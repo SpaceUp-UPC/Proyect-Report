@@ -1,3 +1,6 @@
+![UPC_logo_transparente.png](assets/UPC_logo_transparente.png)
+
+
 ### Universidad Peruana de Ciencias Aplicadas
 
 ### Ingeniería de Software
@@ -120,7 +123,7 @@
 ## Student Outcome
 
 
-#### Conclusiones
+### Conclusiones
 
 ### Recomendaciones
 
