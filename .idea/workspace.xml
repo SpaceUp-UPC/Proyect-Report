@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="Add logo and update section headings in Caratula.md" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/jorget/Downloads/Proyect-Report" value="3Ih5uS4wcATJPRpccS9GKiOavBH" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="3" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="caratula" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JorgeFTS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SpaceUp-UPC/Proyect-Report.git&quot;,
+    &quot;accountId&quot;: &quot;c2bdaef3-1b45-4fd8-a08f-e1dcca273865&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000000702" />
+      <entry key="MS500" value="1.0029899331863317" />
+      <entry key="S2" value="1.509837755292986" />
+      <entry key="S5" value="2.8030570472201006" />
+      <entry key="S10" value="3.922086348129466" />
+      <entry key="S30" value="5.15057853650222" />
+      <entry key="S60" value="5.613143871766398" />
+      <entry key="M2" value="6.795328905335073" />
+      <entry key="M5" value="14.148791991403659" />
+      <entry key="M10" value="24.881774422073804" />
+      <entry key="M15" value="31.382731012431506" />
+      <entry key="M30" value="40.400864635051924" />
+      <entry key="H1" value="46.16993219901043" />
+      <entry key="H2" value="49.44022995047689" />
+      <entry key="H4" value="51.18229136918286" />
+      <entry key="D1" value="52.69164983547101" />
+      <entry key="W1" value="52.95581582227998" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9265880618904367" />
+      <entry key="MS500" value="0.9878218832341449" />
+      <entry key="S2" value="1.5046088533461566" />
+      <entry key="S5" value="2.7993661828552425" />
+      <entry key="S10" value="3.919461630404237" />
+      <entry key="S30" value="5.149394442654452" />
+      <entry key="S60" value="5.612494368586175" />
+      <entry key="M2" value="6.794946646190045" />
+      <entry key="M5" value="14.148473402628985" />
+      <entry key="M10" value="24.881477424760504" />
+      <entry key="M15" value="31.38247433205803" />
+      <entry key="M30" value="40.4006943509756" />
+      <entry key="H1" value="46.16983334497571" />
+      <entry key="H2" value="49.44017659388876" />
+      <entry key="H4" value="51.18226363843733" />
+      <entry key="D1" value="52.69164506118316" />
+      <entry key="W1" value="52.95581513641913" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ih5uSPpmX2g0kKM562uyp957jH" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "capitulo1",
+    "git.auto.fetch.suggestion.counter": "1",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/jorget/Downloads/wa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="" />
+      <created>1788204181278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788204181278</updated>
+      <workItem from="1788204182326" duration="1711000" />
+      <workItem from="1788208197014" duration="930000" />
+      <workItem from="1788209132352" duration="17000" />
+    </task>
+    <task id="LOCAL-00001" summary="Rename README.md to Caratula.md and update content structure">
+      <option name="closed" value="true" />
+      <created>1788205843971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788205843971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add logo and update section headings in Caratula.md">
+      <option name="closed" value="true" />
+      <created>1788208254553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788208254553</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rename README.md to Caratula.md and update content structure" />
+    <MESSAGE value="Add logo and update section headings in Caratula.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logo and update section headings in Caratula.md" />
+  </component>
+</project>
