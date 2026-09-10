@@ -7,8 +7,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="Add logo and update section headings in Caratula.md">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="Add .gitignore and update workspace.xml for project configuration">
+      <change afterPath="$PROJECT_DIR$/Assets/Jorge-Foto.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capitulo1.md" beforeDir="false" afterPath="$PROJECT_DIR$/Capitulo1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,61 +51,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1348869199065735E-48" />
-      <entry key="MS500" value="2.576264909217762E-10" />
-      <entry key="S2" value="0.0040063383985055896" />
-      <entry key="S5" value="0.10992585283227503" />
-      <entry key="S10" value="0.3325991521470353" />
-      <entry key="S30" value="1.0239493644880295" />
-      <entry key="S60" value="2.25667298172182" />
-      <entry key="M2" value="4.335637944575368" />
-      <entry key="M5" value="11.719227695258681" />
-      <entry key="M10" value="22.675492286736592" />
-      <entry key="M15" value="29.629098288565" />
-      <entry key="M30" value="39.589821609592406" />
-      <entry key="H1" value="46.12375448489538" />
-      <entry key="H2" value="49.87700635892638" />
-      <entry key="H4" value="51.8899529774381" />
-      <entry key="D1" value="53.641374495227794" />
-      <entry key="W1" value="53.94859477549707" />
+      <entry key="MS100" value="1.0000087638735646" />
+      <entry key="MS500" value="1.1010115985846431" />
+      <entry key="S2" value="1.8391551582512176" />
+      <entry key="S5" value="2.6246807706506337" />
+      <entry key="S10" value="3.157382945288463" />
+      <entry key="S30" value="3.6726912324654197" />
+      <entry key="S60" value="3.8431227262025036" />
+      <entry key="M2" value="4.429303568521222" />
+      <entry key="M5" value="10.33852746005107" />
+      <entry key="M10" value="22.834058473905905" />
+      <entry key="M15" value="32.995531315646005" />
+      <entry key="M30" value="50.70823582854944" />
+      <entry key="H1" value="64.37143236703275" />
+      <entry key="H2" value="72.95431148911982" />
+      <entry key="H4" value="77.77817258568237" />
+      <entry key="D1" value="82.10056696450266" />
+      <entry key="W1" value="82.87077587413032" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="6.357067376270458E-141" />
+      <entry key="S5" value="8.342625061797694E-57" />
+      <entry key="S10" value="9.13379716317244E-29" />
+      <entry key="S30" value="4.5035029783073305E-10" />
+      <entry key="S60" value="2.122145842845708E-5" />
+      <entry key="M2" value="0.004606675420350029" />
+      <entry key="M5" value="0.11623985122258715" />
+      <entry key="M10" value="0.3409396592105224" />
+      <entry key="M15" value="0.48803580095253335" />
+      <entry key="M30" value="0.6985955918502014" />
+      <entry key="H1" value="0.8358203107428063" />
+      <entry key="H2" value="0.9142320880076381" />
+      <entry key="H4" value="0.9561548452042891" />
+      <entry key="D1" value="0.9925552823750796" />
+      <entry key="W1" value="0.9989330598934936" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.53284938860406E-4" />
-      <entry key="MS500" value="0.23068562340616755" />
-      <entry key="S2" value="0.6969820187880462" />
-      <entry key="S5" value="0.9728514880306515" />
-      <entry key="S10" value="1.260901216907296" />
-      <entry key="S30" value="1.9990371574505443" />
-      <entry key="S60" value="3.243946852471304" />
-      <entry key="M2" value="5.329126229034732" />
-      <entry key="M5" value="12.71644824608498" />
-      <entry key="M10" value="23.673963071510755" />
-      <entry key="M15" value="30.628016816650685" />
-      <entry key="M30" value="40.58923514238084" />
-      <entry key="H1" value="47.12344592288555" />
-      <entry key="H2" value="50.87684762630511" />
-      <entry key="H4" value="52.88987241067426" />
-      <entry key="D1" value="54.64136089275084" />
-      <entry key="W1" value="54.94859282790072" />
+      <entry key="MS100" value="0.9726635309279361" />
+      <entry key="MS500" value="1.0950575534268427" />
+      <entry key="S2" value="1.836788469854777" />
+      <entry key="S5" value="2.6232991429926615" />
+      <entry key="S10" value="3.156533829841558" />
+      <entry key="S30" value="3.6723555501217633" />
+      <entry key="S60" value="3.842964911500771" />
+      <entry key="M2" value="4.433737957779563" />
+      <entry key="M5" value="10.45419094675819" />
+      <entry key="M10" value="23.174214785785264" />
+      <entry key="M15" value="33.48281360651524" />
+      <entry key="M30" value="51.4062750839655" />
+      <entry key="H1" value="65.20691105845829" />
+      <entry key="H2" value="73.86835371190334" />
+      <entry key="H4" value="78.73422726197818" />
+      <entry key="D1" value="83.09310478069595" />
+      <entry key="W1" value="83.86970641936018" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -195,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788208254553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add .gitignore and update workspace.xml for project configuration">
+      <option name="closed" value="true" />
+      <created>1789011639726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1789011639726</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +214,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename README.md to Caratula.md and update content structure" />
     <MESSAGE value="Add logo and update section headings in Caratula.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logo and update section headings in Caratula.md" />
+    <MESSAGE value="Add .gitignore and update workspace.xml for project configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore and update workspace.xml for project configuration" />
   </component>
 </project>

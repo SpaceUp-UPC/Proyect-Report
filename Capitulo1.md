@@ -33,8 +33,8 @@ Convertir a SpaceUp en una startup referente en soluciones para hogares intelige
 ### 1.1.2. Perfiles de integrantes del equipo
 | Foto | Información                                                                                                                                                                                                              |
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | **Nombre Completo:**  <br> **Código:**   <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br>  <br>  <br>  <br><br> **Habilidades Sociales:** <br>  <br> <br>      |
-|  | **Nombre Completo:**  <br> **Código:**  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br>  <br><br> **Habilidades Técnicas:** <br>   <br>  <br> <br><br> **Habilidades Sociales:** <br> <br>  <br>      |
+| | **Nombre Completo:**  <br> **Código:** U202313458  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> <br><br> **Habilidades Técnicas:** <br>  <br>  <br>  <br><br> **Habilidades Sociales:** <br>  <br> <br>      |
+| ![Jorge-Foto.jpeg](Assets/Jorge-Foto.jpeg) | **Nombre Completo:** Jorge Francisco Taipe Sangama <br> **Código:**  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con conocimientos en desarrollo Front-end y Backend. Dentro de Nurse Pulse, aportaré como líder del equipo las habilidades adquiridas durante ciclos anteriores, incluyendo trabajo colaborativo, organización y puntualidad. <br><br> **Habilidades Técnicas:** <br>  Java, Kotlin, .Net Framework <br> **Habilidades Sociales:** <br> Liderazgo, Amigable, Empatico y Cordial<br>       |
 | | **Nombre Completo:**  <br> **Código:**  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br>  <br><br> **Habilidades Técnicas:** <br> <br><br>  <br><br> **Habilidades Sociales:** <br> <br> <br>          |
 | | **Nombre Completo:** <br> **Código:**  <br> **Carrera:** Ingenieria de Software <br><br> **Perfil:** <br>  <br><br> **Habilidades Técnicas:** <br>  <br> <br>  <br><br> **Habilidades Sociales:** <br>  <br> <br>        |
 |  | **Nombre Completo:**  <br> **Código:**  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br>  <br><br> **Habilidades Técnicas:** <br>  <br>  <br><br> **Habilidades Sociales:** <br> <br> <br>             |
@@ -54,7 +54,7 @@ El núcleo inicial de la solución se concentra en tres áreas de protección: d
 ### 1.2.1 Antecedentes y problemática
 La incorporación de tecnologías digitales en los hogares peruanos encuentra un contexto favorable debido al crecimiento de la conectividad. De acuerdo con el Instituto Nacional de Estadística e Informática (INEI), durante el primer trimestre de 2026 el 62,7 % de los hogares del país contó con conexión a Internet. En Lima Metropolitana, esta proporción alcanzó el 82,7 %. Asimismo, el 96,0 % de los hogares peruanos contó con acceso al servicio de telefonía móvil y el 90,7 % de la población usuaria de Internet accedió a este servicio mediante un teléfono celular.
 
-![Acceso a Internet y telefonía móvil en hogares peruanos](assets/inei-conectividad-2026.png)
+![Acceso a Internet y telefonía móvil en hogares peruanos](Assets/inei-conectividad-2026.png)
 
 **Figura 1.** Indicadores de acceso a Internet y telefonía móvil en el Perú durante el primer trimestre de 2026. Fuente: INEI (2026).
 
@@ -64,7 +64,7 @@ Asimismo, la protección del hogar involucra diferentes tipos de riesgos que tra
 
 En el ámbito eléctrico, Osinergmin recomienda que las viviendas dispongan de elementos adecuados de protección en sus instalaciones. Entre ellos se encuentran los interruptores termomagnéticos, capaces de interrumpir automáticamente un circuito frente a condiciones predeterminadas de sobrecarga o cortocircuito. Asimismo, la entidad recomienda que las instalaciones eléctricas sean revisadas y mantenidas por especialistas.
 
-![Recomendaciones de seguridad eléctrica de Osinergmin](assets/osinergmin-seguridad-electrica.png)
+![Recomendaciones de seguridad eléctrica de Osinergmin](Assets/osinergmin-seguridad-electrica.png)
 
 **Figura 2.** Recomendaciones para el uso seguro de la electricidad en viviendas. Fuente: Osinergmin.
 
