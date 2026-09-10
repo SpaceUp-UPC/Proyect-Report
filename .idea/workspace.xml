@@ -7,7 +7,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="Add logo and update section headings in Caratula.md" />
+    <list default="true" id="1b967490-44e0-47f5-aa2e-be79535965e2" name="Changes" comment="Add logo and update section headings in Caratula.md">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000702" />
-      <entry key="MS500" value="1.0029899331863317" />
-      <entry key="S2" value="1.509837755292986" />
-      <entry key="S5" value="2.8030570472201006" />
-      <entry key="S10" value="3.922086348129466" />
-      <entry key="S30" value="5.15057853650222" />
-      <entry key="S60" value="5.613143871766398" />
-      <entry key="M2" value="6.795328905335073" />
-      <entry key="M5" value="14.148791991403659" />
-      <entry key="M10" value="24.881774422073804" />
-      <entry key="M15" value="31.382731012431506" />
-      <entry key="M30" value="40.400864635051924" />
-      <entry key="H1" value="46.16993219901043" />
-      <entry key="H2" value="49.44022995047689" />
-      <entry key="H4" value="51.18229136918286" />
-      <entry key="D1" value="52.69164983547101" />
-      <entry key="W1" value="52.95581582227998" />
+      <entry key="MS100" value="1.1348869199065735E-48" />
+      <entry key="MS500" value="2.576264909217762E-10" />
+      <entry key="S2" value="0.0040063383985055896" />
+      <entry key="S5" value="0.10992585283227503" />
+      <entry key="S10" value="0.3325991521470353" />
+      <entry key="S30" value="1.0239493644880295" />
+      <entry key="S60" value="2.25667298172182" />
+      <entry key="M2" value="4.335637944575368" />
+      <entry key="M5" value="11.719227695258681" />
+      <entry key="M10" value="22.675492286736592" />
+      <entry key="M15" value="29.629098288565" />
+      <entry key="M30" value="39.589821609592406" />
+      <entry key="H1" value="46.12375448489538" />
+      <entry key="H2" value="49.87700635892638" />
+      <entry key="H4" value="51.8899529774381" />
+      <entry key="D1" value="53.641374495227794" />
+      <entry key="W1" value="53.94859477549707" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0" />
+      <entry key="D1" value="1.0" />
+      <entry key="W1" value="1.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9265880618904367" />
-      <entry key="MS500" value="0.9878218832341449" />
-      <entry key="S2" value="1.5046088533461566" />
-      <entry key="S5" value="2.7993661828552425" />
-      <entry key="S10" value="3.919461630404237" />
-      <entry key="S30" value="5.149394442654452" />
-      <entry key="S60" value="5.612494368586175" />
-      <entry key="M2" value="6.794946646190045" />
-      <entry key="M5" value="14.148473402628985" />
-      <entry key="M10" value="24.881477424760504" />
-      <entry key="M15" value="31.38247433205803" />
-      <entry key="M30" value="40.4006943509756" />
-      <entry key="H1" value="46.16983334497571" />
-      <entry key="H2" value="49.44017659388876" />
-      <entry key="H4" value="51.18226363843733" />
-      <entry key="D1" value="52.69164506118316" />
-      <entry key="W1" value="52.95581513641913" />
+      <entry key="MS100" value="6.53284938860406E-4" />
+      <entry key="MS500" value="0.23068562340616755" />
+      <entry key="S2" value="0.6969820187880462" />
+      <entry key="S5" value="0.9728514880306515" />
+      <entry key="S10" value="1.260901216907296" />
+      <entry key="S30" value="1.9990371574505443" />
+      <entry key="S60" value="3.243946852471304" />
+      <entry key="M2" value="5.329126229034732" />
+      <entry key="M5" value="12.71644824608498" />
+      <entry key="M10" value="23.673963071510755" />
+      <entry key="M15" value="30.628016816650685" />
+      <entry key="M30" value="40.58923514238084" />
+      <entry key="H1" value="47.12344592288555" />
+      <entry key="H2" value="50.87684762630511" />
+      <entry key="H4" value="52.88987241067426" />
+      <entry key="D1" value="54.64136089275084" />
+      <entry key="W1" value="54.94859282790072" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -128,31 +130,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "capitulo1",
-    "git.auto.fetch.suggestion.counter": "1",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/jorget/Downloads/wa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;capitulo1&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jorget/Downloads/wa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
