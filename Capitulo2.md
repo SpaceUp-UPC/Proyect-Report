@@ -119,6 +119,7 @@
 
 ### 2.2.2. Registro de entrevistas
 
+#### Segmento objetivo 1 
 <table>
 <colgroup>
 </colgroup>
@@ -232,6 +233,7 @@
 </tbody>
 </table>
 
+
 <table>
 <colgroup>
 </colgroup>
@@ -288,58 +290,60 @@
 </tbody>
 </table>
 
+#### Segmento objetivo 2
+
 <table>
 <colgroup>
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
+    <th colspan="2">Entrevista 1<br></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Oscar </td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Armas</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>22</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Tecnico de IOT</td>
   </tr>
   <tr>
     <td>Evidencia</td>
     <td>
       <div align="center">
-        <img src="..." alt="Evidencia">
+        <img src="assets/Evidencia%20Entrevista%201%20Seg%202.png" alt="Evidencia">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="..." target="_blank">
-        ...
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQC5RCCkX9qPRbhiCPPdNr_kAf-ZZKIRP9Gl0WBl9lu74gs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=YrbGQi" target="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQC5RCCkX9qPRbhiCPPdNr_kAf-ZZKIRP9Gl0WBl9lu74gs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=YrbGQi">
+        Entrevista 1
       </a>
     </td>
   </tr>
   <tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td>00:01</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td>7 minutos</td>
   </tr>
   <tr>
     <td>Resumen</td>
-    <td></td>
+    <td>Oscar, técnico IoT de 22 años, instala dispositivos inteligentes, pero pierde mucho tiempo gestionando información manualmente en Excel y usando múltiples apps para distintas marcas. Como su soporte es netamente reactivo, su solución ideal es una plataforma centralizada que unifique clientes, inventarios y envíe alertas automáticas de fallas para poder actuar proactivamente.</td>
   </tr>
 </tbody>
 </table>
