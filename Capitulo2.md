@@ -380,53 +380,53 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
+    <th colspan="2">Entrevista 2<br></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Mathias</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Villavicencio Viacava</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>25</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Técnico independiente de hogares inteligentes</td>
   </tr>
   <tr>
     <td>Evidencia</td>
     <td>
       <div align="center">
-        <img src="..." alt="Evidencia">
+        <img src="assets/Evidencia Entrevista 2 Seg 2.png" alt="Evidencia">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="..." target="_blank">
-        ...
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319025_upc_edu_pe/IQC3f9CI_NK-SKlISPVuJR-kAZk2KMT4iv5fewT_TTJFCX0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mQVEmh" target="_blank">
+        Entrevista 2
       </a>
     </td>
   </tr>
   <tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td>00:01</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td>5 min</td>
   </tr>
   <tr>
     <td>Resumen</td>
-    <td></td>
+    <td>Mathias, técnico independiente en hogares inteligentes, instala cámaras, alarmas y automatización básica, pero gestiona todo manualmente en Excel y depende de que el cliente le avise cuando algo falla. Considera que una plataforma centralizada que agrupe clientes, instalaciones y alertas automáticas de fallas mejoraría notablemente su forma de trabajar.</td>
   </tr>
 </tbody>
 </table>
