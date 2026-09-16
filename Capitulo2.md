@@ -489,14 +489,17 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 
 ### 2.2.3. Análisis de entrevistas
 
-| Caracteristicas | Diseñadores que lo mencionan | Porcentaje |
-|-----------------|------------------------------|------------|
-|                 |                              |            |
-|                 |                              |            |
-|                 |                              |            |
-|                 |                              |            |
-|                 |                              |            |
-|                 |                              |            |
+A partir de las entrevistas realizadas se identificaron características y necesidades recurrentes relacionadas con la gestión, monitoreo y mantenimiento de soluciones IoT.
+
+| Características identificadas | Entrevistados que lo mencionan | Porcentaje |
+|---|---|---:|
+| Necesidad de centralizar dispositivos e información | Patricia, Oscar y Mathias | 100% |
+| Necesidad de monitoreo y alertas | Patricia, Oscar y Mathias | 100% |
+| Gestión manual de información | Oscar y Mathias | 66.7% |
+| Dependencia del cliente para reportar fallas | Oscar y Mathias | 66.7% |
+| Uso de múltiples aplicaciones o herramientas | Patricia y Oscar | 66.7% |
+| Necesidad de mantenimiento preventivo | Oscar y Mathias | 66.7% |
+| Búsqueda de especialistas mediante redes sociales o recomendaciones | Patricia y Mathias | 66.7% |
 
 ## 2.3. Needfinding
 
@@ -527,91 +530,98 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 <table>
     <tr>
         <th rowspan="2">Actividad</th>
-        <th colspan="2"></th>
-        <th colspan="2"></th>
+        <th colspan="2">Dueño de hogar</th>
+        <th colspan="2">Implementador</th>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Frecuencia</td>
+        <td>Importancia</td>
+        <td>Frecuencia</td>
+        <td>Importancia</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Buscar soluciones IoT</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Seleccionar dispositivos</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Instalar y configurar dispositivos</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Controlar dispositivos</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Media</td>
+        <td>Media</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Monitorear dispositivos</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Consultar información</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Gestionar clientes</td>
+        <td>Baja</td>
+        <td>Baja</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Gestionar instalaciones</td>
+        <td>Baja</td>
+        <td>Baja</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Gestionar dispositivos instalados</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Recibir y atender alertas</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Realizar mantenimiento</td>
+        <td>Baja</td>
+        <td>Alta</td>
+        <td>Alta</td>
+        <td>Alta</td>
+    </tr>
+    <tr>
+        <td>Ampliar soluciones IoT</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Media</td>
+        <td>Alta</td>
     </tr>
 </table>
 
