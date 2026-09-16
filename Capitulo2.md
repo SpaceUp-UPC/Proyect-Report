@@ -152,53 +152,54 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
+    <th colspan="2">Entrevista #1<br></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Patricia</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Navarro</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>52</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Dueña de hogar</td>
   </tr>
   <tr>
     <td>Evidencia</td>
     <td>
       <div align="center">
-        <img src="..." alt="Evidencia">
+         <img src="IoT/Captura.JPG" alt="Evidencia">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="..." target="_blank">
-        ...
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u201711828_upc_edu_pe/IQBhIkbgFjd5RY4HyFRh7DfTAeusEvDwh8Nf4zchNU-ZnpM?e=zIFhMt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+         Entrevista 1
       </a>
     </td>
   </tr>
   <tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td>00:00</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td>03:54</td>
   </tr>
   <tr>
     <td>Resumen</td>
-    <td></td>
+    <td>Patricia cuenta que utiliza diferentes dispositivos IoT en su hogar, como focos inteligentes, cámaras y Alexa. Utiliza su celular para controlar los dispositivos y menciona que la instalación no presentó mayores dificultades. Sin embargo, identifica como principal problema tener que utilizar varias aplicaciones para gestionar los dispositivos. También utiliza cámaras para monitorear su hogar y recibe alertas cuando se detecta actividad. Además, manifiesta interés en conocer el consumo mensual de electricidad y detectar posibles usos no autorizados. Para encontrar especialistas, recurriría principalmente a redes sociales o páginas web. Finalmente, señala que le gustaría tener todos sus dispositivos y funcionalidades centralizados en una sola aplicación.</td>
+  </tr>
   </tr>
 </tbody>
 </table>
