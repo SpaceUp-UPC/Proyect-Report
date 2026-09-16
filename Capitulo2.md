@@ -505,6 +505,10 @@ A partir de las entrevistas realizadas se identificaron características y neces
 
 ### 2.3.1. User Personas
 
+<img src="IoT/Patricia Navarro (2).png" alt="Empathy Mapping - Implementador de Soluciones IoT">
+
+<img src="IoT/Mathias Villavicencio.png" alt="Empathy Mapping - Implementador de Soluciones IoT">
+
 ### 2.3.2. User Task Matrix
 
 | **Actividad / Tarea** | **Dueño de hogar** | **Implementador** |
@@ -627,10 +631,23 @@ A partir de las entrevistas realizadas se identificaron características y neces
 
 ### 2.3.3. User Journey Mapping
 
+<img src="IoT/User Journey Map (Community) (1).png" alt="User Journey Map - Dueña de Hogar">
+
+<img src="IoT/User Journey Map (Community) (2).png" alt="User Journey Map - Implementador de Soluciones IoT">
+
 ### 2.3.4. Empathy Mapping
+
+### Dueña de hogar
+
+<img src="IoT/Empathy Mapping_DueñoHogar.jpg" alt="Empathy Mapping - Dueña de Hogar">
+
+### Implementador de soluciones IoT
+
+<img src="IoT/Empathy Mapping_SolucionIoT.jpg" alt="Empathy Mapping - Implementador de Soluciones IoT">
 
 ## 2.4. Big Picture EventStorming
 
+<img src="IoT/Empathy.png" alt="Empathy Mapping - Implementador de Soluciones IoT">
 
 ### 2.5. Ubiquitous Language
 
