@@ -160,9 +160,8 @@ En el diagrama de despliegue se representa cómo los principales componentes de 
 
 ![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_Diagrams.png)
 
-## 4.2. Tactical-Level Domain-Driven Design
+# 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.1. Bounded Context: Identity & Access Management BC
 
 ### 4.2.1.1. Domain Layer
 
@@ -174,17 +173,8 @@ La capa de dominio de IAM encapsula la lógica de negocio central para la gesti�
 | ------------ | --------- | ----------------------------------------------------- |
 | Aggregate Root         | User      | Representa al usuario autenticado en el sistema, conteniendo su identidad y el hash de su contraseña para validación segura.       |
 
-
 **Métodos:**
-- User.AddPaymentMethod: Este método permite la creación y asociación de un nuevo método de pago al perfil del usuario. Internamente, instancia una entidad PaymentMethod con los datos de la tarjeta proporcionados y la añade a la lista de pagos del usuario.
 - User (Constructor): Además de inicializar las propiedades del usuario, este método realiza una validación de negocio crítica al asegurar que el correo electrónico no esté vacío antes de crear la instancia.
-
-### Entities
-
-| **Atributo** | **Nombre**  | **Descripción**                                       |
-| ------------ | --------- | ----------------------------------------------------- |
-| Type, Number, Expiry, Cvv        | PaymentMethod      | Entidad que representa la información de cobro (tarjeta) vinculada a un usuario específico.      |
-
 ### Value Objects
 
 | **Atributo** | **Nombre**  | **Descripción**                                       |
@@ -197,7 +187,6 @@ La capa de dominio de IAM encapsula la lógica de negocio central para la gesti�
 | **Atributo** | **Nombre**  | **Tipo**                                       |
 | ------------ | --------- | ----------------------------------------------------- |
 | Username, Password        | RegisterUserCommand      | Command      |
-| UserId, PaymentMethodType, CardNumber, ExpirationDate, CVV        | AddPaymentMethodCommand      | Command      |
 | Username, Password        | LoginQuery      | Query      |
 | UserId        | GetUserByIdQuery      | Query      |
 
@@ -210,20 +199,18 @@ La capa de dominio de IAM encapsula la lógica de negocio central para la gesti�
 
 **Métodos:**
 
--IPasswordHashingService.HashPassword: Recibe la contraseña en texto plano ingresada por el usuario y la transforma en una cadena cifrada (hash) mediante un algoritmo criptográfico para su almacenamiento seguro.
-
--IPasswordHashingService.VerifyPassword: Compara una contraseña ingresada en texto claro contra un hash previamente almacenado para verificar si coinciden, permitiendo así el acceso al sistema.
-
--ITokenGenerationService.GenerateToken: Utiliza la información del objeto User autenticado para generar un token de seguridad (usualmente JWT), el cual servirá como credencial temporal para autorizar las peticiones del cliente en la plataforma.
-
-### Domain Services
+- IPasswordHashingService.HashPassword: Recibe la contraseña en texto plano ingresada por el usuario y la transforma en una cadena cifrada (hash) mediante un algoritmo criptográfico para su almacenamiento seguro.
+- IPasswordHashingService.VerifyPassword: Compara una contraseña ingresada en texto claro contra un hash previamente almacenado para verificar si coinciden, permitiendo así el acceso al sistema.
+- ITokenGenerationService.GenerateToken: Utiliza la información del objeto User autenticado para generar un token de seguridad (usualmente JWT), el cual servirá como credencial temporal para autorizar las peticiones del cliente en la plataforma.
+### Repositories
 
 | **Nombre** | **Descripción**                                     |
 | ------------ | --------- |
-| IUserRepository        | Interfaz para la persistencia y recuperación de datos de los agregados User.     | 
-| IPaymentMethodRepository        | Interfaz para gestionar el almacenamiento de los métodos de pago vinculados a los perfiles.      | 
+| IUserRepository        | Interfaz para la persistencia y recuperación de datos de los agregados User.     |
 
-En la Domain Layer de Sentrya, específicamente dentro del Bounded Context de IAM, hemos definido la gestión de identidades bajo un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización para la plataforma de remodelación IoT.La clase User actúa como el Agregado raíz que centraliza la información del perfil y su asociación con roles específicos (como customer o perfiles técnicos), garantizando que el acceso y las credenciales se validen estrictamente a través de servicios de dominio como IPasswordHashingService e ITokenGenerationService. Finalmente, la recuperación y persistencia de estas identidades se gestiona mediante repositorios especializados como IUserRepository.
+En la Domain Layer de Sentrya, específicamente dentro del Bounded Context de IAM, hemos definido la gestión de identidades bajo un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización para la plataforma de remodelación IoT. La clase User actúa como el Agregado raíz que centraliza la información del perfil y su asociación con roles específicos (como customer o perfiles técnicos), garantizando que el acceso y las credenciales se validen estrictamente a través de servicios de dominio como IPasswordHashingService e ITokenGenerationService. Finalmente, la recuperación y persistencia de estas identidades se gestiona mediante repositorios especializados como IUserRepository.
+ 
+---
 
 ### 4.2.1.2. Interface Layer
 
@@ -235,7 +222,6 @@ En la Interface Layer de Sentrya, específicamente para el contexto de IAM, se h
 | ------------ | --------- | 
 | RegisterUserResource        | DTO que encapsula los datos de entrada (Email, Password, FullName, Phone) para el registro de un nuevo usuario.      | 
 | LoginResource        | DTO que contiene las credenciales necesarias (Email, Password) para validar el acceso al sistema.      | 
-| AddPaymentMethodResource        | DTO que transporta la información financiera (Type, Number, Expiry, Cvv) para vincular una tarjeta al perfil del usuario.      | 
 | UserResource        | DTO de salida que representa la información pública del usuario (ID, Nombre, Email, Rol) tras una consulta exitosa.     | 
 | AuthenticatedUserResource        | Recurso que devuelve el token JWT generado y la información básica del usuario tras un inicio de sesión correcto.      | 
 
@@ -245,8 +231,7 @@ En la Interface Layer de Sentrya, específicamente para el contexto de IAM, se h
 | ------------ | --------- | --------- | --------- |
 | UsersController        | POST    |RegisterUserResource   | Expone el endpoint para crear una nueva cuenta de usuario en la plataforma.   |
 | UsersController        | POST     |  LoginResource |  Gestiona la autenticación, verificando las credenciales y devolviendo el token de acceso.  |
-| UsersController        | POST      | AddPaymentMethodResource  |  Permite a un usuario autenticado registrar un nuevo método de pago en su perfil.  |
-| UsersController        | GET     |  AddPaymentMethodResource |  Recupera la información detallada de un usuario específico mediante su identificador.  |
+| UsersController        | GET     |  UserId |  Recupera la información detallada de un usuario específico mediante su identificador.  |
 
 ### Transformers / Assemblers
 
@@ -254,29 +239,29 @@ En la Interface Layer de Sentrya, específicamente para el contexto de IAM, se h
 | ------------ | --------- | 
 | UserResourceFromEntityAssembler        | Se encarga de convertir la entidad de dominio User en un objeto UserResource para su envío a través de la API.     | 
 | RegisterUserCommandFromResourceAssembler        | Transforma los datos recibidos en el RegisterUserResource en un comando RegisterUserCommand procesable por la capa de aplicación.      | 
-| AddPaymentMethodCommandFromResourceAssembler        | Convierte el recurso AddPaymentMethodResource en el comando correspondiente para persistir la información financiera.      | 
 
-En la Interface Layer de S, específicamente para el contexto de IAM, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o a los servicios de aplicación, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar el registro de nuevos usuarios, la autenticación segura mediante credenciales y la administración de métodos de pago dentro de la plataforma de remodelación IoT.
-
+En la Interface Layer de Sentrya, específicamente para el contexto de IAM, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o a los servicios de aplicación, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar el registro de nuevos usuarios y la autenticación segura mediante credenciales dentro de la plataforma de remodelación IoT.
+ 
+---
 
 ### 4.2.1.3. Application Layer
 
-En la Application Layer de Sentrya, específicamente para el contexto de IAM, los handlers son los encargados de procesar los comandos y consultas, orquestando la lógica necesaria para cumplir con los casos de uso del sistema. Estos handlers actúan como mediadores entre la interfaz y el dominio, asegurando que las operaciones de registro, autenticación y gestión de pagos se realicen siguiendo las reglas de negocio establecidas . Los componentes presentados permiten orquestar la seguridad y los perfiles de usuario dentro de la plataforma de remodelación IoT.
+En la Application Layer de Sentrya, específicamente para el contexto de IAM, los handlers son los encargados de procesar los comandos y consultas, orquestando la lógica necesaria para cumplir con los casos de uso del sistema. Estos handlers actúan como mediadores entre la interfaz y el dominio, asegurando que las operaciones de registro y autenticación se realicen siguiendo las reglas de negocio establecidas. Los componentes presentados permiten orquestar la seguridad y los perfiles de usuario dentro de la plataforma de remodelación IoT.
 
 |Nombre|Descripcion|Resumen de Logica|
 |------|---------|------|
-| RegisterUserCommandHandler        | Procesa la creación de nuevas cuentas de usuario .      | Valida que el email no esté en uso, cifra la contraseña usando el servicio de hashing, instancia el agregado User y persiste los cambios a través del repositorio y la unidad de trabajo . | 
-| LoginQueryHandler        | Gestiona el proceso de inicio de sesión y autenticación .     | Busca al usuario por email, verifica la validez de la contraseña comparándola con el hash almacenado y genera un token JWT para sesiones seguras . | 
-| AddPaymentMethodCommandHandler        | Orquesta la vinculación de información financiera a un perfil .      | Verifica la existencia del usuario, crea la entidad PaymentMethod con los datos de la tarjeta y actualiza el registro persistente mediante el repositorio correspondiente . | 
+| RegisterUserCommandHandler        | Procesa la creación de nuevas cuentas de usuario.      | Valida que el email no esté en uso, cifra la contraseña usando el servicio de hashing, instancia el agregado User y persiste los cambios a través del repositorio y la unidad de trabajo. | 
+| LoginQueryHandler        | Gestiona el proceso de inicio de sesión y autenticación.     | Busca al usuario por email, verifica la validez de la contraseña comparándola con el hash almacenado y genera un token JWT para sesiones seguras. | 
 | GetUserByIdQueryHandler        | Recupera la información de un usuario específico.     | Consulta al repositorio de usuarios mediante un identificador único y devuelve un DTO con la información pública y técnica del perfil. | 
 
 ### Internal DTOs (Data Transfer Objects)
 
 | **Nombre** | **Descripción**  |  
 |------------|------------------|
-| UserDto        | Objeto que transporta la información pública y operativa del usuario, incluyendo su rol, foto y lista de métodos de pago vinculados .     | 
-| AuthenticationDto        | DTO especializado que encapsula la información básica del usuario junto con el token JWT tras una autenticación exitosa .      | 
-| PaymentMethodDto        | Estructura de datos simplificada que representa la información de una tarjeta vinculada al perfil del usuario .      | 
+| UserDto        | Objeto que transporta la información pública y operativa del usuario, incluyendo su rol y foto de perfil.     | 
+| AuthenticationDto        | DTO especializado que encapsula la información básica del usuario junto con el token JWT tras una autenticación exitosa.      | 
+ 
+---
 
 ### 4.2.1.4. Infrastructure Layer
 
@@ -287,9 +272,7 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IAM,
 | **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
 | ------------ | --------- | --------- | 
 | UserRepository        | Implementación concreta de IUserRepository que utiliza EFC para realizar operaciones CRUD sobre la tabla de usuarios.      | Entity Framework Core, LINQ. | 
-| PaymentMethodRepository        | Implementación de IPaymentMethodRepository encargada de persistir los datos de las tarjetas vinculadas a los perfiles.     | Entity Framework Core. | 
 | UserConfiguration        | Define el mapeo detallado entre la entidad User y la tabla de base de datos, incluyendo restricciones y tipos de datos.     | Fluent API (EFC). | 
-| PaymentMethodConfiguration        | Configura el esquema de base de datos para la entidad PaymentMethod, estableciendo las relaciones necesarias.     | Fluent API (EFC). | 
 
 ### Security Services Implementation
 
@@ -300,19 +283,20 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IAM,
 
 ### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img width="3930" height="3298" alt="structurizr-107883-IAM_Component_View" src="assets/IAM-COMPONENTDIAGRAM.png" />
-
+![_home_jorget_Downloads_Bounded Context Software Architecture Component Level Diagrams.png.png](Assets/_home_jorget_Downloads_Bounded%20Context%20Software%20Architecture%20Component%20Level%20Diagrams.png.png)
 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img width="956" height="457" alt="image" src="assets/IAM-DOMAINLAYER.png" />
 
+![BoundedContextDomainIAM.png](Assets/BoundedContextDomainIAM.png)
 
 ### 4.2.1.6.2. Bounded Context Database Design Diagrams
 El diseño de la base de datos para el contexto de IAM se ha normalizado para garantizar la integridad de las identidades y la seguridad de la información financiera. Se compone de dos tablas principales relacionadas mediante una clave foránea.
-<img width="229" height="397" alt="image" src="assets/IAM-DBDIAGRAM" />
+
+
+![DBIamdiagram.png](Assets/DBIamdiagram.png)
 
 ## 4.2.2. Bounded Context: Payment Management
 
@@ -1064,11 +1048,11 @@ Contiene los valores específicos de los indicadores calculados que componen un 
 
 ### 4.2.4.1. Domain Layer
 
-La Domain Layer es el núcleo que gestiona las reglas de negocio relacionadas con la administración de espacios dentro de la plataforma Sentrya. En este contexto, entidades como Space y LinkedIoTDevice, junto con objetos de valor y servicios de dominio, permiten registrar espacios, actualizar su información, controlar su disponibilidad y vincular dispositivos IoT para el monitoreo posterior.
+La Domain Layer es el núcleo que gestiona las reglas de negocio relacionadas con la administración de espacios dentro de la plataforma Sentrya. En este contexto, entidades como Space y LinkedIoTDevice, junto con objetos de valor y servicios de dominio, permiten registrar espacios, actualizar su información, controlar su disponibilidad y vincular dispositivos IoT para el monitoreo posterior. Adicionalmente, el agregado Review permite a los usuarios calificar y comentar los espacios publicados.
 
 Objetivo:
 
-La capa de dominio tiene como objetivo representar los elementos fundamentales para la gestión de espacios, cubriendo desde la publicación de un nuevo espacio hasta la actualización de sus detalles y el control de su disponibilidad dentro de la plataforma.
+La capa de dominio tiene como objetivo representar los elementos fundamentales para la gestión de espacios, cubriendo desde la publicación de un nuevo espacio hasta la actualización de sus detalles, el control de su disponibilidad y la recopilación de retroalimentación de los usuarios a través de reseñas.
 
 ## 1. Aggregate: Space
 
@@ -1088,13 +1072,13 @@ El agregado Space actúa como la raíz del modelo y encapsula la información pr
 | dimensions          | SpaceDimensions   | Objeto de valor que representa las dimensiones físicas del espacio.                                   |
 | status  | String | Estado actual del espacio: publicado, pausado o no disponible.                 |
 | createdAt          | DateTime   | Fecha de creación del registro del espacio.                                  |
+
 ### Métodos
 
 - `publish()` : Cambia el estado del espacio a publicado cuando contiene la información necesaria.
 - `updateDetails(name, description, location)`: Actualiza los datos principales del espacio.
 - `pauseAvailability()`: Pausa temporalmente la disponibilidad del espacio.
 - `linkIoTDevice(device)` : Asocia un dispositivo IoT al espacio para permitir su monitoreo.
-
 ---
 
 ## 2. Value Object: SpaceLocation
@@ -1115,7 +1099,6 @@ El objeto de valor SpaceLocation representa la ubicación del espacio registrado
 
 - `getFullAddress()` : Retorna la dirección completa del espacio en formato legible.
 - `isValid()` : Valida que la ubicación cuente con los datos mínimos requeridos.
-
 ---
 
 ## 3. Value Object: SpaceDimensions
@@ -1127,7 +1110,7 @@ El objeto de valor SpaceDimensions representa las medidas físicas del espacio. 
 ### Atributos
 
 | Atributo      | Tipo   | Descripción                                                   |
-|---------------|--------|---------------------------------------------------------------|
+|---------------|--------|-----------------------------------------------------------------|
 | width            | Decimal   | Ancho del espacio.                          |
 | length     | Decimal   | Largo del espacio.         |
 | area | Decimal | Área total calculada del espacio.              |
@@ -1136,19 +1119,18 @@ El objeto de valor SpaceDimensions representa las medidas físicas del espacio. 
 
 - `calculateArea()` : Calcula el área total del espacio a partir del ancho y largo.
 - `isValid()` : Verifica que las dimensiones ingresadas sean mayores a cero.
-
 ---
 
 ## 4. Entity: LinkedIoTDevice
 
 **Descripción:**
 
-La entidad LinkedIoTDevice representa un dispositivo IoT vinculado a un espacio específico. Su función es registrar qué dispositivo está asociado al espacio para permitir el monitoreo operativo desde otro bounded context.
+La entidad LinkedIoTDevice representa un dispositivo IoT vinculado a un espacio específico. Su función es registrar qué dispositivo está asociado al espacio para permitir el monitoreo operativo desde otro bounded context. Al ser una entidad dependiente, su ciclo de vida y persistencia están subordinados al agregado Space.
 
 ### Atributos
 
 | Atributo      | Tipo   | Descripción                                                   |
-|---------------|--------|---------------------------------------------------------------|
+|---------------|--------|-----------------------------------------------------------------|
 | id            | Guid   | Identificador único del vínculo.                          |
 | spaceId     | Guid   | Identificador del espacio asociado.         |
 | deviceId | Guid | Identificador del dispositivo IoT vinculado.              |
@@ -1163,7 +1145,30 @@ La entidad LinkedIoTDevice representa un dispositivo IoT vinculado a un espacio 
 - `isLinkedTo(spaceId)` : Verifica si el dispositivo pertenece al espacio indicado.
 ---
 
-## 5.Domain Service: SpaceCommandService
+## 5. Aggregate: Review
+
+**Descripción:**
+
+El agregado Review actúa como raíz independiente y representa la calificación y comentario que un usuario deja sobre un espacio publicado. Se modela como su propio Aggregate Root — y no como entidad dependiente de Space — porque una reseña tiene identidad, autoría y ciclo de vida propios (puede editarse o eliminarse sin afectar la consistencia del agregado Space), y porque su volumen de escritura/lectura es independiente del de los espacios.
+
+### Atributos
+
+| Atributo   | Tipo     | Descripción                                                        |
+|------------|----------|----------------------------------------------------------------------|
+| id         | Guid     | Identificador único de la reseña.                                   |
+| spaceId    | Guid     | Referencia al espacio calificado (no navegación directa al agregado Space). |
+| authorId   | Guid     | Referencia al usuario autor de la reseña (Bounded Context IAM).     |
+| rating     | Integer  | Calificación numérica otorgada al espacio (rango 1-5).              |
+| comment    | String   | Comentario textual asociado a la calificación.                      |
+| createdAt  | DateTime | Fecha de creación de la reseña.                                     |
+
+### Métodos
+
+- `updateContent(rating, comment)` : Permite al autor editar la calificación y/o el comentario de su reseña.
+- `belongsToSpace(spaceId)` : Verifica si la reseña corresponde al espacio indicado.
+---
+
+## 6. Domain Service: SpaceCommandService
 
 **Descripción:**
 
@@ -1177,27 +1182,41 @@ El servicio SpaceCommandService encapsula reglas de negocio relacionadas con la 
 - `linkDeviceToSpace(Guid spaceId, Guid deviceId)` : Valida y vincula un dispositivo IoT al espacio.
 ---
 
-## 6. Repository: ISpaceRepository
+## 7. Repository: ISpaceRepository
 
 **Descripción:**
 
-El ISpaceRepository es una abstracción para la persistencia de espacios dentro de la base de datos, permitiendo realizar operaciones de consulta y guardado de manera ordenada.
+El ISpaceRepository es una abstracción para la persistencia de espacios (y de sus dispositivos IoT vinculados, al ser entidades dependientes del agregado) dentro de la base de datos, permitiendo realizar operaciones de consulta y guardado de manera ordenada.
 
 ### Métodos
 
-- `save(Space space)` : Guarda un nuevo espacio o actualiza uno existente.
+- `save(Space space)` : Guarda un nuevo espacio o actualiza uno existente, incluyendo los dispositivos IoT vinculados.
 - `findById(Guid id)` : Recupera un espacio por su identificador único.
 - `findByOwnerId(Guid ownerId)` : Recupera los espacios asociados a un propietario.
 - `delete(Guid id)` : Elimina o desactiva un espacio registrado.
+---
 
-En la Domain Layer de Sentrya, específicamente dentro del bounded context Space Management, se define la lógica principal para registrar, publicar, actualizar y pausar espacios dentro de la plataforma. La clase Space actúa como agregado raíz, mientras que SpaceLocation, SpaceDimensions y LinkedIoTDevice complementan la información necesaria para representar el espacio y su relación con el monitoreo IoT. Finalmente, las operaciones principales se coordinan mediante el servicio SpaceCommandService y la persistencia se abstrae a través de ISpaceRepository.
+## 8. Repository: IReviewRepository
 
-## 4.2.4.2. Interface Layer
+**Descripción:**
 
-a Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los usuarios y la gestión de espacios dentro de Sentrya. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para registrar espacios, actualizar su información, controlar su disponibilidad y vincular dispositivos IoT.
+El IReviewRepository es una abstracción para la persistencia del agregado Review, independiente de ISpaceRepository dado que Review es su propia raíz de agregado.
+
+### Métodos
+
+- `save(Review review)` : Guarda una nueva reseña o actualiza una existente.
+- `findById(Guid id)` : Recupera una reseña por su identificador único.
+- `findBySpaceId(Guid spaceId)` : Recupera todas las reseñas asociadas a un espacio.
+  En la Domain Layer de Sentrya, específicamente dentro del bounded context Space Management, se define la lógica principal para registrar, publicar, actualizar y pausar espacios dentro de la plataforma. La clase Space actúa como agregado raíz, mientras que SpaceLocation, SpaceDimensions y LinkedIoTDevice complementan la información necesaria para representar el espacio y su relación con el monitoreo IoT. El agregado Review, independiente de Space, permite capturar la retroalimentación de los usuarios sobre los espacios publicados. Las operaciones principales se coordinan mediante el servicio SpaceCommandService y la persistencia se abstrae a través de ISpaceRepository e IReviewRepository.
+
+---
+
+### 4.2.4.2. Interface Layer
+
+La Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los usuarios y la gestión de espacios dentro de Sentrya. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para registrar espacios, actualizar su información, controlar su disponibilidad, vincular dispositivos IoT y gestionar reseñas.
 
 En esta capa no se implementan reglas de negocio, sino que se coordina la comunicación entre las solicitudes de los usuarios y la lógica del dominio.
-
+ 
 ---
 
 ## Controlador: SpacesController
@@ -1223,14 +1242,13 @@ El SpacesController maneja los endpoints relacionados con la creación, consulta
 - **CreateSpaceCommandFromResourceAssembler**: Utilidad para convertir el recurso de creación en un comando procesable.
 - **UpdateSpaceCommandFromResourceAssembler**: Utilidad para transformar el recurso de actualización en un comando.
 - **SpaceResourceFromEntityAssembler**: Utilidad para convertir la entidad de dominio Space en un recurso de respuesta para la API.
-
 ---
 
 ## Controlador: SpaceDevicesController
 
 **Descripción:**
 
-El SpaceDevicesController maneja los endpoints relacionados con la vinculación y consulta de dispositivos IoT asociados a un espacio. Este controlador permite conectar la gestión del espacio con el posterior monitoreo IoT.
+El SpaceDevicesController maneja los endpoints relacionados con la vinculación, consulta y desvinculación de dispositivos IoT asociados a un espacio. Este controlador permite conectar la gestión del espacio con el posterior monitoreo IoT.
 
 ### Endpoints
 
@@ -1240,14 +1258,33 @@ El SpaceDevicesController maneja los endpoints relacionados con la vinculación 
 | GET    | /api/v1/spaces/{spaceId}/devices        | Recupera los dispositivos IoT asociados a un espacio registrado. |
 | PATCH    | /api/v1/spaces/{spaceId}/devices/{deviceId}/deactivate        | Desactiva la vinculación de un dispositivo IoT cuando ya no será utilizado para el monitoreo del espacio. |
 
-
 ### Dependencias
 
 - **ISpaceDeviceCommandService**: Servicio encargado de procesar comandos relacionados con la vinculación de dispositivos IoT.
 - **ISpaceDeviceQueryService**: Servicio encargado de consultar dispositivos vinculados a espacios.
 - **LinkIoTDeviceCommandFromResourceAssembler**: Utilidad para convertir el recurso de vinculación en un comando procesable.
 - **LinkedIoTDeviceResourceFromEntityAssembler**: Utilidad para transformar la entidad LinkedIoTDevice en un recurso de respuesta.
+---
 
+## Controlador: SpaceReviewsController
+
+**Descripción:**
+
+El SpaceReviewsController maneja los endpoints relacionados con la creación y consulta de reseñas asociadas a un espacio publicado.
+
+### Endpoints
+
+| Método | Ruta                                   | Descripción |
+|--------|----------------------------------------|-------------|
+| POST   | /api/v1/spaces/{spaceId}/reviews       | Permite a un usuario registrar una nueva reseña (calificación y comentario) sobre un espacio. |
+| GET    | /api/v1/spaces/{spaceId}/reviews       | Recupera todas las reseñas asociadas a un espacio específico. |
+
+### Dependencias
+
+- **IReviewCommandService**: Servicio encargado de procesar comandos de creación de reseñas.
+- **IReviewQueryService**: Servicio encargado de consultar reseñas registradas.
+- **AddReviewCommandFromResourceAssembler**: Utilidad para convertir el recurso de entrada en un comando procesable.
+- **ReviewResourceFromEntityAssembler**: Utilidad para transformar la entidad de dominio Review en un recurso de respuesta.
 ---
 
 ## Flujo de Trabajo
@@ -1261,17 +1298,22 @@ Una vez creado el espacio, el propietario puede modificar sus datos principales 
 ### Vinculación de Dispositivos IoT
 Cuando un espacio requiere monitoreo, el sistema permite vincular dispositivos IoT mediante endpoints específicos. Esta información queda asociada al espacio y sirve como base para que el contexto de IoT Monitoring and Notifications pueda procesar lecturas posteriormente.
 
+### Reseñas de Espacios
+Los usuarios pueden registrar una calificación y comentario sobre un espacio publicado, y consultar el historial de reseñas asociadas a dicho espacio.
+ 
 ---
 
 En esta capa de Sentrya, los controladores se encargan de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados y devolver una respuesta adecuada.
 
 Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o a los servicios de aplicación, actuando como una interfaz entre los usuarios propietarios y la gestión interna de espacios.
 
-Los controladores presentados permiten gestionar la publicación, actualización, disponibilidad y vinculación de dispositivos IoT dentro del contexto Space Management.
+Los controladores presentados permiten gestionar la publicación, actualización, disponibilidad, vinculación de dispositivos IoT y reseñas dentro del contexto Space Management.
+ 
+---
 
 ### 4.2.4.3. Application Layer
 
-Esta capa actúa como un orquestador. Recibe comandos y consultas desde la capa de interfaz y coordina la ejecución de la lógica asociada a la gestión de espacios dentro de Sentrya. Es el intermediario que traduce las solicitudes de los usuarios en acciones del dominio, asegurando que la creación, actualización, consulta y control de disponibilidad de los espacios se apliquen correctamente.
+Esta capa actúa como un orquestador. Recibe comandos y consultas desde la capa de interfaz y coordina la ejecución de la lógica asociada a la gestión de espacios dentro de Sentrya. Es el intermediario que traduce las solicitudes de los usuarios en acciones del dominio, asegurando que la creación, actualización, consulta y control de disponibilidad de los espacios, la vinculación y desvinculación de dispositivos IoT, y el registro de reseñas se apliquen correctamente.
 
 ### Commands & Queries Handlers
 
@@ -1280,9 +1322,13 @@ Esta capa actúa como un orquestador. Recibe comandos y consultas desde la capa 
 | CreateSpaceCommandHandler        | Gestiona la creación de un nuevo espacio dentro del sistema.    | Valida los datos básicos del espacio, instancia el agregado Space y lo persiste mediante el repositorio correspondiente. | 
 | UpdateSpaceDetailsCommandHandler        | Procesa la actualización de la información principal de un espacio.  | Recupera el espacio por su identificador, actualiza sus atributos permitidos y guarda los cambios en el repositorio. | 
 | PauseSpaceAvailabilityCommandHandler        | Orquesta el cambio de estado de disponibilidad de un espacio.  | Busca el espacio, ejecuta la operación de pausa de disponibilidad en el dominio y persiste el nuevo estado. | 
-| LinkIoTDeviceCommandHandler        | Gestiona la vinculación de un dispositivo IoT a un espacio.     | Valida que el espacio exista, registra la relación con el dispositivo IoT y actualiza la información persistente. | 
-| GetSpaceByIdQueryHandler        | Recupera la información detallada de un espacio específico.   | Consulta el repositorio utilizando el identificador único y devuelve el DTO correspondiente. | 
-| GetSpacesByOwnerIdQueryHandler        | Obtiene la lista de espacios asociados a un propietario.   | Consulta los espacios registrados por un usuario y devuelve una colección resumida para visualización. | 
+| LinkIoTDeviceCommandHandler        | Gestiona la vinculación de un dispositivo IoT a un espacio.     | Recupera el agregado Space, ejecuta `space.linkIoTDevice(device)` y persiste el agregado completo mediante ISpaceRepository. | 
+| DeactivateIoTDeviceCommandHandler        | Gestiona la desvinculación lógica de un dispositivo IoT asociado a un espacio.     | Recupera el agregado Space, invoca `LinkedIoTDevice.deactivate()` sobre el dispositivo correspondiente y persiste el agregado mediante ISpaceRepository. | 
+| AddReviewCommandHandler        | Procesa el registro de una nueva reseña sobre un espacio.     | Valida que el espacio exista, instancia el agregado Review con el rating y comentario proporcionados, y lo persiste mediante IReviewRepository. | 
+| GetSpaceByIdQueryHandler        | Recupera la información detallada de un espacio específico.   | Consulta ISpaceRepository utilizando el identificador único y devuelve el DTO correspondiente. | 
+| GetSpacesByOwnerIdQueryHandler        | Obtiene la lista de espacios asociados a un propietario.   | Consulta ISpaceRepository por propietario y devuelve una colección resumida para visualización. | 
+| GetLinkedDevicesBySpaceIdQueryHandler        | Recupera los dispositivos IoT vinculados a un espacio.   | Consulta ISpaceRepository utilizando el identificador del espacio y devuelve la colección de `LinkedIoTDevice` asociados al agregado. | 
+| GetReviewsBySpaceIdQueryHandler        | Recupera las reseñas asociadas a un espacio.     | Consulta IReviewRepository utilizando el identificador del espacio y devuelve la colección de reseñas correspondiente. | 
 
 ### Internal DTOs (Data Transfer Objects)
 
@@ -1292,29 +1338,32 @@ Esta capa actúa como un orquestador. Recibe comandos y consultas desde la capa 
 | SpaceAvailabilityDto        | Encapsula la información relacionada con la disponibilidad del espacio, incluyendo su estado actual y observaciones asociadas.   | 
 | LinkedIoTDeviceDto        | Representa la información básica de un dispositivo IoT vinculado a un espacio para su consulta interna.     | 
 | SpaceSummaryDto        | Provee una vista simplificada de los espacios registrados por un propietario, útil para listados y paneles de consulta.    | 
+| ReviewDto        | Contiene la información de una reseña, incluyendo identificador, autor, calificación, comentario y fecha de creación.    | 
 
-En la Application Layer de Sentrya, los handlers orquestan los flujos de gestión de espacios, asegurando que cada operación sea validada y ejecutada correctamente antes de persistirse. La lógica se coordina a través de servicios de aplicación y repositorios, permitiendo mantener separado el dominio de la infraestructura y de la presentación.
+En la Application Layer de Sentrya, los handlers orquestan los flujos de gestión de espacios, dispositivos vinculados y reseñas, asegurando que cada operación sea validada y ejecutada correctamente antes de persistirse. La lógica se coordina a través de servicios de aplicación y repositorios, permitiendo mantener separado el dominio de la infraestructura y de la presentación.
+ 
+---
 
 ### 4.2.4.4. Infrastructure Layer
 
-En la Infrastructure Layer de Sentrya, específicamente para el contexto de Space Management, se implementan los detalles técnicos necesarios para la persistencia de espacios, dispositivos vinculados y reseñas asociadas. Esta capa permite almacenar la información del espacio, configurar su mapeo con la base de datos y dar soporte técnico a las operaciones de creación, actualización, consulta y pausa de disponibilidad.
+En la Infrastructure Layer de Sentrya, específicamente para el contexto de Space Management, se implementan los detalles técnicos necesarios para la persistencia de espacios, dispositivos IoT vinculados y reseñas. Esta capa permite almacenar la información del espacio, configurar su mapeo con la base de datos y dar soporte técnico a las operaciones de creación, actualización, consulta, pausa de disponibilidad y registro de reseñas.
 
 Esta capa se encarga de:
 
 - La gestión de datos mediante Entity Framework Core (EFC).
-- La configuración del mapeo de espacios y dispositivos vinculados con la base de datos MySQL.
+- La configuración del mapeo de espacios, dispositivos vinculados y reseñas con la base de datos MySQL.
 - La implementación de servicios técnicos de apoyo para la administración de disponibilidad e información del espacio.
-
-Estos componentes permiten que la lógica de gestión de espacios se ejecute sobre una infraestructura organizada y mantenible.
+  Estos componentes permiten que la lógica de gestión de espacios se ejecute sobre una infraestructura organizada y mantenible.
 
 ### Persistence (Repositories Implementation)
 
 | **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
 | ------------ | --------- | --------- |
-| UserRepository        | Implementación concreta de IUserRepository que utiliza EFC para realizar operaciones CRUD sobre la tabla de usuarios.      | Entity Framework Core, LINQ. | 
-| PaymentMethodRepository        | Implementación de IPaymentMethodRepository encargada de persistir los datos de las tarjetas vinculadas a los perfiles.     | Entity Framework Core. | 
-| UserConfiguration        | Define el mapeo detallado entre la entidad User y la tabla de base de datos, incluyendo restricciones y tipos de datos.     | Fluent API (EFC). | 
-| PaymentMethodConfiguration        | Configura el esquema de base de datos para la entidad PaymentMethod, estableciendo las relaciones necesarias.     | Fluent API (EFC). |  
+| SpaceRepository        | Implementación concreta de ISpaceRepository que utiliza EFC para realizar operaciones CRUD sobre espacios y sus dispositivos IoT vinculados.      | Entity Framework Core, LINQ. | 
+| ReviewRepository        | Implementación concreta de IReviewRepository que utiliza EFC para persistir y recuperar reseñas asociadas a los espacios.     | Entity Framework Core, LINQ. | 
+| SpaceConfiguration        | Define el mapeo detallado entre la entidad Space y su tabla, incluyendo los objetos de valor embebidos SpaceLocation y SpaceDimensions.     | Fluent API (EFC). | 
+| LinkedIoTDeviceConfiguration        | Configura el mapeo de LinkedIoTDevice como entidad dependiente dentro del agregado Space, estableciendo la relación con la tabla de espacios.     | Fluent API (EFC). |  
+| ReviewConfiguration        | Configura el mapeo de la entidad Review, incluyendo la referencia (no navegación) hacia SpaceId y AuthorId.     | Fluent API (EFC). |  
 
 ### Technical Services Implementation
 
@@ -1327,17 +1376,17 @@ En la Infrastructure Layer de Sentrya, dentro del bounded context Space Manageme
 
 ### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![SpaceManagementComponents_Software_Architecture_Component_Level_Diagram](Assets/SPACE-COMPONENTDIAGRAM.png)
+![SpaceManagementComponentView-dark.png](Assets/SpaceManagementComponentView-dark.png)
 
 ### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![SpaceManagementComponents_Domain_Layer_Class_Diagram](Assets/SPACE-DOMAINLAYER.png)
+![domainlayerclass.png](Assets/domainlayerclass.png)
 
 ### 4.2.4.6.2. Bounded Context Database Design Diagrams
 
-![SpaceManagementComponents_Database_Design_Diagram](Assets/SPACE-DBDIAGRAM.png)
+![dbdiagramspacemanagement.png](Assets/dbdiagramspacemanagement.png)
 
 ## 4.2.5. Bounded Context: IoT Monitoring and Notifications
 
