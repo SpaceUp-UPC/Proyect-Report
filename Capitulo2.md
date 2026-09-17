@@ -437,53 +437,53 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
+    <th colspan="2">Entrevista 3<br></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Carlos</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Alvarez</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>25</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Implementador IOT</td>
   </tr>
   <tr>
     <td>Evidencia</td>
     <td>
       <div align="center">
-        <img src="..." alt="Evidencia">
+        <img src="assets/Evidencia%20Entrevista%203%20Seg%202.png" alt="Evidencia">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="..." target="_blank">
-        ...
-      </a>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQDorReCYjS8R4Mh55WJzlzCAQfa_TwcuAbt-bhV1aHSExY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wl0fbZ" target="_blank">
+        Entrevista 3
+    </a>
     </td>
   </tr>
   <tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td>00:02</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td>05:04</td>
   </tr>
   <tr>
     <td>Resumen</td>
-    <td></td>
+    <td>Carlos, integrador IoT de 25 años, se enfoca en instalaciones de mayor presupuesto y gestiona su información en Notion. Sus principales fricciones son lidiar con equipos incompatibles que compran los clientes, las caídas de servidores en la nube y depender de que el cliente reporte fallas o baterías agotadas. Su solución ideal es un dashboard de monitoreo remoto exclusivo para instaladores, que le alerte sobre equipos desconectados o sin batería antes de que el cliente se dé cuenta, permitiéndole brindar y monetizar un servicio de mantenimiento proactivo.</td>
   </tr>
 </tbody>
 </table>
