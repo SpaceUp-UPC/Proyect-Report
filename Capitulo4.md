@@ -13,16 +13,16 @@ Esta sección describe la dinámica de los procesos de negocio mediante el flujo
 <img width="967" height="171" alt="image" src="https://github.com/user-attachments/assets/5e0e8f3c-e23d-469e-a6d4-37b258531a65" />
 
 ### Payment Management BC
-<img width="585" height="295" alt="image" src="https://github.com/user-attachments/assets/0d9c5bc5-931e-41d2-b00a-c366db0469e8" />
+![Context_Payment_BC](Assets/CONTEXT-PAYMENTBC.png)
 
-### Reports & Advanced Features BC
-<img width="1060" height="115" alt="image" src="https://github.com/user-attachments/assets/eec10c38-8661-42e0-9cc9-c96e5b556ec0" />
+### IoT Monitoring and Notifications BC
+![Context_IOT_BC](Assets/CONTEXT-IOTBC.png)
 
 ### Space Management BC
-<img width="828" height="304" alt="image" src="https://github.com/user-attachments/assets/52f8e616-d8b0-4175-8f30-c708a81dba4d" />
+![Context_SPACE_BC](Assets/CONTEXT-SPACEBC.png)
 
-### Reports & Advanced Features BC
-<img width="853" height="430" alt="image" src="https://github.com/user-attachments/assets/36faae71-9321-41f2-8c0a-d6b3ba6f7512" />
+### Report Management BC
+![Context_REPORT_BC](Assets/CONTEXT-REPORTBC.png)
 <br>
 
 A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos y separamos los que apenas interactuaban, marcando así límites de consistencia más claros.
@@ -51,7 +51,7 @@ Posteriormente, se procedió a definir la interconexión estratégica de los bou
 
 La separación en bounded contexts permite reducir la complejidad, facilitar la escalabilidad y mantener la coherencia del modelo, garantizando que cada parte del sistema responda a objetivos específicos sin generar dependencias innecesarias.
 
-En SpacePulse, los bounded contexts identificados fueron los siguientes:
+En Sentrya, los bounded contexts identificados fueron los siguientes:
 
 Registro y Autenticación de Usuario (IAM): Encargado de la validación de identidades de propietarios y técnicos, garantizando el acceso seguro a la infraestructura de remodelación e IoT privada.
 
@@ -67,26 +67,26 @@ Cada uno de estos bounded contexts se detalla a continuación a través de su ca
 
 ### Identity & Access Management BC
 
-<img width="887" height="598" alt="image" src="https://github.com/user-attachments/assets/b9306904-1ce3-48cb-9775-2cc65730568f" />
+![Canvas_IAM](Assets/CANVA-IDENTITY.png)
 
 ### Space Management BC
 
-<img width="1114" height="754" alt="image" src="https://github.com/user-attachments/assets/51ef5e60-b8cb-4cdc-87d1-55b7b46e689d" />
+![Canvas_SPACE](Assets/CANVA-SPACE.png)
 
 ### Iot Monitoring and Notification BC
 
-<img width="884" height="714" alt="image" src="https://github.com/user-attachments/assets/018d0791-74ac-420b-af17-e5d01aa33c65" />
+![Canvas_IOT](Assets/CANVA-IOT.png)
 
 ### Payment Management BC
 
-<img width="698" height="574" alt="image" src="https://github.com/user-attachments/assets/d3d4dd4c-f0d0-4d0c-9b88-1078b100ec2b" />
+![Canvas_PAYMENT](Assets/CANVA-PAYMENT.png)
 
 ### Reports & Advanced Features BC
 
-<img width="982" height="777" alt="image" src="https://github.com/user-attachments/assets/b77af927-f52e-4b1d-bfea-c728b0fdd994" />
+![Canvas_REPORT](Assets/CANVA-REPORT.png)
 
 ### 4.1.2 Context Mapping
-El Context Mapping de SpacePulse permite representar la organización general del dominio del sistema y la manera en que sus distintas partes se relacionan entre sí. Esta vista ayuda a delimitar responsabilidades, reducir el acoplamiento y entender con mayor claridad cómo se distribuyen los procesos principales de la solución.
+El Context Mapping de Sentrya permite representar la organización general del dominio del sistema y la manera en que sus distintas partes se relacionan entre sí. Esta vista ayuda a delimitar responsabilidades, reducir el acoplamiento y entender con mayor claridad cómo se distribuyen los procesos principales de la solución.
 Se identificaron los siguientes bounded context en el sistema:
 
 **Identity & Access Management**
@@ -143,22 +143,32 @@ Se encarga de la generación de reportes, métricas e información analítica. S
 La arquitectura de software de SpacePulse ha sido planteada para soportar los procesos principales del negocio de forma organizada y desacoplada. La solución parte de una aplicación móvil desde la cual los usuarios interactúan con la plataforma para gestionar espacios, contratar servicios de remodelación, monitorear el avance del proyecto, recibir alertas y consultar reportes. Para responder a estas necesidades, el sistema se apoya en un backend centralizado que concentra la lógica del negocio y coordina la interacción con los distintos módulos funcionales, como autenticación, gestión de espacios, pagos, monitoreo IoT, notificaciones y reportes. Además, la arquitectura contempla la integración con servicios externos necesarios para el procesamiento de pagos, la generación de comprobantes electrónicos, el envío de correos y la recepción de lecturas o eventos provenientes del entorno monitoreado. Esta organización permite que la solución mantenga una estructura clara, facilite la evolución de sus funcionalidades y soporte de manera consistente el flujo principal de SpacePulse.
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-Por completar
+El diagrama System Landscape de Sentrya presenta una visión general del ecosistema de la solución, identificando sus usuarios principales y los sistemas con los que interactúa. Los dueños de hogar utilizan la plataforma para administrar sus espacios y consultar información de dispositivos, alertas, pagos y reportes, mientras que los implementadores de hogares inteligentes participan en la vinculación de dispositivos y la supervisión de las instalaciones autorizadas. Sentrya centraliza estas funcionalidades mediante sus interfaces web y móvil y se integra con el entorno IoT para recibir mediciones, con una pasarela de pagos para procesar transacciones y con un servicio de correo para enviar notificaciones y comprobantes. Asimismo, se representa un servicio de facturación electrónica como integración propuesta, pendiente de concretar en el diseño táctico. Esta vista delimita los participantes y las relaciones generales del ecosistema, sin detallar los contenedores ni los componentes internos de la plataforma.
+
+![Software_Architecture_Context_Level_Diagram](Assets/Software_Architecture_System_Level_DiagramSentrya.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagram
-El diagrama de contexto de SpacePulse muestra la solución como un sistema central que se relaciona directamente con sus actores principales y con los servicios externos requeridos para su funcionamiento. En este caso, los usuarios que interactúan con la plataforma son el Owner, quien administra espacios, contrata remodelaciones, realiza pagos y supervisa el progreso, y el Remodeler, quien actualiza avances, registra procesos y da seguimiento al trabajo realizado. A su vez, el sistema se conecta con un Payment Gateway para procesar transacciones, con un E-Invoicing Service para generar comprobantes electrónicos, con un Email Service para enviar correos de verificación y notificaciones, y con IoT Devices / IoT Broker para recibir lecturas, eventos e información operativa del espacio monitoreado. De esta manera, el diagrama permite identificar de forma clara el alcance de SpacePulse dentro del ecosistema general de la solución y su relación con los elementos externos que complementan el servicio.
+El diagrama de contexto de Sentrya representa la plataforma como un único sistema y muestra sus relaciones con los usuarios y sistemas externos que participan directamente en su funcionamiento. Los dueños de hogar utilizan la solución para administrar sus espacios y consultar dispositivos, lecturas, alertas, pagos y reportes. Por su parte, los implementadores de hogares inteligentes vinculan dispositivos y consultan información de monitoreo de las instalaciones autorizadas. Sentrya recibe telemetría mediante un broker IoT, solicita el procesamiento de transacciones a una pasarela de pagos y utiliza un servicio de correo para enviar notificaciones y comprobantes. También contempla una integración propuesta con un servicio de facturación electrónica, pendiente de concretar en el diseño táctico. Esta vista permite identificar los límites de la plataforma y sus dependencias externas, sin detallar su organización interna.
 
-![Software_Architecture_Context_Level_Diagram](Assets/Software_Architecture_Context_Level_Diagram.png)
+
+
+![Software_Architecture_Context_Level_Diagram](Assets/Software_Architecture_Context_Level_DiagramSentrya.png)
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
-En el nivel de contenedores se desglosan los principales componentes internos de SpacePulse, mostrando cómo se organiza el sistema a nivel tecnológico. Aquí se incluyen la Mobile App, la Landing Page, el API Gateway como punto central de comunicación, los distintos servicios internos que representan la lógica principal de la plataforma y una base de datos relacional común. Además, se consideran las integraciones con servicios externos para pagos, facturación electrónica, envío de correos y recepción de datos de monitoreo IoT. Cada uno de estos contenedores cumple una función específica y se relaciona con los demás para permitir el funcionamiento integrado de la solución. integraciones externas. 
+El diagrama de contenedores de Sentrya presenta la organización interna de la plataforma y las responsabilidades de sus principales unidades de software. Los dueños de hogar y los implementadores acceden a las funcionalidades mediante una aplicación móvil y una aplicación web, mientras que la landing page proporciona información general sobre la solución. Ambas aplicaciones se comunican con un API Gateway, que dirige las solicitudes hacia los servicios de identidad y acceso, gestión de espacios, gestión de pagos, gestión de reportes y monitoreo y notificaciones IoT. En esta propuesta, dichos servicios se representan como aplicaciones independientes que utilizan una base de datos relacional común para persistir su información. El servicio de monitoreo recibe las lecturas del entorno IoT y procesa las alertas, mientras que los servicios correspondientes se integran con proveedores externos de pagos y correo. La facturación electrónica externa se mantiene como una integración propuesta, pendiente de concretar en el diseño táctico. Asimismo, la obtención de datos de proyectos para pagos y reportes constituye una dependencia pendiente de delimitar en el apartado 4.2.
+ 
 
-![Software_Architecture_Container_Level_Diagrams](Assets/Software_Architecture_Container_Level_Diagrams.png)
+![Software_Architecture_Container_Level_Diagrams](Assets/Software_Architecture_Container_Level_DiagramsSentrya.png)
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams.
-En el diagrama de despliegue se representa cómo los principales componentes de SpacePulse se distribuyen en el entorno de producción. En este caso, la Mobile App se ejecuta en los dispositivos móviles de los usuarios, mientras que la Landing Page se publica en un servicio de hosting estático. Por otro lado, el API Gateway se aloja en una plataforma cloud como punto central de acceso al backend, y la Relational Database se ubica en un servidor administrado que permite el almacenamiento persistente de la información. Esta organización permite una arquitectura más clara y escalable, separando la capa de acceso, el procesamiento principal del sistema y el almacenamiento de datos.
+El diagrama presenta una vista resumida del despliegue propuesto de Sentrya. La aplicación móvil se ejecuta en los dispositivos de los usuarios, mientras que la aplicación web y la Landing Page se alojan en infraestructura web. En la plataforma cloud se encuentra el entorno backend, que aloja el API Gateway y los servicios de identidad y acceso, espacios, pagos, reportes, y monitoreo IoT y notificaciones. Estos servicios utilizan una base de datos relacional MySQL para la persistencia de información.
 
-![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_Diagrams.png)
+Para facilitar su lectura, el diagrama agrupa el despliegue del backend en un único nodo y omite las integraciones externas, descritas en los diagramas de contexto y contenedores. Esta agrupación representa su entorno de alojamiento y no modifica la separación funcional de los servicios.
+
+
+
+
+![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_DiagramsSentrya.png)
 
 # 4.2. Tactical-Level Domain-Driven Design
 
