@@ -494,13 +494,15 @@ A partir de las entrevistas realizadas se identificaron características y neces
 
 | Características identificadas | Entrevistados que lo mencionan | Porcentaje |
 |---|---|---:|
-| Necesidad de centralizar dispositivos e información | Patricia, Oscar y Mathias | 100% |
-| Necesidad de monitoreo y alertas | Patricia, Oscar y Mathias | 100% |
-| Gestión manual de información | Oscar y Mathias | 66.7% |
-| Dependencia del cliente para reportar fallas | Oscar y Mathias | 66.7% |
-| Uso de múltiples aplicaciones o herramientas | Patricia y Oscar | 66.7% |
-| Necesidad de mantenimiento preventivo | Oscar y Mathias | 66.7% |
-| Búsqueda de especialistas mediante redes sociales o recomendaciones | Patricia y Mathias | 66.7% |
+| Necesidad de centralizar dispositivos e información | Patricia, Oscar y Mathias | 75% |
+| Necesidad de monitoreo y alertas | Patricia, Oscar, Mathias y Carlos | 100% |
+| Gestión manual de información | Oscar, Mathias y Carlos | 75% |
+| Dependencia del cliente para reportar fallas | Oscar, Mathias y Carlos | 75% |
+| Uso o gestión de múltiples aplicaciones y herramientas | Patricia, Oscar y Carlos | 75% |
+| Necesidad de mantenimiento preventivo | Oscar, Mathias y Carlos | 75% |
+| Problemas de compatibilidad entre dispositivos y marcas | Oscar y Carlos | 50% |
+| Necesidad de monitoreo remoto para detectar fallas | Oscar, Mathias y Carlos | 75% |
+| Captación o búsqueda mediante redes sociales o recomendaciones | Patricia y Mathias | 50% |
 
 ## 2.3. Needfinding
 
