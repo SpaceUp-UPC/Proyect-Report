@@ -262,63 +262,6 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </tbody>
 </table>
 
-
-<table>
-<colgroup>
-</colgroup>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Rol</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>
-      <div align="center">
-        <img src="..." alt="Evidencia">
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>
-      <a href="..." target="_blank">
-        ...
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Duración de la entrevista<br></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td></td>
-  </tr>
-</tbody>
-</table>
-
 #### Segmento objetivo 2
 
 <table>
