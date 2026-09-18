@@ -37,6 +37,9 @@
 
 </div>
 
+<br>
+<br>
+
 <div align="center"> Setiembre 2026 </div>
 
 <div style="page-break-after: always;"></div>
@@ -199,6 +202,8 @@ El núcleo inicial de la solución se concentra en tres áreas de protección: d
 ### 1.2.1 Antecedentes y problemática
 La incorporación de tecnologías digitales en los hogares peruanos encuentra un contexto favorable debido al crecimiento de la conectividad. De acuerdo con el Instituto Nacional de Estadística e Informática (INEI), durante el primer trimestre de 2026 el 62,7 % de los hogares del país contó con conexión a Internet. En Lima Metropolitana, esta proporción alcanzó el 82,7 %. Asimismo, el 96,0 % de los hogares peruanos contó con acceso al servicio de telefonía móvil y el 90,7 % de la población usuaria de Internet accedió a este servicio mediante un teléfono celular.
 
+<div style="page-break-before: always;"></div>
+
 ![Acceso a Internet y telefonía móvil en hogares peruanos](assets/inei-conectividad-2026.png)
 
 **Figura 1.** Indicadores de acceso a Internet y telefonía móvil en el Perú durante el primer trimestre de 2026. Fuente: INEI (2026).
@@ -208,6 +213,8 @@ Este nivel de conectividad permite que soluciones orientadas al hogar inteligent
 Asimismo, la protección del hogar involucra diferentes tipos de riesgos que tradicionalmente se atienden mediante sistemas independientes. La seguridad frente a accesos no autorizados puede depender de cámaras, alarmas u otros sensores; los incrementos anómalos de temperatura requieren mecanismos de detección; mientras que las instalaciones eléctricas necesitan elementos de protección frente a condiciones como sobrecargas y cortocircuitos.
 
 En el ámbito eléctrico, Osinergmin recomienda que las viviendas dispongan de elementos adecuados de protección en sus instalaciones. Entre ellos se encuentran los interruptores termomagnéticos, capaces de interrumpir automáticamente un circuito frente a condiciones predeterminadas de sobrecarga o cortocircuito. Asimismo, la entidad recomienda que las instalaciones eléctricas sean revisadas y mantenidas por especialistas.
+
+<div style="page-break-before: always;"></div>
 
 ![Recomendaciones de seguridad eléctrica de Osinergmin](assets/osinergmin-seguridad-electrica.png)
 
@@ -774,6 +781,8 @@ Este segmento está conformado por profesionales independientes o empresas que b
     </tr>
 </table>
 
+<div style="page-break-before: always;"></div>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 | **Análisis FODA cruzado** | **Oportunidades (O)** | **Amenazas (A)** |
@@ -875,6 +884,8 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </table>
 
 
+<div style="page-break-before: always;"></div>
+
 <table>
 <colgroup>
 </colgroup>
@@ -931,6 +942,8 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
   </tr>
 </tbody>
 </table>
+
+<div style="page-break-before: always;"></div>
 
 #### Segmento objetivo 2
 
@@ -990,6 +1003,8 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </tbody>
 </table>
 
+<div style="page-break-before: always;"></div>
+
 <table>
 <colgroup>
 </colgroup>
@@ -1046,6 +1061,8 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </tbody>
 </table>
 
+<div style="page-break-before: always;"></div>
+
 <table>
 <colgroup>
 </colgroup>
@@ -1101,6 +1118,8 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
   </tr>
 </tbody>
 </table>
+
+<div style="page-break-before: always;"></div>
 
 <table>
 <colgroup>
@@ -1178,9 +1197,12 @@ A partir de las entrevistas realizadas se identificaron características y neces
 
 ### 2.3.1. User Personas
 
-<img src="assets/Patricia Navarro (2).png" alt="Empathy Mapping - Implementador de Soluciones IoT">
+<p align="center">
+  <img src="assets/Persona-Patricia-Navarro.png" alt="User Persona - Patricia Navarro" width="340">
+  <img src="assets/Persona-Mathias-Villavicencio.png" alt="User Persona - Mathias Villavicencio" width="340">
+</p>
 
-<img src="assets/Mathias Villavicencio.png" alt="Empathy Mapping - Implementador de Soluciones IoT">
+<div style="page-break-before: always;"></div>
 
 ### 2.3.2. User Task Matrix
 
@@ -1302,17 +1324,23 @@ A partir de las entrevistas realizadas se identificaron características y neces
     </tr>
 </table>
 
+<div style="page-break-before: always;"></div>
+
 ### 2.3.3. User Journey Mapping
 
 <img src="assets/User Journey Map (Community) (1).png" alt="User Journey Map - Dueña de Hogar">
 
 <img src="assets/User Journey Map (Community) (2).png" alt="User Journey Map - Implementador de Soluciones IoT">
 
+<div style="page-break-before: always;"></div>
+
 ### 2.3.4. Empathy Mapping
 
 ### Dueña de hogar
 
 <img src="assets/Empathy Mapping_DueñoHogar.jpg" alt="Empathy Mapping - Dueña de Hogar">
+
+<div style="page-break-before: always;"></div>
 
 ### Implementador de soluciones IoT
 
@@ -1348,6 +1376,8 @@ A partir de las entrevistas realizadas se identificaron características y neces
 ## 3.1. User Stories
 
 En esta sección se detallan las Épicas y las User Stories que guiarán el desarrollo de Setrya. Las épicas agrupan las historias de usuario según las soluciones IoT y funcionalidades definidas en el Capítulo I (dashboard centralizado, monitoreo térmico, detección acústica y visual, protección eléctrica, centro de alertas, mediciones e históricos, catálogo de soluciones IoT, solicitud de implementadores, gestión de clientes e instalaciones, gestión de dispositivos IoT, control remoto y expansión modular).
+
+<div style="page-break-before: always;"></div>
 
 ### 3.1.1. Épicas
 
@@ -1432,6 +1462,8 @@ El Impact Mapping se elaboró a partir de los objetivos de negocio (Business Out
     - **Impact:** Aceptar y dar seguimiento a nuevas solicitudes de servicio generadas por los dueños de hogar.
       - **Deliverable:** Solicitud de Implementadores (EP09)
 
+<div style="page-break-before: always;"></div>
+
 ## 3.3. Product Backlog
 
 | # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
@@ -1497,6 +1529,8 @@ A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos 
 
 Posteriormente, se procedió a definir la interconexión estratégica de los bounded contexts delimitados en las fases previas. Este proceso se centró en la identificación y mapeo de eventos de dominio clave, los cuales actúan como el tejido conectivo de la arquitectura distribuida. Al establecer estos puntos de enlace, se garantizó una comunicación asíncrona y desacoplada, permitiendo que el flujo de información entre contextos sea fluido, coherente y respete las reglas de negocio de cada área.
 
+<div style="page-break-before: always;"></div>
+
 ## IAM (Identity and Access Management) - El Punto de Entrada --> Space Management (Gestión de Equipos) - La Configuración
 
 <img width="1785" height="414" alt="image" src="https://github.com/user-attachments/assets/615b6853-0abe-4f9d-823b-f77e9e18407a" />
@@ -1508,6 +1542,8 @@ Posteriormente, se procedió a definir la interconexión estratégica de los bou
 ## Payment Management - La Activación del Servicio --> IoT Monitoring and Notifications - El Core Operativo
 
 <img width="1807" height="663" alt="image" src="https://github.com/user-attachments/assets/d55d318e-f15d-44cc-a82d-d00c35c6ebf4" />
+
+<div style="page-break-before: always;"></div>
 
 ## IoT Monitoring and Notifications - El Core Operativo --> Reports and Advanced Features - La Inteligencia de Negocio
 
@@ -1535,17 +1571,25 @@ Cada uno de estos bounded contexts se detalla a continuación a través de su ca
 
 ![Canvas_IAM](assets/CANVA-IDENTITY.png)
 
+<div style="page-break-before: always;"></div>
+
 ### Space Management BC
 
 ![Canvas_SPACE](assets/CANVA-SPACE.png)
+
+<div style="page-break-before: always;"></div>
 
 ### Iot Monitoring and Notification BC
 
 ![Canvas_IOT](assets/CANVA-IOT.png)
 
+<div style="page-break-before: always;"></div>
+
 ### Payment Management BC
 
 ![Canvas_PAYMENT](assets/CANVA-PAYMENT.png)
+
+<div style="page-break-before: always;"></div>
 
 ### Reports & Advanced Features BC
 
@@ -1583,11 +1627,15 @@ Se encarga de la generación de reportes, métricas e información analítica. S
 |Reports & Advanced Features |Payment Management |Conformist |Reports & Advanced Features consume la información financiera generada por Payment Management para construir reportes e indicadores sin modificar el modelo original. |
 |Reports & Advanced Features |IoT Monitoring & Notifications |Conformist |Reports & Advanced Features también consume la información producida por IoT Monitoring & Notifications, como alertas, incidentes o eventos, para generar análisis y vistas de seguimiento. |
 
+<div style="page-break-before: always;"></div>
+
 ![Context_Mapping](assets/Context_Mapping.png)
 
 ### Identity & Access Management BC
 
 <img width="1009" height="412" alt="image" src="https://github.com/user-attachments/assets/386b63bb-3d0c-4aa5-89bf-e97af33dd9a1" />
+
+<div style="page-break-before: always;"></div>
 
 ### Payment Management BC
 
@@ -1596,6 +1644,8 @@ Se encarga de la generación de reportes, métricas e información analítica. S
 ### Iot Monitoring and Notification
 
 <img width="1555" height="298" alt="image" src="https://github.com/user-attachments/assets/fcf5ebda-6c4a-4675-bf65-3b6a54aef741" />
+
+<div style="page-break-before: always;"></div>
 
 ### Space Management BC
 
@@ -1611,6 +1661,8 @@ La arquitectura de software de Sentrya ha sido planteada para soportar los proce
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 El diagrama System Landscape de Sentrya presenta una visión general del ecosistema de la solución, identificando sus usuarios principales y los sistemas con los que interactúa. Los dueños de hogar utilizan la plataforma para administrar sus espacios y consultar información de dispositivos, alertas, pagos y reportes, mientras que los implementadores de hogares inteligentes participan en la vinculación de dispositivos y la supervisión de las instalaciones autorizadas. Sentrya centraliza estas funcionalidades mediante sus interfaces web y móvil y se integra con el entorno IoT para recibir mediciones, con una pasarela de pagos para procesar transacciones y con un servicio de correo para enviar notificaciones y comprobantes. Asimismo, se representa un servicio de facturación electrónica como integración propuesta, pendiente de concretar en el diseño táctico. Esta vista delimita los participantes y las relaciones generales del ecosistema, sin detallar los contenedores ni los componentes internos de la plataforma.
 
+<div style="page-break-before: always;"></div>
+
 ![Software_Architecture_Context_Level_Diagram](assets/Software_Architecture_System_Level_DiagramSentrya.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagram
@@ -1618,11 +1670,15 @@ El diagrama de contexto de Sentrya representa la plataforma como un único siste
 
 
 
+<div style="page-break-before: always;"></div>
+
 ![Software_Architecture_Context_Level_Diagram](assets/Software_Architecture_Context_Level_DiagramSentrya.png)
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 El diagrama de contenedores de Sentrya presenta la organización interna de la plataforma y las responsabilidades de sus principales unidades de software. Los dueños de hogar y los implementadores acceden a las funcionalidades mediante una aplicación móvil y una aplicación web, mientras que la landing page proporciona información general sobre la solución. Ambas aplicaciones se comunican con un API Gateway, que dirige las solicitudes hacia los servicios de identidad y acceso, gestión de espacios, gestión de pagos, gestión de reportes y monitoreo y notificaciones IoT. En esta propuesta, dichos servicios se representan como aplicaciones independientes que utilizan una base de datos relacional común para persistir su información. El servicio de monitoreo recibe las lecturas del entorno IoT y procesa las alertas, mientras que los servicios correspondientes se integran con proveedores externos de pagos y correo. La facturación electrónica externa se mantiene como una integración propuesta, pendiente de concretar en el diseño táctico. Asimismo, la obtención de datos de proyectos para pagos y reportes constituye una dependencia pendiente de delimitar en el apartado 4.2.
  
+
+<div style="page-break-before: always;"></div>
 
 ![Software_Architecture_Container_Level_Diagrams](assets/Software_Architecture_Container_Level_DiagramsSentrya.png)
 
@@ -1633,6 +1689,8 @@ Para facilitar su lectura, el diagrama agrupa el despliegue del backend en un ú
 
 
 
+
+<div style="page-break-before: always;"></div>
 
 ![Software_Architecture_Deployment_Diagrams](assets/Software_Architecture_Deployment_DiagramsSentrya.png)
 
@@ -1652,6 +1710,9 @@ La capa de dominio de IAM encapsula la lógica de negocio central para la gesti�
 
 **Métodos:**
 - User (Constructor): Además de inicializar las propiedades del usuario, este método realiza una validación de negocio crítica al asegurar que el correo electrónico no esté vacío antes de crear la instancia.
+
+<div style="page-break-before: always;"></div>
+
 ### Value Objects
 
 | **Atributo** | **Nombre**  | **Descripción**                                       |
@@ -1744,6 +1805,8 @@ En la Application Layer de Sentrya, específicamente para el contexto de IAM, lo
 
 En la Infrastructure Layer de Sentrya, específicamente para el contexto de IAM, se implementan los detalles técnicos y las integraciones con marcos de trabajo externos. Esta capa se encarga de la persistencia de datos mediante Entity Framework Core (EFC), configurando las entidades del dominio para su mapeo con la base de datos, y de la implementación de los servicios de seguridad como el cifrado de contraseñas y la generación de tokens JWT. Estos componentes aseguran que la lógica de negocio se ejecute sobre una infraestructura robusta y escalable dentro de la plataforma de remodelación IoT.
 
+<div style="page-break-before: always;"></div>
+
 ### Persistence (Repositories Implementation)
 
 | **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
@@ -1758,9 +1821,13 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IAM,
 | PasswordHashingService        | Implementación técnica encargada de proteger las contraseñas de los usuarios.      | Utiliza algoritmos de cifrado estándar para generar hashes seguros y validar contraseñas durante el acceso. | 
 | TokenGenerationService        |Servicio responsable de la gestión de identidades en tránsito mediante tokens de seguridad.     | Implementa la generación de tokens JWT (JSON Web Tokens), codificando la información del usuario y su rol para la autorización de peticiones. | 
 
+<div style="page-break-before: always;"></div>
+
 ### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![_home_jorget_Downloads_Bounded Context Software Architecture Component Level Diagrams.png.png](assets/_home_jorget_Downloads_Bounded%20Context%20Software%20Architecture%20Component%20Level%20Diagrams.png.png)
+
+<div style="page-break-before: always;"></div>
 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -1772,6 +1839,8 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IAM,
 ### 4.2.1.6.2. Bounded Context Database Design Diagrams
 El diseño de la base de datos para el contexto de IAM se ha normalizado para garantizar la integridad de las identidades y la seguridad de la información financiera. Se compone de dos tablas principales relacionadas mediante una clave foránea.
 
+
+<div style="page-break-before: always;"></div>
 
 ![DBIamdiagram.png](assets/DBIamdiagram.png)
 
@@ -2023,6 +2092,8 @@ Estos componentes aseguran que la lógica financiera se ejecute sobre una infrae
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ## 2. External / Technical Services Implementation
 
 | Nombre                  | Descripción                                                                 | Resumen de Implementación |
@@ -2032,7 +2103,9 @@ Estos componentes aseguran que la lógica financiera se ejecute sobre una infrae
 
 ## 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img width="3930" height="3298" alt="structurizr-107883-Payment_Component_View" src="assets/PAYMENT-COMPONENTDIAGRAM.png" />
+<p align="center">
+  <img width="700" alt="structurizr-107883-Payment_Component_View" src="assets/PAYMENT-COMPONENTDIAGRAM.png" />
+</p>
 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2124,6 +2197,8 @@ El diseño de la base de datos para el contexto de Payment Management se ha norm
 ## Tabla: Payments
 
 Esta tabla registra todos los intentos de pago y transacciones completadas dentro de la plataforma.
+
+<div style="page-break-before: always;"></div>
 
 | Campo             | Tipo de Dato        | Restricción | Descripción |
 |------------------|--------------------|-------------|-------------|
@@ -2291,6 +2366,8 @@ Este controlador centraliza las operaciones para la generación y recuperación 
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ## Recursos de Interfaz (DTOs de Entrada/Salida)
 
 | Recurso                | Descripción |
@@ -2321,6 +2398,8 @@ La Application Layer actúa como el motor de orquestación del contexto de repor
 ## 1. Servicios de Comando y Consulta (Handlers)
 
 En esta sección se definen los Handlers que procesan la lógica de aplicación. Al utilizar MediatR, estos componentes desacoplan la recepción de la solicitud de su ejecución técnica.
+
+<div style="page-break-before: always;"></div>
 
 ### Handlers
 
@@ -2390,10 +2469,14 @@ Esta capa:
 | IotTelemetryClient   | Implementación técnica para la obtención de datos históricos de sensores desde el módulo de infraestructura. | Realiza peticiones internas o consultas a la base de datos de telemetría. |
 
 
+<div style="page-break-before: always;"></div>
+
 ## 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-<img width="3930" height="2698" alt="structurizr-107883-Report_Component_View" src="assets/REPORT-COMPONENTDIAGRAM.png" />
+<p align="center">
+  <img width="700" alt="structurizr-107883-Report_Component_View" src="assets/REPORT-COMPONENTDIAGRAM.png" />
+</p>
 
 
 ## 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
@@ -2536,6 +2619,8 @@ La capa de dominio tiene como objetivo representar los elementos fundamentales p
 **Descripción:**
 
 El agregado Space actúa como la raíz del modelo y encapsula la información principal de un espacio registrado en Sentrya. Representa el ambiente físico que será publicado, editado, pausado o monitoreado dentro del sistema.
+
+<div style="page-break-before: always;"></div>
 
 ### Atributos
 
@@ -2702,6 +2787,8 @@ En esta capa no se implementan reglas de negocio, sino que se coordina la comuni
 
 El SpacesController maneja los endpoints relacionados con la creación, consulta, actualización y control de disponibilidad de los espacios registrados en la plataforma.
 
+<div style="page-break-before: always;"></div>
+
 ### Endpoints
 
 | Método | Ruta                                   | Descripción |
@@ -2726,6 +2813,8 @@ El SpacesController maneja los endpoints relacionados con la creación, consulta
 **Descripción:**
 
 El SpaceDevicesController maneja los endpoints relacionados con la vinculación, consulta y desvinculación de dispositivos IoT asociados a un espacio. Este controlador permite conectar la gestión del espacio con el posterior monitoreo IoT.
+
+<div style="page-break-before: always;"></div>
 
 ### Endpoints
 
@@ -2807,6 +2896,8 @@ Esta capa actúa como un orquestador. Recibe comandos y consultas desde la capa 
 | GetLinkedDevicesBySpaceIdQueryHandler        | Recupera los dispositivos IoT vinculados a un espacio.   | Consulta ISpaceRepository utilizando el identificador del espacio y devuelve la colección de `LinkedIoTDevice` asociados al agregado. | 
 | GetReviewsBySpaceIdQueryHandler        | Recupera las reseñas asociadas a un espacio.     | Consulta IReviewRepository utilizando el identificador del espacio y devuelve la colección de reseñas correspondiente. | 
 
+<div style="page-break-before: always;"></div>
+
 ### Internal DTOs (Data Transfer Objects)
 
 | **Nombre** | **Descripción**  |  
@@ -2832,6 +2923,8 @@ Esta capa se encarga de:
 - La implementación de servicios técnicos de apoyo para la administración de disponibilidad e información del espacio.
   Estos componentes permiten que la lógica de gestión de espacios se ejecute sobre una infraestructura organizada y mantenible.
 
+<div style="page-break-before: always;"></div>
+
 ### Persistence (Repositories Implementation)
 
 | **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
@@ -2851,6 +2944,8 @@ Esta capa se encarga de:
 
 En la Infrastructure Layer de Sentrya, dentro del bounded context Space Management, se implementan los repositorios y configuraciones necesarias para almacenar espacios, dispositivos vinculados y reseñas. Asimismo, los servicios técnicos permiten apoyar la disponibilidad del espacio y su relación con dispositivos IoT, manteniendo separados los detalles de infraestructura de la lógica principal del dominio.
 
+<div style="page-break-before: always;"></div>
+
 ### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![SpaceManagementComponentView-dark.png](assets/SpaceManagementComponentView-dark.png)
@@ -2860,6 +2955,8 @@ En la Infrastructure Layer de Sentrya, dentro del bounded context Space Manageme
 ### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![domainlayerclass.png](assets/domainlayerclass.png)
+
+<div style="page-break-before: always;"></div>
 
 ### 4.2.4.6.2. Bounded Context Database Design Diagrams
 
@@ -2898,6 +2995,8 @@ La capa de dominio de IoT Monitoring and Notifications encapsula la lógica prin
 | Value        | SeverityLevel      | Representa el nivel de gravedad de una alerta: baja, media, alta o crítica.      |
 | Value        | ReadingStatus      | Indica el estado de una lectura: recibida, validada o fuera de rango.      |
 | Value        | AlertStatus      | Indica el estado de una alerta: creada, enviada, reconocida o cerrada.      |
+
+<div style="page-break-before: always;"></div>
 
 ### Commands & Queries
 
@@ -2962,6 +3061,8 @@ En la Interface Layer de Sentrya, específicamente para el contexto de IoT Monit
 | AlertController        | PATCH     |  AcknowledgeAlertResource |  Permite marcar una alerta como reconocida por el usuario responsable.  |
 | AlertController        | PATCH     |  CloseAlertResource |  Permite cerrar una alerta cuando ya fue atendida.  |
 
+<div style="page-break-before: always;"></div>
+
 ### Transformers / Assemblers
 
 | **Nombre** | **Descripción**  |  
@@ -2977,6 +3078,8 @@ En la Interface Layer de Sentrya, específicamente para el contexto de IoT Monit
 ### 4.2.5.3. Application Layer
 
 En la Application Layer de Sentrya, específicamente para el contexto de IoT Monitoring and Notifications, los handlers se encargan de procesar los comandos y consultas relacionados con la recepción de lecturas IoT, la validación de datos y la gestión de alertas. Esta capa actúa como intermediaria entre la interfaz y el dominio, coordinando las operaciones necesarias para registrar lecturas, detectar valores fuera de rango, generar alertas y consultar información de monitoreo sin incluir directamente detalles de infraestructura.
+
+<div style="page-break-before: always;"></div>
 
 ### Commands & Queries Handlers
 
@@ -3001,6 +3104,8 @@ En la Application Layer de Sentrya, específicamente para el contexto de IoT Mon
 
 En la Infrastructure Layer de Sentrya, específicamente para el contexto de IoT Monitoring and Notifications, se implementan los detalles técnicos necesarios para persistir dispositivos, lecturas y alertas, así como para integrarse con servicios externos relacionados con la recepción de datos IoT y el envío de notificaciones. Esta capa permite que la lógica del dominio se ejecute sobre una infraestructura concreta, manteniendo separadas las reglas de negocio de los mecanismos técnicos de almacenamiento y comunicación.
 
+<div style="page-break-before: always;"></div>
+
 ### Persistence (Repositories Implementation)
 
 | **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
@@ -3020,9 +3125,13 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IoT 
 | NotificationDispatcherService        |Servicio técnico encargado de enviar alertas o mensajes hacia los usuarios cuando ocurre un evento importante.   |Integra el sistema con un servicio externo de correo o notificaciones para comunicar alertas generadas por el monitoreo. | 
 | ReadingNormalizerService        |Servicio de apoyo encargado de limpiar y estandarizar los valores recibidos desde sensores.    | Convierte unidades, valida estructura básica de datos y prepara la lectura antes de ser enviada al dominio. | 
 
+<div style="page-break-before: always;"></div>
+
 ### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![IoT_Monitoring_and_Notifications_Software_Architecture_ Component_Level_Diagram](assets/IOT-COMPONENTDIAGRAM.png)
+
+<div style="page-break-before: always;"></div>
 
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
