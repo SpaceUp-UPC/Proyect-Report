@@ -32,7 +32,7 @@
 |  Taipe Sangama, Jorge Francisco             |                u202313458              |
 |                 |                            |
 |    Martinez Gaona, Pablo Afranio         |   u202120011                          |
-|              |                             |
+|  Ventosilla Trujillo, Anderson Ricardo | u202319025                            |
 
 </div>
 
