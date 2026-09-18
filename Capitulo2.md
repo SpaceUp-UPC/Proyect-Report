@@ -432,6 +432,62 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </tbody>
 </table>
 
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista 3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Thiago</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Paucar Aranda</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td>Técnico independiente de hogares inteligentes</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>
+      <div align="center">
+        <img src="assets/Evidencia Entrevista 4 Seg 2.png" alt="Evidencia">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="TU_LINK_DE_VIDEO_AQUI" target="_blank">
+        Entrevista 3
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:01</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>5:34</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>Thiago, técnico independiente especializado en automatización de iluminación y climatización, sigue un proceso más estructurado (formulario de diagnóstico, checklist de cierre), pero administra todo entre Trello, Excel y Drive. Destaca como principal problema la falta de una app única que centralice dispositivos de distintas marcas.</td>
+  </tr>
+</tbody>
+</table>
+
 ### 2.2.3. Análisis de entrevistas
 
 A partir de las entrevistas realizadas se identificaron características y necesidades recurrentes relacionadas con la gestión, monitoreo y mantenimiento de soluciones IoT.
