@@ -172,6 +172,7 @@ Para facilitar su lectura, el diagrama agrupa el despliegue del backend en un ú
 
 # 4.2. Tactical-Level Domain-Driven Design
 
+## 4.2.1. Bounded Context IAM
 
 ### 4.2.1.1. Domain Layer
 
@@ -565,7 +566,7 @@ Estos componentes aseguran que la lógica financiera se ejecute sobre una infrae
 
 ## 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img width="3930" height="3298" alt="structurizr-107883-Payment_Component_View" src="assets/PAYMENT-COMPONENTDIAGRAM.png" />
+<img width="3930" height="3298" alt="structurizr-107883-Payment_Component_View" src="Assets/PAYMENT-COMPONENTDIAGRAM.png" />
 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -648,7 +649,7 @@ Responsabilidades:
 - Los repositorios abstraen la persistencia de ambos agregados.
 
 
-<img width="773" height="438" alt="image" src="assets/PAYMENT-DOMAINLAYER.png" />
+<img width="773" height="438" alt="image" src="Assets/PAYMENT-DOMAINLAYER.png" />
 
 ### 4.2.2.6.2. Bounded Context Database Design Diagrams
 
@@ -692,7 +693,7 @@ Almacena la información de los comprobantes fiscales electrónicos generados tr
 - La restricción **Unique** garantiza que no existan múltiples facturas para un mismo pago.
 
 
-<img width="288" height="342" alt="image" src="assets/PAYMENT-DBDIAGRAM.png" />
+<img width="288" height="342" alt="image" src="Assets/PAYMENT-DBDIAGRAM.png" />
 
 ## 4.2.3. Bounded Context: Report Management
 
@@ -926,7 +927,7 @@ Esta capa:
 ## 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-<img width="3930" height="2698" alt="structurizr-107883-Report_Component_View" src="assets/REPORT-COMPONENTDIAGRAM.png" />
+<img width="3930" height="2698" alt="structurizr-107883-Report_Component_View" src="Assets/REPORT-COMPONENTDIAGRAM.png" />
 
 
 ## 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
@@ -1014,7 +1015,7 @@ Este modelo sigue los principios de **Domain-Driven Design (DDD)**:
 - Servicios de dominio para lógica compleja.
 
 
-<img width="821" height="428" alt="image" src="assets/REPORT-DOMAINLAYER.png" />
+<img width="821" height="428" alt="image" src="Assets/REPORT-DOMAINLAYER.png" />
 
 ## 4.2.3.6.2. Bounded Context Database Design Diagrams
 
@@ -1052,7 +1053,7 @@ Contiene los valores específicos de los indicadores calculados que componen un 
 
 
 
-<img width="224" height="310" alt="image" src="assets/REPORT-DBDIAGRAM.png" />
+<img width="224" height="310" alt="image" src="Assets/REPORT-DBDIAGRAM.png" />
 
 ## 4.2.4. Bounded Context: Space Management
 
