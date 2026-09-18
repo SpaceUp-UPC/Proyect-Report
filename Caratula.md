@@ -29,8 +29,8 @@
 | <div style="width:300px">Alumno</div>       | <div style="width:125px">Código</div> |
 |:-------------------------------------------:|:-------------------------------------:|
 |  Martínez Valdivia, José Luis               |              u202213989               |
-|  Taipe Sangama, Jorge Francisco             |                u20231905              |
-|                 |          u202313458                   |
+|  Taipe Sangama, Jorge Francisco             |                u202313458              |
+|                 |                            |
 |               |                             |
 |              |                             |
 
