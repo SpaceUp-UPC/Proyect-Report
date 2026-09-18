@@ -210,53 +210,54 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #[Número]<br></th>
+    <th colspan="2">Entrevista #2<br></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td></td>
+    <td>Carlos</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td></td>
+    <td>Segundo</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td></td>
+    <td>23</td>
   </tr>
   <tr>
     <td>Rol</td>
-    <td></td>
+    <td>Dueño del hogar</td>
   </tr>
   <tr>
     <td>Evidencia</td>
     <td>
       <div align="center">
-        <img src="..." alt="Evidencia">
+        <img src="IoT/IOT_CarlosSegundo.png" alt="Evidencia1">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="..." target="_blank">
-        ...
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202122876_upc_edu_pe/IQAet-HXwwZkSI2zK29LiEUTAWZrvAxGnmiukaoT2guOy_I?e=su9eve&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">
+        Entrevista 2
       </a>
     </td>
   </tr>
   <tr>
     <td>Timing donde inicia la entrevista<br></td>
-    <td></td>
+    <td>00:00</td>
   </tr>
   <tr>
     <td>Duración de la entrevista<br></td>
-    <td></td>
+    <td>08:47</td>
   </tr>
   <tr>
     <td>Resumen</td>
-    <td></td>
+    <td>Carlos Segundo, dueño de un hogar en Lince, utiliza focos inteligentes que instaló por su cuenta para controlar la intensidad y el color de la iluminación desde su celular, principalmente por comodidad. Además, está evaluando adquirir una cámara de seguridad para supervisar su vivienda cuando se encuentre fuera. Durante la entrevista, señaló dificultades para elegir dispositivos debido a la variedad de marcas, las dudas sobre su compatibilidad y las posibles limitaciones de conectividad Wi-Fi. También considera tedioso administrar varias aplicaciones, cuentas y contraseñas, y expresa preocupación por el acceso a sus dispositivos ante la pérdida o el robo del celular. Aunque puede realizar instalaciones sencillas, buscaría apoyo especializado para configuraciones complejas o problemas de mantenimiento. Su principal expectativa es contar con una aplicación móvil que centralice el control y monitoreo de los dispositivos de su hogar de manera sencilla y segura.
+</td>
   </tr>
 </tbody>
 </table>
