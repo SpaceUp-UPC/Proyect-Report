@@ -15,13 +15,13 @@
     <br> <br>
     Profesor: Marco Antonio Leon Baca
     <br> <br>
-    Ciclo: 2026-02
+    Ciclo: 202620
     <br> <br>
     Informe de Trabajo Final
     <br> <br>
     Startup: SpaceUp
     <br> <br>
-    Producto: Sentraya  
+    Producto: Sentrya  
 </h3>
 
 <div align="center">
@@ -46,9 +46,7 @@
 |-------|----------|--------------------------------------------------------|---------|
 | 0.1     | 22/04/2026 |              |          |
 
-
-
-
+<div style="page-break-before: always;"></div>
 
 # Tabla de Contenidos
 
