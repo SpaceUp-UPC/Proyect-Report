@@ -39,6 +39,7 @@
 
 <div align="center"> Setiembre 2026 </div>
 
+<div style="page-break-before: always;"></div>
 
 ## Registro de Versiones del Informe
 
