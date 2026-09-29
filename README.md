@@ -15,13 +15,13 @@
     <br> <br>
     Profesor: Marco Antonio Leon Baca
     <br> <br>
-    Ciclo: 2026-02
+    Ciclo: 202620
     <br> <br>
     Informe de Trabajo Final
     <br> <br>
     Startup: SpaceUp
     <br> <br>
-    Producto: Sentraya  
+    Producto: Sentrya  
 </h3>
 
 <div align="center">
@@ -51,9 +51,7 @@
 |-------|----------|--------------------------------------------------------|---------|
 | 0.1     | 22/04/2026 |              |          |
 
-
-
-
+<div style="page-break-before: always;"></div>
 
 # Tabla de Contenidos
 
@@ -144,7 +142,7 @@ que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Ou
 | **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Pablo Martinez Gaona:** Realicé todo el capítulo 1 <br><br> **Jose Luis Martínez Valdivia:** Contribuí en El desarrollo del capítulo 4 - Definición de Bounded Contexts y sus componentes <br><br> **Jorge Francisco Taipe Sangama:** Construí y refactoricé los Diagramas de contexto, de containers y diagramas ERD <br><br> **Anderson Ricardo Ventosilla Trujillo:** Desarrollé el capítulo 3, elaborando las User Stories, el Impact Mapping y el Product Backlog del proyecto, además de realizar las entrevistas al segmento 2 (implementadores de hogar inteligente). <br><br> **Gerald Serrano Uchuya:** Realicé la sección 4.1 relacionado al Event Storming, definición de Bounded Contexts, flujos y los diagramas de arquitectura de system landscape, context, container y despliegue. <br><br> **Braulio Torrejon:** Contribuí en el desarrollo del capítulo 2, realizando el análisis de las entrevistas a los segmentos objetivo, la identificación de necesidades de los usuarios y la elaboración de los User Personas, User Journey Mapping y Empathy Mapping. Además, incorporé los hallazgos obtenidos de las entrevistas para identificar oportunidades de mejora para la solución IoT. <br><br>| **Pablo Martinez Gaona:** **TB1** Esta entrega me permitió ampliar mis conocimientos sobre el planteamiento de soluciones IoT y comprender mejor cómo relacionar las necesidades de los usuarios con dispositivos, funcionalidades y procesos de software. <br><br> **XXXX:** **TB1:** El desarrollo del AV1 me permitió reforzar mis conocimientos sobre la estructura inicial de un proyecto de software. Sentí que este proceso me ayudó a entender mejor cómo plantear una base sólida, lo cual considero clave para mi crecimiento profesional. <br><br> **Jose Luis Martínez Valdivia:** El desarrollo del AV1 me permitió comentar y enriquecer mis conocimientos de DDD y la forma en la que se debaten ideas para implementar una solución de Servicio Web <br><br> **Jorge Francisco Taipe Sangama:** El desarrollo del AV1 me permitió conocer la perspectiva de los usuarios que usarán la aplicación. <br><br> **Gerald Serrano Uchuya:** El desarrollo del AV1 me permitió reconocer los módulos core del negocio al que nuestro proyecto se enfocará, adicionalmente que permitió definir el diagrama arquitectónico base que servirá como guía para la implementación de Sentrya.<br><br> **Anderson Ricardo Ventosilla Trujillo:** El desarrollo del AV1 me permitió profundizar en la construcción de artefactos clave como las user historias, el impact mapping y el product backlog. A través de este proceso, logré entender mejor cómo traducir necesidades del negocio en requerimientos claros y estructurados, facilitando una mejor organización del trabajo y priorización de funcionalidades dentro del proyecto. <br><br> **Braulio Torrejon:** El desarrollo del capítulo 2 me permitió reforzar mis conocimientos sobre análisis de usuarios y levantamiento de requisitos. A través de las entrevistas y herramientas de UX, comprendí mejor cómo identificar problemas reales de los usuarios y transformarlos en necesidades y oportunidades que pueden ser consideradas durante el desarrollo de una solución de software. <br><br>|
 | **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones detecnologías de ingeniería de software** | **Pablo Martinez Gaona:** Contribuí realizando el capítulo 1,sedimentando las bases del proyecto <br><br> **Jose Luis Martínez Valdivia:** Contribuí en El desarrollo del capítulo 4 - Definición de Bounded Contexts y sus componentes <br><br> **Gerald Serrano Uchuya:** Fue necesario repasar los pasos para la identificación de bounded contexts y flujos, partiendo desde la lluvia de eventos hasta la definición de los módulos en los que se dividirá el proyecto. Adicionalmente, requerí repasar temas de diagramas c4 para ver cómo adaptar IoT a nuestro caso. <br><br> **Jorge Francisco Taipe Sangama:** Reconocí segmentos, funcionalidades y los convertí en bounded context para desarrollo <br><br> **Anderson Ricardo Ventosilla Trujillo:** Contribuí realizando parte del capítulo 3, con las user historias, el impact mapping y el product backlog. <br><br> **Braulio Torrejon:** Investigué y apliqué herramientas de análisis de usuarios y levantamiento de información, como entrevistas, User Personas, User Journey Mapping y Empathy Mapping, para comprender las necesidades de los dueños de hogar e implementadores de soluciones IoT. <br><br>| **Pablo Martinez Gaona** **TB1:** A lo largo del desarrollo del capítulo 1, comprendí que siempre hay aspectos que mejorar y aprender. Esta experiencia me hizo reflexionar sobre la importancia de mantenerme en constante actualización para poder aportar mejor en futuros proyectos. <br><br> **Jose Luis Martínez Valdivia:** Durante El desarrollo de capítulo 4, logré entender los procesos y requerimientos que se deben llevar a cabo para poder delimitar el alcance y arquitectura de desarrollo del proyecto a implementar <br><br> **Gerald Serrano Uchuya:** Repasar esos temas me permitió identificar correctamente los BC de Sentrya de acuerdo a las necesidades de nuestros usuarios y permitir diagramar adecuadamente las diferentes capas del modelo C4 <br><br> **Jorge Francisco Taipe Sangama:** El desarrollo de este capítulo me permitió aprender como segmentar bounded context en el contexto de desarrollo móvil <br><br> **Anderson Ricardo Ventosilla Trujillo:** Durante el desarrollo del capítulo 3, comprendí mejor cómo definir y organizar el alcance del proyecto. El uso de herramientas como el impact mapping y el product backlog me ayudó a estructurar las ideas, priorizar funcionalidades y tener una visión más clara del desarrollo del software.<br><br> **Braulio Torrejon:** El desarrollo de este capítulo me permitió reconocer la importancia de continuar aprendiendo nuevas herramientas y metodologías para el desarrollo de software. En particular, comprendí que conocer las necesidades y dificultades de los usuarios es fundamental para plantear soluciones que respondan adecuadamente al contexto del proyecto. <br><br>|
 
----
+<div style="page-break-before: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -155,15 +153,15 @@ SpaceUp es una startup tecnológica orientada al desarrollo de soluciones para h
 
 La startup busca conectar a dueños de hogar con implementadores especializados en soluciones Smart Home, permitiendo que las viviendas puedan incorporar progresivamente dispositivos inteligentes de acuerdo con sus necesidades de seguridad, prevención, automatización y monitoreo. De esta manera, el usuario no se limita a adquirir dispositivos aislados, sino que puede construir un ecosistema tecnológico adaptable a las características de su vivienda.
 
-Dentro de este ecosistema, SpaceUp desarrolla **Setrya**, una plataforma web y móvil orientada a la implementación y supervisión de hogares inteligentes. La solución permite administrar los dispositivos IoT instalados en una vivienda, visualizar la información generada por sensores, recibir alertas frente a eventos relevantes, controlar dispositivos compatibles y mantener comunicación con implementadores especializados.
+Dentro de este ecosistema, SpaceUp desarrolla **Sentrya**, una plataforma web y móvil orientada a la implementación y supervisión de hogares inteligentes. La solución permite administrar los dispositivos IoT instalados en una vivienda, visualizar la información generada por sensores, recibir alertas frente a eventos relevantes, controlar dispositivos compatibles y mantener comunicación con implementadores especializados.
 
-Setrya plantea inicialmente tres soluciones IoT principales orientadas a la protección del hogar:
+Sentrya plantea inicialmente tres soluciones IoT principales orientadas a la protección del hogar:
 
 - **Escudo de seguridad con detección acústica y visual:** emplea sensores y mecanismos de detección para identificar eventos anómalos asociados a posibles situaciones de intrusión y generar alertas para el propietario.
 - **Control térmico inteligente:** monitorea continuamente la temperatura del entorno y utiliza diferentes niveles o umbrales de alerta para identificar incrementos anómalos que puedan representar un riesgo para la vivienda.
 - **Protector eléctrico inteligente:** supervisa determinadas condiciones del suministro eléctrico y permite interrumpir el flujo de corriente ante anomalías previamente definidas, contribuyendo a la protección de los dispositivos y electrodomésticos conectados.
 
-Estas tres soluciones representan el núcleo inicial de Setrya. Sin embargo, el ecosistema está planteado bajo un enfoque modular, permitiendo incorporar posteriormente otros dispositivos y servicios de automatización según las necesidades del dueño de hogar, como sensores de movimiento, iluminación inteligente, cámaras, sensores ambientales, dispositivos de control energético y otras soluciones compatibles.
+Estas tres soluciones representan el núcleo inicial de Sentrya. Sin embargo, el ecosistema está planteado bajo un enfoque modular, permitiendo incorporar posteriormente otros dispositivos y servicios de automatización según las necesidades del dueño de hogar, como sensores de movimiento, iluminación inteligente, cámaras, sensores ambientales, dispositivos de control energético y otras soluciones compatibles.
 
 #### Objetivo
 
@@ -186,16 +184,16 @@ Convertir a SpaceUp en una startup referente en soluciones para hogares intelige
 | ![foto_pablo.png](assets/foto_pablo.png)| **Nombre Completo:** Pablo Afranio Martinez Gaona <br> **Código:** U202120011 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Me especializo en modelos de aprendizaje. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música. <br><br> **Habilidades Técnicas:** <br> c++, c#, python <br> **Habilidades Sociales:** <br> Liderazgo, amabilidad, puntualidad y mediador <br>|
 | ![foto_braulio.png](assets/braulio.png)|  **Nombre Completo:** Braulio Torrejon <br> **Código:** U201711828 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Soy estudiante de 8vo ciclo de la carrera de Ingeniería de Software. Tengo interés en aprender nuevas herramientas y tecnologías para aplicarlas en proyectos académicos y personales. Actualmente trabajo como QA, donde cuento con experiencia en pruebas y control de calidad de software. Me considero una persona responsable, comprometida con el equipo y capaz de trabajar bajo presión. Dentro del proyecto, aportaré mis conocimientos en aseguramiento de la calidad y testing. <br><br> **Habilidades Técnicas:** <br> C++, Python, C#, Genexus, Jira, Postman, Selenium, Git <br><br> **Habilidades Sociales:** <br> Responsabilidad, trabajo en equipo, compañerismo, adaptabilidad, comunicación y trabajo bajo presión |
 | ![foto_gerald.png](assets/integrante-Gerald.jpeg) | **Nombre Completo:** Gerald Patricio Serrano Uchuya  <br> **Código:** u202122876  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Estoy en 9no ciclo de Ingeniería de software. Me enfoco en tecnologías web fullstack como Angular, .NET y Python. Soy alguien muy entusiasta al momento de aprender nuevas tecnologías y me gusta cumplir lo mejor que pueda mis responsibilidades en un grupo de trabajo. <br>  <br><br> **Habilidades Técnicas:** C#, TypeScript, JavaScript, Python y SQL <br>  <br>  <br><br> **Habilidades Sociales:**  <br> comunicación con usuarios, resolución de problemas, trabajo en equipo y transferencia de conocimientos. <br> <br>             |
-|  ![Anderson-foto.jpeg](assets/Anderson-foto.jpg) | **Nombre Completo:** Anderson Ricardo Ventosilla Trujillo <br> **Código:** U202319025 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> Soy estudiante de 7mo ciclo de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo web y mobile (Angular, Vue.js, Flutter) y en arquitectura y despliegue en la nube (Azure, Google Cloud). Dentro de Setrya, aportaré mis conocimientos en desarrollo frontend, arquitectura de software e integración de soluciones cloud. <br><br> **Habilidades Técnicas:** <br> Angular, Vue.js, Java, Flutter, Azure, Google Cloud Platform, Docker, Git/GitFlow <br><br> **Habilidades Sociales:** <br> Trabajo en equipo, adaptabilidad, comunicación efectiva y aprendizaje autónomo |
+|  ![Anderson-foto.jpeg](assets/Anderson-foto.jpg) | **Nombre Completo:** Anderson Ricardo Ventosilla Trujillo <br> **Código:** U202319025 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> Soy estudiante de 7mo ciclo de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo web y mobile (Angular, Vue.js, Flutter) y en arquitectura y despliegue en la nube (Azure, Google Cloud). Dentro de Sentrya, aportaré mis conocimientos en desarrollo frontend, arquitectura de software e integración de soluciones cloud. <br><br> **Habilidades Técnicas:** <br> Angular, Vue.js, Java, Flutter, Azure, Google Cloud Platform, Docker, Git/GitFlow <br><br> **Habilidades Sociales:** <br> Trabajo en equipo, adaptabilidad, comunicación efectiva y aprendizaje autónomo |
 
 ### 1.2. Solution Profile
-Setrya es una solución digital orientada a la implementación, administración y monitoreo de hogares inteligentes. La plataforma conecta a dos segmentos principales: dueños de hogar interesados en incorporar tecnología IoT en sus viviendas e implementadores especializados encargados de diseñar, instalar, configurar y mantener dichas soluciones.
+Sentrya es una solución digital orientada a la implementación, administración y monitoreo de hogares inteligentes. La plataforma conecta a dos segmentos principales: dueños de hogar interesados en incorporar tecnología IoT en sus viviendas e implementadores especializados encargados de diseñar, instalar, configurar y mantener dichas soluciones.
 
 La propuesta combina una aplicación móvil y una plataforma web con un ecosistema de dispositivos IoT capaz de recopilar información del entorno y ejecutar acciones frente a determinadas condiciones. Los datos producidos por los dispositivos pueden ser procesados y posteriormente presentados al usuario mediante indicadores, históricos, alertas y otras herramientas de visualización.
 
-Para el dueño de hogar, Setrya busca centralizar la experiencia de un Smart Home en un mismo entorno, permitiéndole conocer el estado de sus dispositivos, consultar mediciones, recibir notificaciones y controlar aquellos componentes que admitan acciones remotas. Asimismo, podrá explorar diferentes soluciones disponibles y solicitar los servicios de implementadores especializados para ampliar o mantener su ecosistema.
+Para el dueño de hogar, Sentrya busca centralizar la experiencia de un Smart Home en un mismo entorno, permitiéndole conocer el estado de sus dispositivos, consultar mediciones, recibir notificaciones y controlar aquellos componentes que admitan acciones remotas. Asimismo, podrá explorar diferentes soluciones disponibles y solicitar los servicios de implementadores especializados para ampliar o mantener su ecosistema.
 
-Para el implementador de hogar inteligente, Setrya busca proporcionar herramientas que faciliten la administración de las instalaciones realizadas para diferentes clientes, el registro de dispositivos asociados a cada vivienda, la supervisión de su funcionamiento y la atención de incidencias o necesidades de mantenimiento.
+Para el implementador de hogar inteligente, Sentrya busca proporcionar herramientas que faciliten la administración de las instalaciones realizadas para diferentes clientes, el registro de dispositivos asociados a cada vivienda, la supervisión de su funcionamiento y la atención de incidencias o necesidades de mantenimiento.
 
 El núcleo inicial de la solución se concentra en tres áreas de protección: detección acústica y visual ante posibles eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas. A partir de esta base, el sistema permitirá ampliar progresivamente las capacidades de cada vivienda incorporando nuevos dispositivos IoT según los requerimientos del propietario.
 
@@ -222,7 +220,7 @@ En el ámbito eléctrico, Osinergmin recomienda que las viviendas dispongan de e
 
 La problemática se acentúa cuando cada necesidad del hogar es atendida mediante soluciones independientes que pueden disponer de sus propios métodos de instalación, monitoreo y control. Para un propietario sin experiencia técnica, administrar distintos dispositivos y determinar qué tecnologías resultan adecuadas para su vivienda puede incrementar la complejidad de adoptar un hogar inteligente. De forma paralela, los implementadores necesitan administrar los dispositivos instalados para diferentes clientes y contar con información que facilite su supervisión y posterior mantenimiento.
 
-Frente a este contexto, se aplica la técnica de las **5W y 2H (Who, What, Where, When, Why, How & How Much)** para delimitar la problemática que busca abordar Setrya.
+Frente a este contexto, se aplica la técnica de las **5W y 2H (Who, What, Where, When, Why, How & How Much)** para delimitar la problemática que busca abordar Sentrya.
 
 #### 1. ¿Qué? (What?)
 
@@ -241,7 +239,7 @@ Los principales involucrados son:
 
 La problemática se presenta principalmente en viviendas ubicadas en zonas urbanas que cuentan con conectividad a Internet y cuyos propietarios buscan incorporar progresivamente dispositivos inteligentes.
 
-En una primera etapa, Setrya estará orientado al mercado residencial, dejando fuera del alcance inicial otros ambientes como oficinas, instalaciones industriales o grandes edificios corporativos.
+En una primera etapa, Sentrya estará orientado al mercado residencial, dejando fuera del alcance inicial otros ambientes como oficinas, instalaciones industriales o grandes edificios corporativos.
 
 #### 4. ¿Cuándo? (When?)
 
@@ -266,7 +264,7 @@ Por ello, existe una oportunidad para integrar dispositivos, información y serv
 
 #### 6. ¿Cómo? (How?)
 
-La problemática será abordada mediante Setrya, una plataforma web y móvil integrada con dispositivos IoT y servicios de procesamiento de información.
+La problemática será abordada mediante Sentrya, una plataforma web y móvil integrada con dispositivos IoT y servicios de procesamiento de información.
 
 El sistema permitirá:
 
@@ -287,11 +285,11 @@ Inicialmente, el ecosistema estará representado por un módulo de detección ac
 
 La disponibilidad de infraestructura digital evidencia que existe una base tecnológica considerable para servicios conectados destinados al hogar. Durante el primer trimestre de 2026, el 62,7 % de los hogares peruanos contó con conexión a Internet y, específicamente en Lima Metropolitana, la cifra alcanzó el 82,7 %. Además, el 96,0 % de los hogares contó con telefonía móvil.
 
-Desde la perspectiva del acceso a la solución, el teléfono celular resulta especialmente relevante: el 90,7 % de la población usuaria de Internet de 6 años a más accedió a Internet mediante este dispositivo durante el mismo periodo. Estos indicadores respaldan la viabilidad de complementar el ecosistema IoT de Setrya con una aplicación móvil y una plataforma web que permitan consultar información y administrar remotamente las funcionalidades disponibles.
+Desde la perspectiva del acceso a la solución, el teléfono celular resulta especialmente relevante: el 90,7 % de la población usuaria de Internet de 6 años a más accedió a Internet mediante este dispositivo durante el mismo periodo. Estos indicadores respaldan la viabilidad de complementar el ecosistema IoT de Sentrya con una aplicación móvil y una plataforma web que permitan consultar información y administrar remotamente las funcionalidades disponibles.
 
 
 ### 1.2.2 Lean UX Process
-Para orientar el desarrollo de Setrya bajo un enfoque centrado en las necesidades de sus usuarios, se aplicará el proceso Lean UX. Este permitirá establecer inicialmente el problema que busca resolver la solución, identificar las principales suposiciones relacionadas con el negocio, los usuarios y las funcionalidades propuestas, y posteriormente formular hipótesis que puedan ser validadas durante el desarrollo del proyecto.
+Para orientar el desarrollo de Sentrya bajo un enfoque centrado en las necesidades de sus usuarios, se aplicará el proceso Lean UX. Este permitirá establecer inicialmente el problema que busca resolver la solución, identificar las principales suposiciones relacionadas con el negocio, los usuarios y las funcionalidades propuestas, y posteriormente formular hipótesis que puedan ser validadas durante el desarrollo del proyecto.
 
 
 ### 1.2.2.1. Lean UX Problem Statements
@@ -299,15 +297,15 @@ Actualmente, la incorporación de tecnología IoT en viviendas se encuentra enfo
 
 Sin embargo, las alternativas existentes pueden generar una experiencia fragmentada cuando los dispositivos, servicios de implementación y mecanismos de monitoreo funcionan de manera independiente. Para un propietario sin conocimientos técnicos especializados, seleccionar soluciones adecuadas, comprender la información obtenida por los sensores, administrar diferentes dispositivos y encontrar profesionales que puedan realizar su implementación o mantenimiento puede representar una barrera para la adopción de un hogar inteligente. De forma paralela, los implementadores necesitan administrar diferentes instalaciones, dispositivos y clientes sin depender exclusivamente de registros y herramientas externas.
 
-Setrya busca cubrir esta brecha mediante una plataforma web y móvil que conecte a dueños de hogar con implementadores especializados y permita centralizar la incorporación, monitoreo y administración de soluciones IoT dentro de una vivienda. La propuesta se enfocará inicialmente en tres áreas de protección: detección acústica y visual ante eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas, manteniendo un enfoque modular que permita incorporar nuevas soluciones IoT posteriormente.
+Sentrya busca cubrir esta brecha mediante una plataforma web y móvil que conecte a dueños de hogar con implementadores especializados y permita centralizar la incorporación, monitoreo y administración de soluciones IoT dentro de una vivienda. La propuesta se enfocará inicialmente en tres áreas de protección: detección acústica y visual ante eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas, manteniendo un enfoque modular que permita incorporar nuevas soluciones IoT posteriormente.
 
 El enfoque inicial estará dirigido a propietarios de viviendas interesados en incorporar tecnología inteligente y a profesionales o empresas dedicadas a la implementación de hogares inteligentes.
 
-Consideraremos que la propuesta está obteniendo resultados favorables cuando los usuarios puedan comprender y utilizar las funciones principales de monitoreo y gestión de dispositivos, los propietarios manifiesten interés en centralizar diferentes soluciones IoT mediante Setrya y los implementadores identifiquen valor en administrar las instalaciones realizadas para sus clientes desde una misma plataforma.
+Consideraremos que la propuesta está obteniendo resultados favorables cuando los usuarios puedan comprender y utilizar las funciones principales de monitoreo y gestión de dispositivos, los propietarios manifiesten interés en centralizar diferentes soluciones IoT mediante Sentrya y los implementadores identifiquen valor en administrar las instalaciones realizadas para sus clientes desde una misma plataforma.
 
 ### 1.2.2.2. Lean UX Assumptions
 
-A partir del problema identificado para Setrya, se establecieron las siguientes suposiciones iniciales. Estas representan creencias que deberán ser contrastadas posteriormente mediante entrevistas, pruebas con usuarios y validaciones del producto.
+A partir del problema identificado para Sentrya, se establecieron las siguientes suposiciones iniciales. Estas representan creencias que deberán ser contrastadas posteriormente mediante entrevistas, pruebas con usuarios y validaciones del producto.
 
 #### Business Assumptions
 
@@ -321,7 +319,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que una propuesta modular permitirá que los clientes comiencen utilizando determinadas soluciones IoT y posteriormente amplíen su ecosistema de acuerdo con nuevas necesidades.
 
-- Creemos que Setrya puede diferenciarse al integrar en una misma propuesta el servicio de implementación, la supervisión de dispositivos y el monitoreo de información generada por sensores.
+- Creemos que Sentrya puede diferenciarse al integrar en una misma propuesta el servicio de implementación, la supervisión de dispositivos y el monitoreo de información generada por sensores.
 
 - Creemos que la protección del hogar puede constituir una propuesta inicial atractiva para introducir posteriormente otras categorías de automatización inteligente.
 
@@ -329,7 +327,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 #### Business Outcome Assumptions
 
-- Creemos que el negocio estará obteniendo resultados favorables si una proporción relevante de propietarios interesados en soluciones Smart Home solicita información o contacto con un implementador mediante Setrya.
+- Creemos que el negocio estará obteniendo resultados favorables si una proporción relevante de propietarios interesados en soluciones Smart Home solicita información o contacto con un implementador mediante Sentrya.
 
 - Creemos que el negocio estará obteniendo resultados favorables si los propietarios que incorporan una primera solución IoT posteriormente muestran interés en agregar nuevos módulos o dispositivos a su vivienda.
 
@@ -337,13 +335,13 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que el negocio estará obteniendo resultados favorables si los usuarios consultan periódicamente las mediciones, alertas y estados de los dispositivos asociados a su hogar.
 
-- Creemos que el negocio estará obteniendo resultados favorables si los propietarios consideran que Setrya reduce la dificultad percibida al momento de incorporar y administrar tecnología IoT.
+- Creemos que el negocio estará obteniendo resultados favorables si los propietarios consideran que Sentrya reduce la dificultad percibida al momento de incorporar y administrar tecnología IoT.
 
 - Creemos que el negocio estará obteniendo resultados favorables si parte de los usuarios continúa utilizando la plataforma después de la instalación inicial para monitoreo, control o mantenimiento.
 
 #### User Assumptions
 
-- Creemos que uno de los principales usuarios de Setrya será el dueño de hogar que desea incorporar tecnología inteligente sin necesitar conocimientos especializados sobre dispositivos IoT.
+- Creemos que uno de los principales usuarios de Sentrya será el dueño de hogar que desea incorporar tecnología inteligente sin necesitar conocimientos especializados sobre dispositivos IoT.
 
 - Creemos que otro usuario principal será el implementador de hogar inteligente, ya sea un profesional independiente o una empresa dedicada a instalar, configurar y mantener soluciones IoT residenciales.
 
@@ -353,7 +351,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que los implementadores trabajarán simultáneamente con diferentes clientes, viviendas y dispositivos, por lo que necesitarán distinguir claramente cada instalación.
 
-- Creemos que los usuarios accederán a Setrya tanto desde dispositivos móviles como desde navegadores web dependiendo del contexto en el que necesiten consultar información.
+- Creemos que los usuarios accederán a Sentrya tanto desde dispositivos móviles como desde navegadores web dependiendo del contexto en el que necesiten consultar información.
 
 - Creemos que los dueños de hogar esperarán poder ampliar progresivamente las capacidades inteligentes de su vivienda sin tener que reemplazar completamente las soluciones previamente instaladas.
 
@@ -385,7 +383,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que un **sistema de detección acústica y visual** permitirá identificar determinados eventos relacionados con la seguridad de la vivienda y generar alertas para el propietario.
 
-- Creemos que un **sistema de protección eléctrica integrado con Setrya** permitirá identificar determinadas condiciones eléctricas anómalas, registrar el evento y ejecutar las acciones permitidas por el dispositivo de protección.
+- Creemos que un **sistema de protección eléctrica integrado con Sentrya** permitirá identificar determinadas condiciones eléctricas anómalas, registrar el evento y ejecutar las acciones permitidas por el dispositivo de protección.
 
 - Creemos que un **centro de alertas y notificaciones** permitirá a los propietarios identificar con mayor rapidez los eventos relevantes detectados por los dispositivos instalados.
 
@@ -401,17 +399,17 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que permitir el **control remoto de los dispositivos compatibles** facilitará al propietario administrar determinadas funciones de su hogar desde la plataforma.
 
-- Creemos que una arquitectura modular que permita **incorporar nuevas categorías de dispositivos IoT** facilitará la expansión progresiva del ecosistema Setrya de acuerdo con las necesidades de cada vivienda.
+- Creemos que una arquitectura modular que permita **incorporar nuevas categorías de dispositivos IoT** facilitará la expansión progresiva del ecosistema Sentrya de acuerdo con las necesidades de cada vivienda.
 
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
-A partir de los Feature Assumptions identificados, se formularon los siguientes Hypothesis Statements. Cada hipótesis relaciona un resultado esperado para el negocio con un beneficio para alguno de los segmentos objetivo y una funcionalidad específica de Setrya.
+A partir de los Feature Assumptions identificados, se formularon los siguientes Hypothesis Statements. Cada hipótesis relaciona un resultado esperado para el negocio con un beneficio para alguno de los segmentos objetivo y una funcionalidad específica de Sentrya.
 
 Los criterios de validación incluidos corresponden a métricas preliminares que serán contrastadas posteriormente mediante entrevistas, pruebas de usabilidad y validaciones del producto.
 
 #### Hypothesis Statement 01 — Dashboard centralizado del hogar
 
-Creemos que lograremos incrementar el uso recurrente de Setrya  
+Creemos que lograremos incrementar el uso recurrente de Sentrya  
 si los **dueños de hogar**  
 logran conocer rápidamente el estado general de las soluciones IoT instaladas en su vivienda  
 mediante un **dashboard centralizado del hogar**.
@@ -422,7 +420,7 @@ mediante un **dashboard centralizado del hogar**.
 
 #### Hypothesis Statement 02 — Monitoreo térmico
 
-Creemos que lograremos aumentar el valor percibido de Setrya como herramienta de monitoreo preventivo  
+Creemos que lograremos aumentar el valor percibido de Sentrya como herramienta de monitoreo preventivo  
 si los **dueños de hogar**  
 logran identificar variaciones relevantes de temperatura y comprender el nivel de alerta asociado  
 mediante un **sistema de monitoreo térmico con diferentes niveles de alerta**.
@@ -433,7 +431,7 @@ mediante un **sistema de monitoreo térmico con diferentes niveles de alerta**.
 
 #### Hypothesis Statement 03 — Detección acústica y visual
 
-Creemos que lograremos incrementar la percepción de utilidad de Setrya en materia de seguridad residencial  
+Creemos que lograremos incrementar la percepción de utilidad de Sentrya en materia de seguridad residencial  
 si los **dueños de hogar**  
 logran conocer oportunamente la ocurrencia de eventos anómalos relacionados con la seguridad de su vivienda  
 mediante un **sistema de detección acústica y visual**.
@@ -444,10 +442,10 @@ mediante un **sistema de detección acústica y visual**.
 
 #### Hypothesis Statement 04 — Protección eléctrica
 
-Creemos que lograremos aumentar el valor percibido del ecosistema Setrya como herramienta de protección del hogar  
+Creemos que lograremos aumentar el valor percibido del ecosistema Sentrya como herramienta de protección del hogar  
 si los **dueños de hogar**  
 logran conocer cuándo se presenta una condición eléctrica anómala y qué acción realizó el sistema frente a ella  
-mediante un **sistema de protección eléctrica integrado con Setrya**.
+mediante un **sistema de protección eléctrica integrado con Sentrya**.
 
 **Criterio de validación propuesto:** Consideraremos favorable la hipótesis si al menos el 80 % de los participantes comprende, durante una simulación, la condición eléctrica detectada, el dispositivo afectado y la acción ejecutada por el módulo de protección.
 
@@ -466,7 +464,7 @@ mediante un **centro centralizado de alertas y notificaciones**.
 
 #### Hypothesis Statement 06 — Mediciones e históricos
 
-Creemos que lograremos incrementar el uso de Setrya después de la instalación inicial de los dispositivos  
+Creemos que lograremos incrementar el uso de Sentrya después de la instalación inicial de los dispositivos  
 si los **dueños de hogar e implementadores**  
 logran consultar y comprender el comportamiento previo de los dispositivos y las condiciones registradas en la vivienda  
 mediante la **visualización de mediciones, eventos e información histórica**.
@@ -499,7 +497,7 @@ mediante una **funcionalidad de búsqueda y solicitud de servicios de implementa
 
 #### Hypothesis Statement 09 — Gestión de clientes e instalaciones
 
-Creemos que lograremos incrementar la adopción de Setrya por parte de profesionales del sector Smart Home  
+Creemos que lograremos incrementar la adopción de Sentrya por parte de profesionales del sector Smart Home  
 si los **implementadores de hogar inteligente**  
 logran administrar de manera organizada diferentes clientes, viviendas e instalaciones  
 mediante un **módulo centralizado de gestión de clientes e instalaciones**.
@@ -510,7 +508,7 @@ mediante un **módulo centralizado de gestión de clientes e instalaciones**.
 
 #### Hypothesis Statement 10 — Gestión de dispositivos IoT
 
-Creemos que lograremos mejorar la organización y trazabilidad de las instalaciones realizadas mediante Setrya  
+Creemos que lograremos mejorar la organización y trazabilidad de las instalaciones realizadas mediante Sentrya  
 si los **implementadores de hogar inteligente**  
 logran registrar y consultar claramente qué dispositivos pertenecen a cada vivienda y ambiente  
 mediante un **módulo de gestión de dispositivos IoT**.
@@ -521,7 +519,7 @@ mediante un **módulo de gestión de dispositivos IoT**.
 
 #### Hypothesis Statement 11 — Control remoto
 
-Creemos que lograremos incrementar la utilidad cotidiana de Setrya para los propietarios  
+Creemos que lograremos incrementar la utilidad cotidiana de Sentrya para los propietarios  
 si los **dueños de hogar**  
 logran ejecutar acciones sobre determinados dispositivos sin encontrarse físicamente junto a ellos  
 mediante una **funcionalidad de control remoto para dispositivos compatibles**.
@@ -532,7 +530,7 @@ mediante una **funcionalidad de control remoto para dispositivos compatibles**.
 
 #### Hypothesis Statement 12 — Expansión modular
 
-Creemos que lograremos incrementar la continuidad y expansión del uso de Setrya  
+Creemos que lograremos incrementar la continuidad y expansión del uso de Sentrya  
 si los **dueños de hogar e implementadores**  
 logran incorporar nuevas soluciones inteligentes de acuerdo con necesidades posteriores sin reemplazar el ecosistema previamente configurado  
 mediante una **arquitectura modular para incorporar nuevas categorías de dispositivos IoT**.
@@ -542,12 +540,12 @@ mediante una **arquitectura modular para incorporar nuevas categorías de dispos
 ### 1.2.2.4. Lean UX Canvas
 #### 1.2.2.4. Lean UX Canvas
 
-A partir del Problem Statement, los Assumptions y los Hypothesis Statements previamente definidos, se elaboró el Lean UX Canvas de Setrya. Este artefacto sintetiza la problemática identificada, los resultados esperados para el negocio y los usuarios, las principales soluciones planteadas y los aspectos que deberán ser validados durante el desarrollo del producto.
+A partir del Problem Statement, los Assumptions y los Hypothesis Statements previamente definidos, se elaboró el Lean UX Canvas de Sentrya. Este artefacto sintetiza la problemática identificada, los resultados esperados para el negocio y los usuarios, las principales soluciones planteadas y los aspectos que deberán ser validados durante el desarrollo del producto.
 
 <table>
     <thead>
     <r>
-    <th colspan="2">Lean UX Canvas - Setrya</th>
+    <th colspan="2">Lean UX Canvas - Sentrya</th>
     </r>
   </thead>
   <tbody>
@@ -556,15 +554,15 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
         <b>1. Business Problem</b><br><br>
         Los dueños de hogar interesados en incorporar soluciones IoT pueden enfrentarse a una experiencia fragmentada al seleccionar, instalar, monitorear y administrar dispositivos inteligentes destinados a diferentes necesidades del hogar.<br><br>
         Asimismo, los implementadores especializados necesitan organizar múltiples clientes, viviendas, dispositivos e instalaciones, así como realizar seguimiento de las soluciones implementadas.<br><br>
-        SpaceUp identifica una oportunidad para centralizar estos procesos mediante Setrya, conectando a propietarios e implementadores dentro de un ecosistema orientado inicialmente a la protección y monitoreo inteligente del hogar.
+        SpaceUp identifica una oportunidad para centralizar estos procesos mediante Sentrya, conectando a propietarios e implementadores dentro de un ecosistema orientado inicialmente a la protección y monitoreo inteligente del hogar.
       </td>
       <td>
         <b>2. Business Outcomes</b><br><br>
         <ul>
-          <li>Incrementar la cantidad de propietarios que solicitan servicios de implementación mediante Setrya.</li>
+          <li>Incrementar la cantidad de propietarios que solicitan servicios de implementación mediante Sentrya.</li>
           <li>Conseguir que propietarios que incorporan una primera solución IoT posteriormente amplíen su ecosistema con nuevos módulos.</li>
           <li>Conseguir que los implementadores administren múltiples clientes e instalaciones desde la plataforma.</li>
-          <li>Incrementar el uso recurrente de Setrya después de finalizada la instalación inicial.</li>
+          <li>Incrementar el uso recurrente de Sentrya después de finalizada la instalación inicial.</li>
           <li>Generar oportunidades de ingresos mediante servicios de implementación, mantenimiento y expansión de soluciones IoT.</li>
         </ul>
       </td>
@@ -620,10 +618,10 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
       </td>
       <td>
         <b>6. Hypotheses</b><br><br>
-        <b>H1:</b> Creemos que aumentaremos el uso recurrente de Setrya si los dueños de hogar pueden conocer rápidamente el estado de sus dispositivos mediante un dashboard centralizado.<br><br>
-        <b>H2:</b> Creemos que aumentaremos el valor percibido de Setrya si los dueños de hogar pueden identificar anomalías mediante los módulos de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
-        <b>H3:</b> Creemos que aumentaremos las oportunidades de servicio si los propietarios pueden encontrar implementadores especializados mediante Setrya.<br><br>
-        <b>H4:</b> Creemos que aumentaremos la adopción profesional de Setrya si los implementadores pueden administrar clientes, viviendas y dispositivos desde una misma plataforma.
+        <b>H1:</b> Creemos que aumentaremos el uso recurrente de Sentrya si los dueños de hogar pueden conocer rápidamente el estado de sus dispositivos mediante un dashboard centralizado.<br><br>
+        <b>H2:</b> Creemos que aumentaremos el valor percibido de Sentrya si los dueños de hogar pueden identificar anomalías mediante los módulos de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
+        <b>H3:</b> Creemos que aumentaremos las oportunidades de servicio si los propietarios pueden encontrar implementadores especializados mediante Sentrya.<br><br>
+        <b>H4:</b> Creemos que aumentaremos la adopción profesional de Sentrya si los implementadores pueden administrar clientes, viviendas y dispositivos desde una misma plataforma.
       </td>
     </tr>
     <tr>
@@ -634,7 +632,7 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
       </td>
       <td>
         <b>8. What's the least amount of work we need to do to learn the next most important thing?</b><br><br>
-        Realizar entrevistas con representantes de ambos segmentos y presentar un prototipo inicial de Setrya que permita demostrar los principales flujos de la plataforma junto con simulaciones funcionales de los módulos IoT de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
+        Realizar entrevistas con representantes de ambos segmentos y presentar un prototipo inicial de Sentrya que permita demostrar los principales flujos de la plataforma junto con simulaciones funcionales de los módulos IoT de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
         Se evaluará principalmente la comprensión de las alertas, el valor percibido del monitoreo centralizado, el interés por incorporar nuevas soluciones IoT y la utilidad de conectar propietarios con implementadores especializados.
       </td>
     </tr>
@@ -642,7 +640,7 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
 </table>
 
 ## 1.3. Segmentos objetivo
-Setrya está orientado inicialmente a dos segmentos relacionados con la adopción e implementación de soluciones IoT dentro de viviendas: los dueños de hogar y los implementadores de hogar inteligente.
+Sentrya está orientado inicialmente a dos segmentos relacionados con la adopción e implementación de soluciones IoT dentro de viviendas: los dueños de hogar y los implementadores de hogar inteligente.
 
 ### Segmento Objetivo 1: Dueño de hogar
 
@@ -672,7 +670,7 @@ Este segmento está conformado por profesionales independientes o empresas que b
 - Usuarios que gestionan uno o varios clientes e instalaciones.
 - Familiarizados con herramientas digitales para coordinación y supervisión de servicios.
 
----
+<div style="page-break-before: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -1369,13 +1367,13 @@ A partir de las entrevistas realizadas se identificaron características y neces
 | **Mantenimiento** | Actividades realizadas para revisar, corregir o conservar el funcionamiento de una instalación. |
 | **Expansión modular** | Incorporación de nuevas soluciones o dispositivos IoT sin reemplazar los existentes. |
 
----
+<div style="page-break-before: always;"></div>
 
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
 
-En esta sección se detallan las Épicas y las User Stories que guiarán el desarrollo de Setrya. Las épicas agrupan las historias de usuario según las soluciones IoT y funcionalidades definidas en el Capítulo I (dashboard centralizado, monitoreo térmico, detección acústica y visual, protección eléctrica, centro de alertas, mediciones e históricos, catálogo de soluciones IoT, solicitud de implementadores, gestión de clientes e instalaciones, gestión de dispositivos IoT, control remoto y expansión modular).
+En esta sección se detallan las Épicas y las User Stories que guiarán el desarrollo de Sentrya. Las épicas agrupan las historias de usuario según las soluciones IoT y funcionalidades definidas en el Capítulo I (dashboard centralizado, monitoreo térmico, detección acústica y visual, protección eléctrica, centro de alertas, mediciones e históricos, catálogo de soluciones IoT, solicitud de implementadores, gestión de clientes e instalaciones, gestión de dispositivos IoT, control remoto y expansión modular).
 
 <div style="page-break-before: always;"></div>
 
@@ -1383,13 +1381,13 @@ En esta sección se detallan las Épicas y las User Stories que guiarán el desa
 
 | Epic ID | Título | Descripción |
 |---------|--------|--------------|
-| EP01 | Registro y Autenticación | Como usuario de Setrya (dueño de hogar o implementador), quiero crear una cuenta, iniciar/cerrar sesión y recuperar mi contraseña, para acceder de forma segura a la plataforma según mi rol. |
+| EP01 | Registro y Autenticación | Como usuario de Sentrya (dueño de hogar o implementador), quiero crear una cuenta, iniciar/cerrar sesión y recuperar mi contraseña, para acceder de forma segura a la plataforma según mi rol. |
 | EP02 | Dashboard Centralizado del Hogar | Como dueño de hogar, quiero visualizar en un solo entorno el estado general de mis dispositivos y soluciones IoT, para conocer rápidamente la situación de mi vivienda. |
 | EP03 | Monitoreo Térmico | Como dueño de hogar, quiero monitorear la temperatura de mi vivienda con distintos niveles de alerta, para prevenir riesgos asociados a incrementos anómalos. |
 | EP04 | Detección Acústica y Visual | Como dueño de hogar, quiero recibir alertas ante eventos anómalos de seguridad detectados por sensores acústicos y visuales, para responder oportunamente ante posibles intrusiones. |
 | EP05 | Protección Eléctrica Inteligente | Como dueño de hogar, quiero que el sistema detecte condiciones eléctricas anómalas y actúe automáticamente, para proteger mis dispositivos y mi vivienda. |
 | EP06 | Centro de Alertas y Notificaciones | Como dueño de hogar, quiero recibir y consultar todas las alertas generadas por mis dispositivos en un solo lugar, para atender rápidamente lo que requiere mi atención. |
-| EP07 | Mediciones e Históricos | Como usuario de Setrya, quiero consultar el historial de mediciones y eventos de mi vivienda, para comprender el comportamiento de mis dispositivos a lo largo del tiempo. |
+| EP07 | Mediciones e Históricos | Como usuario de Sentrya, quiero consultar el historial de mediciones y eventos de mi vivienda, para comprender el comportamiento de mis dispositivos a lo largo del tiempo. |
 | EP08 | Catálogo de Soluciones IoT | Como dueño de hogar, quiero explorar un catálogo de soluciones IoT disponibles, para ampliar progresivamente el ecosistema inteligente de mi vivienda. |
 | EP09 | Solicitud de Implementadores | Como dueño de hogar, quiero buscar y solicitar el servicio de un implementador especializado, para instalar, ampliar o mantener mis soluciones IoT. |
 | EP10 | Gestión de Clientes e Instalaciones | Como implementador, quiero administrar mis clientes, viviendas e instalaciones desde un mismo entorno, para organizar mi trabajo de forma centralizada. |
@@ -1400,39 +1398,39 @@ En esta sección se detallan las Épicas y las User Stories que guiarán el desa
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Epic ID |
 |------------------|--------|--------------|---------------------------|---------|
-| Registro y Autenticación / US01 | Registro de usuario | Como usuario de Setrya, quiero crear una cuenta seleccionando mi rol (dueño de hogar o implementador), para acceder a las funcionalidades correspondientes. | Dado que el usuario accede a la pantalla de registro <br> Cuando completa el formulario con sus datos y selecciona un rol <br> Entonces el sistema crea la cuenta y lo redirige a su dashboard según el rol elegido. | EP01 |
-| Registro y Autenticación / US02 | Inicio de sesión | Como usuario de Setrya, quiero iniciar sesión con mis credenciales, para acceder a mi cuenta personalizada. | Escenario 1: <br> Dado que el usuario ingresa credenciales válidas <br> Cuando presiona "Iniciar sesión" <br> Entonces accede a su dashboard. <br><br> Escenario 2: <br> Dado que el usuario ingresa credenciales inválidas <br> Cuando presiona "Iniciar sesión" <br> Entonces el sistema muestra un mensaje de error y no permite el acceso. | EP01 |
-| Registro y Autenticación / US03 | Recuperar contraseña | Como usuario de Setrya, quiero recuperar mi contraseña, para volver a acceder a mi cuenta en caso la olvide. | Dado que el usuario no recuerda su contraseña <br> Cuando presiona "Recuperar contraseña" e ingresa su correo <br> Entonces el sistema envía un enlace para restablecerla. | EP01 |
-| Dashboard Centralizado / US04 | Visualización del estado general del hogar | Como dueño de hogar, quiero ver un resumen del estado de todos mis dispositivos IoT al ingresar a la aplicación, para identificar rápidamente si existe alguna alerta activa. | Dado que el dueño de hogar tiene dispositivos registrados <br> Cuando ingresa a su dashboard <br> Entonces el sistema muestra el estado general de cada módulo (térmico, seguridad, eléctrico) y las alertas activas. | EP02 |
-| Dashboard Centralizado / US05 | Organización por ambientes | Como dueño de hogar, quiero visualizar mis dispositivos agrupados por ambiente de la vivienda, para ubicar rápidamente el dispositivo que necesito revisar. | Dado que el dueño de hogar tiene ambientes configurados <br> Cuando accede a la sección "Mis ambientes" <br> Entonces el sistema lista los dispositivos asociados a cada ambiente. | EP02 |
-| Monitoreo Térmico / US06 | Configuración de niveles de alerta térmica | Como dueño de hogar, quiero configurar los umbrales de temperatura que activan una alerta, para adaptar el monitoreo a las condiciones de mi vivienda. | Dado que el dueño de hogar tiene un sensor térmico instalado <br> Cuando define los umbrales de alerta (normal, moderado, crítico) <br> Entonces el sistema guarda la configuración y la aplica a las lecturas futuras. | EP03 |
-| Monitoreo Térmico / US07 | Recepción de alerta térmica | Como dueño de hogar, quiero recibir una notificación cuando la temperatura supere el umbral configurado, para tomar acción antes de que represente un riesgo. | Dado que un sensor térmico registra una lectura fuera de los umbrales definidos <br> Cuando se supera el umbral configurado <br> Entonces el sistema genera una alerta y notifica al dueño de hogar indicando el nivel alcanzado. | EP03 |
-| Detección Acústica y Visual / US08 | Recepción de alerta de seguridad | Como dueño de hogar, quiero recibir una alerta cuando un sensor acústico o visual detecte un evento anómalo, para conocer oportunamente una posible situación de riesgo. | Dado que los sensores de seguridad están activos <br> Cuando se detecta un evento anómalo <br> Entonces el sistema genera una alerta con la evidencia disponible y notifica al dueño de hogar. | EP04 |
-| Detección Acústica y Visual / US09 | Revisión de evidencia de un evento | Como dueño de hogar, quiero revisar la evidencia asociada a una alerta de seguridad, para comprender qué originó la notificación. | Dado que existe una alerta de seguridad generada <br> Cuando el dueño de hogar accede al detalle de la alerta <br> Entonces el sistema muestra la evidencia (imagen o registro) asociada al evento. | EP04 |
-| Protección Eléctrica / US10 | Detección de condición eléctrica anómala | Como dueño de hogar, quiero que el sistema identifique condiciones eléctricas anómalas (sobrecarga o cortocircuito), para proteger los dispositivos conectados a mi vivienda. | Dado que el protector eléctrico inteligente está instalado <br> Cuando se detecta una condición anómala predefinida <br> Entonces el sistema registra el evento y ejecuta la acción de protección configurada. | EP05 |
-| Protección Eléctrica / US11 | Consulta de acción ejecutada | Como dueño de hogar, quiero consultar qué acción ejecutó el sistema ante una condición eléctrica anómala, para conocer el estado actual del suministro. | Dado que se generó un evento de protección eléctrica <br> Cuando el dueño de hogar accede al detalle del evento <br> Entonces el sistema muestra la condición detectada, el dispositivo afectado y la acción ejecutada. | EP05 |
-| Centro de Alertas / US12 | Listado centralizado de alertas | Como dueño de hogar, quiero ver todas mis alertas (térmicas, de seguridad y eléctricas) en un mismo centro de notificaciones, para atender rápidamente lo más relevante. | Dado que existen alertas generadas por distintos módulos <br> Cuando el dueño de hogar accede al "Centro de alertas" <br> Entonces el sistema lista las alertas ordenadas por prioridad y fecha. | EP06 |
-| Centro de Alertas / US13 | Configuración de preferencias de notificación | Como dueño de hogar, quiero elegir el canal por el que recibo mis notificaciones (push, correo), para enterarme de los eventos de la forma que prefiera. | Dado que el dueño de hogar accede a "Preferencias de notificaciones" <br> Cuando selecciona los canales deseados <br> Entonces el sistema aplica la configuración a las futuras alertas. | EP06 |
-| Mediciones e Históricos / US14 | Consulta de histórico de mediciones | Como dueño de hogar, quiero consultar el histórico de mediciones de un dispositivo en un periodo determinado, para comprender su comportamiento a lo largo del tiempo. | Dado que un dispositivo tiene mediciones registradas <br> Cuando el usuario selecciona un rango de fechas <br> Entonces el sistema muestra las mediciones y una tendencia básica del periodo. | EP07 |
-| Mediciones e Históricos / US15 | Consulta de histórico de eventos | Como implementador, quiero consultar el historial de eventos de las instalaciones que administro, para dar seguimiento a su comportamiento. | Dado que una instalación tiene eventos registrados <br> Cuando el implementador accede al historial de la instalación <br> Entonces el sistema lista los eventos ordenados por fecha. | EP07 |
-| Catálogo de Soluciones IoT / US16 | Exploración del catálogo | Como dueño de hogar, quiero explorar un catálogo de soluciones IoT disponibles, para identificar nuevas soluciones acordes a las necesidades de mi vivienda. | Dado que el dueño de hogar accede al "Catálogo de soluciones" <br> Cuando filtra por categoría (seguridad, monitoreo, automatización) <br> Entonces el sistema muestra las soluciones disponibles para esa categoría. | EP08 |
-| Catálogo de Soluciones IoT / US17 | Detalle de una solución del catálogo | Como dueño de hogar, quiero ver el detalle de una solución del catálogo, para conocer sus características antes de solicitarla. | Dado que el dueño de hogar selecciona una solución del catálogo <br> Cuando accede a su detalle <br> Entonces el sistema muestra la descripción, requisitos y beneficios de la solución. | EP08 |
-| Solicitud de Implementadores / US18 | Búsqueda de implementadores | Como dueño de hogar, quiero buscar implementadores especializados disponibles en mi zona, para solicitar la instalación o el mantenimiento de una solución. | Dado que el dueño de hogar accede a "Buscar implementador" <br> Cuando filtra por ubicación y especialidad <br> Entonces el sistema muestra una lista de implementadores disponibles. | EP09 |
-| Solicitud de Implementadores / US19 | Solicitud de servicio a un implementador | Como dueño de hogar, quiero enviar una solicitud de servicio a un implementador, para coordinar la instalación de una solución IoT. | Dado que el dueño de hogar seleccionó un implementador <br> Cuando completa y envía el formulario de solicitud <br> Entonces el sistema notifica al implementador y registra la solicitud como pendiente. | EP09 |
-| Gestión de Clientes e Instalaciones / US20 | Registro de una nueva instalación | Como implementador, quiero registrar una nueva instalación asociada a un cliente, para llevar control de los servicios que realizo. | Dado que el implementador acepta una solicitud de servicio <br> Cuando registra los datos de la instalación <br> Entonces el sistema la asocia al cliente correspondiente y la agrega a su listado de instalaciones. | EP10 |
-| Gestión de Clientes e Instalaciones / US21 | Consulta de instalaciones por cliente | Como implementador, quiero consultar las instalaciones que he realizado agrupadas por cliente, para ubicar rápidamente la información que necesito. | Dado que el implementador tiene instalaciones registradas <br> Cuando accede a "Mis clientes" <br> Entonces el sistema lista los clientes junto con sus instalaciones asociadas. | EP10 |
-| Gestión de Dispositivos IoT / US22 | Registro de dispositivo IoT | Como implementador, quiero registrar un dispositivo IoT y asociarlo a una vivienda y ambiente, para mantener organizada la información de cada instalación. | Dado que el implementador está configurando una instalación <br> Cuando registra un dispositivo indicando vivienda y ambiente <br> Entonces el sistema guarda el dispositivo y lo asocia correctamente. | EP11 |
-| Gestión de Dispositivos IoT / US23 | Identificación de dispositivos que requieren atención | Como implementador, quiero identificar qué dispositivos presentan alertas o fallas, para priorizar mi trabajo de mantenimiento. | Dado que existen dispositivos con alertas activas <br> Cuando el implementador accede a su panel de dispositivos <br> Entonces el sistema resalta los dispositivos que requieren revisión. | EP11 |
-| Control Remoto / US24 | Control remoto de un dispositivo compatible | Como dueño de hogar, quiero ejecutar acciones remotas sobre un dispositivo compatible, para administrar mi vivienda sin necesidad de estar físicamente junto al dispositivo. | Dado que el dueño de hogar tiene un dispositivo compatible con control remoto <br> Cuando ejecuta una acción desde la aplicación <br> Entonces el sistema aplica la acción y actualiza el estado del dispositivo. | EP12 |
-| Control Remoto / US25 | Incorporación de una nueva categoría de dispositivo | Como dueño de hogar, quiero incorporar una nueva categoría de dispositivo a mi ecosistema, para ampliar mi hogar inteligente sin reemplazar lo ya instalado. | Dado que el dueño de hogar selecciona una nueva solución del catálogo <br> Cuando confirma su incorporación <br> Entonces el sistema la agrega a su ecosistema manteniendo activas las soluciones previas. | EP12 |
+| Registro y Autenticación / US01 | Registro de usuario | Como usuario de Sentrya, quiero crear una cuenta seleccionando mi rol (dueño de hogar o implementador), para acceder a las funcionalidades correspondientes. | Escenario 1: <br> Dado que el usuario accede a la pantalla de registro <br> Cuando completa el formulario con sus datos y selecciona un rol <br> Entonces el sistema crea la cuenta y lo redirige a su dashboard según el rol elegido. <br><br> Escenario 2: <br> Dado que el usuario accede a la pantalla de registro <br> Cuando ingresa un correo ya registrado o deja campos obligatorios vacíos <br> Entonces el sistema muestra un mensaje de error indicando el problema y no crea la cuenta. | EP01 |
+| Registro y Autenticación / US02 | Inicio de sesión | Como usuario de Sentrya, quiero iniciar sesión con mis credenciales, para acceder a mi cuenta personalizada. | Escenario 1: <br> Dado que el usuario ingresa credenciales válidas <br> Cuando presiona "Iniciar sesión" <br> Entonces accede a su dashboard. <br><br> Escenario 2: <br> Dado que el usuario ingresa credenciales inválidas <br> Cuando presiona "Iniciar sesión" <br> Entonces el sistema muestra un mensaje de error y no permite el acceso. | EP01 |
+| Registro y Autenticación / US03 | Recuperar contraseña | Como usuario de Sentrya, quiero recuperar mi contraseña, para volver a acceder a mi cuenta en caso la olvide. | Escenario 1: <br> Dado que el usuario no recuerda su contraseña <br> Cuando presiona "Recuperar contraseña" e ingresa su correo <br> Entonces el sistema envía un enlace para restablecerla. <br><br> Escenario 2: <br> Dado que el usuario ingresa un correo no asociado a ninguna cuenta <br> Cuando presiona "Recuperar contraseña" <br> Entonces el sistema muestra un mensaje indicando que el correo no está registrado y no envía el enlace. | EP01 |
+| Dashboard Centralizado / US04 | Visualización del estado general del hogar | Como dueño de hogar, quiero ver un resumen del estado de todos mis dispositivos IoT al ingresar a la aplicación, para identificar rápidamente si existe alguna alerta activa. | Escenario 1: <br> Dado que el dueño de hogar tiene dispositivos registrados <br> Cuando ingresa a su dashboard <br> Entonces el sistema muestra el estado general de cada módulo (térmico, seguridad, eléctrico) y las alertas activas. <br><br> Escenario 2: <br> Dado que el dueño de hogar aún no tiene dispositivos registrados <br> Cuando ingresa a su dashboard <br> Entonces el sistema muestra un mensaje informativo e invita a explorar el catálogo de soluciones. | EP02 |
+| Dashboard Centralizado / US05 | Organización por ambientes | Como dueño de hogar, quiero visualizar mis dispositivos agrupados por ambiente de la vivienda, para ubicar rápidamente el dispositivo que necesito revisar. | Escenario 1: <br> Dado que el dueño de hogar tiene ambientes configurados <br> Cuando accede a la sección "Mis ambientes" <br> Entonces el sistema lista los dispositivos asociados a cada ambiente. <br><br> Escenario 2: <br> Dado que el dueño de hogar tiene un ambiente sin dispositivos asignados <br> Cuando accede a la sección "Mis ambientes" <br> Entonces el sistema muestra el ambiente indicando que no tiene dispositivos asociados. | EP02 |
+| Monitoreo Térmico / US06 | Configuración de niveles de alerta térmica | Como dueño de hogar, quiero configurar los umbrales de temperatura que activan una alerta, para adaptar el monitoreo a las condiciones de mi vivienda. | Escenario 1: <br> Dado que el dueño de hogar tiene un sensor térmico instalado <br> Cuando define los umbrales de alerta (normal, moderado, crítico) <br> Entonces el sistema guarda la configuración y la aplica a las lecturas futuras. <br><br> Escenario 2: <br> Dado que el dueño de hogar tiene un sensor térmico instalado <br> Cuando define umbrales inconsistentes (por ejemplo, un umbral moderado mayor que el crítico) <br> Entonces el sistema muestra un error de validación y no guarda la configuración. | EP03 |
+| Monitoreo Térmico / US07 | Recepción de alerta térmica | Como dueño de hogar, quiero recibir una notificación cuando la temperatura supere el umbral configurado, para tomar acción antes de que represente un riesgo. | Escenario 1: <br> Dado que un sensor térmico registra una lectura fuera de los umbrales definidos <br> Cuando se supera el umbral configurado <br> Entonces el sistema genera una alerta y notifica al dueño de hogar indicando el nivel alcanzado. <br><br> Escenario 2: <br> Dado que un sensor térmico registra una lectura dentro del umbral normal <br> Cuando el sistema procesa la lectura <br> Entonces no se genera ninguna alerta ni notificación. | EP03 |
+| Detección Acústica y Visual / US08 | Recepción de alerta de seguridad | Como dueño de hogar, quiero recibir una alerta cuando un sensor acústico o visual detecte un evento anómalo, para conocer oportunamente una posible situación de riesgo. | Escenario 1: <br> Dado que los sensores de seguridad están activos <br> Cuando se detecta un evento anómalo <br> Entonces el sistema genera una alerta con la evidencia disponible y notifica al dueño de hogar. <br><br> Escenario 2: <br> Dado que un sensor de seguridad pierde conexión con la plataforma <br> Cuando el sistema deja de recibir su señal <br> Entonces notifica al dueño de hogar que el dispositivo se encuentra fuera de línea. | EP04 |
+| Detección Acústica y Visual / US09 | Revisión de evidencia de un evento | Como dueño de hogar, quiero revisar la evidencia asociada a una alerta de seguridad, para comprender qué originó la notificación. | Escenario 1: <br> Dado que existe una alerta de seguridad generada <br> Cuando el dueño de hogar accede al detalle de la alerta <br> Entonces el sistema muestra la evidencia (imagen o registro) asociada al evento. <br><br> Escenario 2: <br> Dado que la alerta de seguridad no cuenta con evidencia disponible <br> Cuando el dueño de hogar accede al detalle de la alerta <br> Entonces el sistema muestra los datos del evento e indica que no hay evidencia asociada. | EP04 |
+| Protección Eléctrica / US10 | Detección de condición eléctrica anómala | Como dueño de hogar, quiero que el sistema identifique condiciones eléctricas anómalas (sobrecarga o cortocircuito), para proteger los dispositivos conectados a mi vivienda. | Escenario 1: <br> Dado que el protector eléctrico inteligente está instalado <br> Cuando se detecta una condición anómala predefinida <br> Entonces el sistema registra el evento y ejecuta la acción de protección configurada. <br><br> Escenario 2: <br> Dado que el protector eléctrico inteligente está instalado <br> Cuando las lecturas eléctricas se mantienen dentro de los parámetros normales <br> Entonces el sistema no ejecuta ninguna acción de protección y mantiene el suministro. | EP05 |
+| Protección Eléctrica / US11 | Consulta de acción ejecutada | Como dueño de hogar, quiero consultar qué acción ejecutó el sistema ante una condición eléctrica anómala, para conocer el estado actual del suministro. | Escenario 1: <br> Dado que se generó un evento de protección eléctrica <br> Cuando el dueño de hogar accede al detalle del evento <br> Entonces el sistema muestra la condición detectada, el dispositivo afectado y la acción ejecutada. <br><br> Escenario 2: <br> Dado que no se han generado eventos de protección eléctrica <br> Cuando el dueño de hogar accede al historial de eventos <br> Entonces el sistema muestra un mensaje indicando que no existen eventos registrados. | EP05 |
+| Centro de Alertas / US12 | Listado centralizado de alertas | Como dueño de hogar, quiero ver todas mis alertas (térmicas, de seguridad y eléctricas) en un mismo centro de notificaciones, para atender rápidamente lo más relevante. | Escenario 1: <br> Dado que existen alertas generadas por distintos módulos <br> Cuando el dueño de hogar accede al "Centro de alertas" <br> Entonces el sistema lista las alertas ordenadas por prioridad y fecha. <br><br> Escenario 2: <br> Dado que no existen alertas generadas <br> Cuando el dueño de hogar accede al "Centro de alertas" <br> Entonces el sistema muestra un mensaje indicando que no hay alertas pendientes. | EP06 |
+| Centro de Alertas / US13 | Configuración de preferencias de notificación | Como dueño de hogar, quiero elegir el canal por el que recibo mis notificaciones (push, correo), para enterarme de los eventos de la forma que prefiera. | Escenario 1: <br> Dado que el dueño de hogar accede a "Preferencias de notificaciones" <br> Cuando selecciona los canales deseados <br> Entonces el sistema aplica la configuración a las futuras alertas. <br><br> Escenario 2: <br> Dado que el dueño de hogar desactiva todos los canales de notificación <br> Cuando intenta guardar la configuración <br> Entonces el sistema le solicita mantener al menos un canal activo y no guarda los cambios. | EP06 |
+| Mediciones e Históricos / US14 | Consulta de histórico de mediciones | Como dueño de hogar, quiero consultar el histórico de mediciones de un dispositivo en un periodo determinado, para comprender su comportamiento a lo largo del tiempo. | Escenario 1: <br> Dado que un dispositivo tiene mediciones registradas <br> Cuando el usuario selecciona un rango de fechas <br> Entonces el sistema muestra las mediciones y una tendencia básica del periodo. <br><br> Escenario 2: <br> Dado que un dispositivo no tiene mediciones en el periodo seleccionado <br> Cuando el usuario selecciona un rango de fechas <br> Entonces el sistema muestra un mensaje indicando que no hay mediciones para ese periodo. | EP07 |
+| Mediciones e Históricos / US15 | Consulta de histórico de eventos | Como implementador, quiero consultar el historial de eventos de las instalaciones que administro, para dar seguimiento a su comportamiento. | Escenario 1: <br> Dado que una instalación tiene eventos registrados <br> Cuando el implementador accede al historial de la instalación <br> Entonces el sistema lista los eventos ordenados por fecha. <br><br> Escenario 2: <br> Dado que una instalación no tiene eventos registrados <br> Cuando el implementador accede al historial de la instalación <br> Entonces el sistema muestra un mensaje indicando que no existen eventos. | EP07 |
+| Catálogo de Soluciones IoT / US16 | Exploración del catálogo | Como dueño de hogar, quiero explorar un catálogo de soluciones IoT disponibles, para identificar nuevas soluciones acordes a las necesidades de mi vivienda. | Escenario 1: <br> Dado que el dueño de hogar accede al "Catálogo de soluciones" <br> Cuando filtra por categoría (seguridad, monitoreo, automatización) <br> Entonces el sistema muestra las soluciones disponibles para esa categoría. <br><br> Escenario 2: <br> Dado que ninguna solución del catálogo corresponde a la categoría seleccionada <br> Cuando el dueño de hogar aplica el filtro <br> Entonces el sistema muestra un mensaje indicando que no hay soluciones disponibles para esa categoría. | EP08 |
+| Catálogo de Soluciones IoT / US17 | Detalle de una solución del catálogo | Como dueño de hogar, quiero ver el detalle de una solución del catálogo, para conocer sus características antes de solicitarla. | Escenario 1: <br> Dado que el dueño de hogar selecciona una solución del catálogo <br> Cuando accede a su detalle <br> Entonces el sistema muestra la descripción, requisitos y beneficios de la solución. <br><br> Escenario 2: <br> Dado que la solución seleccionada requiere instalación especializada <br> Cuando el dueño de hogar accede a su detalle <br> Entonces el sistema muestra la opción de solicitar la instalación a un implementador. | EP08 |
+| Solicitud de Implementadores / US18 | Búsqueda de implementadores | Como dueño de hogar, quiero buscar implementadores especializados disponibles en mi zona, para solicitar la instalación o el mantenimiento de una solución. | Escenario 1: <br> Dado que el dueño de hogar accede a "Buscar implementador" <br> Cuando filtra por ubicación y especialidad <br> Entonces el sistema muestra una lista de implementadores disponibles. <br><br> Escenario 2: <br> Dado que no existen implementadores disponibles para la ubicación y especialidad indicadas <br> Cuando el dueño de hogar aplica los filtros <br> Entonces el sistema muestra un mensaje sin resultados y sugiere ampliar los criterios de búsqueda. | EP09 |
+| Solicitud de Implementadores / US19 | Solicitud de servicio a un implementador | Como dueño de hogar, quiero enviar una solicitud de servicio a un implementador, para coordinar la instalación de una solución IoT. | Escenario 1: <br> Dado que el dueño de hogar seleccionó un implementador <br> Cuando completa y envía el formulario de solicitud <br> Entonces el sistema notifica al implementador y registra la solicitud como pendiente. <br><br> Escenario 2: <br> Dado que el dueño de hogar seleccionó un implementador <br> Cuando intenta enviar el formulario de solicitud con campos obligatorios vacíos <br> Entonces el sistema indica los campos faltantes y no envía la solicitud. | EP09 |
+| Gestión de Clientes e Instalaciones / US20 | Registro de una nueva instalación | Como implementador, quiero registrar una nueva instalación asociada a un cliente, para llevar control de los servicios que realizo. | Escenario 1: <br> Dado que el implementador acepta una solicitud de servicio <br> Cuando registra los datos de la instalación <br> Entonces el sistema la asocia al cliente correspondiente y la agrega a su listado de instalaciones. <br><br> Escenario 2: <br> Dado que el implementador acepta una solicitud de servicio <br> Cuando intenta registrar la instalación con datos obligatorios incompletos <br> Entonces el sistema indica los campos faltantes y no registra la instalación. | EP10 |
+| Gestión de Clientes e Instalaciones / US21 | Consulta de instalaciones por cliente | Como implementador, quiero consultar las instalaciones que he realizado agrupadas por cliente, para ubicar rápidamente la información que necesito. | Escenario 1: <br> Dado que el implementador tiene instalaciones registradas <br> Cuando accede a "Mis clientes" <br> Entonces el sistema lista los clientes junto con sus instalaciones asociadas. <br><br> Escenario 2: <br> Dado que el implementador aún no tiene instalaciones registradas <br> Cuando accede a "Mis clientes" <br> Entonces el sistema muestra un mensaje indicando que no hay clientes ni instalaciones asociadas. | EP10 |
+| Gestión de Dispositivos IoT / US22 | Registro de dispositivo IoT | Como implementador, quiero registrar un dispositivo IoT y asociarlo a una vivienda y ambiente, para mantener organizada la información de cada instalación. | Escenario 1: <br> Dado que el implementador está configurando una instalación <br> Cuando registra un dispositivo indicando vivienda y ambiente <br> Entonces el sistema guarda el dispositivo y lo asocia correctamente. <br><br> Escenario 2: <br> Dado que el implementador está configurando una instalación <br> Cuando intenta registrar un dispositivo con un identificador ya existente <br> Entonces el sistema muestra un error de duplicidad y no registra el dispositivo. | EP11 |
+| Gestión de Dispositivos IoT / US23 | Identificación de dispositivos que requieren atención | Como implementador, quiero identificar qué dispositivos presentan alertas o fallas, para priorizar mi trabajo de mantenimiento. | Escenario 1: <br> Dado que existen dispositivos con alertas activas <br> Cuando el implementador accede a su panel de dispositivos <br> Entonces el sistema resalta los dispositivos que requieren revisión. <br><br> Escenario 2: <br> Dado que ningún dispositivo presenta alertas activas <br> Cuando el implementador accede a su panel de dispositivos <br> Entonces el sistema muestra todos los dispositivos en estado normal sin resaltar ninguno. | EP11 |
+| Control Remoto / US24 | Control remoto de un dispositivo compatible | Como dueño de hogar, quiero ejecutar acciones remotas sobre un dispositivo compatible, para administrar mi vivienda sin necesidad de estar físicamente junto al dispositivo. | Escenario 1: <br> Dado que el dueño de hogar tiene un dispositivo compatible con control remoto <br> Cuando ejecuta una acción desde la aplicación <br> Entonces el sistema aplica la acción y actualiza el estado del dispositivo. <br><br> Escenario 2: <br> Dado que el dispositivo compatible se encuentra fuera de línea <br> Cuando el dueño de hogar ejecuta una acción desde la aplicación <br> Entonces el sistema informa que no se pudo ejecutar la acción y mantiene el estado anterior del dispositivo. | EP12 |
+| Control Remoto / US25 | Incorporación de una nueva categoría de dispositivo | Como dueño de hogar, quiero incorporar una nueva categoría de dispositivo a mi ecosistema, para ampliar mi hogar inteligente sin reemplazar lo ya instalado. | Escenario 1: <br> Dado que el dueño de hogar selecciona una nueva solución del catálogo <br> Cuando confirma su incorporación <br> Entonces el sistema la agrega a su ecosistema manteniendo activas las soluciones previas. <br><br> Escenario 2: <br> Dado que la solución seleccionada no es compatible con la vivienda <br> Cuando el dueño de hogar intenta confirmar su incorporación <br> Entonces el sistema indica la incompatibilidad y no la agrega al ecosistema. | EP12 |
 
 ## 3.2. Impact Mapping
 
-El Impact Mapping se elaboró a partir de los objetivos de negocio (Business Outcomes) definidos en el Lean UX Canvas del Capítulo I, distinguiendo los dos segmentos objetivo de Setrya: dueños de hogar e implementadores de hogar inteligente.
+El Impact Mapping se elaboró a partir de los objetivos de negocio (Business Outcomes) definidos en el Lean UX Canvas del Capítulo I, distinguiendo los dos segmentos objetivo de Sentrya: dueños de hogar e implementadores de hogar inteligente.
 
 ### 3.2.1. Impact Mapping — Segmento: Dueño de hogar
 
-- **Goal (¿Por qué?):** Incrementar el uso recurrente de Setrya y la ampliación progresiva del ecosistema IoT de la vivienda.
+- **Goal (¿Por qué?):** Incrementar el uso recurrente de Sentrya y la ampliación progresiva del ecosistema IoT de la vivienda.
   - **Actor (¿Quién?): Dueño de hogar**
     - **Impact (¿Cómo debe cambiar su comportamiento?):** Consultar el estado de su hogar con frecuencia y confiar en las alertas generadas.
       - **Deliverable (¿Qué podemos construir?):** Dashboard Centralizado del Hogar (EP02)
@@ -1450,7 +1448,7 @@ El Impact Mapping se elaboró a partir de los objetivos de negocio (Business Out
 
 ### 3.2.2. Impact Mapping — Segmento: Implementador de hogar inteligente
 
-- **Goal (¿Por qué?):** Incrementar la adopción profesional de Setrya y mejorar la organización y trazabilidad de las instalaciones realizadas.
+- **Goal (¿Por qué?):** Incrementar la adopción profesional de Sentrya y mejorar la organización y trazabilidad de las instalaciones realizadas.
   - **Actor (¿Quién?): Implementador de hogar inteligente**
     - **Impact (¿Cómo debe cambiar su comportamiento?):** Administrar clientes e instalaciones desde una misma herramienta en lugar de registros externos.
       - **Deliverable:** Gestión de Clientes e Instalaciones (EP10)
@@ -1494,7 +1492,9 @@ El Impact Mapping se elaboró a partir de los objetivos de negocio (Business Out
 | 24 | US24 | Control remoto de un dispositivo compatible | 5 |
 | 25 | US25 | Incorporación de una nueva categoría de dispositivo | 3 |
 
----
+<div style="page-break-before: always;"></div>
+
+# Capítulo IV: Solution Software Design
 
 ### 4.1. Strategic-Level Domain-Driven Design
 
@@ -3143,21 +3143,21 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IoT 
 
 ![IoT_Monitoring_and_Notifications_Database_Design_Diagram](assets/IOT-DBDIAGRAM.png)
 
----
+<div style="page-break-before: always;"></div>
 
 ### Conclusiones
 
 1. El análisis de la problemática, desarrollado mediante la técnica de las 5W y 2H y respaldado por indicadores del INEI y recomendaciones de Osinergmin, confirmó que existe una necesidad real de centralizar la implementación, el monitoreo y la administración de soluciones IoT en viviendas peruanas, tanto para los dueños de hogar como para los implementadores especializados.
 
-2. El proceso de Lean UX permitió validar que la propuesta de valor de Setrya se sostiene sobre tres núcleos de protección —detección acústica y visual, monitoreo térmico y protección eléctrica inteligente— y que estos pueden ampliarse de forma modular sin reemplazar las soluciones ya instaladas, lo cual responde directamente a las hipótesis y suposiciones planteadas en el Capítulo I.
+2. El proceso de Lean UX permitió validar que la propuesta de valor de Sentrya se sostiene sobre tres núcleos de protección —detección acústica y visual, monitoreo térmico y protección eléctrica inteligente— y que estos pueden ampliarse de forma modular sin reemplazar las soluciones ya instaladas, lo cual responde directamente a las hipótesis y suposiciones planteadas en el Capítulo I.
 
-3. Las entrevistas, el needfinding y el análisis competitivo del Capítulo II evidenciaron que, a diferencia de alternativas como Samsung SmartThings, Home Assistant o Google Home, la principal oportunidad de diferenciación de Setrya no está en el control de dispositivos aislados, sino en integrar en una misma plataforma el monitoreo, las alertas, los históricos y la comunicación entre dueños de hogar e implementadores.
+3. Las entrevistas, el needfinding y el análisis competitivo del Capítulo II evidenciaron que, a diferencia de alternativas como Samsung SmartThings, Home Assistant o Google Home, la principal oportunidad de diferenciación de Sentrya no está en el control de dispositivos aislados, sino en integrar en una misma plataforma el monitoreo, las alertas, los históricos y la comunicación entre dueños de hogar e implementadores.
 
 4. La especificación de requisitos del Capítulo III, compuesta por 12 épicas y 25 historias de usuario derivadas del Impact Mapping, tradujo de manera consistente los objetivos de negocio de ambos segmentos objetivo en funcionalidades concretas y priorizables dentro del Product Backlog.
 
 5. El diseño estratégico y táctico del Capítulo IV, mediante Domain-Driven Design, permitió delimitar cinco bounded contexts (Identity & Access Management, Space Management, Payment Management, IoT Monitoring and Notifications, y Report Management) con responsabilidades claras, lo que reduce el acoplamiento entre módulos y facilita la evolución independiente de cada uno conforme el ecosistema de dispositivos se amplíe.
 
-6. En conjunto, los cuatro capítulos muestran una trazabilidad coherente entre la problemática identificada, las hipótesis de negocio, los requisitos funcionales y la arquitectura de software propuesta, lo que sustenta la viabilidad de Setrya como solución para la gestión integral de hogares inteligentes.
+6. En conjunto, los cuatro capítulos muestran una trazabilidad coherente entre la problemática identificada, las hipótesis de negocio, los requisitos funcionales y la arquitectura de software propuesta, lo que sustenta la viabilidad de Sentrya como solución para la gestión integral de hogares inteligentes.
 
 ### Recomendaciones
 
