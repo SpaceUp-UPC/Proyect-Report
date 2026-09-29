@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -7,15 +9,15 @@ SpaceUp es una startup tecnológica orientada al desarrollo de soluciones para h
 
 La startup busca conectar a dueños de hogar con implementadores especializados en soluciones Smart Home, permitiendo que las viviendas puedan incorporar progresivamente dispositivos inteligentes de acuerdo con sus necesidades de seguridad, prevención, automatización y monitoreo. De esta manera, el usuario no se limita a adquirir dispositivos aislados, sino que puede construir un ecosistema tecnológico adaptable a las características de su vivienda.
 
-Dentro de este ecosistema, SpaceUp desarrolla **Setrya**, una plataforma web y móvil orientada a la implementación y supervisión de hogares inteligentes. La solución permite administrar los dispositivos IoT instalados en una vivienda, visualizar la información generada por sensores, recibir alertas frente a eventos relevantes, controlar dispositivos compatibles y mantener comunicación con implementadores especializados.
+Dentro de este ecosistema, SpaceUp desarrolla **Sentrya**, una plataforma web y móvil orientada a la implementación y supervisión de hogares inteligentes. La solución permite administrar los dispositivos IoT instalados en una vivienda, visualizar la información generada por sensores, recibir alertas frente a eventos relevantes, controlar dispositivos compatibles y mantener comunicación con implementadores especializados.
 
-Setrya plantea inicialmente tres soluciones IoT principales orientadas a la protección del hogar:
+Sentrya plantea inicialmente tres soluciones IoT principales orientadas a la protección del hogar:
 
 - **Escudo de seguridad con detección acústica y visual:** emplea sensores y mecanismos de detección para identificar eventos anómalos asociados a posibles situaciones de intrusión y generar alertas para el propietario.
 - **Control térmico inteligente:** monitorea continuamente la temperatura del entorno y utiliza diferentes niveles o umbrales de alerta para identificar incrementos anómalos que puedan representar un riesgo para la vivienda.
 - **Protector eléctrico inteligente:** supervisa determinadas condiciones del suministro eléctrico y permite interrumpir el flujo de corriente ante anomalías previamente definidas, contribuyendo a la protección de los dispositivos y electrodomésticos conectados.
 
-Estas tres soluciones representan el núcleo inicial de Setrya. Sin embargo, el ecosistema está planteado bajo un enfoque modular, permitiendo incorporar posteriormente otros dispositivos y servicios de automatización según las necesidades del dueño de hogar, como sensores de movimiento, iluminación inteligente, cámaras, sensores ambientales, dispositivos de control energético y otras soluciones compatibles.
+Estas tres soluciones representan el núcleo inicial de Sentrya. Sin embargo, el ecosistema está planteado bajo un enfoque modular, permitiendo incorporar posteriormente otros dispositivos y servicios de automatización según las necesidades del dueño de hogar, como sensores de movimiento, iluminación inteligente, cámaras, sensores ambientales, dispositivos de control energético y otras soluciones compatibles.
 
 #### Objetivo
 
@@ -38,16 +40,16 @@ Convertir a SpaceUp en una startup referente en soluciones para hogares intelige
 | ![foto_pablo.png](Assets/foto_pablo.png)| **Nombre Completo:** Pablo Afranio Martinez Gaona <br> **Código:** U202120011 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Me especializo en modelos de aprendizaje. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música. <br><br> **Habilidades Técnicas:** <br> c++, c#, python <br> **Habilidades Sociales:** <br> Liderazgo, amabilidad, puntualidad y mediador <br>|
 | ![foto_braulio.png](Assets/braulio.png)|  **Nombre Completo:** Braulio Torrejon <br> **Código:** U201711828 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Soy estudiante de 8vo ciclo de la carrera de Ingeniería de Software. Tengo interés en aprender nuevas herramientas y tecnologías para aplicarlas en proyectos académicos y personales. Actualmente trabajo como QA, donde cuento con experiencia en pruebas y control de calidad de software. Me considero una persona responsable, comprometida con el equipo y capaz de trabajar bajo presión. Dentro del proyecto, aportaré mis conocimientos en aseguramiento de la calidad y testing. <br><br> **Habilidades Técnicas:** <br> C++, Python, C#, Genexus, Jira, Postman, Selenium, Git <br><br> **Habilidades Sociales:** <br> Responsabilidad, trabajo en equipo, compañerismo, adaptabilidad, comunicación y trabajo bajo presión |
 | ![foto_gerald.png](Assets/integrante-Gerald.jpeg) | **Nombre Completo:** Gerald Patricio Serrano Uchuya  <br> **Código:** u202122876  <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** Estoy en 9no ciclo de Ingeniería de software. Me enfoco en tecnologías web fullstack como Angular, .NET y Python. Soy alguien muy entusiasta al momento de aprender nuevas tecnologías y me gusta cumplir lo mejor que pueda mis responsibilidades en un grupo de trabajo. <br>  <br><br> **Habilidades Técnicas:** C#, TypeScript, JavaScript, Python y SQL <br>  <br>  <br><br> **Habilidades Sociales:**  <br> comunicación con usuarios, resolución de problemas, trabajo en equipo y transferencia de conocimientos. <br> <br>             |
-|  ![Anderson-foto.jpeg](Assets/Anderson-foto.jpg) | **Nombre Completo:** Anderson Ricardo Ventosilla Trujillo <br> **Código:** U202319025 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> Soy estudiante de 7mo ciclo de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo web y mobile (Angular, Vue.js, Flutter) y en arquitectura y despliegue en la nube (Azure, Google Cloud). Dentro de Setrya, aportaré mis conocimientos en desarrollo frontend, arquitectura de software e integración de soluciones cloud. <br><br> **Habilidades Técnicas:** <br> Angular, Vue.js, Java, Flutter, Azure, Google Cloud Platform, Docker, Git/GitFlow <br><br> **Habilidades Sociales:** <br> Trabajo en equipo, adaptabilidad, comunicación efectiva y aprendizaje autónomo |
+|  ![Anderson-foto.jpeg](Assets/Anderson-foto.jpg) | **Nombre Completo:** Anderson Ricardo Ventosilla Trujillo <br> **Código:** U202319025 <br> **Carrera:** Ingeniería de Software <br><br> **Perfil:** <br> Soy estudiante de 7mo ciclo de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo web y mobile (Angular, Vue.js, Flutter) y en arquitectura y despliegue en la nube (Azure, Google Cloud). Dentro de Sentrya, aportaré mis conocimientos en desarrollo frontend, arquitectura de software e integración de soluciones cloud. <br><br> **Habilidades Técnicas:** <br> Angular, Vue.js, Java, Flutter, Azure, Google Cloud Platform, Docker, Git/GitFlow <br><br> **Habilidades Sociales:** <br> Trabajo en equipo, adaptabilidad, comunicación efectiva y aprendizaje autónomo |
 
 ### 1.2. Solution Profile
-Setrya es una solución digital orientada a la implementación, administración y monitoreo de hogares inteligentes. La plataforma conecta a dos segmentos principales: dueños de hogar interesados en incorporar tecnología IoT en sus viviendas e implementadores especializados encargados de diseñar, instalar, configurar y mantener dichas soluciones.
+Sentrya es una solución digital orientada a la implementación, administración y monitoreo de hogares inteligentes. La plataforma conecta a dos segmentos principales: dueños de hogar interesados en incorporar tecnología IoT en sus viviendas e implementadores especializados encargados de diseñar, instalar, configurar y mantener dichas soluciones.
 
 La propuesta combina una aplicación móvil y una plataforma web con un ecosistema de dispositivos IoT capaz de recopilar información del entorno y ejecutar acciones frente a determinadas condiciones. Los datos producidos por los dispositivos pueden ser procesados y posteriormente presentados al usuario mediante indicadores, históricos, alertas y otras herramientas de visualización.
 
-Para el dueño de hogar, Setrya busca centralizar la experiencia de un Smart Home en un mismo entorno, permitiéndole conocer el estado de sus dispositivos, consultar mediciones, recibir notificaciones y controlar aquellos componentes que admitan acciones remotas. Asimismo, podrá explorar diferentes soluciones disponibles y solicitar los servicios de implementadores especializados para ampliar o mantener su ecosistema.
+Para el dueño de hogar, Sentrya busca centralizar la experiencia de un Smart Home en un mismo entorno, permitiéndole conocer el estado de sus dispositivos, consultar mediciones, recibir notificaciones y controlar aquellos componentes que admitan acciones remotas. Asimismo, podrá explorar diferentes soluciones disponibles y solicitar los servicios de implementadores especializados para ampliar o mantener su ecosistema.
 
-Para el implementador de hogar inteligente, Setrya busca proporcionar herramientas que faciliten la administración de las instalaciones realizadas para diferentes clientes, el registro de dispositivos asociados a cada vivienda, la supervisión de su funcionamiento y la atención de incidencias o necesidades de mantenimiento.
+Para el implementador de hogar inteligente, Sentrya busca proporcionar herramientas que faciliten la administración de las instalaciones realizadas para diferentes clientes, el registro de dispositivos asociados a cada vivienda, la supervisión de su funcionamiento y la atención de incidencias o necesidades de mantenimiento.
 
 El núcleo inicial de la solución se concentra en tres áreas de protección: detección acústica y visual ante posibles eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas. A partir de esta base, el sistema permitirá ampliar progresivamente las capacidades de cada vivienda incorporando nuevos dispositivos IoT según los requerimientos del propietario.
 
@@ -70,7 +72,7 @@ En el ámbito eléctrico, Osinergmin recomienda que las viviendas dispongan de e
 
 La problemática se acentúa cuando cada necesidad del hogar es atendida mediante soluciones independientes que pueden disponer de sus propios métodos de instalación, monitoreo y control. Para un propietario sin experiencia técnica, administrar distintos dispositivos y determinar qué tecnologías resultan adecuadas para su vivienda puede incrementar la complejidad de adoptar un hogar inteligente. De forma paralela, los implementadores necesitan administrar los dispositivos instalados para diferentes clientes y contar con información que facilite su supervisión y posterior mantenimiento.
 
-Frente a este contexto, se aplica la técnica de las **5W y 2H (Who, What, Where, When, Why, How & How Much)** para delimitar la problemática que busca abordar Setrya.
+Frente a este contexto, se aplica la técnica de las **5W y 2H (Who, What, Where, When, Why, How & How Much)** para delimitar la problemática que busca abordar Sentrya.
 
 #### 1. ¿Qué? (What?)
 
@@ -89,7 +91,7 @@ Los principales involucrados son:
 
 La problemática se presenta principalmente en viviendas ubicadas en zonas urbanas que cuentan con conectividad a Internet y cuyos propietarios buscan incorporar progresivamente dispositivos inteligentes.
 
-En una primera etapa, Setrya estará orientado al mercado residencial, dejando fuera del alcance inicial otros ambientes como oficinas, instalaciones industriales o grandes edificios corporativos.
+En una primera etapa, Sentrya estará orientado al mercado residencial, dejando fuera del alcance inicial otros ambientes como oficinas, instalaciones industriales o grandes edificios corporativos.
 
 #### 4. ¿Cuándo? (When?)
 
@@ -114,7 +116,7 @@ Por ello, existe una oportunidad para integrar dispositivos, información y serv
 
 #### 6. ¿Cómo? (How?)
 
-La problemática será abordada mediante Setrya, una plataforma web y móvil integrada con dispositivos IoT y servicios de procesamiento de información.
+La problemática será abordada mediante Sentrya, una plataforma web y móvil integrada con dispositivos IoT y servicios de procesamiento de información.
 
 El sistema permitirá:
 
@@ -135,11 +137,11 @@ Inicialmente, el ecosistema estará representado por un módulo de detección ac
 
 La disponibilidad de infraestructura digital evidencia que existe una base tecnológica considerable para servicios conectados destinados al hogar. Durante el primer trimestre de 2026, el 62,7 % de los hogares peruanos contó con conexión a Internet y, específicamente en Lima Metropolitana, la cifra alcanzó el 82,7 %. Además, el 96,0 % de los hogares contó con telefonía móvil.
 
-Desde la perspectiva del acceso a la solución, el teléfono celular resulta especialmente relevante: el 90,7 % de la población usuaria de Internet de 6 años a más accedió a Internet mediante este dispositivo durante el mismo periodo. Estos indicadores respaldan la viabilidad de complementar el ecosistema IoT de Setrya con una aplicación móvil y una plataforma web que permitan consultar información y administrar remotamente las funcionalidades disponibles.
+Desde la perspectiva del acceso a la solución, el teléfono celular resulta especialmente relevante: el 90,7 % de la población usuaria de Internet de 6 años a más accedió a Internet mediante este dispositivo durante el mismo periodo. Estos indicadores respaldan la viabilidad de complementar el ecosistema IoT de Sentrya con una aplicación móvil y una plataforma web que permitan consultar información y administrar remotamente las funcionalidades disponibles.
 
 
 ### 1.2.2 Lean UX Process
-Para orientar el desarrollo de Setrya bajo un enfoque centrado en las necesidades de sus usuarios, se aplicará el proceso Lean UX. Este permitirá establecer inicialmente el problema que busca resolver la solución, identificar las principales suposiciones relacionadas con el negocio, los usuarios y las funcionalidades propuestas, y posteriormente formular hipótesis que puedan ser validadas durante el desarrollo del proyecto.
+Para orientar el desarrollo de Sentrya bajo un enfoque centrado en las necesidades de sus usuarios, se aplicará el proceso Lean UX. Este permitirá establecer inicialmente el problema que busca resolver la solución, identificar las principales suposiciones relacionadas con el negocio, los usuarios y las funcionalidades propuestas, y posteriormente formular hipótesis que puedan ser validadas durante el desarrollo del proyecto.
 
 
 ### 1.2.2.1. Lean UX Problem Statements
@@ -147,15 +149,15 @@ Actualmente, la incorporación de tecnología IoT en viviendas se encuentra enfo
 
 Sin embargo, las alternativas existentes pueden generar una experiencia fragmentada cuando los dispositivos, servicios de implementación y mecanismos de monitoreo funcionan de manera independiente. Para un propietario sin conocimientos técnicos especializados, seleccionar soluciones adecuadas, comprender la información obtenida por los sensores, administrar diferentes dispositivos y encontrar profesionales que puedan realizar su implementación o mantenimiento puede representar una barrera para la adopción de un hogar inteligente. De forma paralela, los implementadores necesitan administrar diferentes instalaciones, dispositivos y clientes sin depender exclusivamente de registros y herramientas externas.
 
-Setrya busca cubrir esta brecha mediante una plataforma web y móvil que conecte a dueños de hogar con implementadores especializados y permita centralizar la incorporación, monitoreo y administración de soluciones IoT dentro de una vivienda. La propuesta se enfocará inicialmente en tres áreas de protección: detección acústica y visual ante eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas, manteniendo un enfoque modular que permita incorporar nuevas soluciones IoT posteriormente.
+Sentrya busca cubrir esta brecha mediante una plataforma web y móvil que conecte a dueños de hogar con implementadores especializados y permita centralizar la incorporación, monitoreo y administración de soluciones IoT dentro de una vivienda. La propuesta se enfocará inicialmente en tres áreas de protección: detección acústica y visual ante eventos de seguridad, monitoreo térmico mediante niveles de alerta y protección eléctrica frente a condiciones anómalas, manteniendo un enfoque modular que permita incorporar nuevas soluciones IoT posteriormente.
 
 El enfoque inicial estará dirigido a propietarios de viviendas interesados en incorporar tecnología inteligente y a profesionales o empresas dedicadas a la implementación de hogares inteligentes.
 
-Consideraremos que la propuesta está obteniendo resultados favorables cuando los usuarios puedan comprender y utilizar las funciones principales de monitoreo y gestión de dispositivos, los propietarios manifiesten interés en centralizar diferentes soluciones IoT mediante Setrya y los implementadores identifiquen valor en administrar las instalaciones realizadas para sus clientes desde una misma plataforma.
+Consideraremos que la propuesta está obteniendo resultados favorables cuando los usuarios puedan comprender y utilizar las funciones principales de monitoreo y gestión de dispositivos, los propietarios manifiesten interés en centralizar diferentes soluciones IoT mediante Sentrya y los implementadores identifiquen valor en administrar las instalaciones realizadas para sus clientes desde una misma plataforma.
 
 ### 1.2.2.2. Lean UX Assumptions
 
-A partir del problema identificado para Setrya, se establecieron las siguientes suposiciones iniciales. Estas representan creencias que deberán ser contrastadas posteriormente mediante entrevistas, pruebas con usuarios y validaciones del producto.
+A partir del problema identificado para Sentrya, se establecieron las siguientes suposiciones iniciales. Estas representan creencias que deberán ser contrastadas posteriormente mediante entrevistas, pruebas con usuarios y validaciones del producto.
 
 #### Business Assumptions
 
@@ -169,7 +171,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que una propuesta modular permitirá que los clientes comiencen utilizando determinadas soluciones IoT y posteriormente amplíen su ecosistema de acuerdo con nuevas necesidades.
 
-- Creemos que Setrya puede diferenciarse al integrar en una misma propuesta el servicio de implementación, la supervisión de dispositivos y el monitoreo de información generada por sensores.
+- Creemos que Sentrya puede diferenciarse al integrar en una misma propuesta el servicio de implementación, la supervisión de dispositivos y el monitoreo de información generada por sensores.
 
 - Creemos que la protección del hogar puede constituir una propuesta inicial atractiva para introducir posteriormente otras categorías de automatización inteligente.
 
@@ -177,7 +179,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 #### Business Outcome Assumptions
 
-- Creemos que el negocio estará obteniendo resultados favorables si una proporción relevante de propietarios interesados en soluciones Smart Home solicita información o contacto con un implementador mediante Setrya.
+- Creemos que el negocio estará obteniendo resultados favorables si una proporción relevante de propietarios interesados en soluciones Smart Home solicita información o contacto con un implementador mediante Sentrya.
 
 - Creemos que el negocio estará obteniendo resultados favorables si los propietarios que incorporan una primera solución IoT posteriormente muestran interés en agregar nuevos módulos o dispositivos a su vivienda.
 
@@ -185,13 +187,13 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que el negocio estará obteniendo resultados favorables si los usuarios consultan periódicamente las mediciones, alertas y estados de los dispositivos asociados a su hogar.
 
-- Creemos que el negocio estará obteniendo resultados favorables si los propietarios consideran que Setrya reduce la dificultad percibida al momento de incorporar y administrar tecnología IoT.
+- Creemos que el negocio estará obteniendo resultados favorables si los propietarios consideran que Sentrya reduce la dificultad percibida al momento de incorporar y administrar tecnología IoT.
 
 - Creemos que el negocio estará obteniendo resultados favorables si parte de los usuarios continúa utilizando la plataforma después de la instalación inicial para monitoreo, control o mantenimiento.
 
 #### User Assumptions
 
-- Creemos que uno de los principales usuarios de Setrya será el dueño de hogar que desea incorporar tecnología inteligente sin necesitar conocimientos especializados sobre dispositivos IoT.
+- Creemos que uno de los principales usuarios de Sentrya será el dueño de hogar que desea incorporar tecnología inteligente sin necesitar conocimientos especializados sobre dispositivos IoT.
 
 - Creemos que otro usuario principal será el implementador de hogar inteligente, ya sea un profesional independiente o una empresa dedicada a instalar, configurar y mantener soluciones IoT residenciales.
 
@@ -201,7 +203,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que los implementadores trabajarán simultáneamente con diferentes clientes, viviendas y dispositivos, por lo que necesitarán distinguir claramente cada instalación.
 
-- Creemos que los usuarios accederán a Setrya tanto desde dispositivos móviles como desde navegadores web dependiendo del contexto en el que necesiten consultar información.
+- Creemos que los usuarios accederán a Sentrya tanto desde dispositivos móviles como desde navegadores web dependiendo del contexto en el que necesiten consultar información.
 
 - Creemos que los dueños de hogar esperarán poder ampliar progresivamente las capacidades inteligentes de su vivienda sin tener que reemplazar completamente las soluciones previamente instaladas.
 
@@ -233,7 +235,7 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que un **sistema de detección acústica y visual** permitirá identificar determinados eventos relacionados con la seguridad de la vivienda y generar alertas para el propietario.
 
-- Creemos que un **sistema de protección eléctrica integrado con Setrya** permitirá identificar determinadas condiciones eléctricas anómalas, registrar el evento y ejecutar las acciones permitidas por el dispositivo de protección.
+- Creemos que un **sistema de protección eléctrica integrado con Sentrya** permitirá identificar determinadas condiciones eléctricas anómalas, registrar el evento y ejecutar las acciones permitidas por el dispositivo de protección.
 
 - Creemos que un **centro de alertas y notificaciones** permitirá a los propietarios identificar con mayor rapidez los eventos relevantes detectados por los dispositivos instalados.
 
@@ -249,17 +251,17 @@ A partir del problema identificado para Setrya, se establecieron las siguientes 
 
 - Creemos que permitir el **control remoto de los dispositivos compatibles** facilitará al propietario administrar determinadas funciones de su hogar desde la plataforma.
 
-- Creemos que una arquitectura modular que permita **incorporar nuevas categorías de dispositivos IoT** facilitará la expansión progresiva del ecosistema Setrya de acuerdo con las necesidades de cada vivienda.
+- Creemos que una arquitectura modular que permita **incorporar nuevas categorías de dispositivos IoT** facilitará la expansión progresiva del ecosistema Sentrya de acuerdo con las necesidades de cada vivienda.
 
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
-A partir de los Feature Assumptions identificados, se formularon los siguientes Hypothesis Statements. Cada hipótesis relaciona un resultado esperado para el negocio con un beneficio para alguno de los segmentos objetivo y una funcionalidad específica de Setrya.
+A partir de los Feature Assumptions identificados, se formularon los siguientes Hypothesis Statements. Cada hipótesis relaciona un resultado esperado para el negocio con un beneficio para alguno de los segmentos objetivo y una funcionalidad específica de Sentrya.
 
 Los criterios de validación incluidos corresponden a métricas preliminares que serán contrastadas posteriormente mediante entrevistas, pruebas de usabilidad y validaciones del producto.
 
 #### Hypothesis Statement 01 — Dashboard centralizado del hogar
 
-Creemos que lograremos incrementar el uso recurrente de Setrya  
+Creemos que lograremos incrementar el uso recurrente de Sentrya  
 si los **dueños de hogar**  
 logran conocer rápidamente el estado general de las soluciones IoT instaladas en su vivienda  
 mediante un **dashboard centralizado del hogar**.
@@ -270,7 +272,7 @@ mediante un **dashboard centralizado del hogar**.
 
 #### Hypothesis Statement 02 — Monitoreo térmico
 
-Creemos que lograremos aumentar el valor percibido de Setrya como herramienta de monitoreo preventivo  
+Creemos que lograremos aumentar el valor percibido de Sentrya como herramienta de monitoreo preventivo  
 si los **dueños de hogar**  
 logran identificar variaciones relevantes de temperatura y comprender el nivel de alerta asociado  
 mediante un **sistema de monitoreo térmico con diferentes niveles de alerta**.
@@ -281,7 +283,7 @@ mediante un **sistema de monitoreo térmico con diferentes niveles de alerta**.
 
 #### Hypothesis Statement 03 — Detección acústica y visual
 
-Creemos que lograremos incrementar la percepción de utilidad de Setrya en materia de seguridad residencial  
+Creemos que lograremos incrementar la percepción de utilidad de Sentrya en materia de seguridad residencial  
 si los **dueños de hogar**  
 logran conocer oportunamente la ocurrencia de eventos anómalos relacionados con la seguridad de su vivienda  
 mediante un **sistema de detección acústica y visual**.
@@ -292,10 +294,10 @@ mediante un **sistema de detección acústica y visual**.
 
 #### Hypothesis Statement 04 — Protección eléctrica
 
-Creemos que lograremos aumentar el valor percibido del ecosistema Setrya como herramienta de protección del hogar  
+Creemos que lograremos aumentar el valor percibido del ecosistema Sentrya como herramienta de protección del hogar  
 si los **dueños de hogar**  
 logran conocer cuándo se presenta una condición eléctrica anómala y qué acción realizó el sistema frente a ella  
-mediante un **sistema de protección eléctrica integrado con Setrya**.
+mediante un **sistema de protección eléctrica integrado con Sentrya**.
 
 **Criterio de validación propuesto:** Consideraremos favorable la hipótesis si al menos el 80 % de los participantes comprende, durante una simulación, la condición eléctrica detectada, el dispositivo afectado y la acción ejecutada por el módulo de protección.
 
@@ -314,7 +316,7 @@ mediante un **centro centralizado de alertas y notificaciones**.
 
 #### Hypothesis Statement 06 — Mediciones e históricos
 
-Creemos que lograremos incrementar el uso de Setrya después de la instalación inicial de los dispositivos  
+Creemos que lograremos incrementar el uso de Sentrya después de la instalación inicial de los dispositivos  
 si los **dueños de hogar e implementadores**  
 logran consultar y comprender el comportamiento previo de los dispositivos y las condiciones registradas en la vivienda  
 mediante la **visualización de mediciones, eventos e información histórica**.
@@ -347,7 +349,7 @@ mediante una **funcionalidad de búsqueda y solicitud de servicios de implementa
 
 #### Hypothesis Statement 09 — Gestión de clientes e instalaciones
 
-Creemos que lograremos incrementar la adopción de Setrya por parte de profesionales del sector Smart Home  
+Creemos que lograremos incrementar la adopción de Sentrya por parte de profesionales del sector Smart Home  
 si los **implementadores de hogar inteligente**  
 logran administrar de manera organizada diferentes clientes, viviendas e instalaciones  
 mediante un **módulo centralizado de gestión de clientes e instalaciones**.
@@ -358,7 +360,7 @@ mediante un **módulo centralizado de gestión de clientes e instalaciones**.
 
 #### Hypothesis Statement 10 — Gestión de dispositivos IoT
 
-Creemos que lograremos mejorar la organización y trazabilidad de las instalaciones realizadas mediante Setrya  
+Creemos que lograremos mejorar la organización y trazabilidad de las instalaciones realizadas mediante Sentrya  
 si los **implementadores de hogar inteligente**  
 logran registrar y consultar claramente qué dispositivos pertenecen a cada vivienda y ambiente  
 mediante un **módulo de gestión de dispositivos IoT**.
@@ -369,7 +371,7 @@ mediante un **módulo de gestión de dispositivos IoT**.
 
 #### Hypothesis Statement 11 — Control remoto
 
-Creemos que lograremos incrementar la utilidad cotidiana de Setrya para los propietarios  
+Creemos que lograremos incrementar la utilidad cotidiana de Sentrya para los propietarios  
 si los **dueños de hogar**  
 logran ejecutar acciones sobre determinados dispositivos sin encontrarse físicamente junto a ellos  
 mediante una **funcionalidad de control remoto para dispositivos compatibles**.
@@ -380,7 +382,7 @@ mediante una **funcionalidad de control remoto para dispositivos compatibles**.
 
 #### Hypothesis Statement 12 — Expansión modular
 
-Creemos que lograremos incrementar la continuidad y expansión del uso de Setrya  
+Creemos que lograremos incrementar la continuidad y expansión del uso de Sentrya  
 si los **dueños de hogar e implementadores**  
 logran incorporar nuevas soluciones inteligentes de acuerdo con necesidades posteriores sin reemplazar el ecosistema previamente configurado  
 mediante una **arquitectura modular para incorporar nuevas categorías de dispositivos IoT**.
@@ -390,12 +392,12 @@ mediante una **arquitectura modular para incorporar nuevas categorías de dispos
 ### 1.2.2.4. Lean UX Canvas
 #### 1.2.2.4. Lean UX Canvas
 
-A partir del Problem Statement, los Assumptions y los Hypothesis Statements previamente definidos, se elaboró el Lean UX Canvas de Setrya. Este artefacto sintetiza la problemática identificada, los resultados esperados para el negocio y los usuarios, las principales soluciones planteadas y los aspectos que deberán ser validados durante el desarrollo del producto.
+A partir del Problem Statement, los Assumptions y los Hypothesis Statements previamente definidos, se elaboró el Lean UX Canvas de Sentrya. Este artefacto sintetiza la problemática identificada, los resultados esperados para el negocio y los usuarios, las principales soluciones planteadas y los aspectos que deberán ser validados durante el desarrollo del producto.
 
 <table>
     <thead>
     <r>
-    <th colspan="2">Lean UX Canvas - Setrya</th>
+    <th colspan="2">Lean UX Canvas - Sentrya</th>
     </r>
   </thead>
   <tbody>
@@ -404,15 +406,15 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
         <b>1. Business Problem</b><br><br>
         Los dueños de hogar interesados en incorporar soluciones IoT pueden enfrentarse a una experiencia fragmentada al seleccionar, instalar, monitorear y administrar dispositivos inteligentes destinados a diferentes necesidades del hogar.<br><br>
         Asimismo, los implementadores especializados necesitan organizar múltiples clientes, viviendas, dispositivos e instalaciones, así como realizar seguimiento de las soluciones implementadas.<br><br>
-        SpaceUp identifica una oportunidad para centralizar estos procesos mediante Setrya, conectando a propietarios e implementadores dentro de un ecosistema orientado inicialmente a la protección y monitoreo inteligente del hogar.
+        SpaceUp identifica una oportunidad para centralizar estos procesos mediante Sentrya, conectando a propietarios e implementadores dentro de un ecosistema orientado inicialmente a la protección y monitoreo inteligente del hogar.
       </td>
       <td>
         <b>2. Business Outcomes</b><br><br>
         <ul>
-          <li>Incrementar la cantidad de propietarios que solicitan servicios de implementación mediante Setrya.</li>
+          <li>Incrementar la cantidad de propietarios que solicitan servicios de implementación mediante Sentrya.</li>
           <li>Conseguir que propietarios que incorporan una primera solución IoT posteriormente amplíen su ecosistema con nuevos módulos.</li>
           <li>Conseguir que los implementadores administren múltiples clientes e instalaciones desde la plataforma.</li>
-          <li>Incrementar el uso recurrente de Setrya después de finalizada la instalación inicial.</li>
+          <li>Incrementar el uso recurrente de Sentrya después de finalizada la instalación inicial.</li>
           <li>Generar oportunidades de ingresos mediante servicios de implementación, mantenimiento y expansión de soluciones IoT.</li>
         </ul>
       </td>
@@ -468,10 +470,10 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
       </td>
       <td>
         <b>6. Hypotheses</b><br><br>
-        <b>H1:</b> Creemos que aumentaremos el uso recurrente de Setrya si los dueños de hogar pueden conocer rápidamente el estado de sus dispositivos mediante un dashboard centralizado.<br><br>
-        <b>H2:</b> Creemos que aumentaremos el valor percibido de Setrya si los dueños de hogar pueden identificar anomalías mediante los módulos de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
-        <b>H3:</b> Creemos que aumentaremos las oportunidades de servicio si los propietarios pueden encontrar implementadores especializados mediante Setrya.<br><br>
-        <b>H4:</b> Creemos que aumentaremos la adopción profesional de Setrya si los implementadores pueden administrar clientes, viviendas y dispositivos desde una misma plataforma.
+        <b>H1:</b> Creemos que aumentaremos el uso recurrente de Sentrya si los dueños de hogar pueden conocer rápidamente el estado de sus dispositivos mediante un dashboard centralizado.<br><br>
+        <b>H2:</b> Creemos que aumentaremos el valor percibido de Sentrya si los dueños de hogar pueden identificar anomalías mediante los módulos de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
+        <b>H3:</b> Creemos que aumentaremos las oportunidades de servicio si los propietarios pueden encontrar implementadores especializados mediante Sentrya.<br><br>
+        <b>H4:</b> Creemos que aumentaremos la adopción profesional de Sentrya si los implementadores pueden administrar clientes, viviendas y dispositivos desde una misma plataforma.
       </td>
     </tr>
     <tr>
@@ -482,7 +484,7 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
       </td>
       <td>
         <b>8. What's the least amount of work we need to do to learn the next most important thing?</b><br><br>
-        Realizar entrevistas con representantes de ambos segmentos y presentar un prototipo inicial de Setrya que permita demostrar los principales flujos de la plataforma junto con simulaciones funcionales de los módulos IoT de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
+        Realizar entrevistas con representantes de ambos segmentos y presentar un prototipo inicial de Sentrya que permita demostrar los principales flujos de la plataforma junto con simulaciones funcionales de los módulos IoT de monitoreo térmico, detección acústica y visual, y protección eléctrica.<br><br>
         Se evaluará principalmente la comprensión de las alertas, el valor percibido del monitoreo centralizado, el interés por incorporar nuevas soluciones IoT y la utilidad de conectar propietarios con implementadores especializados.
       </td>
     </tr>
@@ -490,7 +492,7 @@ A partir del Problem Statement, los Assumptions y los Hypothesis Statements prev
 </table>
 
 ## 1.3. Segmentos objetivo
-Setrya está orientado inicialmente a dos segmentos relacionados con la adopción e implementación de soluciones IoT dentro de viviendas: los dueños de hogar y los implementadores de hogar inteligente.
+Sentrya está orientado inicialmente a dos segmentos relacionados con la adopción e implementación de soluciones IoT dentro de viviendas: los dueños de hogar y los implementadores de hogar inteligente.
 
 ### Segmento Objetivo 1: Dueño de hogar
 
