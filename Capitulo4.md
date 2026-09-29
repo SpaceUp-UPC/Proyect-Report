@@ -1,3 +1,7 @@
+<div style="page-break-before: always;"></div>
+
+# Capítulo IV: Solution Software Design
+
 ### 4.1. Strategic-Level Domain-Driven Design
 
 Esta sección describe cómo el diseño orientado al dominio (DDD) guio la arquitectura estratégica de nuestra solución. Nos enfocamos en segmentar el sistema en contextos delimitados (Bounded Contexts) para mejorar la organización del desarrollo. Mediante el uso de Event Storming y Bounded Context Canvases, definimos con precisión el alcance y las interacciones de cada componente. Como resultado, logramos una estructura de software totalmente alineada con las necesidades reales del negocio.
