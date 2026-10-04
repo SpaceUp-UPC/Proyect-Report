@@ -143,7 +143,8 @@ Donde los valores T1 y T2 son configurables en lugar de estar fijos en el dispos
 
 <img src="assets/IOTALL.png" alt="IOT ALL">
 
-Relación entre los tres dispositivos
+
+
 En conjunto, la solución queda conceptualmente así:
 
 
