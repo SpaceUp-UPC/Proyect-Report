@@ -51,8 +51,12 @@ Por ejemplo:
 ```IF unknown_person = true
 AND suspicious_sound = true
 THEN SECURITY_ALERT
+```
+
 
 Mientras que para temperatura:
+
+
 ```
 IF temperature >= WARNING_THRESHOLD
     -> WARNING
@@ -75,7 +79,7 @@ OR sudden_power_spike = true
 ### 5.6.3 Camera + Sound Detector
 Este es el flujo más importante del prototipo.
 
-<img src="assets/CSD.png" alt="IOT CSD">
+<img src="assets/IOTCSD.png" alt="IOT CSD">
 
 
 El sistema no considera suficiente únicamente detectar una persona.
@@ -141,21 +145,9 @@ Donde los valores T1 y T2 son configurables en lugar de estar fijos en el dispos
 
 Relación entre los tres dispositivos
 En conjunto, la solución queda conceptualmente así:
-                      ┌──────────────────────┐
- Camera ─────────────►│                      │
- Microphone ─────────►│                      │
-                      │                      │
- Power Sensor ───────►│ IoT Edge Controller │──────► Cloud Backend
-                      │                      │              │
- Temperature Sensor ─►│                      │              ├──► Database
-                      │                      │              │
-                      └──────────┬───────────┘              ├──► Mobile Alerts
-                                 │                          │
-                                 ▼                          └──► Emergency Service
-                           Smart Relay
-                                 │
-                                 ▼
-                          Electrical Load
+
+
+<img src="assets/IOTECS.png" alt="IOT ECS">
 
 
 
