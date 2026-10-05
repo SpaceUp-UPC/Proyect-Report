@@ -93,22 +93,10 @@ El diagrama muestra el comportamiento del sistema de monitoreo de temperatura co
 
 <img src="assets/IOTTS.png" alt="IOT TS">
 
-### 5.6.6 Temperature Device
-
-Este diagrama de estados representa la transición del sensor de temperatura entre los estados Normal, Warning y Critical. Las transiciones dependen directamente de los valores de temperatura comparados con los umbrales T1 y T2. El modelo permite visualizar de forma clara cómo el dispositivo cambia su comportamiento en función de las condiciones detectadas, incluyendo el envío de alertas y el incremento de la frecuencia de monitoreo ante situaciones anómalas.
-
-<img src="assets/IOTTD.png" alt="IOT TD">
-
-
-### 5.6.7 Power Sensor
-
-El diagrama representa los diferentes estados operativos del sistema de monitoreo eléctrico. Inicialmente, el dispositivo permanece en estado de monitoreo continuo. Ante la detección de un consumo inusual, cambia a un estado de advertencia. Si posteriormente se identifica un pico peligroso de energía, el sistema entra en estado crítico y ejecuta el corte eléctrico mediante el relé inteligente. Finalmente, el suministro puede ser restablecido una vez que la situación ha sido validada y autorizada.
-
-<img src="assets/IOTPS.png" alt="IOT PS">
 
 
 
-### 5.6.8 Overall IoT Interaction
+### 5.6.6 Overall IoT Interaction
 
 El diagrama presenta una visión integrada del funcionamiento de los tres subsistemas IoT. Cada sensor opera de manera concurrente, supervisando de forma independiente la seguridad, el consumo eléctrico y la temperatura. Cuando se detecta una condición anómala, el subsistema correspondiente ejecuta las acciones definidas, tales como generar alertas, interrumpir la alimentación eléctrica o solicitar una validación de emergencia. Finalmente, los eventos generados y la telemetría son almacenados para su posterior consulta y análisis:
 
