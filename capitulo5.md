@@ -39,8 +39,7 @@ Los tres dispositivos se encuentran dentro de la vivienda y se comunican con un 
 El Edge Controller permite que determinadas decisiones críticas se ejecuten localmente. Por ejemplo, si existe un incremento peligroso de consumo eléctrico, el controlador puede abrir el relé sin esperar una respuesta del servidor.
 
 ### 5.6.2 UML Component Diagram
-Este diagrama muestra cómo se relacionan los principales componentes lógicos.
-
+El diagrama de componentes muestra la organización lógica de la solución IoT y las responsabilidades de cada módulo. Los dispositivos físicos capturan información del entorno y la envían al controlador Edge, donde se ejecutan servicios de análisis, detección y aplicación de reglas. Posteriormente, los eventos relevantes son enviados al backend, el cual se encarga del almacenamiento, generación de notificaciones y escalamiento de situaciones críticas. Esta separación facilita el mantenimiento y permite desacoplar la lógica de sensores, procesamiento y servicios cloud.
 <img src="assets/IOTCD.png" alt="IOT CD">
 
 
@@ -77,76 +76,45 @@ OR sudden_power_spike = true
 
 
 ### 5.6.3 Camera + Sound Detector
-Este es el flujo más importante del prototipo.
+Este diagrama describe el flujo de detección de posibles incidentes de seguridad utilizando información proveniente de la cámara y del sensor de sonido. El sistema analiza primero si existe una persona en el área supervisada y determina si esta puede ser reconocida. En caso de tratarse de una persona desconocida, se analiza adicionalmente el entorno sonoro. Cuando ambas condiciones, persona desconocida y sonido sospechoso, ocurren de manera simultánea, se genera un evento de alta prioridad, se notifica al usuario y se inicia un proceso de validación antes de realizar un posible escalamiento hacia las autoridades:
 
 <img src="assets/IOTCSD.png" alt="IOT CSD">
 
 
-El sistema no considera suficiente únicamente detectar una persona.
-La condición crítica se produce cuando:
- - Persona desconocida + sonido sospechoso = posible incidente.
-
 ### 5.6.4 Power Flow Sensor
-Para este dispositivo se necesita tanto el sensor como un actuador.
-El sensor puede medir:
-- voltaje;
-- corriente;
-- potencia;
-- consumo acumulado.
-Mientras que un Smart Relay permite interrumpir físicamente la alimentación.
+Este diagrama representa el proceso de monitoreo del consumo eléctrico de los dispositivos conectados. El sensor obtiene valores de voltaje y corriente, a partir de los cuales se calcula el consumo energético. Si se detecta una variación anómala, el sistema determina si se trata únicamente de un consumo inusual o de un pico potencialmente peligroso. En el segundo caso, el controlador Edge puede abrir el relé inteligente para interrumpir de manera inmediata la alimentación del dispositivo afectado y posteriormente notificar al usuario:
 
 <img src="assets/IOTPFS.png" alt="IOT PFS">
 
 
-La diferencia importante es que este dispositivo utiliza un actuador físico.
-Por tanto:
-```Power Sensor → Edge Controller → Smart Relay → Electrical Device```
-
-El corte de energía debe ejecutarse localmente para que no dependa de:
-```Sensor → Internet → Backend → Internet → Relay ```
-
-porque una pérdida de conexión podría impedir la acción de seguridad.
-
 
 ### 5.6.5 Temperature Sensor
-Los thresholds puede representarse:
-```Normal:
-Temperature < T1
-
-Warning:
-T1 <= Temperature < T2
-
-Critical:
-Temperature >= T2
-```
-Donde los valores T1 y T2 son configurables en lugar de estar fijos en el dispositivo.
-
+El diagrama muestra el comportamiento del sistema de monitoreo de temperatura considerando dos niveles configurables de alerta. Mientras la temperatura permanezca por debajo del primer umbral, el sistema continúa operando en estado normal. Al superar el primer nivel, se genera una advertencia dirigida al usuario y se incrementa la frecuencia de monitoreo. Si la temperatura alcanza el segundo umbral, el evento pasa a ser crítico, generándose una alerta prioritaria y un proceso de validación para determinar si es necesario realizar un escalamiento hacia los servicios de emergencia:
 
 <img src="assets/IOTTS.png" alt="IOT TS">
 
 ### 5.6.6 Temperature Device
+
+Este diagrama de estados representa la transición del sensor de temperatura entre los estados Normal, Warning y Critical. Las transiciones dependen directamente de los valores de temperatura comparados con los umbrales T1 y T2. El modelo permite visualizar de forma clara cómo el dispositivo cambia su comportamiento en función de las condiciones detectadas, incluyendo el envío de alertas y el incremento de la frecuencia de monitoreo ante situaciones anómalas.
 
 <img src="assets/IOTTD.png" alt="IOT TD">
 
 
 ### 5.6.7 Power Sensor
 
+El diagrama representa los diferentes estados operativos del sistema de monitoreo eléctrico. Inicialmente, el dispositivo permanece en estado de monitoreo continuo. Ante la detección de un consumo inusual, cambia a un estado de advertencia. Si posteriormente se identifica un pico peligroso de energía, el sistema entra en estado crítico y ejecuta el corte eléctrico mediante el relé inteligente. Finalmente, el suministro puede ser restablecido una vez que la situación ha sido validada y autorizada.
+
 <img src="assets/IOTPS.png" alt="IOT PS">
 
 
 
-### 5.6.8 Security Sensor
+### 5.6.8 Overall IoT Interaction
 
-<img src="assets/IOTSS.png" alt="IOT SS">
-
-### 5.6.9 Overall IoT Interaction
+El diagrama presenta una visión integrada del funcionamiento de los tres subsistemas IoT. Cada sensor opera de manera concurrente, supervisando de forma independiente la seguridad, el consumo eléctrico y la temperatura. Cuando se detecta una condición anómala, el subsistema correspondiente ejecuta las acciones definidas, tales como generar alertas, interrumpir la alimentación eléctrica o solicitar una validación de emergencia. Finalmente, los eventos generados y la telemetría son almacenados para su posterior consulta y análisis:
 
 <img src="assets/IOTALL.png" alt="IOT ALL">
 
-
-
-En conjunto, la solución queda conceptualmente así:
-
+Este diagrama de secuencia muestra el intercambio de mensajes entre un sensor IoT, el controlador Edge, el backend, el servicio de notificaciones y la aplicación móvil. Dependiendo de la severidad del evento, el flujo puede limitarse al registro de telemetría, generar una advertencia o escalar hacia una situación crítica. La comunicación permite evidenciar cómo los eventos detectados en el entorno físico son procesados y convertidos en acciones visibles para el usuario:
 
 <img src="assets/IOTECS.png" alt="IOT ECS">
 
