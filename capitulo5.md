@@ -325,6 +325,7 @@ La estructura de navegación busca que el usuario pueda identificar fácilmente 
 <img src="Capitulo5/Flujo UX de Sentrya para Hogar e Implementadores.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 ## 5.5. Applications Prototyping. 
+[Link a Prototipo](https://www.figma.com/proto/mhFUTeLhAmlhVzSYXVqVsk/Sentrya?node-id=4-64&p=f&t=Zn6KBqUbSSFouWeO-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 <img src="Capitulo5/prototipo.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 ## 5.6. IoT Device Design.
