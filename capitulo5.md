@@ -1,18 +1,204 @@
 # Capítulo V: Solution UI/UX Design 
 ## 5.1. Style Guidelines. 
 ### 5.1.1. General Style Guidelines. 
+
+| Color | Uso |
+|---|---|
+| Primary | Botones principales, navegación, elementos importantes |
+| Accent | Destacar acciones, indicadores y elementos seleccionados |
+| Background | Fondo general de la aplicación |
+| Surface | Cards, formularios y contenedores |
+| Text | Textos principales |
+| Success | Estados correctos |
+| Warning | Alertas preventivas |
+| Error/Critical | Situaciones críticas |
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines. 
 ## 5.2. Information Architecture. 
+La arquitectura de información de Sentrya organiza y estructura el contenido disponible en el Landing Page y en la aplicación Web, permitiendo que los usuarios encuentren de forma clara y eficiente la información y funcionalidades de la solución. La estructura considera las necesidades de los principales usuarios de la plataforma, principalmente dueños de hogar e implementadores.
+
 ### 5.2.1. Organization Systems. 
+
+
 ### 5.2.2. Labeling Systems. 
+Etiquetas del Landing Page
+| Etiqueta | Descripción |
+|---|---|
+| **Inicio** | Acceso a la sección principal de la Landing Page. |
+| **Problema** | Presenta las principales necesidades que busca resolver Sentrya. |
+| **Soluciones** | Presenta las soluciones IoT ofrecidas por Sentrya. |
+| **Cómo funciona** | Explica el funcionamiento de la solución mediante tres pasos. |
+| **Equipo** | Presenta a los integrantes responsables del proyecto. |
+| **Contacto** | Permite al usuario comunicarse con el equipo de Sentrya. |
+| **Descargar app** | Acceso a las opciones disponibles para utilizar Sentrya. |
+
+Aplicación Web — Dueño de hogar
+| Etiqueta | Descripción |
+|---|---|
+| **Inicio** | Muestra el resumen general del estado del hogar. |
+| **Mis ambientes** | Permite consultar los ambientes y dispositivos asociados al hogar. |
+| **Alertas** | Permite consultar y revisar eventos que requieren atención. |
+| **Históricos** | Permite consultar mediciones y eventos registrados anteriormente. |
+| **Catálogo** | Muestra las soluciones y servicios disponibles. |
+| **Implementadores** | Permite buscar especialistas para instalación o mantenimiento. |
+| **Ver detalle** | Permite consultar información ampliada de una solución o elemento. |
+| **Solicitar servicio** | Permite iniciar una solicitud a un implementador. |
+| **Control remoto** | Permite ejecutar acciones sobre los dispositivos compatibles. |
+
+Aplicación Web — Implementador
+| Etiqueta | Descripción |
+|---|---|
+| **Panel** | Presenta un resumen de las actividades pendientes del implementador. |
+| **Solicitudes** | Permite gestionar solicitudes de servicio recibidas. |
+| **Clientes** | Permite consultar los clientes asociados al implementador. |
+| **Instalaciones** | Permite gestionar las instalaciones realizadas o pendientes. |
+| **Dispositivos** | Permite consultar los dispositivos asociados a las instalaciones. |
+| **Históricos** | Permite consultar los registros históricos de las instalaciones y dispositivos. |
+| **Aceptar** | Permite aceptar una solicitud pendiente. |
+| **Revisar** | Permite consultar el detalle de una solicitud antes de tomar una decisión. |
+| **Ver perfil** | Permite consultar la información del implementador. |
+
+Criterios utilizados
+Las etiquetas se definieron considerando los siguientes criterios:
+- Claridad: utilizan términos que describen directamente la función.
+- Consistencia: se mantiene el mismo término para una misma funcionalidad en las diferentes pantallas.
+- Brevedad: se evita utilizar textos innecesariamente extensos en menús y botones.
+- Orientación al usuario: se emplean términos comprensibles para dueños de hogar e implementadores.
+- Diferenciación por rol: las etiquetas de la aplicación cambian según las necesidades del dueño de hogar o del implementador.
+
 ### 5.2.3. SEO Tags and Meta Tags 
+
+| Página / sección | Title | Description | Keywords | Author |
+|---|---|---|---|---|
+| **Inicio** | Sentrya \| Hogar inteligente y seguro | Convierte tu vivienda en un hogar inteligente con soluciones IoT para seguridad, monitoreo y protección. | Sentrya, IoT, hogar inteligente, seguridad, monitoreo | SpaceUp |
+| **Problema** | Problema \| Sentrya | Conoce los principales problemas relacionados con la seguridad, temperatura y consumo dentro del hogar. | seguridad del hogar, IoT, temperatura, consumo eléctrico | SpaceUp |
+| **Soluciones** | Soluciones IoT \| Sentrya | Conoce las soluciones de seguridad, monitoreo térmico y protección eléctrica de Sentrya. | soluciones IoT, seguridad, temperatura, energía, Smart Home | SpaceUp |
+| **Cómo funciona** | Cómo funciona \| Sentrya | Descubre cómo Sentrya permite seleccionar, instalar y monitorear soluciones inteligentes para el hogar. | IoT, Smart Home, instalación, monitoreo | SpaceUp |
+| **Contacto** | Contacto \| Sentrya | Comunícate con el equipo de Sentrya para conocer más sobre nuestras soluciones para el hogar. | contacto, Sentrya, soporte, hogar inteligente | SpaceUp |
+
+Ejemplo de Meta Tags
+```html
+<title>Sentrya | Hogar inteligente y seguro</title>
+
+<meta
+    name="description"
+    content="Convierte tu vivienda en un hogar inteligente
+    con soluciones IoT para seguridad, monitoreo y protección."
+>
+
+<meta
+    name="keywords"
+    content="Sentrya, IoT, hogar inteligente,
+    seguridad, monitoreo, temperatura, energía"
+>
+
+<meta
+    name="author"
+    content="SpaceUp"
+>
+```
+
+Open Graph
+Para mejorar la presentación de la Landing Page cuando sea compartida mediante plataformas sociales o aplicaciones de mensajería, también pueden definirse etiquetas Open Graph:
+```html
+<meta
+    property="og:title"
+    content="Sentrya | Hogar inteligente y seguro"
+>
+
+<meta
+    property="og:description"
+    content="Soluciones IoT para proteger,
+    monitorear y controlar tu hogar."
+>
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:site_name"
+    content="Sentrya"
+>
+```
+
+
 ### 5.2.4. Searching Systems. 
-### 5.2.5. Navigation Systems. 
+El sistema de búsqueda de Sentrya se encuentra principalmente en la aplicación Web, dentro del módulo de Implementadores. Su objetivo es permitir que el usuario encuentre de manera rápida a especialistas que puedan realizar servicios relacionados con la instalación y mantenimiento de las soluciones IoT.
+La búsqueda se organiza mediante criterios y filtros, permitiendo reducir los resultados de acuerdo con las necesidades del usuario. Los resultados presentan información resumida del implementador y permiten acceder posteriormente a su perfil para consultar información más detallada.
+
+| Criterio | Descripción |
+|---|---|
+| **Nombre o servicio** | Permite buscar un implementador mediante texto relacionado con su nombre o servicio ofrecido. |
+| **Ubicación** | Permite encontrar implementadores disponibles en una determinada zona. |
+| **Especialidad** | Permite filtrar según el tipo de solución o servicio que puede realizar el implementador. |
+| **Disponibilidad** | Permite identificar implementadores que se encuentran disponibles para atender una solicitud. |
+| **Calificación** | Permite considerar la valoración obtenida por el implementador. |
+
+
+
+Los resultados de búsqueda se presentan mediante tarjetas que permiten identificar rápidamente al implementador, su especialidad, ubicación y valoración. Desde el resultado seleccionado, el usuario puede acceder al perfil correspondiente y continuar con el proceso de solicitud del servicio.
+
+
+### 5.2.5. Navigation Systems
+
+El sistema de navegación de Sentrya permite a los usuarios desplazarse de manera clara y organizada entre las diferentes secciones de la Landing Page y de la aplicación Web. La navegación se estructura de acuerdo con las funcionalidades disponibles y el rol del usuario, facilitando el acceso a la información y reduciendo desplazamientos innecesarios.
+
+#### Navegación de la Landing Page
+
+La Landing Page cuenta con un menú de navegación principal que permite acceder a las diferentes secciones informativas de Sentrya:
+
+| Elemento | Función |
+|---|---|
+| Inicio | Acceso a la sección principal de la Landing Page. |
+| Problema | Presenta las necesidades que busca solucionar Sentrya. |
+| Soluciones | Presenta las soluciones IoT ofrecidas por Sentrya. |
+| Cómo funciona | Explica el funcionamiento general de la solución. |
+| Equipo | Presenta información relacionada con el equipo. |
+| Contacto | Permite acceder a los medios de contacto. |
+
+#### Navegación de la aplicación Web
+
+La aplicación Web utiliza un menú lateral para organizar las funcionalidades disponibles según el rol del usuario.
+
+**Usuario propietario del hogar:**
+
+- Inicio
+- Mis ambientes
+- Alertas
+- Históricos
+- Catálogo
+- Implementadores
+
+**Usuario implementador:**
+
+- Panel
+- Solicitudes
+- Clientes
+- Instalaciones
+- Dispositivos
+- Históricos
+
+Esta organización permite que cada usuario acceda principalmente a las funcionalidades relacionadas con sus actividades dentro de Sentrya.
+
+#### Técnicas de navegación
+
+| Técnica | Aplicación en Sentrya |
+|---|---|
+| Menú lateral | Permite acceder a las principales funcionalidades de la aplicación Web. |
+| Navegación jerárquica | Organiza las funcionalidades de acuerdo con el rol del usuario. |
+| Botones de acción | Permiten ejecutar acciones específicas dentro de cada sección. |
+| Enlaces internos | Permiten desplazarse entre contenidos y vistas relacionadas. |
+| Navegación contextual | Presenta acciones relacionadas con la sección en la que se encuentra el usuario. |
+
+La estructura de navegación busca que el usuario pueda identificar fácilmente las secciones disponibles y acceder a las funcionalidades necesarias de acuerdo con su rol.
+
 ## 5.3. Landing Page UI Design. 
 ### 5.3.1. Landing Page Wireframe. 
 ### 5.3.2. Landing Page Mock-up. 
 ## 5.4. Applications UX/UI Design. 
-###5.4.1. Applications Wireframes. 
+### 5.4.1. Applications Wireframes. 
 ### 5.4.2. Applications Wireflow Diagrams. 
 ### 5.4.2. Applications Mock-ups. 
 ### 5.4.3. Applications User Flow Diagrams. 
