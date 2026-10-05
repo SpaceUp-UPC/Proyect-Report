@@ -19,6 +19,8 @@ Se utiliza una tipografía sans-serif que prioriza la legibilidad y establece un
 
 #### Colors
 
+<img src="Capitulo5/Colors.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 La interfaz utiliza una paleta basada principalmente en tonos oscuros, neutros y acentos cálidos, manteniendo contraste suficiente para diferenciar acciones, estados y alertas.
 
 #### Spacing
@@ -72,6 +74,8 @@ La arquitectura de información de Sentrya organiza el contenido de la Landing P
 #### Jerárquico
 
 La información se organiza desde los contenidos generales hacia las funcionalidades específicas de la solución.
+
+<img src="Capitulo5/5.2.1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 Secuencial
 La organización secuencial se utiliza en procesos que requieren que el usuario complete diferentes pasos para alcanzar un objetivo.
@@ -217,7 +221,7 @@ La búsqueda se organiza mediante criterios y filtros, permitiendo reducir los r
 | **Disponibilidad** | Permite identificar implementadores que se encuentran disponibles para atender una solicitud. |
 | **Calificación** | Permite considerar la valoración obtenida por el implementador. |
 
-
+<img src="Capitulo5/5.3.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 Los resultados de búsqueda se presentan mediante tarjetas que permiten identificar rápidamente al implementador, su especialidad, ubicación y valoración. Desde el resultado seleccionado, el usuario puede acceder al perfil correspondiente y continuar con el proceso de solicitud del servicio.
 
@@ -278,16 +282,51 @@ La estructura de navegación busca que el usuario pueda identificar fácilmente 
 ## 5.3. Landing Page UI Design. 
 ### 5.3.1. Landing Page Wireframe. 
 
+<img src="Capitulo5/LandingPageWireframe1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<img src="Capitulo5/LandingPageWireframe2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 ### 5.3.2. Landing Page Mock-up. 
+<img src="Capitulo5/LandingMockup1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
+<img src="Capitulo5/LandingMockup2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 ## 5.4. Applications UX/UI Design. 
 ### 5.4.1. Applications Wireframes. 
+
+<img src="Capitulo5/Wireframe1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe3.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe4.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe5.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe6.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe7.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe8.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Wireframe9.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 ### 5.4.2. Applications Wireflow Diagrams. 
+<img src="Capitulo5/Wireflow UX de Sentrya en español.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 ### 5.4.3. Applications Mock-ups. 
+
+<img src="Capitulo5/Mockup1.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup2.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup3.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup4.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup5.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup6.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup7.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup8.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup9.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup10.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="Capitulo5/Mockup11.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+
 ### 5.4.4. Applications User Flow Diagrams. 
+<img src="Capitulo5/Flujo UX de Sentrya para Hogar e Implementadores.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 ## 5.5. Applications Prototyping. 
+<img src="Capitulo5/prototipo.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 ## 5.6. IoT Device Design.
 La solución IoT propuesta está orientada al monitoreo preventivo de seguridad, consumo eléctrico y condiciones ambientales dentro de una vivienda. El diseño considera tres dispositivos principales: un sistema de detección mediante cámara y sonido, un sensor de flujo/consumo eléctrico y un sensor de temperatura.
 Las decisiones de diseño se basan principalmente en los siguientes criterios:
