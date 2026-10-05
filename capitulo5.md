@@ -2,23 +2,104 @@
 ## 5.1. Style Guidelines. 
 ### 5.1.1. General Style Guidelines. 
 
-| Color | Uso |
-|---|---|
-| Primary | Botones principales, navegación, elementos importantes |
-| Accent | Destacar acciones, indicadores y elementos seleccionados |
-| Background | Fondo general de la aplicación |
-| Surface | Cards, formularios y contenedores |
-| Text | Textos principales |
-| Success | Estados correctos |
-| Warning | Alertas preventivas |
-| Error/Critical | Situaciones críticas |
 
-### 5.1.2. Web, Mobile and IoT Style Guidelines. 
+Las guías generales de estilo de Sentrya establecen los criterios visuales y de comunicación utilizados en la Landing Page y en la aplicación Web. Su finalidad es mantener una experiencia visual consistente, clara y reconocible en todos los puntos de interacción de la solución.
+
+#### Branding
+
+Sentrya utiliza una identidad visual moderna y tecnológica orientada a transmitir seguridad, confianza, protección y control del hogar mediante soluciones IoT.
+
+#### Iconography
+
+Se emplean iconos simples y reconocibles para representar funcionalidades como dispositivos, alertas, ambientes, históricos, soluciones e implementadores.
+
+#### Typography
+
+Se utiliza una tipografía sans-serif que prioriza la legibilidad y establece una jerarquía visual mediante títulos, subtítulos, textos descriptivos, etiquetas y botones.
+
+#### Colors
+
+La interfaz utiliza una paleta basada principalmente en tonos oscuros, neutros y acentos cálidos, manteniendo contraste suficiente para diferenciar acciones, estados y alertas.
+
+#### Spacing
+
+Se mantiene un sistema de espaciado consistente entre tarjetas, botones, formularios y secciones para evitar saturación visual y facilitar la lectura.
+
+#### Communication Tone
+
+El lenguaje utilizado por Sentrya es claro, directo, profesional y cercano, especialmente en mensajes relacionados con seguridad, alertas y estado de los dispositivos.
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Las guías específicas de plataforma de Sentrya establecen los criterios visuales y de interacción que deben mantenerse en los diferentes componentes de la solución. Para el alcance actual del proyecto se consideran principalmente la aplicación Web y los dispositivos IoT, debido a que la aplicación móvil aún no forma parte de la implementación actual.
+
+#### Web Style Guidelines
+
+La aplicación Web de Sentrya mantiene los lineamientos definidos en el sistema de diseño general, adaptándolos a una interfaz orientada al monitoreo y gestión del hogar.
+
+Los principales criterios son:
+
+- **Navegación:** se utiliza un menú lateral para acceder a las principales funcionalidades de acuerdo con el rol del usuario.
+- **Componentes:** se utilizan tarjetas para representar ambientes, dispositivos, alertas, soluciones e implementadores.
+- **Botones:** las acciones principales utilizan botones visualmente diferenciados para facilitar su identificación.
+- **Estados:** los estados de los dispositivos y alertas se representan mediante indicadores visuales que permiten distinguir situaciones normales, preventivas y críticas.
+- **Información:** los datos de sensores, históricos y alertas se presentan mediante tarjetas, indicadores y gráficos para facilitar su interpretación.
+- **Consistencia:** los colores, tipografías, iconos, espaciados y componentes mantienen el mismo estilo en las diferentes pantallas del Web Front.
+
+#### IoT Style Guidelines
+
+Los dispositivos IoT de Sentrya utilizan una interacción física mínima, priorizando indicadores simples y fácilmente reconocibles para comunicar su estado.
+
+Los principales criterios son:
+
+- **Indicadores de estado:** los dispositivos pueden utilizar LEDs u otros indicadores para comunicar estados de funcionamiento.
+- **Interacción mínima:** se reduce la necesidad de interacción física del usuario, priorizando la automatización.
+- **Alertas:** las situaciones detectadas por los sensores son comunicadas mediante el sistema Web y los mecanismos de notificación definidos.
+- **Seguridad:** la comunicación entre los dispositivos, el Edge Controller y el backend debe realizarse mediante conexiones autenticadas y cifradas.
+- **Baja latencia:** las situaciones críticas deben poder procesarse localmente mediante el Edge Controller.
+- **Consistencia:** los estados mostrados físicamente por los dispositivos deben corresponder con los estados representados en la aplicación Web.
+
+De esta manera, los lineamientos de estilo permiten mantener una experiencia consistente entre la interfaz Web y los dispositivos físicos que forman parte de la solución IoT.
+
+
 ## 5.2. Information Architecture. 
 La arquitectura de información de Sentrya organiza y estructura el contenido disponible en el Landing Page y en la aplicación Web, permitiendo que los usuarios encuentren de forma clara y eficiente la información y funcionalidades de la solución. La estructura considera las necesidades de los principales usuarios de la plataforma, principalmente dueños de hogar e implementadores.
 
-### 5.2.1. Organization Systems. 
+### 5.2.1. Organization Systems
 
+La arquitectura de información de Sentrya organiza el contenido de la Landing Page y de la aplicación Web de acuerdo con su función, contexto y tipo de usuario. Para ello, se consideran diferentes sistemas de organización que permiten estructurar la información de manera clara y facilitar su comprensión.
+
+#### Jerárquico
+
+La información se organiza desde los contenidos generales hacia las funcionalidades específicas de la solución.
+
+Secuencial
+La organización secuencial se utiliza en procesos que requieren que el usuario complete diferentes pasos para alcanzar un objetivo.
+En Sentrya, este tipo de organización se aplica principalmente en procesos como:
+- Registro de usuario.
+- Inicio de sesión.
+- Búsqueda de un implementador.
+- Consulta del perfil de un implementador.
+- Solicitud de un servicio.
+- Gestión de una solicitud de instalación.
+
+Por tópicos
+La información de Sentrya se agrupa según el tema o funcionalidad que representa. En la aplicación Web se consideran principalmente los siguientes tópicos:
+Tópico	Información relacionada
+Monitoreo	Ambientes, dispositivos y mediciones
+Seguridad	Alertas y eventos detectados
+Históricos	Registros y mediciones anteriores
+Soluciones	Catálogo de soluciones IoT
+Servicios	Implementadores y solicitudes
+Gestión	Clientes, instalaciones y dispositivos
+
+
+Esta organización permite que el usuario encuentre información relacionada dentro de una misma categoría funcional.
+Según audiencia
+La aplicación Web organiza sus funcionalidades de acuerdo con el tipo de usuario. Se consideran principalmente dos perfiles:
+- Dueño de hogar: accede a funcionalidades relacionadas con el monitoreo, gestión y seguridad de su vivienda.
+- Implementador: accede a funcionalidades relacionadas con la atención de solicitudes, clientes, instalaciones y dispositivos.
+De esta manera, cada usuario visualiza una estructura de información acorde con las actividades que puede realizar dentro de Sentrya.
 
 ### 5.2.2. Labeling Systems. 
 Etiquetas del Landing Page
@@ -196,12 +277,16 @@ La estructura de navegación busca que el usuario pueda identificar fácilmente 
 
 ## 5.3. Landing Page UI Design. 
 ### 5.3.1. Landing Page Wireframe. 
+
+
 ### 5.3.2. Landing Page Mock-up. 
+
+
 ## 5.4. Applications UX/UI Design. 
 ### 5.4.1. Applications Wireframes. 
 ### 5.4.2. Applications Wireflow Diagrams. 
-### 5.4.2. Applications Mock-ups. 
-### 5.4.3. Applications User Flow Diagrams. 
+### 5.4.3. Applications Mock-ups. 
+### 5.4.4. Applications User Flow Diagrams. 
 ## 5.5. Applications Prototyping. 
 ## 5.6. IoT Device Design.
 La solución IoT propuesta está orientada al monitoreo preventivo de seguridad, consumo eléctrico y condiciones ambientales dentro de una vivienda. El diseño considera tres dispositivos principales: un sistema de detección mediante cámara y sonido, un sensor de flujo/consumo eléctrico y un sensor de temperatura.
