@@ -383,12 +383,3 @@ La evidencia permite observar la ejecución de las funcionalidades desarrolladas
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint
 
-## 6.3. Validation Interviews
-
-### 6.3.1. Diseño de Entrevistas
-
-### 6.3.2. Registro de Entrevistas
-
-### 6.3.3. Evaluaciones según heurísticas
-
-## 6.4. Video About-the-Product
