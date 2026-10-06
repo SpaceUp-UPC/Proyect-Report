@@ -1570,4 +1570,4 @@ En la Infrastructure Layer de Sentrya, específicamente para el contexto de IoT 
 
 ### 4.2.5.6.2. Bounded Context Database Design Diagrams
 
-![IoT_Monitoring_and_Notifications_Database_Design_Diagram](Assets/IOT-DBDIAGRAM.png)
+![IoT_Monitoring_and_Notifications_Database_Design_Diagram](Assets/IOT_DB.png)
