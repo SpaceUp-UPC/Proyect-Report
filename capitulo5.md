@@ -329,16 +329,56 @@ La estructura de navegación busca que el usuario pueda identificar fácilmente 
 <img src="Capitulo5/prototipo.PNG" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 ## 5.6. IoT Device Design.
-La solución IoT propuesta está orientada al monitoreo preventivo de seguridad, consumo eléctrico y condiciones ambientales dentro de una vivienda. El diseño considera tres dispositivos principales: un sistema de detección mediante cámara y sonido, un sensor de flujo/consumo eléctrico y un sensor de temperatura.
+
+La solución IoT propuesta está orientada al monitoreo preventivo de seguridad, consumo eléctrico y condiciones ambientales dentro de una vivienda. El diseño considera tres dispositivos principales, cada uno con sus sensores y actuadores:
+
+| Dispositivo | Sensores (magnitud y unidad) | Actuadores |
+|---|---|---|
+| Seguridad | Cámara (resolución en px, tasa en fps) y micrófono (nivel sonoro en dB(A), muestreo en kHz) | Sirena (≈ 95 dB a 1 m), cerradura inteligente de puertas (bloqueo electromecánico) y LED de estado |
+| Monitoreo eléctrico | Voltaje (V), corriente (A), potencia (W) y energía (kWh) | Relé inteligente / interruptor de circuito (corta o restablece la alimentación) y LED de estado |
+| Ambiental | Temperatura (°C) | Ventilador / extractor (control por relé o PWM, 0–100 %), aire acondicionado inteligente (encendido y consigna en °C), buzzer y LED de estado |
+
 Las decisiones de diseño se basan principalmente en los siguientes criterios:
-- Procesamiento en el borde (Edge Computing): las lecturas críticas y reglas de emergencia se procesan localmente para reducir la dependencia de la conexión a Internet.
-- Baja latencia: las situaciones consideradas críticas requieren que el dispositivo pueda actuar inmediatamente.
-- Disponibilidad: ciertas acciones, como interrumpir la alimentación eléctrica, pueden ejecutarse localmente aun cuando el servicio cloud no se encuentre disponible.
-- Privacidad: el procesamiento de imágenes y sonido debe realizarse preferentemente en el dispositivo Edge, enviándose al backend únicamente eventos y evidencias estrictamente necesarias.
-- Seguridad: toda comunicación entre los dispositivos IoT y el backend debe utilizar conexiones autenticadas y cifradas, por ejemplo MQTT sobre TLS o HTTPS.
-- Interacción mínima: siguiendo los principios de IoT Device Physical Interfaces, el dispositivo debe comunicar sus estados mediante indicadores simples como LEDs, sonidos o notificaciones en la aplicación.
-- Prevención de falsos positivos: las acciones de escalamiento externo, particularmente aquellas relacionadas con servicios de emergencia, requieren la correlación y validación de múltiples señales antes de ejecutarse.
-La arquitectura considera un IoT Edge Controller como elemento central encargado de recibir información de los sensores, aplicar reglas locales y comunicarse con la plataforma backend.
+
+- **Procesamiento en el borde (Edge Computing):** las lecturas críticas y reglas de emergencia se procesan localmente para reducir la dependencia de la conexión a Internet.
+- **Baja latencia:** las situaciones críticas requieren que el dispositivo actúe de inmediato. Por ejemplo, el relé se abre en menos de 100 ms desde que se confirma un pico de corriente.
+- **Disponibilidad:** las acciones locales (corte de energía, enfriamiento, sirena, bloqueo de cajas fuertes) se ejecutan aun cuando el servicio cloud no esté disponible.
+- **Privacidad:** el procesamiento de imagen y sonido se realiza en el dispositivo Edge, y solo se envían al backend los eventos y evidencias estrictamente necesarios.
+- **Seguridad:** toda comunicación entre los dispositivos IoT y el backend utiliza conexiones autenticadas y cifradas (MQTT sobre TLS o HTTPS).
+- **Interacción mínima:** el dispositivo comunica sus estados mediante LEDs, sonidos o notificaciones en la aplicación.
+- **Prevención de falsos positivos:** el escalamiento a autoridades requiere correlacionar varias señales y pasar por una ventana de validación antes de ejecutarse.
+
+La arquitectura considera un **IoT Edge Controller** como elemento central, encargado de recibir la información de los sensores, aplicar reglas locales, comandar los actuadores y comunicarse con el backend. Se propone una Raspberry Pi para el análisis de imagen y sonido, y nodos ESP32 para sensores livianos (temperatura y consumo eléctrico) y el control de relés.
+
+### Parámetros de referencia
+
+Los umbrales son valores iniciales configurables desde la aplicación y deben calibrarse según la vivienda y el hardware instalado.
+
+| Subsistema | Parámetro | Valor de referencia |
+|---|---|---|
+| Temperatura | T1 (Warning) | 45 °C |
+| | T2 (Critical) | 57 °C |
+| | Acción en T1 | Aviso al usuario + enfriamiento nivel 1 (ventilador al 50 %) |
+| | Acción en T2 | Aviso al usuario + enfriamiento máximo (ventilador al 100 % + A/C a 22 °C) + aviso a autoridades |
+| | Velocidad de aumento (opcional) | ≥ 8 °C/min → Critical |
+| | Histéresis para bajar de estado | 2 °C (los actuadores se apagan al volver a Normal) |
+| | Frecuencia de lectura | 30 s (Normal), 5 s (Warning), 1 s (Critical) |
+| | Confirmación de Critical | 3 lecturas consecutivas ≥ T2 |
+| | Rango y precisión del sensor | −40 a 125 °C, ±0.5 °C |
+| Consumo eléctrico | Tensión nominal | 220 V, 60 Hz |
+| | Warning | I ≥ 80 % de la corriente nominal (≥ 12.8 A en un circuito de 16 A, ≈ 2.8 kW) sostenida ≥ 30 s, o tensión fuera de 198–242 V |
+| | Critical (pico peligroso) | I ≥ 120 % de la nominal (≥ 19.2 A, ≈ 4.2 kW), o aumento > 50 % de la corriente en < 1 s, o tensión < 180 V o > 250 V |
+| | Frecuencia de lectura (valores RMS) | 200 ms (Normal), 100 ms (Warning) |
+| | Envío de telemetría | cada 60 s |
+| | Tiempo de apertura del relé | < 100 ms |
+| Seguridad | Detección de persona | confianza ≥ 70 % |
+| | Reconocimiento de persona conocida | coincidencia ≥ 80 % |
+| | Sonido anormal | ver criterio en 5.6.3 |
+| | Ventana de correlación persona desconocida + sonido | ≤ 10 s |
+| | Video / audio | 1280×720 px a 15 fps / 16 kHz |
+| | Ventana de validación del usuario | 30 s; sin respuesta, se escala a autoridades |
+
+
 
 ### 5.6.1 UML Deployment Diagram
 Este diagrama representa físicamente dónde se encuentran los sensores y cómo se comunican con el Edge Controller y la infraestructura cloud.
@@ -346,61 +386,91 @@ Este diagrama representa físicamente dónde se encuentran los sensores y cómo 
 <img src="assets/IOTDD.png" alt="IOT DD">
 
 
-Los tres dispositivos se encuentran dentro de la vivienda y se comunican con un IoT Edge Controller.
-El Edge Controller permite que determinadas decisiones críticas se ejecuten localmente. Por ejemplo, si existe un incremento peligroso de consumo eléctrico, el controlador puede abrir el relé sin esperar una respuesta del servidor.
+Los tres dispositivos se encuentran dentro de la vivienda y se comunican con el IoT Edge Controller. El controlador recibe imágenes y eventos de sonido, mediciones eléctricas (V, A, W) y lecturas de temperatura (°C). A su vez, comanda los actuadores locales: relé inteligente, sirena, cerradura de caja fuerte y sistema de enfriamiento (ventilador y A/C). Esto permite ejecutar decisiones críticas sin esperar respuesta del servidor. La comunicación con la nube se realiza mediante MQTT/TLS o HTTPS.
+
 
 ### 5.6.2 UML Component Diagram
-El diagrama de componentes muestra la organización lógica de la solución IoT y las responsabilidades de cada módulo. Los dispositivos físicos capturan información del entorno y la envían al controlador Edge, donde se ejecutan servicios de análisis, detección y aplicación de reglas. Posteriormente, los eventos relevantes son enviados al backend, el cual se encarga del almacenamiento, generación de notificaciones y escalamiento de situaciones críticas. Esta separación facilita el mantenimiento y permite desacoplar la lógica de sensores, procesamiento y servicios cloud.
+Los módulos de cámara, sonido, consumo eléctrico y temperatura envían sus datos al *Sensor Manager* del Edge Controller, que los distribuye al *Person Detection Service*, al *Sound Analysis Service* y al *Rules Engine*. El *Rules Engine* genera eventos hacia el *IoT Communication Client* y emite órdenes al *Local Safety Controller*, que gobierna los actuadores (relé, sistema de enfriamiento, sirena y cerradura de caja fuerte). Los eventos relevantes se envían al backend, que se encarga del almacenamiento, las notificaciones y el escalamiento a autoridades.
+
 <img src="assets/IOTCD.png" alt="IOT CD">
 
 
+Las reglas principales del Rules Engine son:
 
-Aquí la parte importante de la arquitectura es el Rules Engine.
-Por ejemplo:
-
-```IF unknown_person = true
-AND suspicious_sound = true
-THEN SECURITY_ALERT
+Seguridad:
+```
+IF person_detected = true
+AND person_recognized = false
+AND suspicious_sound = true          // ventana de 10 s
+THEN
+    ACTIVATE_SIREN
+    LOCK_DOORS
+    CAPTURE_EVIDENCE
+    CREATE SECURITY_ALERT (HIGH)
+    NOTIFY_USER
+    REQUEST_VALIDATION (30 s)
+    IF user_confirms OR no_response_in_30s
+        NOTIFY_AUTHORITIES (with evidence)
+    ELSE IF user_rejects
+        DEACTIVATE_SIREN, state = MONITORING
 ```
 
-
-Mientras que para temperatura:
-
-
+Temperatura:
 ```
-IF temperature >= WARNING_THRESHOLD
-    -> WARNING
+IF temperature < T1 (45 °C)
+    -> state = NORMAL
+       COOLING_OFF (cuando baja de T1 − 2 °C)
+ELSE IF temperature < T2 (57 °C)
+    -> state = WARNING
+    -> NOTIFY_USER
+    -> START_COOLING (level 1: fan 50 %)
+    -> INCREASE_SAMPLING_RATE
+ELSE IF 3 consecutive readings >= T2
+    -> state = CRITICAL
+    -> NOTIFY_USER
+    -> START_COOLING (level 2: fan 100 % + A/C 22 °C)
+    -> ACTIVATE_BUZZER
+    -> NOTIFY_AUTHORITIES
 ```
 
-```IF temperature >= CRITICAL_THRESHOLD
-    -> CRITICAL_ALERT
+Consumo eléctrico:
+```
+IF power_consumption_abnormal = true
+    IF sudden_power_spike = true     // I ≥ 120 % nominal, o aumento > 50 % en < 1 s
+        -> OPEN_RELAY (CUT_POWER)
+        -> CRITICAL_EVENT
+        -> ALERT_USER
+    ELSE
+        -> POWER_WARNING
+        -> NOTIFY_USER
 ```
 
-
-Y para consumo eléctrico:
-
-```IF power > NORMAL_THRESHOLD
-OR sudden_power_spike = true
-    -> CUT_POWER
-    -> ALERT_USER
-```
 
 
 ### 5.6.3 Camera + Sound Detector
-Este diagrama describe el flujo de detección de posibles incidentes de seguridad utilizando información proveniente de la cámara y del sensor de sonido. El sistema analiza primero si existe una persona en el área supervisada y determina si esta puede ser reconocida. En caso de tratarse de una persona desconocida, se analiza adicionalmente el entorno sonoro. Cuando ambas condiciones, persona desconocida y sonido sospechoso, ocurren de manera simultánea, se genera un evento de alta prioridad, se notifica al usuario y se inicia un proceso de validación antes de realizar un posible escalamiento hacia las autoridades:
+El sistema analiza primero si hay una persona en el área supervisada y si puede ser reconocida. Si es desconocida, se analiza además el entorno sonoro. Cuando una persona desconocida y un sonido anormal ocurren dentro de una ventana de 10 s, se genera un evento de alta prioridad. El Edge Controller ejecuta de inmediato las acciones locales: activa la sirena, bloquea las puertas y captura evidencia. En paralelo notifica al usuario y le pide validar el evento durante 30 s. Si el usuario lo confirma, o no responde en ese tiempo, se escala a las autoridades con la evidencia adjunta. Si lo rechaza, la sirena se apaga y el sistema vuelve a monitoreo. Las cajas fuertes solo se desbloquean con autenticación del usuario desde la aplicación.
 
 <img src="assets/IOTCSD.png" alt="IOT CSD">
 
+**Criterio para decidir que un sonido es anormal.** El sensor de audio no interpreta sonidos por sí mismo; el Sound Analysis Service del Edge Controller combina dos condiciones:
+
+1. **Nivel relativo al ruido de fondo (dB(A)).** El sistema calcula continuamente el ruido de fondo *L_bg* como la mediana móvil de los últimos 5 min. Un sonido es candidato si su nivel pico es ≥ *L_bg* + 20 dB y, además, ≥ 65 dB(A). Así se ignoran variaciones pequeñas en una casa silenciosa y se adapta a viviendas ruidosas.
+2. **Clasificación del tipo de sonido.** Se analizan ventanas de 1 s (50 % de solape, 16 kHz) con un modelo de clasificación de audio sobre espectrograma log-mel, entrenado para las clases: rotura de vidrio, golpe o patada a puerta, grito, disparo y alarma. La clase debe tener confianza ≥ 0.75, o ≥ 0.65 entre 22:00 y 06:00, cuando la vivienda debería estar en silencio.
+
+Un sonido es **sospechoso** si cumple ambas condiciones. Los sonidos impulsivos (vidrio, golpe, disparo) requieren una sola ventana. Los sostenidos (grito, alarma) requieren 2 ventanas consecutivas. Los sonidos cotidianos (TV, música, mascotas, electrodomésticos) pertenecen a clases normales y no disparan el evento. Cuando el usuario marca una alerta como falso positivo, esa muestra se usa para ajustar el umbral.
+
+
 
 ### 5.6.4 Power Flow Sensor
-Este diagrama representa el proceso de monitoreo del consumo eléctrico de los dispositivos conectados. El sensor obtiene valores de voltaje y corriente, a partir de los cuales se calcula el consumo energético. Si se detecta una variación anómala, el sistema determina si se trata únicamente de un consumo inusual o de un pico potencialmente peligroso. En el segundo caso, el controlador Edge puede abrir el relé inteligente para interrumpir de manera inmediata la alimentación del dispositivo afectado y posteriormente notificar al usuario:
+El sensor mide voltaje (V) y corriente (A), y calcula la potencia (W) y la energía (kWh). Si se detecta una variación anómala, el sistema determina si es solo un consumo inusual (Warning) o un pico peligroso (Critical). Ante un pico peligroso, el Edge Controller abre el relé en menos de 100 ms, almacena las mediciones y notifica al usuario. La energía solo se restablece, regresando a *Monitoring*, tras una autorización explícita del usuario.
 
 <img src="assets/IOTPFS.png" alt="IOT PFS">
 
 
 
 ### 5.6.5 Temperature Sensor
-El diagrama muestra el comportamiento del sistema de monitoreo de temperatura considerando dos niveles configurables de alerta. Mientras la temperatura permanezca por debajo del primer umbral, el sistema continúa operando en estado normal. Al superar el primer nivel, se genera una advertencia dirigida al usuario y se incrementa la frecuencia de monitoreo. Si la temperatura alcanza el segundo umbral, el evento pasa a ser crítico, generándose una alerta prioritaria y un proceso de validación para determinar si es necesario realizar un escalamiento hacia los servicios de emergencia:
+
+El monitoreo usa dos umbrales configurables, T1 = 45 °C y T2 = 57 °C. Mientras la temperatura sea menor que T1, el sistema permanece en estado *Normal*, con lecturas cada 30 s. Al alcanzar T1 pasa a *Warning*: avisa al usuario, activa el enfriamiento nivel 1 (ventilador al 50 %) y lee cada 5 s. Al alcanzar T2, confirmada con 3 lecturas consecutivas, pasa a *Critical*: avisa al usuario, activa el enfriamiento máximo (ventilador al 100 % y A/C a 22 °C), activa el buzzer y notifica a las autoridades. Para evitar oscilaciones, el retorno a un estado inferior requiere que la temperatura baje 2 °C por debajo del umbral, y los actuadores se apagan al volver a *Normal*.
 
 <img src="assets/IOTTS.png" alt="IOT TS">
 
@@ -409,11 +479,11 @@ El diagrama muestra el comportamiento del sistema de monitoreo de temperatura co
 
 ### 5.6.6 Overall IoT Interaction
 
-El diagrama presenta una visión integrada del funcionamiento de los tres subsistemas IoT. Cada sensor opera de manera concurrente, supervisando de forma independiente la seguridad, el consumo eléctrico y la temperatura. Cuando se detecta una condición anómala, el subsistema correspondiente ejecuta las acciones definidas, tales como generar alertas, interrumpir la alimentación eléctrica o solicitar una validación de emergencia. Finalmente, los eventos generados y la telemetría son almacenados para su posterior consulta y análisis:
+El diagrama integra los tres subsistemas, que operan de forma concurrente. Cuando se detecta una condición anómala, cada uno ejecuta sus acciones: sirena y bloqueo de puertas, corte de energía con el relé, o enfriamiento. Todos notifican al usuario y, según el caso, a las autoridades. Los eventos y la telemetría se almacenan para consulta posterior.
 
 <img src="assets/IOTALL.png" alt="IOT ALL">
 
-Este diagrama de secuencia muestra el intercambio de mensajes entre un sensor IoT, el controlador Edge, el backend, el servicio de notificaciones y la aplicación móvil. Dependiendo de la severidad del evento, el flujo puede limitarse al registro de telemetría, generar una advertencia o escalar hacia una situación crítica. La comunicación permite evidenciar cómo los eventos detectados en el entorno físico son procesados y convertidos en acciones visibles para el usuario:
+El diagrama de secuencia muestra el intercambio de mensajes entre el sensor, el Edge Controller, los actuadores, el backend, el servicio de notificaciones, la aplicación móvil y el servicio de emergencia. Las acciones sobre los actuadores se ejecutan localmente, antes de la respuesta del backend.
 
 <img src="assets/IOTECS.png" alt="IOT ECS">
 
