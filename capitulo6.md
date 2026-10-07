@@ -13,14 +13,17 @@ Para el diseño de experiencia de usuario, arquitectura de información y protot
 ##### Figma
 
 Herramienta utilizada para la creación de wireframes, mockups y prototipos interactivos de la Landing Page y de la aplicación Web de Sentrya.
+https://www.figma.com/
 
 ##### UXPressia
 
 Herramienta utilizada para la elaboración de User Personas, Empathy Maps y User Journey Maps, permitiendo representar las necesidades, comportamientos y experiencias de los usuarios considerados para Sentrya.
+https://uxpressia.com/
 
 ##### Miro
 
 Herramienta colaborativa utilizada para la elaboración de actividades de diseño y análisis del producto, así como para organizar información y facilitar el trabajo colaborativo durante las etapas de planificación y diseño.
+https://miro.com/
 
 #### Software Development
 
@@ -53,10 +56,12 @@ Gestor de paquetes utilizado para administrar las dependencias del proyecto y ej
 ##### Git
 
 Herramienta utilizada para gestionar los cambios realizados en el código fuente mediante el control de versiones.
+https://git-scm.com/
 
 ##### GitHub
 
 Plataforma utilizada para almacenar los repositorios del proyecto y facilitar la colaboración entre los integrantes del equipo.
+https://github.com/
 
 ##### Vitest
 
@@ -73,6 +78,7 @@ Para la coordinación y comunicación entre los integrantes del equipo se utiliz
 ##### Google Meet
 
 Herramienta utilizada para realizar reuniones virtuales, coordinaciones del equipo, seguimiento del avance del proyecto y actividades relacionadas con los Sprints.
+https://meet.google.com/
 
 #### Software Documentation
 
