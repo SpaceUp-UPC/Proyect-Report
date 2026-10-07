@@ -394,7 +394,7 @@ Link al Frontend: [Frontend](https://setrya-frontend.vercel.app/)
 A continuacion se presenta un desglose de las contribuciones y commits hechos por los integrantes del equipo:
 
 <img src="capitulo6/Insights.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
-<img src="capitulo6/Insights2.png.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/Insights2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 
 # Conclusiones
@@ -413,7 +413,7 @@ A continuacion se presenta un desglose de las contribuciones y commits hechos po
 
 7. La definición de lineamientos de **UI/UX** permitió establecer una experiencia visual consistente entre las distintas funcionalidades de Sentrya. La organización de información por roles, la utilización de indicadores visuales para representar estados y alertas, y la presentación de mediciones mediante dashboards permiten facilitar la interpretación del estado del hogar para usuarios que no necesariamente cuentan con conocimientos técnicos especializados.
 
-8. La implementación inicial permitió trasladar parte de los requerimientos y diseños realizados a una solución funcional. El uso de **Angular, TypeScript, Angular Material, Git, GitHub, GitHub Actions y GitHub Pages**, entre otras herramientas, permitió establecer un entorno de desarrollo colaborativo, organizar el código fuente y automatizar parte del proceso de construcción y despliegue del producto.
+8. La implementación inicial permitió trasladar parte de los requerimientos y diseños realizados a una solución funcional. El uso de **Angular, TypeScript, Angular Material, Git, GitHub y GitHub Pages**, entre otras herramientas, permitió establecer un entorno de desarrollo colaborativo, organizar el código fuente y automatizar parte del proceso de construcción y despliegue del producto.
 
 9. La utilización de prácticas de **gestión de configuración y control de versiones** permitió mantener los componentes principales del proyecto organizados en diferentes repositorios y ramas de desarrollo. Esta estrategia facilita la colaboración entre los integrantes del equipo, mantiene la trazabilidad de los cambios y permite separar el desarrollo de nuevas funcionalidades de las versiones consideradas estables.
 
