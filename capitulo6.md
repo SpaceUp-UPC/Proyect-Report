@@ -18,11 +18,13 @@ https://www.figma.com/
 ##### UXPressia
 
 Herramienta utilizada para la elaboración de User Personas, Empathy Maps y User Journey Maps, permitiendo representar las necesidades, comportamientos y experiencias de los usuarios considerados para Sentrya.
+
 https://uxpressia.com/
 
 ##### Miro
 
 Herramienta colaborativa utilizada para la elaboración de actividades de diseño y análisis del producto, así como para organizar información y facilitar el trabajo colaborativo durante las etapas de planificación y diseño.
+
 https://miro.com/
 
 #### Software Development
@@ -33,13 +35,19 @@ Para el desarrollo de la aplicación Web y Landing Page de Sentrya se utilizaron
 
 IDE utilizado como entorno principal para el desarrollo y edición del código fuente de la aplicación Web y Landing Page.
 
+https://code.visualstudio.com/
+
 ##### Angular
 
 Framework utilizado para el desarrollo de la aplicación Web de Sentrya.
 
+https://angular.dev/
+
 ##### TypeScript
 
 Lenguaje de programación utilizado para implementar la lógica y funcionalidades de la aplicación Web.
+
+https://www.typescriptlang.org/
 
 ##### Angular Material
 
@@ -56,11 +64,13 @@ Gestor de paquetes utilizado para administrar las dependencias del proyecto y ej
 ##### Git
 
 Herramienta utilizada para gestionar los cambios realizados en el código fuente mediante el control de versiones.
+
 https://git-scm.com/
 
 ##### GitHub
 
 Plataforma utilizada para almacenar los repositorios del proyecto y facilitar la colaboración entre los integrantes del equipo.
+
 https://github.com/
 
 ##### Vitest
@@ -78,6 +88,7 @@ Para la coordinación y comunicación entre los integrantes del equipo se utiliz
 ##### Google Meet
 
 Herramienta utilizada para realizar reuniones virtuales, coordinaciones del equipo, seguimiento del avance del proyecto y actividades relacionadas con los Sprints.
+
 https://meet.google.com/
 
 #### Software Documentation
@@ -381,7 +392,9 @@ Para este Sprint no se contemplaron pruebas unitarias
 Durante el Sprint 1 se realizó la ejecución de los componentes desarrollados de Sentrya, verificando el funcionamiento de la Landing Page, la aplicación Web y los servicios utilizados por la solución.
 
 
-**Link a Execution Evidence de Landing Page y Web:** [Landing Page y Web](PEGAR_AQUI_EL_LINK_DEL_VIDEO)
+**Link a Execution Evidence de Landing Page y Web:** 
+
+https://setrya-frontend.vercel.app/login
 
 La evidencia permite observar la ejecución de las funcionalidades desarrolladas durante el Sprint 1, incluyendo el acceso a la aplicación, navegación por los módulos principales y visualización de la información correspondiente a los servicios IoT.
 
