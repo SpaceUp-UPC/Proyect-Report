@@ -274,7 +274,9 @@ https://spaceup-upc.github.io/LandingPageSentrya/
 
 **Resultado del despliegue**
 Como resultado del proceso de despliegue, la Landing Page de Sentrya se encuentra disponible públicamente mediante GitHub Pages.
+
 URL: https://spaceup-upc.github.io/LandingPageSentrya/
+
 Figura. Landing Page Sentrya desplegada.
 <img src="capitulo6/LandingPage-Deploy.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
