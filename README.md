@@ -823,7 +823,12 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
 ### 2.2.2. Registro de entrevistas
 
 #### Link de Entrevistas unidas: [Registro de entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQCbt_6Mzl12SJq6qsfCFuxqAR2Ywpzb010_STXjIGtgn6c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=m336re)
-#### Segmento objetivo 1 
+### 2.2.2. Registro de entrevistas
+
+#### Link de Entrevistas unidas: [Registro de entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQCbt_6Mzl12SJq6qsfCFuxqAR2Ywpzb010_STXjIGtgn6c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=m336re)
+
+#### Segmento objetivo 1
+
 <table>
 <colgroup>
 </colgroup>
@@ -853,15 +858,15 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
     <td>Evidencia</td>
     <td>
       <div align="center">
-         <img src="assets/Captura.JPG" alt="Evidencia">
+        <img src="assets/Captura.JPG" alt="Evidencia">
       </div>
     </td>
   </tr>
   <tr>
     <td>Link</td>
     <td>
-      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u201711828_upc_edu_pe/IQBhIkbgFjd5RY4HyFRh7DfTAeusEvDwh8Nf4zchNU-ZnpM?e=zIFhMt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
-         Entrevista 1
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311828_upc_edu_pe/IQBhIkbgFjd5RY4HyFRh7DfTAeusEvDwh8Nf4zchNU-ZnpM?e=zIFhMt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+        Entrevista 1
       </a>
     </td>
   </tr>
@@ -875,12 +880,22 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
   </tr>
   <tr>
     <td>Resumen</td>
-    <td>Patricia cuenta que utiliza diferentes dispositivos IoT en su hogar, como focos inteligentes, cámaras y Alexa. Utiliza su celular para controlar los dispositivos y menciona que la instalación no presentó mayores dificultades. Sin embargo, identifica como principal problema tener que utilizar varias aplicaciones para gestionar los dispositivos. También utiliza cámaras para monitorear su hogar y recibe alertas cuando se detecta actividad. Además, manifiesta interés en conocer el consumo mensual de electricidad y detectar posibles usos no autorizados. Para encontrar especialistas, recurriría principalmente a redes sociales o páginas web. Finalmente, señala que le gustaría tener todos sus dispositivos y funcionalidades centralizados en una sola aplicación.</td>
-  </tr>
+    <td>
+      Patricia cuenta que utiliza diferentes dispositivos IoT en su hogar,
+      como focos inteligentes, cámaras y Alexa. Utiliza su celular para
+      controlar los dispositivos y menciona que la instalación no presentó
+      mayores dificultades. Sin embargo, identifica como principal problema
+      tener que utilizar varias aplicaciones para gestionar los dispositivos.
+      También utiliza cámaras para monitorear su hogar y recibe alertas cuando
+      se detecta actividad. Además, manifiesta interés en conocer el consumo
+      mensual de electricidad y detectar posibles usos no autorizados. Para
+      encontrar especialistas, recurriría principalmente a redes sociales o
+      páginas web. Finalmente, señala que le gustaría tener todos sus
+      dispositivos y funcionalidades centralizados en una sola aplicación.
+    </td>
   </tr>
 </tbody>
 </table>
-
 
 <div style="page-break-before: always;"></div>
 
@@ -935,8 +950,93 @@ Las entrevistas tuvieron como objetivo identificar las necesidades, experiencias
   </tr>
   <tr>
     <td>Resumen</td>
-    <td>Carlos Segundo, dueño de un hogar en Lince, utiliza focos inteligentes que instaló por su cuenta para controlar la intensidad y el color de la iluminación desde su celular, principalmente por comodidad. Además, está evaluando adquirir una cámara de seguridad para supervisar su vivienda cuando se encuentre fuera. Durante la entrevista, señaló dificultades para elegir dispositivos debido a la variedad de marcas, las dudas sobre su compatibilidad y las posibles limitaciones de conectividad Wi-Fi. También considera tedioso administrar varias aplicaciones, cuentas y contraseñas, y expresa preocupación por el acceso a sus dispositivos ante la pérdida o el robo del celular. Aunque puede realizar instalaciones sencillas, buscaría apoyo especializado para configuraciones complejas o problemas de mantenimiento. Su principal expectativa es contar con una aplicación móvil que centralice el control y monitoreo de los dispositivos de su hogar de manera sencilla y segura.
-</td>
+    <td>
+      Carlos Segundo, dueño de un hogar en Lince, utiliza focos inteligentes
+      que instaló por su cuenta para controlar la intensidad y el color de la
+      iluminación desde su celular, principalmente por comodidad. Además, está
+      evaluando adquirir una cámara de seguridad para supervisar su vivienda
+      cuando se encuentre fuera. Durante la entrevista, señaló dificultades
+      para elegir dispositivos debido a la variedad de marcas, las dudas sobre
+      su compatibilidad y las posibles limitaciones de conectividad Wi-Fi.
+      También considera tedioso administrar varias aplicaciones, cuentas y
+      contraseñas, y expresa preocupación por el acceso a sus dispositivos
+      ante la pérdida o el robo del celular. Aunque puede realizar
+      instalaciones sencillas, buscaría apoyo especializado para
+      configuraciones complejas o problemas de mantenimiento. Su principal
+      expectativa es contar con una aplicación móvil que centralice el control
+      y monitoreo de los dispositivos de su hogar de manera sencilla y segura.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Martin</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Alegre Padilla</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Rol</td>
+    <td>Dueño de hogar</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>
+      <div align="center">
+        <img src="assets/Entrevista2.PNG" alt="Evidencia entrevista 3">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u201711828_upc_edu_pe/IQAg7RWJCNE8QItCVBGjgS4-AVAs660UKkbkQnpfznzbH5k?e=CX6eLz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">
+        Entrevista 3
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:00</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>06:40</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Martin Alegre Padilla, dueño de hogar de 24 años, actualmente no cuenta
+      con dispositivos IoT en su vivienda, aunque estaría dispuesto a
+      adquirirlos. Considera práctico poder controlar desde su celular
+      dispositivos como el aire acondicionado y monitorear de forma remota a
+      su perro cuando se encuentra fuera de casa. Asimismo, manifestó haber
+      considerado adquirir un termostato para controlar la temperatura del
+      hogar; sin embargo, el costo y la dificultad de instalación influyeron
+      en su decisión de no adquirirlo. Para encontrar especialistas,
+      recurriría principalmente a redes sociales, especialmente Facebook.
+      Finalmente, considera conveniente tener sus dispositivos centralizados
+      y accesibles desde una misma solución, aunque reconoce que podría
+      experimentar cierta dificultad inicial debido a la falta de costumbre.
+    </td>
   </tr>
 </tbody>
 </table>
@@ -1181,16 +1281,16 @@ A partir de las entrevistas realizadas se identificaron características y neces
 
 | Características identificadas | Entrevistados que lo mencionan | Porcentaje |
 |---|---|---:|
-| Necesidad de centralizar dispositivos e información | Patricia, Oscar y Mathias | 75% |
-| Necesidad de monitoreo y alertas | Patricia, Oscar, Mathias y Carlos | 100% |
-| Gestión manual de información | Oscar, Mathias y Carlos | 75% |
-| Dependencia del cliente para reportar fallas | Oscar, Mathias y Carlos | 75% |
-| Uso o gestión de múltiples aplicaciones y herramientas | Patricia, Oscar y Carlos | 75% |
-| Necesidad de mantenimiento preventivo | Oscar, Mathias y Carlos | 75% |
-| Problemas de compatibilidad entre dispositivos y marcas | Oscar y Carlos | 50% |
-| Necesidad de monitoreo remoto para detectar fallas | Oscar, Mathias y Carlos | 75% |
-| Captación o búsqueda mediante redes sociales o recomendaciones | Patricia y Mathias | 50% |
-
+| Necesidad de centralizar dispositivos e información | Patricia, Carlos, Martin, Oscar, Mathias, Carlos y Thiago | 100% |
+| Necesidad de monitoreo y alertas | Patricia, Carlos, Martin, Oscar, Mathias y Carlos | 86% |
+| Uso o gestión de múltiples aplicaciones y herramientas | Patricia, Carlos, Oscar, Mathias, Carlos y Thiago | 86% |
+| Gestión manual de información | Oscar, Mathias, Carlos y Thiago | 57% |
+| Dependencia del cliente para reportar fallas | Oscar, Mathias y Carlos | 43% |
+| Necesidad de mantenimiento preventivo o proactivo | Oscar, Mathias y Carlos | 43% |
+| Problemas de compatibilidad entre dispositivos y marcas | Carlos, dueño de hogar, y Carlos, implementador IoT | 29% |
+| Interés en monitoreo o control remoto | Patricia, Carlos, Martin, Oscar, Mathias y Carlos | 86% |
+| Búsqueda de especialistas mediante redes sociales | Patricia y Martin | 29% |
+| Dificultad relacionada con instalación o configuración | Martin, Carlos, Oscar, Mathias y Thiago | 71% |
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
