@@ -344,22 +344,28 @@ La participación conjunta del equipo permitió avanzar en los diferentes compon
 
 #### 6.2.1.4. Development Evidence for Sprint Review
 
-Durante el desarrollo del Sprint 1 se realizaron diferentes actividades de implementación sobre los repositorios de Sentrya. Las evidencias de desarrollo se pueden verificar mediante el historial de commits registrado en GitHub, donde se identifican los cambios realizados por los integrantes del equipo sobre la Landing Page y la aplicación Web.
+Durante el desarrollo del Sprint 1 se realizaron diferentes actividades de implementación sobre los repositorios de Sentrya. Las evidencias de desarrollo se pueden verificar mediante el historial de commits registrado en GitHub, donde se identifican los cambios realizados sobre la Landing Page y la aplicación Web.
 
-A continuación, se presentan algunos de los commits realizados durante el Sprint:
+A continuación, se presentan algunos de los commits más representativos realizados durante el Sprint 1, correspondientes al periodo comprendido entre el 01 y el 04 de octubre de 2026:
 
 | Repository | Branch | Commit Id | Commit Message | Author | Committed on |
 |---|---|---|---|---|---|
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `a7f3c21` | `feat(webapp): implement dashboard and main navigation` | BraulioTN | 2026-10-04 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `c4e891b` | `feat(iot): add temperature monitoring views` | AndersonaNd12326 | 2026-10-04 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `f82d6a4` | `feat(iot): implement security events visualization` | Martinezhmongus | 2026-10-03 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `b19e735` | `feat(alerts): implement alerts module` | Jose | 2026-10-03 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `d63a912` | `chore(deploy): configure production API` | BraulioTN | 2026-10-02 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `e51c4f8` | `feat(iot): implement power consumption monitoring` | AndersonaNd12326 | 2026-10-02 |
-| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `main` | `91b7e42` | `feat(landing): improve responsive layout` | JorgeJorgeFTS | 2026-10-02 |
-| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `main` | `3c8a6f1` | `fix(landing): adjust navigation and sections` | Jose | 2026-10-01 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `6e42b93` | `feat(auth): implement login functionality` | Martinezhmongus | 2026-10-01 |
-| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `develop` | `4d91f27` | `chore(deploy): prepare fake API for deployment` | JorgeJorgeFTS | 2026-10-01 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `76a6500` | `fix(deploy): add SPA route rewrite for Vercel` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `45760a` | `chore(deploy): configure production API` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `5f1b6e9` | `chore(deploy): prepare fake API for deployment` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `b049426` | `feat(webapp): improve UI, i18n and accessibility` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `45925fd` | `feat(webapp): implement Sprint 1 core features` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `8dd5114` | `chore(project): preserve DDD directory structure` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/Setrya-Frontend](https://github.com/SpaceUp-UPC/Setrya-Frontend) | `main` | `f9b66d2` | `chore(project): initialize Angular web application` | de123xl | 2026-10-04 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `b9de0f9` | `Update web link in hero section to point to the live application` | JorgeFTS | 2026-10-04 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `b9d0c64` | `Show team photos in the team section` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `8334475` | `Add team photos` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `ca081bb` | `Add new images for team members to the landing page` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `29dc26e` | `Fix team leader role` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `a0bca6d` | `Rewrite landing for Sentrya smart home IoT: new sections, team, FAQ and download` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `7636c30` | `Replace Coder Placing with SpaceUp` | JorgeFTS | 2026-10-02 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `c7e8ff7` | `Add .nojekyll for GitHub Pages` | JorgeFTS | 2026-10-01 |
+| [SpaceUp-UPC/LandingPageSentrya](https://github.com/SpaceUp-UPC/LandingPageSentrya) | `claude/beautiful-mendel-6sk0t8` | `f672b3a` | `Add Sentrya landing page` | JorgeFTS | 2026-10-01 |
 
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
