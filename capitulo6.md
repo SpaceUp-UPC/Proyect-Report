@@ -270,35 +270,14 @@ La Landing Page se encuentra disponible en:
 ```text
 https://spaceup-upc.github.io/LandingPageSentrya/
 ```
-Proceso de despliegue
-El proceso de despliegue se encuentra automatizado mediante GitHub Actions. Cuando se ejecuta el flujo de despliegue, se realizan las siguientes etapas:
-```text
-Código fuente
-      ↓
-Build
-      ↓
-Report Build Status
-      ↓
-Deploy
-      ↓
-GitHub Pages
-      ↓
-Landing Page Sentrya
-```
-La ejecución observada en GitHub Actions presenta los pasos build, report-build-status y deploy, finalizando correctamente con el despliegue de la Landing Page.
-Evidencia del despliegue
-Figura 1. Historial de deployments de la Landing Page mediante GitHub Pages.
-[Insertar captura de GitHub → Deployments]
 
 
-Figura 2. Flujo de construcción y despliegue de la Landing Page mediante GitHub Actions.
-[Insertar captura de GitHub Actions]
-
-Resultado del despliegue
+**Resultado del despliegue**
 Como resultado del proceso de despliegue, la Landing Page de Sentrya se encuentra disponible públicamente mediante GitHub Pages.
 URL: https://spaceup-upc.github.io/LandingPageSentrya/
-Figura 3. Landing Page Sentrya desplegada.
-[Insertar captura de la Landing Page funcionando]
+Figura. Landing Page Sentrya desplegada.
+<img src="capitulo6/LandingPage-Deploy.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 
 
 ## 6.2. Landing Page, Services & Applications Implementation
@@ -362,7 +341,6 @@ La participación conjunta del equipo permitió avanzar en los diferentes compon
 | US13 | Documentación del Sprint | Como equipo de proyecto, queremos documentar las actividades, evidencias y resultados obtenidos durante el Sprint para facilitar el seguimiento del desarrollo. | Media | José Luis Martínez Valdivia |
 
 #### 6.2.1.4. Development Evidence for Sprint Review
-#### 6.2.1.3. Development Evidence for Sprint Review
 
 Durante el desarrollo del Sprint 1 se realizaron diferentes actividades de implementación sobre los repositorios de Sentrya. Las evidencias de desarrollo se pueden verificar mediante el historial de commits registrado en GitHub, donde se identifican los cambios realizados por los integrantes del equipo sobre la Landing Page y la aplicación Web.
 
@@ -387,7 +365,6 @@ A continuación, se presentan algunos de los commits realizados durante el Sprin
 Para este Sprint no se contemplaron pruebas unitarias
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
-#### 6.2.1.6. Execution Evidence for Sprint Review
 
 Durante el Sprint 1 se realizó la ejecución de los componentes desarrollados de Sentrya, verificando el funcionamiento de la Landing Page, la aplicación Web y los servicios utilizados por la solución.
 
@@ -403,13 +380,50 @@ La evidencia permite observar la ejecución de las funcionalidades desarrolladas
 En esta entega se realizó el despliegue de la Landing Page por medio de Github Pages, a continuación se explica el proceso y lo que se consiguió:
 <img src="capitulo6/WhatsApp Image 2026-10-04 at 7.24.11 PM.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 <img src="capitulo6/WhatsApp Image 2026-10-04 at 7.24.11 PM2.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 Link a Landing Page: [Landing Page](https://spaceup-upc.github.io/LandingPageSentrya/)
 
 
 Ademas, se entrego el deployment del frontend a partir de Vercel
 <img src="capitulo6/WhatsApp Image 2026-10-04 at 11.10.20 PM.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 <img src="capitulo6/WhatsApp Image 2026-10-04 at 11.10.20 PM2.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
 Link al Frontend: [Frontend](https://setrya-frontend.vercel.app/)
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint
+A continuacion se presenta un desglose de las contribuciones y commits hechos por los integrantes del equipo:
+
+<img src="capitulo6/Insights.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/Insights2.png.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+
+# Conclusiones
+
+1. El desarrollo de **Sentrya** permitió plantear una solución tecnológica orientada a centralizar la implementación, monitoreo y administración de dispositivos IoT dentro de hogares inteligentes. La propuesta busca reducir la fragmentación existente entre diferentes dispositivos y sistemas, proporcionando al dueño de hogar un único entorno desde el cual consultar el estado de su vivienda, recibir alertas, visualizar mediciones y gestionar los dispositivos instalados.
+
+2. La identificación de dos segmentos principales, **dueños de hogar e implementadores de soluciones Smart Home**, permitió definir funcionalidades diferenciadas de acuerdo con las necesidades de cada tipo de usuario. Mientras el propietario requiere principalmente monitoreo, seguridad, alertas y facilidad de uso, el implementador necesita herramientas para administrar clientes, instalaciones y dispositivos asociados a cada vivienda.
+
+3. El proceso de **Requirements Elicitation & Analysis** permitió transformar las necesidades identificadas durante la investigación en funcionalidades concretas del producto. La definición de épicas, historias de usuario y criterios de aceptación facilitó establecer el alcance funcional de Sentrya y mantener trazabilidad entre las necesidades de los usuarios y las características propuestas para la plataforma.
+
+4. El análisis de soluciones como **Samsung SmartThings, Home Assistant y Google Home** permitió identificar oportunidades de diferenciación para Sentrya. Aunque estas plataformas cuentan con ecosistemas consolidados de automatización, Sentrya plantea complementar la gestión tecnológica del hogar mediante la integración entre propietarios e implementadores especializados, incorporando también seguimiento de instalaciones, mantenimiento y expansión progresiva de las soluciones IoT.
+
+5. La aplicación de **Domain-Driven Design** permitió organizar el sistema alrededor de responsabilidades claramente diferenciadas. La separación en bounded contexts como *Identity & Access Management*, *Space Management*, *IoT Monitoring & Notifications*, *Payment Management* y *Reports & Advanced Features* contribuye a reducir el acoplamiento entre componentes y proporciona una base adecuada para la evolución independiente de las diferentes áreas del sistema.
+
+6. La arquitectura propuesta permite combinar procesamiento en la nube con procesamiento local dentro de la vivienda. La utilización de dispositivos IoT, un **Edge Controller**, comunicación mediante **MQTT**, servicios backend y aplicaciones Web/Mobile permite que Sentrya pueda procesar información generada por sensores y responder ante determinados eventos. La capacidad de procesar situaciones críticas localmente también contribuye a disminuir la dependencia de la conectividad con los servicios cloud.
+
+7. La definición de lineamientos de **UI/UX** permitió establecer una experiencia visual consistente entre las distintas funcionalidades de Sentrya. La organización de información por roles, la utilización de indicadores visuales para representar estados y alertas, y la presentación de mediciones mediante dashboards permiten facilitar la interpretación del estado del hogar para usuarios que no necesariamente cuentan con conocimientos técnicos especializados.
+
+8. La implementación inicial permitió trasladar parte de los requerimientos y diseños realizados a una solución funcional. El uso de **Angular, TypeScript, Angular Material, Git, GitHub, GitHub Actions y GitHub Pages**, entre otras herramientas, permitió establecer un entorno de desarrollo colaborativo, organizar el código fuente y automatizar parte del proceso de construcción y despliegue del producto.
+
+9. La utilización de prácticas de **gestión de configuración y control de versiones** permitió mantener los componentes principales del proyecto organizados en diferentes repositorios y ramas de desarrollo. Esta estrategia facilita la colaboración entre los integrantes del equipo, mantiene la trazabilidad de los cambios y permite separar el desarrollo de nuevas funcionalidades de las versiones consideradas estables.
+
+10. Finalmente, Sentrya establece una base tecnológica que puede evolucionar progresivamente mediante la incorporación de nuevos sensores, actuadores, soluciones de automatización e integraciones. El enfoque modular definido durante el diseño permite que la propuesta no se limite a los módulos iniciales de seguridad, monitoreo térmico y protección eléctrica, sino que pueda extenderse según las necesidades futuras de los usuarios y la evolución del ecosistema IoT.
+
+---
+
+# Referencias
+
+
+
+# Anexos
 
