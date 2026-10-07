@@ -400,5 +400,16 @@ La evidencia permite observar la ejecución de las funcionalidades desarrolladas
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
+En esta entega se realizó el despliegue de la Landing Page por medio de Github Pages, a continuación se explica el proceso y lo que se consiguió:
+<img src="capitulo6/WhatsApp Image 2026-10-04 at 7.24.11 PM.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/WhatsApp Image 2026-10-04 at 7.24.11 PM2.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+Link a Landing Page: [Landing Page](https://spaceup-upc.github.io/LandingPageSentrya/)
+
+
+Ademas, se entrego el deployment del frontend a partir de Vercel
+<img src="capitulo6/WhatsApp Image 2026-10-04 at 11.10.20 PM.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/WhatsApp Image 2026-10-04 at 11.10.20 PM2.jpeg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+Link al Frontend: [Frontend](https://setrya-frontend.vercel.app/)
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint
 
