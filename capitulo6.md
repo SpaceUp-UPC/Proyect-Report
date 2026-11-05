@@ -404,6 +404,13 @@ A continuacion se presenta un desglose de las contribuciones y commits hechos po
 <img src="capitulo6/Insights.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 <img src="capitulo6/Insights2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
+## 6.3. Validations Interviews.
+### 6.3.1. Diseño de Entrevistas
+### 6.3.2. Registro de Entrevistas.
+### 6.3.3. Evaluaciones según heurísticas.
+## 6.4. Video About-the-Product.
+
+
 
 # Conclusiones
 
