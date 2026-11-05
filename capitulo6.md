@@ -1,6 +1,6 @@
 # Capítulo VI: Product Implementation, Validation & Deployment
 
-## 6.1. Software Configuration Management
+## 6.1.  Software Configuration Management
 
 ### 6.1.1. Software Development Environment Configuration
 
@@ -406,7 +406,98 @@ A continuacion se presenta un desglose de las contribuciones y commits hechos po
 
 ## 6.3. Validations Interviews.
 ### 6.3.1. Diseño de Entrevistas
+
+Las entrevistas de validación tuvieron como objetivo comprobar si el producto desarrollado (landing page y aplicación web de Sentrya) resulta comprensible, usable y útil para los dos segmentos objetivo definidos en el Capítulo I. A diferencia de las entrevistas del Capítulo II, que buscaban descubrir necesidades, en esta etapa se solicitó a cada participante interactuar con el producto y expresar sus percepciones sobre la propuesta de valor, la claridad de la información, la facilidad de uso y su disposición a adoptar la solución.
+
+
+**Segmento 1: Dueño de hogar**
+
+1. ¿Cuántos años tienes, en qué distrito vives y qué dispositivos inteligentes usas en tu hogar, si es que usas alguno?
+2. ¿Qué crees que ofrece Sentrya y qué problema resuelve, según la página principal?
+3. ¿Se entiende claramente cómo funciona el servicio?
+4. ¿Es fácil encontrar cómo empezar a usar Sentrya o cómo contactar al equipo?
+5. ¿Qué te da confianza o desconfianza de Sentrya al ver la página?
+6. ¿Se entiende el estado general de tu hogar en la pantalla de inicio?
+7. ¿Las alertas te dejan claro qué ocurrió y qué debes hacer?
+8. ¿Te resulta útil el historial de humedad y temperatura? ¿Qué más te gustaría ver?
+9. ¿Está claro cuando una acción sobre un dispositivo se realizó correctamente?
+10. ¿La información de los implementadores es suficiente para elegir uno y solicitar un servicio?
+11. ¿Qué fue lo más fácil y lo más difícil de usar, y qué cambiarías o agregarías?
+12. ¿Usarías Sentrya en tu hogar? Del 1 al 5, ¿qué tan fácil te pareció?
+
+**Segmento 2: Implementador de hogar inteligente**
+
+1. ¿Cuántos años tienes, en qué distrito trabajas y cómo organizas hoy a tus clientes e instalaciones?
+2. ¿Qué entiendes que ofrece Sentrya para un profesional como tú, según la página principal?
+3. ¿Queda claro cómo recibirías clientes o te unirías como implementador?
+4. ¿Qué te da confianza o desconfianza para usar esta plataforma en tu negocio?
+5. ¿El panel te muestra claramente las actividades que tienes pendientes?
+6. ¿La información de una solicitud es suficiente para decidir si la aceptas?
+7. ¿La información de tus clientes e instalaciones está organizada de forma clara?
+8. ¿Con los datos de los dispositivos podrías detectar y diagnosticar una anomalía?
+9. ¿Te sirve el historial de una instalación para el seguimiento y el mantenimiento?
+10. ¿Esta herramienta reemplazaría o complementaría lo que usas hoy?
+11. ¿Qué función te falta para gestionar mejor tus instalaciones?
+12. Del 1 al 5, ¿qué tan fácil te pareció usar la plataforma? ¿Pagarías por ella?
+
+Las preguntas se agrupan en tres ejes de validación:
+
+| Eje de validación | Segmento 1 (Dueño de hogar) | Segmento 2 (Implementador) |
+|-------------------|-----------------------------|----------------------------|
+| Comprensión de la propuesta de valor y confianza (landing page) | P2, P3, P4, P5 | P2, P3, P4 |
+| Utilidad y claridad de las funcionalidades (aplicación) | P6, P7, P8, P9, P10 | P5, P6, P7, P8, P9 |
+| Usabilidad, adopción y disposición de uso | P11, P12 | P10, P11, P12 |
+
 ### 6.3.2. Registro de Entrevistas.
+
+
+#### Segmento objetivo 1: Dueño de hogar
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Nombre</td><td></td></tr>
+  <tr><td>Apellidos</td><td></td></tr>
+  <tr><td>Edad</td><td></td></tr>
+  <tr><td>Distrito</td><td></td></tr>
+  <tr><td>Rol</td><td>Dueño de hogar</td></tr>
+  <tr><td>Evidencia</td><td></td></tr>
+  <tr><td>Link</td><td></td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td></td></tr>
+  <tr><td>Duración de la entrevista</td><td></td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td></td></tr>
+  <tr><td>Resumen</td><td></td></tr>
+</tbody>
+</table>
+
+#### Segmento objetivo 2: Implementador de hogar inteligente
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Nombre</td><td>Carlos</td></tr>
+  <tr><td>Apellidos</td><td>Alvarez</td></tr>
+  <tr><td>Edad</td><td>25</td></tr>
+  <tr><td>Distrito</td><td>Chorrillos</td></tr>
+  <tr><td>Rol</td><td>Implementador de hogar inteligente</td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg2.png"></td></tr>
+  <tr><td>Link</td><td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQDgZ9aweA6mSqXu-QNOT0o8AWunsHs_v2GjyCQ7paqwx4c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bfIH0X</td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td>00:10</td></tr>
+  <tr><td>Duración de la entrevista</td><td>6:42</td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td>4.5</td></tr>
+  <tr><td>¿Pagaría por la plataforma?</td><td>Si</td></tr>
+  <tr><td>Resumen</td><td>El entrevistado es un implementador de domótica de 25 años que actualmente gestiona sus instalaciones de forma desordenada usando Excel y WhatsApp. Ve en Sentrya una solución sumamente valiosa para centralizar su agenda y monitorear el estado técnico de los dispositivos IoT de sus clientes desde un solo panel. Su mayor beneficio percibido es la capacidad de diagnosticar fallas a distancia (como problemas de Wi-Fi), lo que le ahorraría tiempo y dinero al evitar visitas técnicas presenciales innecesarias. Aunque sugiere agregar un pequeño control de inventario y asegurar que los límites de privacidad con el cliente sean claros, califica la plataforma con un 4.5 sobre 5 y afirma que pagaría una suscripción mensual sin dudarlo, ya que el sistema se pagaría solo con el ahorro operativo.</td></tr>
+</tbody>
+</table>
+
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Video About-the-Product.
 
