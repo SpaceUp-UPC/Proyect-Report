@@ -606,14 +606,29 @@ Se consideran los siguientes escenarios de validación, derivados de los criteri
 | TC11 | US21 | Consulta de instalaciones de un cliente. | El servicio devuelve las instalaciones asociadas. |
 | TC12 | US22 | Registro de dispositivo con identificador duplicado. | El servicio rechaza el registro duplicado. |
 
-Estos escenarios representan la cobertura que debe verificarse mediante la ejecución de pruebas. No constituyen por sí mismos evidencia de que todas las pruebas hayan sido ejecutadas satisfactoriamente.
+<br>
 
-Las evidencias deben incluir, según corresponda, capturas de solicitudes HTTP, códigos de respuesta, resultados obtenidos y registros de ejecución.
+**IAM:**
+<br>
 
-Debido al estado actual de la solución, todavía no es posible dar por validados los escenarios que requieren interacción completa entre el frontend, los servicios backend y los dispositivos físicos IoT.
+<img src="capitulo6/TestIAM.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
-Por lo tanto, la validación de las interfaces con datos reales, la comunicación MQTT y las acciones sobre actuadores queda pendiente para próximas iteraciones.
+<br>
 
+**IoT Monitoring:**
+<br>
+
+<img src="capitulo6/TestMonitoring.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+**SpaceManagement:**
+
+<br>
+
+<img src="capitulo6/TestSpaceManagement.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
 
 
 
@@ -649,7 +664,7 @@ La validación individual de los microservicios permite evaluar la lógica de ne
 
 <br>
 
-<img src="capitulo6/SWAGGER2.pngg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/SWAGGER2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 <br>
 
@@ -688,17 +703,21 @@ Esta información constituye un requisito importante para las futuras actividade
 - Requisitos de autenticación y autorización.
 - Dependencias y variables de configuración.
 
-**Evidencias por incorporar:**
+**Evidencias SWAGGER:**
 
-- [Captura de documentación OpenAPI/Swagger del servicio IAM]
-- [Captura de documentación OpenAPI/Swagger de Space Management]
-- [Captura de documentación OpenAPI/Swagger de IoT Monitoring]
-- [Captura de documentación OpenAPI/Swagger de Payment Management]
-- [Captura de documentación OpenAPI/Swagger de Reports]
+<br>
 
-La disponibilidad de estos documentos deberá verificarse para cada microservicio antes de considerar completada la documentación técnica del Sprint.
+<img src="capitulo6/SWAGGER3.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
----
+<br>
+
+<img src="capitulo6/SWAGGER2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/SWAGGER1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+
 
 ### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
