@@ -499,31 +499,9 @@ Las actividades AT01 a AT05 reflejan el desarrollo de los microservicios informa
 
 ### 6.2.2.4. Development Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo SpaceUp concentró sus esfuerzos en la implementación de los microservicios backend de Sentrya.
+Durante el desarrollo del Sprint 2 se realizaron diferentes actividades de implementación sobre los repositorios de Sentrya. Las evidencias de desarrollo se pueden verificar mediante el historial de commits registrado en GitHub, donde se identifican los cambios realizados sobre los microservicios y la aplicación Web.
 
-El desarrollo siguió la separación por Bounded Contexts establecida durante el diseño estratégico de Domain-Driven Design, con el objetivo de organizar las responsabilidades del sistema y facilitar su evolución independiente.
-
-Se desarrollaron cinco microservicios principales:
-
-**1. Identity & Access Management**
-
-
-**2. Space Management**
-
-
-**3. IoT Monitoring & Notifications**
-
-
-
-**4. Payment Management**
-
-
-
-**5. Reports & Advanced Features**
-
-
-
-#### Registro de evidencias de desarrollo
+A continuación, se presentan algunos de los commits más representativos realizados durante el Sprint 2:
 
 
 | Repository | Branch | Commit ID | Commit Message | Author | Committed On |
