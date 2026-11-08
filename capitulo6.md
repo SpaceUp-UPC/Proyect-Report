@@ -404,6 +404,392 @@ A continuacion se presenta un desglose de las contribuciones y commits hechos po
 <img src="capitulo6/Insights.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 <img src="capitulo6/Insights2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
+
+## 6.2.2. Sprint 2
+
+### 6.2.2.1. Sprint Planning 2
+### 6.2.2.1. Sprint Planning 2
+
+| Campo | Descripción |
+|---|---|
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | Desarrollo de los microservicios backend que conforman la arquitectura de Sentrya, tomando como referencia los Bounded Contexts definidos mediante Domain-Driven Design y las historias de usuario priorizadas en el Product Backlog. |
+| **Date** | [Fecha de planificación del Sprint 2] |
+| **Time** | [Hora de planificación] |
+| **Location** | Google Meet |
+| **Prepared By** | Martínez Valdivia, José Luis |
+| **Attendees** | Martínez Valdivia, José Luis; Taipe Sangama, Jorge Francisco; Serrano Uchuya, Gerald Patricio; Martinez Gaona, Pablo Afranio; Ventosilla Trujillo, Anderson Ricardo; Torrejon Navarro, Braulio Rodrigo |
+| **Sprint 1 Review Summary** | Durante el Sprint 1, el equipo SpaceUp avanzó en el desarrollo de los componentes iniciales de Sentrya, incluyendo la Landing Page y la aplicación frontend. Asimismo, se estableció la estructura de navegación, se desarrollaron las interfaces principales y se prepararon los componentes visuales necesarios para representar las funcionalidades de monitoreo, seguridad, protección eléctrica y administración del hogar.<br><br>El resultado permitió establecer una base visual y funcional para continuar con la implementación del sistema. Sin embargo, permaneció pendiente la conexión de las interfaces con los servicios backend definitivos y con los dispositivos físicos IoT. |
+| **Sprint 1 Retrospective Summary** | Durante la retrospectiva del Sprint 1, el equipo identificó la necesidad de fortalecer la separación de responsabilidades entre los componentes de la solución y avanzar en la implementación de los servicios que soportarán las funcionalidades propuestas.<br><br>Se determinó que el siguiente incremento debía enfocarse en el desarrollo de la arquitectura backend, aplicando los principios de Domain-Driven Design y la separación por Bounded Contexts.<br><br>Asimismo, se reconoció la importancia de establecer contratos de comunicación claros mediante API REST, con el objetivo de facilitar posteriormente la integración de los microservicios con las aplicaciones frontend y los dispositivos IoT. |
+| **Sprint 2 Goal** | El objetivo del Sprint 2 consiste en desarrollar los microservicios backend que conforman la arquitectura de Sentrya, implementando las responsabilidades principales de los Bounded Contexts identificados: Identity & Access Management, Space Management, IoT Monitoring & Notifications, Payment Management y Reports & Advanced Features.<br><br>El desarrollo busca proporcionar una base de servicios independientes que permita gestionar la autenticación de usuarios, administrar la información de los hogares y dispositivos, procesar información de monitoreo, gestionar operaciones relacionadas con pagos y consultar información histórica y reportes.<br><br>El cumplimiento del objetivo se evaluará mediante la disponibilidad del código fuente de los microservicios y la ejecución independiente de sus funcionalidades implementadas, utilizando solicitudes HTTP y datos de prueba cuando corresponda.<br><br>El alcance del Sprint 2 se concentra en el desarrollo de los servicios backend. La integración con la aplicación frontend, el intercambio de información con los dispositivos físicos IoT y la validación integral de los flujos entre componentes permanecen pendientes para las siguientes iteraciones. |
+| **Sprint 2 Velocity** | La velocidad del Sprint se determinará a partir de los Story Points correspondientes a las historias de usuario que hayan cumplido completamente sus criterios de aceptación.<br><br>Debido a que determinadas historias requieren integración con el frontend o dispositivos IoT, su implementación parcial a nivel backend no implica necesariamente que puedan considerarse completamente finalizadas. Por lo tanto, la velocidad real se establecerá al finalizar el Sprint, considerando únicamente las historias completadas conforme a la Definition of Done. |
+| **Sum of Story Points** | Para el Sprint 2 se seleccionaron historias de usuario relacionadas principalmente con autenticación, gestión de instalaciones y dispositivos, procesamiento de alertas, mediciones e históricos.<br><br>La selección representa un alcance planificado de **34 Story Points**, de acuerdo con las estimaciones establecidas en el Product Backlog. Este valor corresponde al esfuerzo estimado de las historias seleccionadas y no necesariamente a los puntos completados, debido a que algunas funcionalidades requieren integraciones adicionales para cumplir todos sus criterios de aceptación. |
+
+### 6.2.2.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 2, el equipo SpaceUp distribuyó las responsabilidades considerando los principales Bounded Contexts de la arquitectura de Sentrya y las actividades complementarias de documentación, pruebas y preparación para la integración.
+
+Esta distribución permitió mantener la separación entre los servicios, facilitando que cada integrante contribuyera al desarrollo de componentes independientes.
+
+La siguiente matriz propone la distribución de responsabilidades para documentar el Sprint 2. Los responsables deben ajustarse de acuerdo con las contribuciones reales registradas en los repositorios.
+
+| Aspecto / Actividad | Aspect Leader | Collaborators |
+|---|---|---|
+| Identity & Access Management | Gerald Patricio Serrano Uchuya | José Luis Martínez Valdivia; Pablo Afranio Martinez Gaona |
+| Space Management | Jorge Francisco Taipe Sangama | Braulio Rodrigo Torrejon Navarro; Anderson Ricardo Ventosilla Trujillo |
+| IoT Monitoring & Notifications | Anderson Ricardo Ventosilla Trujillo | Pablo Afranio Martinez Gaona; Gerald Patricio Serrano Uchuya |
+| Payment Management | Pablo Afranio Martinez Gaona | José Luis Martínez Valdivia; Jorge Francisco Taipe Sangama |
+| Reports & Advanced Features | Braulio Rodrigo Torrejon Navarro | Anderson Ricardo Ventosilla Trujillo; José Luis Martínez Valdivia |
+| Pruebas y validación de servicios | José Luis Martínez Valdivia | Todos los integrantes |
+| Documentación de API REST | Gerald Patricio Serrano Uchuya | Todos los integrantes |
+| Configuración y despliegue backend | Jorge Francisco Taipe Sangama | Gerald Patricio Serrano Uchuya; Anderson Ricardo Ventosilla Trujillo |
+| Documentación del Sprint | José Luis Martínez Valdivia | Todos los integrantes |
+
+Los Aspect Leaders serán responsables de coordinar las actividades correspondientes a cada componente, mientras que los colaboradores participarán en la implementación, revisión del código, validación de funcionalidades y elaboración de evidencias.
+
+La organización por responsabilidades permite mantener un desarrollo modular, reduciendo dependencias innecesarias entre los microservicios y facilitando la preparación de futuras actividades de integración.
+
+
+
+### 6.2.2.3. Sprint Backlog 2
+
+Para el Sprint 2 se seleccionaron historias del Product Backlog que permiten avanzar en la implementación de la lógica de negocio y los servicios backend correspondientes a los distintos Bounded Contexts.
+
+Se priorizaron las funcionalidades relacionadas con autenticación, registro de instalaciones, administración de dispositivos, procesamiento de alertas y consulta de información histórica.
+
+Debido a que las historias originales están formuladas desde la perspectiva del usuario final, su implementación a nivel de API representa un avance técnico, pero algunas requieren integración con el frontend o con dispositivos IoT para satisfacer completamente sus criterios de aceptación.
+
+#### Historias de usuario seleccionadas
+
+| ID | Historia de Usuario | Story Points | Prioridad | Alcance del Sprint 2 |
+|---|---|---:|---|---|
+| US01 | Registro de usuario | 3 | Alta | Implementación del servicio backend para registrar usuarios y gestionar sus roles. |
+| US02 | Inicio de sesión | 2 | Alta | Implementación de la autenticación y validación de credenciales mediante API. |
+| US03 | Recuperar contraseña | 2 | Media | Desarrollo de la lógica backend para iniciar y gestionar la recuperación de credenciales. |
+| US06 | Configuración de niveles de alerta térmica | 3 | Alta | Implementación de las reglas de validación y almacenamiento de umbrales. |
+| US07 | Recepción de alerta térmica | 5 | Alta | Desarrollo de la lógica que permite identificar lecturas fuera de los umbrales configurados y generar alertas. |
+| US12 | Listado centralizado de alertas | 3 | Alta | Implementación de consultas backend para recuperar alertas por usuario y prioridad. |
+| US14 | Consulta de histórico de mediciones | 3 | Media | Implementación del almacenamiento y consulta de mediciones registradas. |
+| US15 | Consulta de histórico de eventos | 3 | Media | Implementación de consultas para recuperar eventos asociados a instalaciones. |
+| US20 | Registro de una nueva instalación | 3 | Alta | Desarrollo de la lógica para registrar instalaciones asociadas a clientes. |
+| US21 | Consulta de instalaciones por cliente | 2 | Media | Implementación de consultas de instalaciones vinculadas a un cliente. |
+| US22 | Registro de dispositivo IoT | 3 | Alta | Desarrollo de las operaciones para registrar dispositivos y asociarlos a viviendas y ambientes. |
+| US11 | Consulta de acción ejecutada | 2 | Media | Implementación del modelo y consulta de eventos relacionados con acciones de protección eléctrica. |
+| **Total** | | **34** | | |
+
+**Nota:** El total de las historias seleccionadas es de 34 Story Points. La implementación de estos requerimientos se evalúa en el Sprint 2 a nivel de microservicios. Los criterios que dependen de interfaces de usuario, sensores físicos o actuadores permanecen pendientes de validación integral.
+
+#### Actividades técnicas complementarias
+
+Además de las historias seleccionadas, el equipo contempló actividades técnicas para implementar la arquitectura de microservicios definida en el Capítulo IV.
+
+| ID | Actividad técnica | Descripción | Estado |
+|---|---|---|---|
+| AT01 | Implementación de IAM | Desarrollo del microservicio de identidad y gestión de acceso. | Desarrollado |
+| AT02 | Implementación de Space Management | Desarrollo del microservicio encargado de administrar espacios, instalaciones y dispositivos registrados. | Desarrollado |
+| AT03 | Implementación de IoT Monitoring & Notifications | Desarrollo del microservicio responsable del procesamiento de lecturas, eventos y alertas. | Desarrollado |
+| AT04 | Implementación de Payment Management | Desarrollo del microservicio encargado de gestionar operaciones relacionadas con pagos. | Desarrollado |
+| AT05 | Implementación de Reports & Advanced Features | Desarrollo del microservicio orientado a consultas y generación de información para reportes. | Desarrollado |
+| AT06 | Definición de contratos API REST | Definición de los endpoints y estructuras de intercambio de información entre consumidores y servicios. | Por verificar |
+| AT07 | Pruebas independientes de microservicios | Validación de los endpoints y reglas de negocio utilizando datos de prueba. | Por verificar |
+| AT08 | Integración frontend-backend | Conexión de la aplicación web con los microservicios desarrollados. | Pendiente |
+| AT09 | Integración IoT-backend | Comunicación de dispositivos físicos y servicios mediante la infraestructura IoT propuesta. | Pendiente |
+| AT10 | Pruebas de integración end-to-end | Validación integral de la comunicación entre frontend, microservicios y dispositivos físicos. | Pendiente |
+
+Las actividades AT01 a AT05 reflejan el desarrollo de los microservicios informado para el Sprint 2. Las actividades restantes diferencian los elementos que necesitan evidencia adicional o que todavía requieren implementación.
+
+
+### 6.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo SpaceUp concentró sus esfuerzos en la implementación de los microservicios backend de Sentrya.
+
+El desarrollo siguió la separación por Bounded Contexts establecida durante el diseño estratégico de Domain-Driven Design, con el objetivo de organizar las responsabilidades del sistema y facilitar su evolución independiente.
+
+Se desarrollaron cinco microservicios principales:
+
+**1. Identity & Access Management**
+
+Se desarrolló el componente backend encargado de administrar la identidad y el acceso de los usuarios de Sentrya.
+
+Este servicio constituye la base para implementar los procesos relacionados con registro, autenticación y administración de credenciales de propietarios e implementadores.
+
+Su implementación permite separar las responsabilidades de seguridad del resto de los dominios funcionales.
+
+Historias relacionadas: US01, US02 y US03.
+
+**2. Space Management**
+
+Se desarrolló el microservicio responsable de administrar la información relacionada con los espacios, instalaciones y dispositivos registrados en la plataforma.
+
+Este componente permite organizar las entidades necesarias para relacionar a los usuarios con sus viviendas, ambientes y dispositivos IoT.
+
+Su desarrollo proporciona una base para la futura vinculación de los equipos físicos con las instalaciones administradas desde Sentrya.
+
+Historias relacionadas: US20, US21 y US22.
+
+**3. IoT Monitoring & Notifications**
+
+Se desarrolló el microservicio destinado al procesamiento de información relacionada con el monitoreo de dispositivos, la evaluación de condiciones y la administración de eventos y alertas.
+
+Este componente constituye una parte central de la propuesta de Sentrya, debido a que permitirá procesar la información generada por los módulos de monitoreo térmico, seguridad y protección eléctrica.
+
+En esta etapa, el desarrollo se realizó de manera independiente de los dispositivos físicos IoT.
+
+Por lo tanto, la recepción automática de telemetría desde sensores reales, la comunicación mediante MQTT y la generación de alertas a partir de datos físicos permanecen pendientes de integración y validación.
+
+Historias relacionadas: US06, US07 y US12.
+
+**4. Payment Management**
+
+Se desarrolló el microservicio correspondiente al dominio de gestión de pagos.
+
+Su responsabilidad es mantener separada la lógica de procesamiento y administración de operaciones financieras respecto a los demás servicios de la solución.
+
+La implementación de este componente permite preparar las funcionalidades relacionadas con operaciones económicas, sin que ello implique que se haya completado la integración con una pasarela de pagos externa.
+
+Este componente corresponde a una responsabilidad arquitectónica definida en el Capítulo IV y no tiene una historia de usuario específica dentro del Product Backlog actual.
+
+**5. Reports & Advanced Features**
+
+Se desarrolló el microservicio orientado a la gestión y consulta de información que posteriormente permitirá generar históricos, métricas y reportes sobre las operaciones de Sentrya.
+
+Este componente permitirá aprovechar los datos producidos por los demás servicios para proporcionar información de seguimiento y análisis a los usuarios.
+
+Debido a que todavía no se ha completado la integración con el ecosistema IoT, la generación de reportes a partir de mediciones reales y eventos obtenidos de dispositivos físicos permanece pendiente.
+
+Historias relacionadas: US14 y US15.
+
+#### Registro de evidencias de desarrollo
+
+Las evidencias correspondientes al Sprint 2 deberán incluir el historial de commits de cada repositorio, mostrando la implementación de los servicios y las contribuciones de los integrantes.
+
+| Repository | Branch | Commit ID | Commit Message | Author | Committed On |
+|---|---|---|---|---|---|
+| [Repositorio IAM] | [Rama] | [Commit] | [Descripción del cambio] | [Autor] | [Fecha] |
+| [Repositorio Space Management] | [Rama] | [Commit] | [Descripción del cambio] | [Autor] | [Fecha] |
+| [Repositorio IoT Monitoring] | [Rama] | [Commit] | [Descripción del cambio] | [Autor] | [Fecha] |
+| [Repositorio Payment Management] | [Rama] | [Commit] | [Descripción del cambio] | [Autor] | [Fecha] |
+| [Repositorio Reports] | [Rama] | [Commit] | [Descripción del cambio] | [Autor] | [Fecha] |
+
+**Evidencia sugerida:**
+
+- Capturas de la estructura del código fuente de cada microservicio.
+- Historial de commits realizados durante el Sprint.
+- Implementaciones de controllers, servicios y repositorios.
+- Modelos de dominio y entidades persistentes.
+- Configuración de ejecución de los microservicios.
+
+Estas evidencias permitirán demostrar la implementación de los componentes backend sin confundir su desarrollo independiente con la integración final de la solución.
+
+
+
+### 6.2.2.5. Testing Suite Evidence for Sprint Review
+
+Las actividades de validación del Sprint 2 se enfocan en comprobar el funcionamiento independiente de los microservicios backend.
+
+A diferencia de las pruebas end-to-end, estas validaciones se limitan a verificar el comportamiento de cada servicio sin depender de la aplicación frontend ni de los dispositivos físicos IoT.
+
+Se consideran los siguientes escenarios de validación, derivados de los criterios de aceptación del Product Backlog.
+
+| Test ID | Historia | Escenario de prueba | Resultado esperado |
+|---|---|---|---|
+| TC01 | US01 | Registro de usuario con información válida. | El servicio crea el usuario con el rol correspondiente. |
+| TC02 | US01 | Registro de usuario con correo duplicado. | El servicio rechaza el registro. |
+| TC03 | US02 | Autenticación con credenciales válidas. | El servicio autentica al usuario correctamente. |
+| TC04 | US02 | Autenticación con credenciales incorrectas. | El servicio rechaza el acceso. |
+| TC05 | US06 | Configuración de umbrales térmicos válidos. | El servicio almacena la configuración. |
+| TC06 | US06 | Configuración de umbrales inconsistentes. | El servicio rechaza los valores inválidos. |
+| TC07 | US07 | Procesamiento de lectura simulada que supera un umbral. | El servicio genera el evento de alerta correspondiente. |
+| TC08 | US12 | Consulta de alertas existentes. | El servicio devuelve las alertas registradas. |
+| TC09 | US14 | Consulta de mediciones dentro de un rango de fechas. | El servicio devuelve las mediciones correspondientes. |
+| TC10 | US20 | Registro de instalación con datos válidos. | El servicio registra la instalación. |
+| TC11 | US21 | Consulta de instalaciones de un cliente. | El servicio devuelve las instalaciones asociadas. |
+| TC12 | US22 | Registro de dispositivo con identificador duplicado. | El servicio rechaza el registro duplicado. |
+
+Estos escenarios representan la cobertura que debe verificarse mediante la ejecución de pruebas. No constituyen por sí mismos evidencia de que todas las pruebas hayan sido ejecutadas satisfactoriamente.
+
+Las evidencias deben incluir, según corresponda, capturas de solicitudes HTTP, códigos de respuesta, resultados obtenidos y registros de ejecución.
+
+Debido al estado actual de la solución, todavía no es posible dar por validados los escenarios que requieren interacción completa entre el frontend, los servicios backend y los dispositivos físicos IoT.
+
+Por lo tanto, la validación de las interfaces con datos reales, la comunicación MQTT y las acciones sobre actuadores queda pendiente para próximas iteraciones.
+
+
+
+
+### 6.2.2.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 2 se avanzó en la implementación de los componentes backend de Sentrya, organizados como microservicios independientes.
+
+Para sustentar su ejecución, es necesario presentar evidencias de las funcionalidades disponibles mediante sus interfaces API REST.
+
+La validación individual de los microservicios permite evaluar la lógica de negocio implementada antes de realizar la integración de toda la plataforma.
+
+**Componentes desarrollados**
+
+| Microservicio | Estado del desarrollo | Integración con frontend | Integración IoT |
+|---|---|---|---|
+| Identity & Access Management | Desarrollado | Pendiente | No aplica directamente |
+| Space Management | Desarrollado | Pendiente | Pendiente para vinculación física |
+| IoT Monitoring & Notifications | Desarrollado | Pendiente | Pendiente |
+| Payment Management | Desarrollado | Pendiente | No aplica directamente |
+| Reports & Advanced Features | Desarrollado | Pendiente | Pendiente de recibir datos del ecosistema |
+
+**Evidencias de ejecución por incorporar:**
+
+1. Ejecución del microservicio IAM y respuesta de sus endpoints.
+2. Ejecución del microservicio Space Management.
+3. Ejecución del microservicio IoT Monitoring & Notifications utilizando información de prueba.
+4. Ejecución del microservicio Payment Management.
+5. Ejecución del microservicio Reports & Advanced Features.
+
+El incremento del Sprint 2 representa un avance en la implementación de la arquitectura backend de Sentrya. Sin embargo, todavía no constituye una solución completamente integrada.
+
+La conexión entre los componentes del sistema y la demostración de un flujo completo de monitoreo desde un sensor físico hasta la aplicación frontend permanecerán pendientes para una siguiente iteración.
+
+
+
+### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, la documentación de los servicios se orienta a facilitar la comprensión y utilización de los microservicios desarrollados.
+
+La documentación técnica debe describir las responsabilidades de cada servicio, sus endpoints, las estructuras de datos intercambiadas y las condiciones necesarias para su ejecución.
+
+Esta información constituye un requisito importante para las futuras actividades de integración, debido a que permitirá identificar cómo deben comunicarse los consumidores de las APIs con cada microservicio.
+
+| Microservicio | Documentación requerida |
+|---|---|
+| Identity & Access Management | Endpoints de autenticación, registro de usuarios, roles y manejo de credenciales. |
+| Space Management | Endpoints de gestión de viviendas, espacios, instalaciones y dispositivos. |
+| IoT Monitoring & Notifications | Endpoints y contratos para lecturas, eventos, alertas y configuraciones de monitoreo. |
+| Payment Management | Endpoints y modelos relacionados con operaciones de pago. |
+| Reports & Advanced Features | Endpoints de consultas históricas y generación de información para reportes. |
+
+**Elementos de documentación:**
+
+- Descripción general del servicio.
+- Responsabilidades del Bounded Context.
+- Endpoints expuestos.
+- Métodos HTTP utilizados.
+- Parámetros de entrada.
+- Estructuras de solicitudes y respuestas.
+- Códigos de estado HTTP.
+- Requisitos de autenticación y autorización.
+- Dependencias y variables de configuración.
+
+**Evidencias por incorporar:**
+
+- [Captura de documentación OpenAPI/Swagger del servicio IAM]
+- [Captura de documentación OpenAPI/Swagger de Space Management]
+- [Captura de documentación OpenAPI/Swagger de IoT Monitoring]
+- [Captura de documentación OpenAPI/Swagger de Payment Management]
+- [Captura de documentación OpenAPI/Swagger de Reports]
+
+La disponibilidad de estos documentos deberá verificarse para cada microservicio antes de considerar completada la documentación técnica del Sprint.
+
+---
+
+### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+El Sprint 2 contempla la preparación de los microservicios backend para su ejecución independiente, respetando la arquitectura distribuida definida para Sentrya.
+
+Esta arquitectura establece que los servicios deben contar con responsabilidades separadas y que su comunicación se realizará mediante interfaces API REST.
+
+Asimismo, el diseño de Sentrya considera un API Gateway como punto de entrada para los consumidores y un broker MQTT para la comunicación con el ecosistema IoT.
+
+No obstante, el desarrollo de los microservicios no implica automáticamente que todos los componentes de la arquitectura hayan sido desplegados o integrados.
+
+Por ello, es importante diferenciar entre la implementación del código fuente, la ejecución de los servicios y su integración operativa.
+
+**Estado del despliegue**
+
+| Componente | Estado |
+|---|---|
+| Microservicios backend | Desarrollo completado; despliegue por verificar |
+| API Gateway | Configuración e integración por verificar |
+| Bases de datos de los microservicios | Configuración y disponibilidad por verificar |
+| Frontend | Desarrollado previamente; conexión con los nuevos microservicios pendiente |
+| Broker MQTT | Implementación y conexión con el backend pendientes de verificar |
+| Dispositivos físicos IoT | Integración con el backend pendiente |
+| Comunicación end-to-end | Pendiente |
+
+Para sustentar el despliegue se deberán incorporar capturas de los servicios ejecutándose, sus URLs disponibles y sus respectivas configuraciones.
+
+**Evidencias por incorporar:**
+
+- [URL o captura del despliegue de IAM]
+- [URL o captura del despliegue de Space Management]
+- [URL o captura del despliegue de IoT Monitoring & Notifications]
+- [URL o captura del despliegue de Payment Management]
+- [URL o captura del despliegue de Reports & Advanced Features]
+
+El resultado de este Sprint proporciona la base de servicios que será utilizada para desarrollar las integraciones restantes.
+
+La validación del despliegue integrado deberá realizarse cuando los microservicios puedan comunicarse con los componentes frontend y con la infraestructura IoT correspondiente.
+
+
+### 6.2.2.9. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo SpaceUp orientó sus actividades hacia la implementación de la arquitectura backend de Sentrya.
+
+La separación de la solución en diferentes Bounded Contexts permitió distribuir el desarrollo entre los integrantes, manteniendo responsabilidades delimitadas para cada servicio.
+
+Este enfoque favoreció el trabajo paralelo sobre las funcionalidades de autenticación, gestión de espacios, monitoreo y notificaciones, pagos y reportes.
+
+Asimismo, la utilización de repositorios y herramientas de control de versiones permitió organizar los cambios realizados sobre los componentes desarrollados y mantener trazabilidad sobre las contribuciones individuales.
+
+**Principales avances del Sprint**
+
+El avance más relevante del Sprint 2 fue el desarrollo de los cinco microservicios que conforman la arquitectura backend de Sentrya.
+
+Esta implementación representa una transición desde el diseño de la solución hacia la construcción de los componentes encargados de ejecutar las reglas de negocio.
+
+Otro avance importante fue la separación de las responsabilidades del sistema, siguiendo los Bounded Contexts definidos mediante Domain-Driven Design. Esto permite reducir el acoplamiento entre funcionalidades y preparar una arquitectura más organizada para futuras ampliaciones.
+
+**Dificultades identificadas**
+
+Una de las principales dificultades del Sprint fue la necesidad de desarrollar múltiples componentes backend con responsabilidades diferentes, manteniendo coherencia entre los modelos de dominio y las interfaces de comunicación.
+
+Asimismo, el equipo identificó que la implementación independiente de los microservicios no resulta suficiente para demostrar el funcionamiento integral de Sentrya.
+
+Todavía se requiere integrar los servicios con la aplicación frontend, establecer la comunicación con los dispositivos IoT y verificar la transmisión de información desde los sensores hacia los servicios de monitoreo.
+
+Estas dependencias limitan la validación de determinadas historias de usuario, especialmente aquellas que requieren visualizar información actualizada, generar notificaciones a partir de eventos físicos o ejecutar acciones sobre actuadores.
+
+**Lecciones aprendidas**
+
+El desarrollo del Sprint permitió reforzar la importancia de implementar las responsabilidades del sistema mediante componentes independientes y bien delimitados.
+
+También se reconoció la necesidad de definir contratos claros entre servicios antes de abordar la integración, evitando inconsistencias en el intercambio de información.
+
+Finalmente, el equipo identificó que las pruebas individuales de los servicios y las pruebas de integración cumplen propósitos distintos. Mientras las primeras permiten evaluar la lógica de negocio de cada componente, las segundas permitirán comprobar el funcionamiento conjunto de toda la solución.
+
+**Próximos pasos**
+
+Como resultado del Sprint 2, se establecieron las siguientes prioridades para continuar con el desarrollo de Sentrya:
+
+1. Integrar los microservicios backend con la aplicación frontend.
+2. Configurar y validar la comunicación entre los servicios mediante sus API REST y el API Gateway.
+3. Implementar la comunicación entre los dispositivos IoT y el backend, considerando la infraestructura MQTT propuesta.
+4. Conectar los módulos de monitoreo térmico, seguridad y protección eléctrica con los sensores y actuadores correspondientes.
+5. Implementar la visualización de lecturas, eventos y alertas reales en el frontend.
+6. Ejecutar pruebas de integración y validaciones end-to-end sobre los principales flujos del sistema.
+7. Consolidar la documentación técnica y las evidencias del despliegue integrado.
+
+**Conclusión del Sprint 2**
+
+El Sprint 2 permitió avanzar en la implementación de Sentrya mediante el desarrollo de los microservicios backend correspondientes a los Bounded Contexts definidos en la arquitectura de software.
+
+La disponibilidad de estos componentes representa un avance significativo en la construcción de la solución, debido a que establece la base técnica necesaria para implementar los procesos de autenticación, administración, monitoreo, pagos y reportes.
+
+Sin embargo, el incremento alcanzado todavía no representa una versión completamente integrada del producto, debido a que la comunicación con el frontend y los dispositivos físicos IoT permanece pendiente.
+
+En consecuencia, el siguiente Sprint deberá concentrarse en conectar los componentes desarrollados y validar los flujos completos de información, desde la captura de datos mediante sensores hasta su procesamiento en los microservicios y presentación al usuario final.
+
+
+
+
+
 ## 6.3. Validations Interviews.
 ### 6.3.1. Diseño de Entrevistas
 
