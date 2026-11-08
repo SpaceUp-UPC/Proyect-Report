@@ -635,17 +635,28 @@ La validación individual de los microservicios permite evaluar la lógica de ne
 | Payment Management | Desarrollado | Pendiente | No aplica directamente |
 | Reports & Advanced Features | Desarrollado | Pendiente | Pendiente de recibir datos del ecosistema |
 
-**Evidencias de ejecución por incorporar:**
+**Evidencias de ejecución SWAGGER:**
 
-1. Ejecución del microservicio IAM y respuesta de sus endpoints.
+1. Ejecución del microservicio IAM y respuesta de sus endpoints
 2. Ejecución del microservicio Space Management.
 3. Ejecución del microservicio IoT Monitoring & Notifications utilizando información de prueba.
 4. Ejecución del microservicio Payment Management.
 5. Ejecución del microservicio Reports & Advanced Features.
 
-El incremento del Sprint 2 representa un avance en la implementación de la arquitectura backend de Sentrya. Sin embargo, todavía no constituye una solución completamente integrada.
+<br>
 
-La conexión entre los componentes del sistema y la demostración de un flujo completo de monitoreo desde un sensor físico hasta la aplicación frontend permanecerán pendientes para una siguiente iteración.
+<img src="capitulo6/SWAGGER3.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/SWAGGER2.pngg" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/SWAGGER1.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+
+
 
 
 
