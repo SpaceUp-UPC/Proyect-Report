@@ -647,11 +647,8 @@ El Sprint 2 contempla la preparación de los microservicios backend para su ejec
 
 Esta arquitectura establece que los servicios deben contar con responsabilidades separadas y que su comunicación se realizará mediante interfaces API REST.
 
-Asimismo, el diseño de Sentrya considera un API Gateway como punto de entrada para los consumidores y un broker MQTT para la comunicación con el ecosistema IoT.
+Asimismo, el diseño de Sentrya considera un API Gateway como punto de entrada para los consumidores.
 
-No obstante, el desarrollo de los microservicios no implica automáticamente que todos los componentes de la arquitectura hayan sido desplegados o integrados.
-
-Por ello, es importante diferenciar entre la implementación del código fuente, la ejecución de los servicios y su integración operativa.
 
 **Estado del despliegue**
 
@@ -723,13 +720,7 @@ Las entrevistas de validación tuvieron como objetivo comprobar si el producto d
 11. ¿Qué función te falta para gestionar mejor tus instalaciones?
 12. Del 1 al 5, ¿qué tan fácil te pareció usar la plataforma? ¿Pagarías por ella?
 
-Las preguntas se agrupan en tres ejes de validación:
 
-| Eje de validación | Segmento 1 (Dueño de hogar) | Segmento 2 (Implementador) |
-|-------------------|-----------------------------|----------------------------|
-| Comprensión de la propuesta de valor y confianza (landing page) | P2, P3, P4, P5 | P2, P3, P4 |
-| Utilidad y claridad de las funcionalidades (aplicación) | P6, P7, P8, P9, P10 | P5, P6, P7, P8, P9 |
-| Usabilidad, adopción y disposición de uso | P11, P12 | P10, P11, P12 |
 
 ### 6.3.2. Registro de Entrevistas.
 
@@ -743,16 +734,16 @@ Las preguntas se agrupan en tres ejes de validación:
   </tr>
 </thead>
 <tbody>
-  <tr><td>Nombre</td><td></td></tr>
-  <tr><td>Apellidos</td><td></td></tr>
-  <tr><td>Edad</td><td></td></tr>
-  <tr><td>Distrito</td><td></td></tr>
+  <tr><td>Sebastian</td><td></td></tr>
+  <tr><td>Beingolea</td><td></td></tr>
+  <tr><td>24</td><td></td></tr>
+  <tr><td>Surco</td><td></td></tr>
   <tr><td>Rol</td><td>Dueño de hogar</td></tr>
-  <tr><td>Evidencia</td><td></td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg2Entrevista1.png "style="max-width:500px; max-height:700px; "></td></tr>
   <tr><td>Link</td><td></td></tr>
-  <tr><td>Timing donde inicia la entrevista</td><td></td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td>00:00</td></tr>
   <tr><td>Duración de la entrevista</td><td></td></tr>
-  <tr><td>Facilidad de uso (1 a 5)</td><td></td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td>4.0</td></tr>
   <tr><td>Resumen</td><td></td></tr>
 </tbody>
 </table>
