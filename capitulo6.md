@@ -665,7 +665,11 @@ Para sustentar el despliegue se deberán incorporar capturas de los servicios ej
 
 **Evidencias:**
 
-- [URL o captura del despliegue de IAM]
+- IAM MICROSERVICE - https://iot-iam-microservice.onrender.com/swagger-ui/index.html#
+<br>
+<img src="capitulo6/IAMDEPLOY.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<br>
+
 - [URL o captura del despliegue de Space Management]
 - [URL o captura del despliegue de IoT Monitoring & Notifications]
 - [URL o captura del despliegue de Payment Management]
