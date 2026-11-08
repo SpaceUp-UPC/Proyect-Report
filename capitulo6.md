@@ -762,7 +762,7 @@ Las entrevistas de validación tuvieron como objetivo comprobar si el producto d
   <tr><td>Edad</td><td>25</td></tr>
   <tr><td>Distrito</td><td>Chorrillos</td></tr>
   <tr><td>Rol</td><td>Implementador de hogar inteligente</td></tr>
-  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg2.png "style="max-width:500px; max-height:700px; "></td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg2Entrevista2.png "style="max-width:500px; max-height:700px; "></td></tr>
   <tr><td>Link</td><td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313458_upc_edu_pe/IQDgZ9aweA6mSqXu-QNOT0o8AWunsHs_v2GjyCQ7paqwx4c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bfIH0X</td></tr>
   <tr><td>Timing donde inicia la entrevista</td><td>00:10</td></tr>
   <tr><td>Duración de la entrevista</td><td>6:42</td></tr>
