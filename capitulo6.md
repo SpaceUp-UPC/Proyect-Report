@@ -499,6 +499,313 @@ Las preguntas se agrupan en tres ejes de validación:
 </table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
+
+## UX Heuristics & Principles Evaluation
+**Usability – Inclusive Design – Information Architecture**
+
+### Datos generales
+
+| Campo | Información |
+|---|---|
+| CARRERA | Ingeniería de Software |
+| CURSO | Desarrollo de Soluciones IoT |
+| SECCIÓN | 8735 |
+| PROFESORES | Marco Antonio León Baca |
+| AUDITOR | Equipo SpaceUp |
+| CLIENTE(S) | Dueños de hogar e implementadores de soluciones IoT participantes de las sesiones de validación (nombres por completar) |
+| SITE O APP A EVALUAR | Sentrya – Plataforma de monitoreo y gestión de hogares inteligentes |
+
+## Tareas a evaluar
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de una nueva cuenta e inicio de sesión en Sentrya.
+2. Visualización del dashboard principal y consulta del estado general del hogar.
+3. Navegación entre los ambientes registrados y consulta de sus dispositivos IoT.
+4. Visualización de alertas generadas por los sensores de seguridad, temperatura y humedad.
+5. Consulta de mediciones y registros históricos de los dispositivos.
+6. Visualización de los niveles de humedad y del estado de funcionamiento del humidificador.
+7. Exploración del catálogo de soluciones IoT disponibles.
+8. Búsqueda de implementadores especializados mediante filtros.
+9. Consulta de información de implementadores y solicitud de servicios.
+10. Gestión y seguimiento de dispositivos e instalaciones asociados a la vivienda.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Procesamiento de pagos por servicios de implementación.
+2. Integración de dispositivos IoT de fabricantes externos.
+3. Administración de sistemas de seguridad de múltiples viviendas desde una única cuenta.
+4. Configuración avanzada del firmware de sensores y actuadores.
+5. Integración con asistentes de voz y plataformas externas de automatización.
+6. Mantenimiento físico de los dispositivos IoT.
+
+## Escala de severidad
+
+Los problemas identificados serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|---|---|
+| 1 | **Problema superficial:** puede ser fácilmente superado por el usuario o sucede con poca frecuencia. Su corrección no es prioritaria. |
+| 2 | **Problema menor:** puede ocurrir con mayor frecuencia o requerir un esfuerzo adicional para superarlo. Se recomienda asignarle una prioridad baja de corrección. |
+| 3 | **Problema mayor:** dificulta significativamente la realización de tareas frecuentes o la comprensión de funciones importantes. Se recomienda asignarle una prioridad alta. |
+| 4 | **Problema muy grave:** impide al usuario completar una tarea crítica o puede generar consecuencias importantes por una interpretación incorrecta. Debe corregirse antes del lanzamiento. |
+
+## Tabla resumen
+
+La revisión heurística preliminar identifica los siguientes problemas potenciales en la experiencia propuesta.
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---|---|
+| 1 | La representación de estados de alerta depende considerablemente de indicadores visuales y colores. | 3 | Inclusive Design: Proporcionar experiencias comparables |
+| 2 | Las alertas no presentan de manera suficientemente destacada instrucciones específicas para responder a cada evento. | 3 | Usability: Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores |
+| 3 | La visualización de mediciones históricas puede dificultar la interpretación de tendencias a usuarios sin conocimientos técnicos. | 2 | Usability: Reconocimiento antes que recuerdo |
+| 4 | La información del estado de los dispositivos puede resultar insuficiente para diferenciar entre funcionamiento normal, desconexión y anomalía. | 3 | Usability: Visibilidad del estado del sistema |
+| 5 | La navegación entre ambientes, dispositivos y mediciones puede requerir pasos adicionales para localizar información específica. | 2 | Information Architecture: Is it findable? |
+| 6 | El catálogo presenta soluciones IoT sin destacar suficientemente sus requisitos de instalación y compatibilidad. | 2 | Information Architecture: Is it usable? |
+| 7 | Los filtros de búsqueda de implementadores pueden resultar complejos para usuarios que desconocen las especialidades técnicas. | 2 | Usability: Correspondencia entre el sistema y el mundo real |
+| 8 | El proceso de solicitud de servicios no evidencia suficientemente una confirmación detallada antes de completar la operación. | 3 | Usability: Prevención de errores |
+| 9 | El módulo de humedad requiere una representación explícita de la relación entre las mediciones del sensor y el funcionamiento del humidificador. | 3 | Usability: Visibilidad del estado del sistema |
+| 10 | El control del humidificador requiere mecanismos claros para distinguir la activación manual del funcionamiento automático. | 3 | Usability: Libertad y control del usuario |
+| 11 | Las etiquetas y unidades de las mediciones ambientales pueden dificultar la comprensión de usuarios no especializados. | 2 | Inclusive Design: Considerar la diversidad de situaciones |
+| 12 | La diferenciación visual entre secciones y acciones secundarias puede dificultar la identificación rápida de funcionalidades. | 2 | Information Architecture: Is it clear? |
+
+## Descripción de problemas
+
+### PROBLEMA #1: La representación de estados de alerta depende considerablemente de indicadores visuales y colores
+
+**Severidad:** 3
+
+**Heurística violada:** Inclusive Design – Proporcionar experiencias comparables.
+
+**Problema:**
+
+En los mock-ups del centro de alertas y dashboard de Sentrya se utilizan indicadores visuales para representar diferentes estados relacionados con los dispositivos inteligentes. Si bien estos elementos facilitan la identificación de eventos, su interpretación puede resultar complicada para usuarios con dificultades de percepción del color o limitaciones visuales.
+
+En situaciones en las que los estados de normalidad, advertencia y criticidad sean diferenciados principalmente mediante colores, los usuarios podrían tener dificultades para reconocer la gravedad del evento. Esta situación resulta especialmente relevante debido a que Sentrya está orientado al monitoreo de condiciones del hogar, incluyendo eventos de seguridad y anomalías ambientales.
+
+
+**Recomendación:**
+
+Complementar los colores utilizados para representar alertas con etiquetas textuales explícitas como "Normal", "Advertencia" y "Crítico". Asimismo, incorporar iconografía diferenciada y descripciones accesibles que permitan identificar el estado de los dispositivos sin depender exclusivamente del color. Se recomienda verificar que los contrastes de texto y componentes cumplan con los criterios de accesibilidad WCAG.
+
+### PROBLEMA #2: Las alertas no presentan de manera suficientemente destacada instrucciones específicas para responder a cada evento
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores.
+
+**Problema:**
+
+El centro de alertas de Sentrya permite consultar eventos generados por los sensores y visualizar información relacionada con las condiciones detectadas en el hogar. Sin embargo, en la representación del diseño no se destaca de manera uniforme una acción recomendada para cada tipo de evento.
+
+Esta situación puede generar incertidumbre entre propietarios sin experiencia en dispositivos IoT, especialmente cuando se reciben alertas relacionadas con incrementos de temperatura, eventos de seguridad o condiciones de humedad fuera del rango configurado.
+
+La ausencia de orientaciones suficientemente visibles puede provocar que el usuario reconozca la existencia de una alerta, pero no comprenda cuál debería ser el siguiente paso.
+
+
+**Recomendación:**
+
+Incorporar descripciones breves y recomendaciones específicas en cada alerta. Por ejemplo, ante un nivel de humedad inferior al umbral establecido, el sistema podría mostrar el mensaje "Humedad por debajo del rango configurado" junto con información sobre el estado del humidificador. Para situaciones críticas, las instrucciones deben distinguir claramente entre acciones automáticas realizadas por el sistema y acciones que requieren intervención humana.
+
+### PROBLEMA #3: Las mediciones históricas pueden resultar difíciles de interpretar para usuarios sin conocimientos técnicos
+
+**Severidad:** 2
+
+**Heurística violada:** Usability – Reconocimiento antes que recuerdo.
+
+**Problema:**
+
+La sección de históricos de Sentrya presenta información relacionada con mediciones y eventos registrados anteriormente mediante gráficos, indicadores y registros organizados por periodos.
+
+Aunque esta representación permite revisar el comportamiento de los dispositivos, los usuarios sin conocimientos técnicos podrían presentar dificultades para interpretar las variaciones de las mediciones o determinar si un valor corresponde a una condición normal.
+
+Por ejemplo, un propietario podría identificar cambios en los niveles de humedad relativa o temperatura, pero no comprender fácilmente si dichas variaciones se encuentran dentro de los límites establecidos para su vivienda.
+
+
+**Recomendación:**
+
+Incorporar líneas de referencia, rangos configurados y etiquetas descriptivas dentro de los gráficos. Asimismo, mostrar resúmenes sencillos sobre el comportamiento de las mediciones, indicando cuándo se encontraron dentro o fuera de los umbrales establecidos. Esto permitirá que los usuarios comprendan la información sin tener que recordar valores técnicos.
+
+### PROBLEMA #4: La información del estado de los dispositivos puede resultar insuficiente para diferenciar entre funcionamiento normal, desconexión y anomalía
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Visibilidad del estado del sistema.
+
+**Problema:**
+
+El dashboard y la sección de ambientes de Sentrya permiten visualizar información relacionada con los dispositivos registrados en el hogar. Sin embargo, la representación general del estado de estos dispositivos podría no permitir diferenciar de manera suficientemente evidente entre un dispositivo conectado, uno desconectado y uno que presenta alguna anomalía.
+
+Esta diferenciación es importante porque un dispositivo sin conexión puede dejar de transmitir mediciones, mientras que uno conectado podría detectar una condición que requiere atención. Si ambos casos se muestran de forma similar, el usuario podría interpretar erróneamente que todos los dispositivos funcionan correctamente.
+
+
+**Recomendación:**
+
+Incorporar estados diferenciados como "Conectado", "Desconectado", "Sin datos" y "Alerta activa". Asimismo, presentar la fecha y hora de la última lectura registrada por el sensor, permitiendo al propietario conocer si la información mostrada se encuentra actualizada.
+
+### PROBLEMA #5: La navegación entre ambientes, dispositivos y mediciones puede requerir pasos adicionales para localizar información específica
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture – Is it findable?
+
+**Problema:**
+
+La aplicación web de Sentrya organiza las funcionalidades mediante un menú lateral que permite acceder a secciones como "Inicio", "Mis ambientes", "Alertas" e "Históricos". Esta distribución presenta una organización general coherente, pero puede requerir que el usuario cambie de sección para consultar diferentes tipos de información relacionados con un mismo dispositivo.
+
+Por ejemplo, un propietario interesado en conocer el comportamiento de un sensor de humedad podría necesitar localizar primero el ambiente correspondiente y posteriormente acceder a los históricos para revisar sus mediciones anteriores. Esto puede incrementar el número de acciones necesarias para completar la consulta.
+
+
+**Recomendación:**
+
+Incorporar accesos contextuales desde el detalle de cada dispositivo hacia sus mediciones, históricos y alertas relacionadas. También se recomienda implementar rutas de navegación que permitan identificar claramente la relación entre el hogar, el ambiente y el dispositivo seleccionado.
+
+### PROBLEMA #6: El catálogo de soluciones IoT no destaca suficientemente los requisitos de instalación y compatibilidad
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture – Is it usable?
+
+**Problema:**
+
+El catálogo de Sentrya permite explorar distintas soluciones IoT destinadas a la protección y automatización del hogar. En los mock-ups se observa una organización de las soluciones mediante tarjetas y categorías, lo que facilita su reconocimiento visual.
+
+Sin embargo, la información presentada en la vista general podría no ser suficiente para que un propietario identifique rápidamente los requisitos de instalación, la compatibilidad con dispositivos existentes o la necesidad de contratar un implementador.
+
+Esta situación puede provocar que los usuarios seleccionen soluciones sin comprender completamente sus características o condiciones de funcionamiento.
+
+
+**Recomendación:**
+
+Incorporar información resumida sobre compatibilidad, requisitos de conectividad, componentes necesarios y nivel de complejidad de instalación. Asimismo, facilitar el acceso a una ficha descriptiva que explique el funcionamiento de cada solución mediante términos comprensibles para usuarios no especializados.
+
+### PROBLEMA #7: Los filtros de búsqueda de implementadores pueden resultar complejos para usuarios sin conocimientos técnicos
+
+**Severidad:** 2
+
+**Heurística violada:** Usability – Correspondencia entre el sistema y el mundo real.
+
+**Problema:**
+
+La sección de implementadores de Sentrya permite buscar profesionales especializados mediante filtros relacionados con la ubicación, especialidad, disponibilidad y calificación.
+
+Aunque estos criterios ayudan a encontrar profesionales adecuados, los usuarios que recién comienzan a implementar soluciones inteligentes podrían no conocer la especialidad técnica que necesitan contratar.
+
+Por ejemplo, un propietario interesado en instalar un sensor de humedad y un humidificador podría desconocer qué categoría de servicio seleccionar, dificultando su búsqueda.
+
+
+**Recomendación:**
+
+Complementar los filtros técnicos con categorías orientadas a las necesidades del usuario, como "Mejorar las condiciones ambientales", "Instalar sensores", "Automatizar dispositivos" o "Mejorar la seguridad del hogar". Asimismo, incorporar descripciones breves de cada especialidad para facilitar la selección del servicio requerido.
+
+### PROBLEMA #8: El proceso de solicitud de servicios no evidencia suficientemente una confirmación detallada antes de completar la operación
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Prevención de errores.
+
+**Problema:**
+
+Sentrya contempla la búsqueda de implementadores y el envío de solicitudes para instalación o mantenimiento de dispositivos inteligentes. Sin embargo, en los flujos representados no se evidencia suficientemente una pantalla de confirmación que reúna todos los detalles relevantes antes de registrar la solicitud.
+
+Esta situación podría ocasionar que un propietario envíe una solicitud asociada a un servicio, implementador o ambiente diferente al deseado, generando inconvenientes en la coordinación de la instalación.
+
+
+**Recomendación:**
+
+Incorporar una etapa de revisión previa al envío de la solicitud, mostrando el implementador seleccionado, tipo de servicio, ambiente involucrado y descripción de la necesidad. Asimismo, presentar una confirmación visual después del registro, indicando el estado de la solicitud y las opciones disponibles para consultarla.
+
+### PROBLEMA #9: El módulo de humedad requiere una representación explícita de la relación entre las mediciones del sensor y el humidificador
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Visibilidad del estado del sistema.
+
+**Problema:**
+
+La solución IoT de Sentrya incorpora un módulo ambiental destinado a supervisar condiciones dentro de la vivienda. Con la actualización del proyecto, el módulo de alimentación eléctrica se reemplaza por un sistema de monitoreo de humedad que utiliza un sensor para obtener mediciones y un humidificador como actuador.
+
+Debido a esta modificación, resulta necesario actualizar la interfaz para que el usuario pueda comprender la relación entre la humedad detectada y las acciones ejecutadas por el dispositivo.
+
+Si únicamente se presenta el porcentaje de humedad sin indicar el estado del humidificador, el usuario podría desconocer si el sistema está intentando modificar las condiciones ambientales o si el actuador se encuentra desactivado.
+
+
+**Recomendación:**
+
+Presentar el valor actual de humedad relativa en porcentaje (% HR), el rango objetivo configurado y el estado del humidificador. Asimismo, incorporar indicadores como "Humidificador encendido", "Humidificador apagado" y "Modo automático", permitiendo al propietario comprender las acciones ejecutadas por el sistema.
+
+### PROBLEMA #10: El control del humidificador requiere mecanismos claros para diferenciar el funcionamiento manual y automático
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Libertad y control del usuario.
+
+**Problema:**
+
+El funcionamiento del módulo de humedad contempla la utilización de un sensor que registra las condiciones ambientales y un humidificador que puede modificar el nivel de humedad del entorno.
+
+Si la interfaz no diferencia claramente entre el funcionamiento automático y el control manual, el propietario podría desconocer si el humidificador se activó como consecuencia de una regla configurada o por una acción realizada directamente desde la aplicación.
+
+Asimismo, la ausencia de una confirmación del resultado de una orden podría generar incertidumbre sobre si el actuador recibió correctamente la instrucción enviada.
+
+
+**Recomendación:**
+
+Incorporar un selector que permita identificar claramente el modo de funcionamiento del humidificador. En modo automático, mostrar el rango de humedad configurado y el estado de la regla de activación. En modo manual, presentar controles explícitos para encender y apagar el dispositivo, acompañados de mensajes que confirmen la ejecución de la acción. También se debe informar cuando una orden no pueda completarse por pérdida de conexión.
+
+### PROBLEMA #11: Las etiquetas y unidades de las mediciones ambientales pueden dificultar la comprensión de usuarios no especializados
+
+**Severidad:** 2
+
+**Heurística violada:** Inclusive Design – Considerar la diversidad de situaciones.
+
+**Problema:**
+
+Sentrya está dirigida tanto a usuarios con experiencia en dispositivos inteligentes como a propietarios que no cuentan con conocimientos técnicos sobre sensores, mediciones y automatización.
+
+La presentación de magnitudes como temperatura en grados Celsius (°C) y humedad relativa en porcentaje (% HR) puede resultar insuficiente cuando los usuarios desconocen cómo interpretar dichos valores.
+
+Por ejemplo, conocer que una habitación presenta una humedad relativa del 35 % no necesariamente permite determinar si este valor se encuentra dentro del rango configurado para ese ambiente.
+
+
+**Recomendación:**
+
+Complementar los valores numéricos con etiquetas descriptivas como "Por debajo del objetivo", "Dentro del rango configurado" y "Por encima del objetivo". Adicionalmente, incorporar textos de ayuda que expliquen el significado de las unidades y permitan consultar los umbrales establecidos para cada ambiente.
+
+### PROBLEMA #12: La diferenciación visual entre secciones y acciones secundarias puede dificultar la identificación rápida de funcionalidades
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture – Is it clear?
+
+**Problema:**
+
+La aplicación web de Sentrya presenta diferentes secciones mediante un menú lateral y utiliza tarjetas, botones e indicadores para organizar la información disponible.
+
+Si bien esta estructura proporciona una distribución general de las funcionalidades, la coexistencia de múltiples elementos informativos y acciones secundarias puede dificultar que los usuarios identifiquen rápidamente cuál es la función principal de cada pantalla.
+
+Esta situación resulta especialmente relevante para propietarios que utilizan la plataforma por primera vez y necesitan reconocer las acciones disponibles sin recorrer detalladamente toda la interfaz.
+
+
+**Recomendación:**
+
+Fortalecer la jerarquía visual de las pantallas mediante títulos descriptivos, agrupación de elementos relacionados y diferenciación clara entre acciones principales y secundarias. Asimismo, mantener una ubicación consistente para los botones principales y resaltar la sección activa dentro del menú de navegación.
+
+## Conclusiones de la evaluación heurística
+
+La revisión heurística preliminar de Sentrya permite identificar oportunidades de mejora relacionadas principalmente con la interpretación de información generada por dispositivos IoT, la accesibilidad de los indicadores visuales y la claridad de los procesos de interacción.
+
+En términos de usabilidad, las principales oportunidades se concentran en proporcionar mayor visibilidad sobre el estado de los dispositivos, explicar las acciones ejecutadas por el sistema y facilitar la comprensión de las alertas y mediciones ambientales.
+
+Desde la perspectiva de Inclusive Design, se considera importante que los estados y notificaciones puedan interpretarse independientemente de la percepción del color o del nivel de conocimientos técnicos del propietario.
+
+En cuanto a Information Architecture, se recomienda fortalecer los accesos contextuales entre ambientes, dispositivos, alertas e históricos, además de incorporar información más comprensible sobre las soluciones disponibles y los servicios ofrecidos por los implementadores.
+
+Finalmente, la incorporación del nuevo módulo de humedad requiere actualizar las interfaces para presentar adecuadamente las mediciones del sensor, el rango objetivo y el funcionamiento del humidificador. Estas mejoras permitirán mantener la coherencia de la experiencia propuesta y facilitar que los propietarios comprendan el comportamiento de los dispositivos conectados a su vivienda.
+
+Los problemas identificados deberán contrastarse con el prototipo actualizado y las sesiones de validación para confirmar su presencia y ajustar sus niveles de severidad.
+
+
 ## 6.4. Video About-the-Product.
 
 
