@@ -81,6 +81,46 @@ Herramienta utilizada para la ejecución de pruebas automatizadas del proyecto.
 
 Herramienta utilizada para proporcionar una API local durante el desarrollo y las pruebas de la aplicación Web.
 
+#### Backend: IoT Monitoring and Notifications
+
+Para el desarrollo del microservicio de monitoreo IoT y notificaciones se utilizaron las siguientes tecnologías y herramientas:
+
+##### Go
+
+Lenguaje de programación utilizado para implementar el microservicio (versión 1.27). La API REST se construyó con la librería estándar (`net/http`), sin frameworks externos.
+
+https://go.dev/
+
+##### MySQL
+
+Base de datos relacional propia del microservicio, de acuerdo con la arquitectura definida en el Capítulo IV (una base de datos por microservicio). Se accede mediante `database/sql` y el driver `go-sql-driver/mysql`; el esquema se versiona con migraciones SQL que se aplican al iniciar el servicio.
+
+https://www.mysql.com/
+
+##### MQTT y Eclipse Mosquitto
+
+Protocolo con el que la Edge Application publica las lecturas y eventos del hogar. El servicio se suscribe al broker mediante la librería `eclipse/paho.mqtt.golang`. Eclipse Mosquitto se utilizó como broker en el entorno de desarrollo.
+
+https://mosquitto.org/
+
+##### Docker y Docker Compose
+
+Herramientas utilizadas para empaquetar el servicio en una imagen y para levantar en local el entorno completo (MySQL, Mosquitto y el servicio).
+
+https://www.docker.com/
+
+##### Render y Aiven
+
+Render se utilizó como plataforma de despliegue del servicio, y Aiven como proveedor de la base de datos MySQL gestionada. Ambas se describen en la sección 6.1.4.
+
+https://render.com/ · https://aiven.io/
+
+##### OpenAPI
+
+Especificación utilizada para documentar los endpoints del servicio. Se publica en el propio servicio en la ruta `/openapi.yaml`.
+
+https://www.openapis.org/
+
 #### Project Management and Collaboration
 
 Para la coordinación y comunicación entre los integrantes del equipo se utilizaron las siguientes herramientas:
@@ -118,6 +158,12 @@ El proyecto Sentrya se encuentra organizado mediante diferentes repositorios de 
 | **Sentrya-Backend** | Repositorio correspondiente a los servicios backend de la solución. |
 | **MultiPlatform-App-Sentrya** | Repositorio correspondiente a la aplicación multiplataforma considerada en el proyecto. |
 | **MultiPlatform-App-Sentrya-Flutter** | Repositorio correspondiente a la implementación realizada con Flutter. |
+| **Setrya-IoTMonitoring-Service** | Microservicio IoT Monitoring and Notifications (Go): recepción de lecturas y eventos por MQTT, generación de alertas y comunicación hacia el Edge. |
+| **sentrya-edge-service** | Edge Application (Python): recibe las lecturas de las ESP32, aplica las reglas locales, comanda los actuadores y publica por MQTT. |
+| **sentrya-iam-microservice** | Microservicio Identity & Access Management (Java, Spring Boot): registro, inicio de sesión y emisión del JWT. |
+| **sentrya-payment-microservice** | Microservicio Payment Management (.NET): pagos y facturación. |
+| **Setrya-SpaceManagement-Service** | Microservicio Space Management. |
+| **sentrya-apigateway** | API Gateway, punto de entrada único hacia los microservicios. |
 
 #### Estructura de ramas
 
@@ -139,6 +185,21 @@ main
        ├── fix
        └── chore
 ```
+#### Ramas y flujo en los microservicios backend
+
+Cada microservicio backend se mantiene en su propio repositorio, lo que permite aislar su código, su historial y su despliegue. En el repositorio **Setrya-IoTMonitoring-Service** se trabajó con las ramas `main` (versión desplegada), `develop` y ramas `feature/*` por cada cambio. Cada cambio se integró mediante un Pull Request:
+
+| Pull Request | Rama origen | Rama destino | Contenido |
+|---|---|---|---|
+| [#1](https://github.com/SpaceUp-UPC/Setrya-IoTMonitoring-Service/pull/1) | `feature/iot-monitoring` | `develop` | Primera versión del microservicio. Se cerró sin mergear porque el mismo código ingresó a `main` mediante el PR #2. |
+| [#3](https://github.com/SpaceUp-UPC/Setrya-IoTMonitoring-Service/pull/3) | `feature/edge-contract` | `main` | Adaptación al contrato MQTT de la Edge Application y preparación del despliegue en Render. |
+
+```text
+main
+  ├── feature/iot-monitoring
+  └── feature/edge-contract
+```
+
 ### 6.1.3. Source Code Style Guide & Conventions
 
 Para mantener la consistencia, legibilidad y facilidad de mantenimiento del código fuente de Sentrya, se establecieron convenciones de nomenclatura, organización y formato para el desarrollo de la aplicación Web.
@@ -250,6 +311,38 @@ Los archivos de prueba se mantienen asociados a los componentes o funcionalidade
 Estas convenciones permiten mantener un código fuente consistente, organizado y comprensible para los integrantes del equipo, facilitando el mantenimiento y evolución de la aplicación Web de Sentrya.
 
 
+#### Convenciones del microservicio IoT Monitoring and Notifications (Go)
+
+El microservicio de monitoreo sigue las convenciones habituales del lenguaje Go y la organización por capas del diseño táctico definido en el Capítulo IV.
+
+- **Formato:** todo el código se formatea con `gofmt` y se revisa con `go vet` antes de cada commit.
+- **Nomenclatura:** `PascalCase` para identificadores exportados y `camelCase` para los no exportados. Los paquetes tienen nombres cortos en minúsculas.
+- **Comentarios:** los elementos exportados se documentan con comentarios que comienzan con su nombre.
+- **Errores:** los errores de dominio se definen como valores (`ErrDeviceNotFound`, `ErrInvalid`, etc.) y se comparan con `errors.Is`. Los errores técnicos se envuelven con contexto mediante `fmt.Errorf("...: %w", err)`.
+- **Pruebas:** los archivos de prueba usan el sufijo `_test.go` y se ubican junto al código que prueban.
+- **Decisiones pendientes:** los puntos de diseño que aún dependen de otros equipos se marcan en el código con el comentario `TODO(faltante)` y se listan en el README del repositorio.
+
+La estructura de carpetas sigue el Standard Go Project Layout:
+
+```text
+cmd/server/                 punto de entrada y ensamblaje de dependencias
+api/                        especificación OpenAPI
+migrations/                 migraciones SQL
+deployments/                docker-compose para desarrollo
+internal/
+├── domain/                 agregados, entidades, value objects y servicios de dominio
+├── application/            comandos, consultas y handlers
+├── interfaces/rest/        controllers, resources y assemblers
+├── infrastructure/
+│   ├── persistence/mysql/  repositorios y migrador
+│   ├── mqtt/               adaptador del broker (IoTBrokerAdapter)
+│   ├── notification/       envío de alertas (NotificationDispatcherService)
+│   └── normalizer/         normalización de lecturas (ReadingNormalizerService)
+└── config/                 configuración por variables de entorno
+```
+
+Esta organización corresponde a las cuatro capas descritas en la sección 4.2.5 (Domain, Interface, Application e Infrastructure).
+
 ### 6.1.4. Software Deployment Configuration
 
 El despliegue de los componentes Web de Sentrya se realizó mediante servicios de alojamiento integrados con los repositorios de GitHub. Para la Landing Page se utilizó **GitHub Pages**, junto con **GitHub Actions** para automatizar el proceso de construcción y publicación.
@@ -281,6 +374,36 @@ Figura. Landing Page Sentrya desplegada.
 <img src="capitulo6/LandingPage-Deploy.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
 
+
+#### Microservicios backend
+
+Cada microservicio backend se despliega de forma independiente y con su propia base de datos, de acuerdo con la arquitectura definida en la sección 4.1.3.4. El equipo decidió que cada integrante despliegue el servicio a su cargo en la plataforma **Render**, que construye la imagen directamente desde el `Dockerfile` del repositorio, por lo que no fue necesario publicar imágenes en un registro externo.
+
+##### IoT Monitoring and Notifications
+
+**Plataforma de despliegue:** Render (servicio web con runtime Docker), a partir de la rama `main` del repositorio `Setrya-IoTMonitoring-Service`. Cada push a `main` genera un nuevo despliegue. El repositorio incluye el archivo `render.yaml` que describe la configuración del servicio.
+
+**Imagen:** compilación en dos etapas. La primera compila el binario con Go sin dependencias del sistema (`CGO_ENABLED=0`); la segunda copia únicamente el binario a una imagen base mínima (`distroless`). La imagen resultante pesa aproximadamente 18 MB.
+
+**Base de datos:** MySQL 8.4 gestionado por Aiven, con conexión cifrada (TLS). Las tablas se crean automáticamente cuando el servicio inicia, mediante migraciones versionadas.
+
+**Configuración:** el servicio se configura exclusivamente con variables de entorno, de modo que ningún secreto se almacena en el repositorio:
+
+| Variable | Propósito |
+|---|---|
+| `MYSQL_DSN` y `MYSQL_TLS` | Conexión a la base de datos MySQL. |
+| `MQTT_BROKER_URL`, `MQTT_USERNAME` y `MQTT_PASSWORD` | Conexión al broker MQTT al que publica la Edge Application. |
+| `JWT_SECRET` | Secreto compartido con el microservicio IAM para validar el token. El servicio no inicia si falta. |
+| `CORS_ALLOWED_ORIGINS` | Orígenes de la aplicación Web autorizados a consumir la API. |
+| `SMTP_HOST`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `SMTP_FROM` y `ALERT_RECIPIENT` | Envío de alertas por correo (opcional). |
+
+**Seguridad:** todas las rutas bajo `/api/v1` exigen el JWT emitido por IAM. Solo `/health` y `/openapi.yaml` son públicas.
+
+**Verificación de disponibilidad:** el servicio expone la ruta `/health`, que Render utiliza como health check.
+
+URL: https://setrya-iotmonitoring-service.onrender.com
+
+**Consideración del plan gratuito:** Render suspende el servicio tras 15 minutos sin tráfico HTTP. Mientras está suspendido no recibe mensajes MQTT, aunque el broker conserva las lecturas con QoS 1 (la sesión del servicio es persistente) y se las entrega al reanudarse.
 
 ## 6.2. Landing Page, Services & Applications Implementation
 
@@ -496,6 +619,22 @@ Además de las historias seleccionadas, el equipo contempló actividades técnic
 
 Las actividades AT01 a AT05 reflejan el desarrollo de los microservicios informado para el Sprint 2. Las actividades restantes diferencian los elementos que necesitan evidencia adicional o que todavía requieren implementación.
 
+#### Cobertura del microservicio IoT Monitoring & Notifications
+
+La siguiente tabla indica qué parte de las historias del Sprint 2 relacionadas con el monitoreo cubre el microservicio, de acuerdo con lo implementado en su repositorio.
+
+| ID | Historia | Alcance implementado | Estado |
+|---|---|---|---|
+| US06 | Configuración de niveles de alerta térmica | Los umbrales se definen por dispositivo y métrica al registrarlo (`POST /devices`) y se validan (el mínimo debe ser menor o igual al máximo). Si no se definen, se aplican valores por defecto. Los umbrales se pueden enviar al Edge (`PUT /spaces/{spaceId}/edge-config`). No existe un endpoint para modificar los umbrales de un dispositivo ya registrado. | Parcial |
+| US07 | Recepción de alerta térmica | Cada lectura se evalúa contra el umbral y contra el estado local que calcula el Edge (`NORMAL`, `WARNING`, `CRITICAL`). Si es anómala, se genera una alerta con severidad (`low`, `medium`, `high`, `critical`) y se notifica por correo cuando el envío SMTP está configurado. Mientras la condición persiste no se crean alertas repetidas. | Cubierto |
+| US12 | Listado centralizado de alertas | `GET /spaces/{spaceId}/alerts` con filtro por estado. No filtra por usuario ni por prioridad. | Parcial |
+| US14 | Consulta de histórico de mediciones | `GET /spaces/{spaceId}/readings`, ordenado de la más reciente a la más antigua y con límite de resultados. No admite filtro por rango de fechas. | Parcial |
+| US15 | Consulta de histórico de eventos | Las intrusiones, escalamientos y fallos de sensor se almacenan como alertas con su identificador de evento y la referencia a la evidencia. No existe una consulta específica de eventos. | Parcial |
+
+Las historias US11, US20, US21 y US22 corresponden a otros microservicios. El servicio de monitoreo incluye únicamente un registro mínimo de dispositivos, necesario porque la ingesta rechaza las lecturas de dispositivos no registrados o inactivos.
+
+Además de las historias, el microservicio implementa los elementos necesarios para la comunicación con el Edge: recepción de los tipos de lectura `temperature`, `humidity`, `intrusion`, `escalation` y `device_error`, ingesta idempotente mediante el identificador de lectura (los reenvíos del Edge no duplican datos), y publicación hacia el Edge de órdenes a actuadores, de la decisión del usuario sobre una intrusión y de la configuración de umbrales.
+
 
 ### 6.2.2.4. Development Evidence for Sprint Review
 
@@ -508,7 +647,9 @@ A continuación, se presentan algunos de los commits más representativos realiz
 |---|---|---|---|---|---|
 | sentrya-iam-service | develop | a7f3c91 | feat(auth): implement user registration, login and JWT authentication | Gerald Serrano Uchuya | 2026-10-20 |
 | sentrya-space-management | develop | b8e2d46 | feat(spaces): implement installation and IoT device management endpoints | Jorge Taipe Sangama | 2026-10-21 |
-| sentrya-iot-monitoring | develop | c4a9f72 | feat(monitoring): implement sensor readings, thermal thresholds and alert generation | Anderson Ventosilla Trujillo | 2026-10-22 |
+| [Setrya-IoTMonitoring-Service](https://github.com/SpaceUp-UPC/Setrya-IoTMonitoring-Service) | feature/iot-monitoring | 3e49713 | feat: implement IoT Monitoring and Notifications service | JorgeFTS | 2026-10-28 |
+| [Setrya-IoTMonitoring-Service](https://github.com/SpaceUp-UPC/Setrya-IoTMonitoring-Service) | feature/iot-monitoring | 815bc71 | chore: Update README.md | JorgeFTS | 2026-10-28 |
+| [Setrya-IoTMonitoring-Service](https://github.com/SpaceUp-UPC/Setrya-IoTMonitoring-Service) | feature/edge-contract | f687713 | feat: adopt edge MQTT contract and prepare Render deployment | JorgeFTS | 2026-11-11 |
 | sentrya-payment-management | develop | d6b1e83 | feat(payments): implement payment transactions and payment status management | Pablo Martinez Gaona | 2026-10-23 |
 | sentrya-reports-service | develop | e9c5a27 | feat(reports): implement historical measurements, event queries and reporting endpoints | Braulio Torrejon Navarro | 2026-10-24 |
 
@@ -552,6 +693,46 @@ Se consideran los siguientes escenarios de validación, derivados de los criteri
 <br>
 
 <img src="capitulo6/TestMonitoring.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+**Pruebas automatizadas del microservicio IoT Monitoring & Notifications**
+
+El repositorio incluye una suite de pruebas automatizadas escrita con el paquete `testing` de Go, que se ejecuta con `go test ./...`. La suite cuenta con 30 pruebas distribuidas en cinco paquetes (dominio, aplicación, adaptador MQTT, persistencia y capa REST) y su ejecución más reciente finalizó sin fallos. Las pruebas de aplicación utilizan repositorios en memoria, por lo que no requieren base de datos ni broker.
+
+| Test ID | Escenario | Prueba automatizada | Resultado |
+|---|---|---|---|
+| TC05 | Registro de un dispositivo con umbrales válidos. | `TestRegisterDevice` | Aprobada |
+| TC06 | Registro con umbrales inconsistentes (mínimo mayor que el máximo). | `TestRegisterDevice`, `TestThresholdRange` | Aprobada |
+| TC07 | Lectura que supera el umbral. | `TestIngestOutOfRangeCreatesAndSendsAlert` | Aprobada |
+| TC07 | Lectura en estado `WARNING` o `CRITICAL` informado por el Edge. | `TestIngestDoesNotRepeatAlertWhileConditionLasts` | Aprobada |
+| TC08 | Consulta de alertas por estado. | `TestQueriesAndSummary` | Aprobada |
+| TC09 | Consulta de mediciones dentro de un rango de fechas. | No implementado: el servicio solo admite un límite de resultados. | No cubierto |
+| TC12 | Registro de un dispositivo con identificador duplicado. | `TestRegisterDevice` | Aprobada |
+
+Escenarios adicionales verificados por la suite:
+
+| Escenario | Prueba automatizada |
+|---|---|
+| Lectura dentro del rango: no genera alerta. | `TestIngestInRangeCreatesNoAlert` |
+| Lectura de un dispositivo inactivo, inexistente, con métrica o unidad inválida: se rechaza y no se almacena. | `TestIngestRejections` |
+| Eventos del Edge (intrusión, escalamiento, fallo de sensor) generan alertas con la severidad correspondiente. | `TestIngestEdgeEvents` |
+| El mismo `readingId` enviado dos veces no duplica la lectura ni la alerta. | `TestIngestIsIdempotentByReadingID` |
+| Si falla el envío del correo, la ingesta no falla y la alerta queda pendiente de envío. | `TestIngestNotifierFailureKeepsAlertCreated` |
+| Ciclo de vida de la alerta: reconocer y cerrar, y rechazo de transiciones inválidas. | `TestAlertLifecycle`, `TestAcknowledgeAndCloseAlert` |
+| Confirmación o rechazo de una intrusión por el usuario. | `TestValidateSecurityAlert` |
+| Envío de órdenes y configuración al Edge, con validación de los identificadores usados en el tópico. | `TestSendEdgeCommandAndConfig`, `TestValidateID` |
+| Interpretación del mensaje MQTT que publica el Edge. | `TestParsePayload`, `TestParsePayloadEdgeEvent` |
+| Autenticación: firma, vigencia y algoritmo del JWT de IAM (HS256, HS384 y HS512), y rechazo de tokens manipulados, vencidos o sin firma. | `TestVerifyJWT`, `TestRequireJWT` |
+| Política CORS. | `TestCORS` |
+
+```text
+ok  internal/application
+ok  internal/domain
+ok  internal/infrastructure/mqtt
+ok  internal/infrastructure/persistence/mysql
+ok  internal/interfaces/rest
+```
 
 <br>
 
@@ -608,6 +789,33 @@ La validación individual de los microservicios permite evaluar la lógica de ne
 
 
 
+**Evidencia de ejecución del microservicio IoT Monitoring & Notifications**
+
+El microservicio se ejecutó en un entorno local con MySQL 8.4 y Eclipse Mosquitto 2 levantados con Docker Compose. Para simular a la Edge Application se publicaron por MQTT, con QoS 1, los mismos mensajes que esta genera (tópico `sentrya/space1/{deviceId}/readings`). Antes se registraron y activaron cuatro dispositivos con los identificadores acordados con el Edge: `space1-temperature`, `space1-humidity`, `space1-intrusion` y `space1-escalation`.
+
+| Mensaje publicado | Resultado en el servicio |
+|---|---|
+| Temperatura 26 °C, estado `NORMAL` | Lectura `validated`; sin alerta. |
+| Temperatura 29 °C, estado `WARNING` (tres lecturas seguidas) | Lecturas `out_of_range`; **una** alerta de severidad `medium`. |
+| Temperatura 33 °C, estado `CRITICAL` (publicada dos veces con el mismo `readingId`) | Una sola lectura almacenada; una alerta `critical`. |
+| Humedad 50 % | Lectura `validated`; sin alerta. |
+| `device_error` | Alerta `medium`. |
+| `intrusion`, con `eventId` y `evidenceRef` | Alerta `high` que conserva el evento y la referencia a la evidencia. |
+| `escalation`, con `reason: temperature_critical` | Alerta `critical`. |
+| Lectura de un `deviceId` no registrado | Rechazada y registrada en el log; no se almacena. |
+
+En total se almacenaron 9 lecturas y se generaron 5 alertas. Posteriormente se comprobó la comunicación hacia el Edge, usando un suscriptor al tópico `sentrya/space1/#`:
+
+| Llamada a la API | Mensaje recibido en el broker |
+|---|---|
+| `POST /alerts/{id}/validation` con `{"decision":"reject"}` sobre la intrusión | `sentrya/space1/security/validation` con `{"decision":"reject","eventId":"ev-1"}` |
+| `POST /spaces/space1/commands/valve` con `{"action":"open"}` | `sentrya/space1/valve/commands` con `commandId`, `action` y `params` |
+| `PUT /spaces/space1/edge-config` con un árbol de umbrales | `sentrya/space1/config` con el mismo árbol |
+
+También se verificó la seguridad de la API: sin token, `/api/v1/...` respondió `401`; con un JWT firmado con el secreto compartido respondió `200`; y la ruta `/health` respondió sin autenticación. Además, el servicio se negó a iniciar sin la variable `JWT_SECRET`.
+
+Esta ejecución se realizó con un token firmado por el equipo con el formato de IAM y con mensajes simulados del Edge; la verificación con el servicio IAM y la Edge Application reales queda pendiente para la integración de los componentes.
+
 ### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 2, la documentación de los servicios se orienta a facilitar la comprensión y utilización de los microservicios desarrollados.
@@ -641,6 +849,41 @@ Esta información constituye un requisito importante para las futuras actividade
 
 
 
+**Documentación del microservicio IoT Monitoring & Notifications**
+
+La especificación OpenAPI 3.0 del servicio se publica en la ruta `/openapi.yaml` (https://setrya-iotmonitoring-service.onrender.com/openapi.yaml) y se mantiene en el repositorio en `api/openapi.yaml`. Todas las rutas de `/api/v1` requieren el encabezado `Authorization: Bearer <JWT emitido por IAM>`.
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| POST | `/api/v1/devices` | Registra un dispositivo. Acepta un `id` acordado con el Edge y `active`. |
+| PATCH | `/api/v1/devices/{deviceId}/activate` y `/deactivate` | Activa o desactiva un dispositivo. |
+| GET | `/api/v1/spaces/{spaceId}/devices` | Lista los dispositivos de un espacio. |
+| POST | `/api/v1/readings` | Ingresa una lectura por HTTP, con el mismo contenido que el mensaje MQTT. |
+| GET | `/api/v1/spaces/{spaceId}/readings` | Lista las lecturas de un espacio. |
+| GET | `/api/v1/spaces/{spaceId}/alerts` | Lista las alertas de un espacio, con filtro opcional por estado. |
+| GET | `/api/v1/spaces/{spaceId}/monitoring-summary` | Resume el estado del monitoreo de un espacio. |
+| PATCH | `/api/v1/alerts/{alertId}/acknowledge` | Reconoce una alerta. |
+| PATCH | `/api/v1/alerts/{alertId}/close` | Cierra una alerta. |
+| POST | `/api/v1/alerts/{alertId}/validation` | Confirma o rechaza una intrusión y envía la decisión al Edge. |
+| POST | `/api/v1/spaces/{spaceId}/commands/{target}` | Envía una orden a un actuador del Edge. |
+| PUT | `/api/v1/spaces/{spaceId}/edge-config` | Envía una configuración de umbrales al Edge. |
+
+**Contrato MQTT con la Edge Application**
+
+La Edge Application publica en `sentrya/{spaceId}/{deviceId}/readings` (QoS 1) un mensaje JSON con los campos `deviceId`, `metricType`, `value` y `unit`, y de forma opcional `readingId`, `measuredAt`, `localState`, `reason`, `eventId` y `evidenceRef`. Los tipos de lectura aceptados son:
+
+| `metricType` | `unit` | Alerta |
+|---|---|---|
+| `temperature` | `C` | Fuera de umbral, o estado local `WARNING` (severidad media) o `CRITICAL` (crítica). |
+| `humidity` | `%` | Fuera de umbral. |
+| `intrusion` | `event` | Siempre; severidad alta. |
+| `escalation` | `event` | Siempre; severidad crítica. |
+| `device_error` | `event` | Severidad media. |
+
+En sentido inverso, el servicio publica hacia el Edge en los tópicos `sentrya/{spaceId}/{target}/commands`, `sentrya/{spaceId}/security/validation` y `sentrya/{spaceId}/config`.
+
+El README del repositorio documenta además las variables de entorno, el proceso de despliegue y la lista de puntos de diseño pendientes.
+
 ### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 El Sprint 2 contempla la preparación de los microservicios backend para su ejecución independiente, respetando la arquitectura distribuida definida para Sentrya.
@@ -671,7 +914,17 @@ Para sustentar el despliegue se deberán incorporar capturas de los servicios ej
 <br>
 
 - [URL o captura del despliegue de Space Management]
-- [URL o captura del despliegue de IoT Monitoring & Notifications]
+- IoT MONITORING & NOTIFICATIONS - https://setrya-iotmonitoring-service.onrender.com
+
+  Servicio desplegado en Render con base de datos MySQL en Aiven (ver la sección 6.1.4). El 11 de noviembre de 2026 se comprobaron las siguientes respuestas:
+
+  | Solicitud | Respuesta | Significado |
+  |---|---|---|
+  | `GET /health` | `200` con `{"status":"ok"}` | El servicio está activo y se conectó a la base de datos (el servicio no escucha hasta completar las migraciones). |
+  | `GET /api/v1/spaces/space1/alerts` sin token | `401` con `missing bearer token` | La API está protegida con el JWT de IAM. |
+  | `GET /openapi.yaml` | `200`, versión 0.2.0 | Está desplegada la versión que implementa el contrato del Edge. |
+
+  Queda pendiente verificar la suscripción al broker MQTT en la nube, que depende de la configuración del broker compartido con la Edge Application.
 - [URL o captura del despliegue de Payment Management]
 - [URL o captura del despliegue de Reports & Advanced Features]
 
