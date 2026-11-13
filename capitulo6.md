@@ -1005,6 +1005,27 @@ Las entrevistas de validación tuvieron como objetivo comprobar si el producto d
 </tbody>
 </table>
 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Nombre</td><td>Carlos</td></tr>
+  <tr><td>Apellido</td><td>Segundo</td></tr>
+  <tr><td>Edad</td><td>25</td></tr>
+  <tr><td>Distrito</td><td>Lince</td></tr>
+  <tr><td>Rol</td><td>Dueño de hogar</td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg1Entrevista2.png "style="max-width:500px; max-height:700px; "></td></tr>
+  <tr><td>Link</td><td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202122876_upc_edu_pe/IQAv9vpNFDFaSakLrkf88be_Aam_Eg0vgnp1sIzNjQcrozI?e=27YTRH</td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td>00:00</td></tr>
+  <tr><td>Duración de la entrevista</td><td>05:58</td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td>5</td></tr>
+  <tr><td>Resumen</td><td>El entrevistado, de 25 años y usuario de luces con sensor de movimiento, cámaras y una aspiradora robot, valoró positivamente el prototipo, sobre todo porque centraliza en una sola app dispositivos de distintas marcas. Encontró la interfaz intuitiva y fácil de navegar, con un dashboard claro, alertas útiles (como el aviso de una cámara sin señal), confirmaciones visibles de cada acción y un historial de humedad y temperatura práctico. Dijo que la estética le transmite confianza y solo sugirió agregar más espaciado en los campos de texto. Calificó la facilidad de uso con 5/5 y afirmó que usaría la aplicación, e incluso planea integrar más dispositivos.</td></tr>
+</tbody>
+</table>
+
 #### Segmento objetivo 2: Implementador de hogar inteligente
 
 <table>
