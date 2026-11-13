@@ -1029,6 +1029,28 @@ Las entrevistas de validación tuvieron como objetivo comprobar si el producto d
 </tbody>
 </table>
 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Nombre</td><td>Mathias</td></tr>
+  <tr><td>Apellidos</td><td>Villavicencio</td></tr>
+  <tr><td>Edad</td><td>22</td></tr>
+  <tr><td>Distrito</td><td>San Juan de Lurigancho</td></tr>
+  <tr><td>Rol</td><td>Implementador de hogar inteligente</td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/Evidencia-ValidacionSeg2Mathias.png" style="max-width:500px; max-height:700px;"></td></tr>
+  <tr><td>Link</td><td>https://youtu.be/Jx0B4ccVva0</td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td>0:00</td></tr>
+  <tr><td>Duración de la entrevista</td><td>3:38</td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td>4.0</td></tr>
+  <tr><td>¿Pagaría por la plataforma?</td><td>Sí</td></tr>
+  <tr><td>Resumen</td><td>El entrevistado tiene 22 años y trabaja principalmente en Lima. Actualmente organiza a sus clientes e instalaciones con Excel, WhatsApp y registros manuales. Entendió que Sentrya es una plataforma para gestionar dispositivos inteligentes, monitorear hogares y administrar las instalaciones de los clientes desde un solo lugar. Consideró que el proceso para recibir clientes o unirse como implementador se entiende, aunque recomendó explicar mejor el registro y cómo se asignan las solicitudes. Valoró que la plataforma centralice la información y permita monitorear los dispositivos en tiempo real, pero le genera desconfianza no saber qué tan segura es la información de los clientes. Indicó que el panel ofrece una visión general de las actividades, aunque sería útil destacar las tareas urgentes, y que la información de las solicitudes es suficiente en general, pero agregaría fotografías, ubicación del domicilio, tipo de dispositivo y una descripción más detallada del problema. Destacó que centralizar clientes e instalaciones facilita el seguimiento, que los datos de temperatura, humedad y alertas permiten detectar anomalías antes de visitar al cliente, y que el historial sirve para revisar problemas y mantenimientos anteriores. Considera que la herramienta complementaría lo que usa hoy y reemplazaría algunas tareas manuales de Excel y WhatsApp. Le gustaría contar con un calendario de visitas técnicas, notificaciones de mantenimiento preventivo y un sistema para generar reportes de cada instalación. Calificó la facilidad de uso con 4 de 5 y respondió que sí pagaría si ofrece funcionalidades útiles para su trabajo y un precio accesible.</td></tr>
+</tbody>
+</table>
+
 ### 6.3.3. Evaluaciones según heurísticas.
 
 ## UX Heuristics & Principles Evaluation
