@@ -121,6 +121,58 @@ Especificación utilizada para documentar los endpoints del servicio. Se publica
 
 https://www.openapis.org/
 
+Backend: Report Management
+
+Para el desarrollo del microservicio de gestión de reportes se utilizaron las siguientes tecnologías y herramientas:
+
+TypeScript y Node.js
+
+Lenguaje de programación (TypeScript) y entorno de ejecución (Node.js 24) con los que se implementó el microservicio. El tipado estático permite detectar errores de contratos entre capas antes de ejecutar el código.
+
+https://www.typescriptlang.org/ · https://nodejs.org/
+
+NestJS
+
+Framework utilizado para construir la API REST (versión 12). Su sistema de módulos, inyección de dependencias, pipes de validación y filtros de excepciones facilitó la organización por capas del diseño táctico definido en el Capítulo IV.
+
+https://nestjs.com/
+
+PostgreSQL y TypeORM
+
+Base de datos relacional propia del microservicio, de acuerdo con la arquitectura definida en el Capítulo IV (una base de datos por microservicio). Se accede mediante TypeORM con el driver pg. El esquema no se sincroniza automáticamente: se versiona con migraciones que se ejecutan al iniciar el servicio.
+
+https://www.postgresql.org/ · https://typeorm.io/
+
+pdfkit
+
+Librería utilizada para generar los reportes en formato PDF directamente desde Node.js, con las fuentes incluidas en la librería y sin depender de un navegador. Los reportes en formato CSV se generan con código propio, con codificación UTF-8 con BOM y delimitador configurable para que Excel los abra correctamente.
+
+https://pdfkit.org/
+
+Swagger (OpenAPI)
+
+Especificación utilizada para documentar los endpoints del servicio. La documentación interactiva se publica en la ruta /api/docs e incluye el esquema de autenticación Bearer.
+
+https://swagger.io/specification/
+
+Vitest
+
+Framework utilizado para las pruebas unitarias y end-to-end del microservicio.
+
+https://vitest.dev/
+
+Docker y Docker Compose
+
+Herramientas utilizadas para empaquetar el servicio en una imagen de dos etapas (compilación y ejecución, sobre node:24-alpine) y para levantar en local el entorno completo (servicio y PostgreSQL 16).
+
+https://www.docker.com/
+
+Render y Aiven
+
+Render se utilizó como plataforma de despliegue del servicio, y Aiven como proveedor de la base de datos PostgreSQL gestionada. Ambas se describen en la sección 6.1.4.
+
+https://render.com/ · https://aiven.io/
+
 #### Project Management and Collaboration
 
 Para la coordinación y comunicación entre los integrantes del equipo se utilizaron las siguientes herramientas:
@@ -198,6 +250,50 @@ Cada microservicio backend se mantiene en su propio repositorio, lo que permite 
 main
   ├── feature/iot-monitoring
   └── feature/edge-contract
+```
+
+En el repositorio **Setrya-ReportManagement-Service** se trabajó con las ramas `main` (versión desplegada), `develop` y ramas `feature/*` por cada cambio. Cada cambio se integró primero a `develop` mediante un Pull Request, y `develop` se integró a `main` para generar el despliegue.
+
+| Pull Request | Rama origen | Rama destino | Contenido |
+|---|---|---|---|
+| [#1](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/1) | `feature/project-setup` | `develop` | Configuración inicial: base de datos, Swagger y validación. |
+| [#2](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/2) | `feature/report-creation` | `develop` | Creación y consulta de reportes. |
+| [#3](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/3) | `feature/report-listing` | `develop` | Listado de reportes con filtros y paginación. |
+| [#4](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/4) | `feature/report-generation-csv` | `develop` | Generación y descarga de reportes en formato CSV. |
+| [#5](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/5) | `feature/iot-monitoring-client` | `develop` | Lectura de mediciones desde IoT Monitoring y compatibilidad del CSV con Excel. |
+| [#6](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/6) | `feature/dockerize-service` | `develop` | Dockerfile, Docker Compose y migraciones automáticas al iniciar. |
+| [#7](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/7) | `feature/report-pdf-generation` | `develop` | Generación de reportes en formato PDF. |
+| [#8](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/8) | `feature/db-ssl` | `develop` | Conexión cifrada (SSL) opcional a la base de datos. |
+| [#9](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/9) | `feature/e2e-tests` | `develop` | Pruebas end-to-end del flujo de reportes. |
+| [#10](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/10) | `feature/jwt-auth` | `develop` | Autenticación con el JWT emitido por IAM. |
+| [#12](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/12) | `feature/requester-id-string` | `develop` | El solicitante se guarda como texto, porque IAM emite el correo del usuario en el token. |
+| [#14](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/14) | `feature/iot-error-handling` | `develop` | Registro de fallos de IoT Monitoring, tiempo de espera configurable y respuesta 502. |
+| [#11](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/11), [#13](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/13) y [#15](https://github.com/SpaceUp-UPC/Setrya-ReportManagement-Service/pull/15) | `develop` | `main` | Versiones desplegadas en Render. |
+
+```text
+main
+└── develop
+    ├── feature/project-setup
+    ├── feature/report-creation
+    ├── feature/report-listing
+    ├── feature/report-generation-csv
+    ├── feature/iot-monitoring-client
+    ├── feature/dockerize-service
+    ├── feature/report-pdf-generation
+    ├── feature/db-ssl
+    ├── feature/e2e-tests
+    ├── feature/jwt-auth
+    ├── feature/requester-id-string
+    └── feature/iot-error-handling
+```
+
+```text
+main
+└── develop
+    ├── feature/project-setup
+    ├── feature/jwt-auth
+    ├── feature/requester-id-string
+    └── feature/iot-error-handling
 ```
 
 ### 6.1.3. Source Code Style Guide & Conventions
@@ -343,6 +439,50 @@ internal/
 
 Esta organización corresponde a las cuatro capas descritas en la sección 4.2.5 (Domain, Interface, Application e Infrastructure).
 
+#### Convenciones del microservicio Report Management (NestJS)
+
+El microservicio de reportes sigue las convenciones habituales de TypeScript y NestJS, y la organización por capas del diseño táctico definido en el Capítulo IV.
+
+- **Formato y análisis estático:** el código se formatea con Prettier y se revisa con oxlint antes de cada commit.
+- **Nomenclatura:** `PascalCase` para clases y tipos, `camelCase` para variables y funciones, `UPPER_SNAKE_CASE` para constantes y variables de entorno. Los archivos usan `kebab-case` con un sufijo que indica su rol (`.entity.ts`, `.use-case.ts`, `.controller.ts`, `.dto.ts`).
+- **Validación:** los cuerpos de las peticiones se validan con DTOs y `class-validator`; las peticiones inválidas se rechazan con 400.
+- **Puertos y adaptadores:** el dominio define interfaces (`ReportDataProvider`, almacenamiento de archivos, repositorios) que se implementan en la capa de infraestructura. Esto permite cambiar entre datos de prueba y datos reales (`DATA_PROVIDER=mock|http`) sin modificar la lógica de negocio.
+- **Capa anticorrupción:** el modelo del servicio IoT Monitoring se traduce a las estructuras propias del dominio dentro de la capa de infraestructura.
+- **Base de datos:** el esquema se modifica únicamente mediante migraciones versionadas; la sincronización automática del ORM está desactivada.
+- **Commits:** mensajes siguiendo Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`).
+- **Pruebas:** los archivos unitarios usan el sufijo `.spec.ts` y se ubican junto al código que prueban; las pruebas end-to-end están en la carpeta `test/`.
+
+La estructura de carpetas es la siguiente:
+
+```text
+src/
+├── auth/                          validación del JWT emitido por IAM
+├── health/                        endpoint de verificación de disponibilidad
+└── reports/
+    ├── domain/
+    │   ├── entities/              agregado Report
+    │   ├── enums/                 tipo, formato y estado del reporte
+    │   ├── ports/                 interfaces hacia datos y almacenamiento
+    │   └── repositories/          contrato de persistencia
+    ├── application/
+    │   ├── use-cases/             crear, listar, consultar, generar y descargar
+    │   ├── csv/                   generación del archivo CSV
+    │   ├── pdf/                   generación del archivo PDF
+    │   └── errors/                errores de aplicación
+    ├── infrastructure/
+    │   ├── persistence/           entidades ORM, repositorios y migraciones
+    │   ├── providers/             datos de prueba y cliente de IoT Monitoring
+    │   ├── clients/iot-monitoring/ modelo externo del servicio de monitoreo
+    │   ├── storage/               almacenamiento de los archivos generados
+    │   └── errors/                errores técnicos
+    └── interfaces/
+        ├── controllers/           endpoints REST
+        ├── dto/                   recursos de entrada y salida
+        └── filters/               traducción de errores a respuestas HTTP
+```
+
+Esta organización corresponde a las cuatro capas descritas en la sección 4.2.5 (Domain, Interface, Application e Infrastructure).
+
 ### 6.1.4. Software Deployment Configuration
 
 El despliegue de los componentes Web de Sentrya se realizó mediante servicios de alojamiento integrados con los repositorios de GitHub. Para la Landing Page se utilizó **GitHub Pages**, junto con **GitHub Actions** para automatizar el proceso de construcción y publicación.
@@ -404,6 +544,41 @@ Cada microservicio backend se despliega de forma independiente y con su propia b
 URL: https://setrya-iotmonitoring-service.onrender.com
 
 **Consideración del plan gratuito:** Render suspende el servicio tras 15 minutos sin tráfico HTTP. Mientras está suspendido no recibe mensajes MQTT, aunque el broker conserva las lecturas con QoS 1 (la sesión del servicio es persistente) y se las entrega al reanudarse.
+
+##### Report Management
+
+**Plataforma de despliegue:** Render (servicio web con runtime Docker), a partir de la rama `main` del repositorio `Setrya-ReportManagement-Service`. Cada push a `main` genera un nuevo despliegue.
+
+**Imagen:** compilación en dos etapas sobre `node:24-alpine`. La primera instala las dependencias y compila el proyecto; la segunda copia únicamente el resultado compilado y las dependencias de producción, y se ejecuta con un usuario sin privilegios.
+
+**Base de datos:** PostgreSQL gestionado por Aiven, con conexión cifrada (SSL). Las tablas se crean automáticamente cuando el servicio inicia: el script de arranque ejecuta las migraciones pendientes antes de levantar la aplicación.
+
+**Configuración:** el servicio se configura exclusivamente con variables de entorno, de modo que ningún secreto se almacena en el repositorio:
+
+| Variable | Propósito |
+|---|---|
+| `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` y `DB_SSL` | Conexión a la base de datos PostgreSQL. |
+| `JWT_SECRET` | Secreto compartido con el microservicio IAM para validar el token. |
+| `AUTH_DISABLED` | Desactiva la autenticación. Solo para desarrollo local; en despliegue es `false`. |
+| `DATA_PROVIDER` | Origen de los datos de los reportes: `mock` (datos de prueba) o `http` (IoT Monitoring). |
+| `IOT_MONITORING_URL` y `IOT_MONITORING_TIMEOUT_MS` | Dirección y tiempo máximo de espera del servicio IoT Monitoring cuando `DATA_PROVIDER=http`. |
+| `CSV_DELIMITER` | Delimitador de los archivos CSV (por defecto `;`). |
+| `CORS_ALLOWED_ORIGINS` | Orígenes de la aplicación Web autorizados a consumir la API. |
+
+**Seguridad:** todas las rutas bajo `/api/v1/reports` exigen el JWT emitido por IAM. Solo `/api/v1/health` es pública. El identificador del solicitante de cada reporte se toma del token.
+
+**Verificación de disponibilidad:** el servicio expone la ruta `/api/v1/health`, que Render utiliza como health check.
+
+URL: https://setrya-reportmanagement-service.onrender.com
+
+Documentación interactiva: https://setrya-reportmanagement-service.onrender.com/api/docs
+
+**Consideraciones del plan gratuito:**
+- Render suspende el servicio tras 15 minutos sin tráfico HTTP; la primera petición posterior tarda cerca de un minuto en responder.
+- El sistema de archivos del plan gratuito es efímero: los archivos PDF y CSV generados se pierden cuando el servicio se reinicia o se vuelve a desplegar. Los registros de los reportes permanecen en la base de datos, y el archivo puede regenerarse con `POST /api/v1/reports/{id}/generate`.
+
+**Estado de la integración con IoT Monitoring:** el servicio implementa la lectura de mediciones reales desde IoT Monitoring (`DATA_PROVIDER=http`), reenviando el token del usuario y devolviendo `502 Bad Gateway` si el servicio de monitoreo no está disponible o rechaza la petición. En el despliegue actual se utiliza `DATA_PROVIDER=mock`, a la espera de que IoT Monitoring tenga configuradas su validación de token y la recepción de lecturas del Edge. Los reportes de instalación y mantenimiento utilizan datos de prueba hasta que Space Management exponga su API.
+
 
 ## 6.2. Landing Page, Services & Applications Implementation
 
@@ -569,6 +744,28 @@ La siguiente matriz propone la distribución de responsabilidades para documenta
 Los Aspect Leaders serán responsables de coordinar las actividades correspondientes a cada componente, mientras que los colaboradores participarán en la implementación, revisión del código, validación de funcionalidades y elaboración de evidencias.
 
 La organización por responsabilidades permite mantener un desarrollo modular, reduciendo dependencias innecesarias entre los microservicios y facilitando la preparación de futuras actividades de integración.
+
+#### Cobertura del microservicio Report Management
+
+Las historias seleccionadas para el Sprint 2 no incluyen una historia dedicada a la generación de reportes; el microservicio se desarrolló como la actividad técnica AT05. Su alcance se relaciona con la consulta de información histórica (US14) y con el sistema de reportes de cada instalación que solicitó uno de los entrevistados de validación (sección 6.3.2).
+
+| Funcionalidad | Alcance implementado | Estado |
+|---|---|---|
+| Solicitud de reportes | `POST /api/v1/reports` crea un reporte de tipo `INSTALLATION`, `MAINTENANCE` o `HOME_HISTORY`, para un espacio y un periodo, en formato `PDF` o `CSV`. | Cubierto |
+| Consulta de reportes | `GET /api/v1/reports` lista los reportes y `GET /api/v1/reports/{id}` consulta uno. | Cubierto |
+| Generación de archivos | `POST /api/v1/reports/{id}/generate` genera el archivo PDF o CSV y marca el reporte como `READY`; si falla, lo marca como `FAILED`. | Cubierto |
+| Descarga | `GET /api/v1/reports/{id}/download` entrega el archivo. Responde 409 si el reporte aún no está `READY` y 404 si no existe. | Cubierto |
+| Historial del hogar con datos reales | El reporte `HOME_HISTORY` lee temperatura y humedad desde IoT Monitoring. Está implementado y probado; en el despliegue actual usa datos de prueba. | Parcial |
+| Reportes de instalación y mantenimiento | Usan datos de prueba hasta que Space Management exponga su API. | Parcial |
+| Autenticación | Valida el JWT emitido por IAM (HS256, HS384 y HS512). | Cubierto |
+
+**Cobertura de código de las pruebas unitarias** (Vitest con V8, 14 archivos y 87 pruebas):
+
+| Statements | Branches | Functions | Lines |
+|---:|---:|---:|---:|
+| 82.07 % | 81.46 % | 82.41 % | 82.00 % |
+
+Las capas de dominio y de aplicación alcanzan prácticamente el 100 %. Los controladores y los DTOs aparecen con menor porcentaje porque sus pruebas son las pruebas end-to-end (32 pruebas), que se ejecutan contra una base de datos PostgreSQL de pruebas y no se incluyen en este cálculo.
 
 
 
@@ -744,7 +941,28 @@ ok  internal/interfaces/rest
 
 <br>
 
+**Report Management:**
 
+Las pruebas del microservicio se ejecutan con Vitest e incluyen 87 pruebas unitarias y 32 pruebas end-to-end contra una base de datos PostgreSQL de pruebas.
+
+| Test ID | Funcionalidad | Escenario de prueba | Resultado esperado |
+|---|---|---|---|
+| TC13 | Solicitud de reportes | Crear un reporte con datos válidos. | El servicio crea el reporte en estado `PENDING` (201). |
+| TC14 | Solicitud de reportes | Crear un reporte con un cuerpo inválido. | El servicio rechaza la petición (400). |
+| TC15 | Generación | Generar el archivo de un reporte en formato PDF. | El reporte pasa a `READY` y se crea el archivo PDF. |
+| TC16 | Generación | Generar el archivo de un reporte en formato CSV. | El reporte pasa a `READY` y se crea el archivo CSV. |
+| TC17 | Descarga | Descargar un reporte que aún no está generado. | El servicio responde 409. |
+| TC18 | Descarga | Consultar o descargar un reporte inexistente. | El servicio responde 404. |
+| TC19 | Autenticación | Llamar a un endpoint protegido sin token. | El servicio responde 401. |
+| TC20 | Autenticación | Llamar con un token firmado por IAM cuyo `sub` es un correo. | El servicio crea el reporte y guarda el correo como solicitante (201). |
+| TC21 | Integración | Generar un reporte `HOME_HISTORY` cuando IoT Monitoring rechaza la petición o no responde. | El servicio responde 502 y el reporte queda en estado `FAILED`. |
+<br>
+
+**Ejecución de las pruebas unitarias de Report Management (`npm run test`):**
+
+<img src="capitulo6/TestReportManagement.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
 
 ### 6.2.2.6. Execution Evidence for Sprint Review
 
@@ -762,7 +980,7 @@ La validación individual de los microservicios permite evaluar la lógica de ne
 | Space Management | Desarrollado | Pendiente | Pendiente para vinculación física |
 | IoT Monitoring & Notifications | Desarrollado | Pendiente | Pendiente |
 | Payment Management | Desarrollado | Pendiente | No aplica directamente |
-| Reports & Advanced Features | Desarrollado | Pendiente | Pendiente de recibir datos del ecosistema |
+| Reports & Advanced Features (Report Management) | Desarrollado y desplegado | Pendiente | Lectura de IoT Monitoring implementada; en el despliegue se usan datos de prueba |
 
 **Evidencias de ejecución SWAGGER:**
 
@@ -816,6 +1034,34 @@ También se verificó la seguridad de la API: sin token, `/api/v1/...` respondi�
 
 Esta ejecución se realizó con un token firmado por el equipo con el formato de IAM y con mensajes simulados del Edge; la verificación con el servicio IAM y la Edge Application reales queda pendiente para la integración de los componentes.
 
+**Evidencias de ejecución de Report Management:**
+
+1. Petición sin token rechazada con 401.
+2. Creación de un reporte (`POST /api/v1/reports`, respuesta 201).
+3. Generación del archivo (`POST /api/v1/reports/{id}/generate`, estado `READY`).
+4. Reporte en formato PDF descargado.
+5. Reporte en formato CSV abierto en Excel.
+
+<img src="capitulo6/RM-401.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/RM-Swagger-Crear.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/RM-Swagger-Generar.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/RM-PDF.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/RM-CSV.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
 ### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 2, la documentación de los servicios se orienta a facilitar la comprensión y utilización de los microservicios desarrollados.
@@ -830,8 +1076,20 @@ Esta información constituye un requisito importante para las futuras actividade
 | Space Management | Endpoints de gestión de viviendas, espacios, instalaciones y dispositivos. |
 | IoT Monitoring & Notifications | Endpoints y contratos para lecturas, eventos, alertas y configuraciones de monitoreo. |
 | Payment Management | Endpoints y modelos relacionados con operaciones de pago. |
-| Reports & Advanced Features | Endpoints de consultas históricas y generación de información para reportes. |
+| Reports & Advanced Features (Report Management) | Endpoints de solicitud, generación, consulta y descarga de reportes en formato PDF y CSV. |
 
+**Endpoints de Report Management** (documentación interactiva en `/api/docs`):
+
+| Método | Ruta | Descripción | Respuestas |
+|---|---|---|---|
+| `GET` | `/api/v1/health` | Verificación de disponibilidad. Pública. | 200 |
+| `POST` | `/api/v1/reports` | Crea un reporte (`type`, `spaceId`, `periodStart`, `periodEnd`, `format`). El solicitante se toma del token. | 201, 400, 401 |
+| `GET` | `/api/v1/reports` | Lista los reportes. | 200, 401 |
+| `GET` | `/api/v1/reports/{id}` | Consulta un reporte. | 200, 401, 404 |
+| `POST` | `/api/v1/reports/{id}/generate` | Genera el archivo del reporte. | 201, 401, 404, 502 |
+| `GET` | `/api/v1/reports/{id}/download` | Descarga el archivo generado. | 200, 401, 404, 409 |
+
+Estados de un reporte: `PENDING` (creado), `READY` (archivo generado) y `FAILED` (la generación falló).
 
 **Evidencias SWAGGER:**
 
@@ -884,6 +1142,12 @@ En sentido inverso, el servicio publica hacia el Edge en los tópicos `sentrya/{
 
 El README del repositorio documenta además las variables de entorno, el proceso de despliegue y la lista de puntos de diseño pendientes.
 
+**Evidencia SWAGGER de Report Management:**
+
+<img src="capitulo6/RM-Swagger.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
 ### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 El Sprint 2 contempla la preparación de los microservicios backend para su ejecución independiente, respetando la arquitectura distribuida definida para Sentrya.
@@ -912,9 +1176,7 @@ Para sustentar el despliegue se deberán incorporar capturas de los servicios ej
 
 - IoT MONITORING & NOTIFICATIONS - https://setrya-iotmonitoring-service.onrender.com
 
-
-
-
+- REPORT MANAGEMENT (Reports & Advanced Features) - https://setrya-reportmanagement-service.onrender.com/api/docs
 
 
 
