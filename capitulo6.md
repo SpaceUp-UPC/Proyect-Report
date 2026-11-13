@@ -121,53 +121,53 @@ Especificación utilizada para documentar los endpoints del servicio. Se publica
 
 https://www.openapis.org/
 
-Backend: Report Management
+#### Backend: Report Management
 
 Para el desarrollo del microservicio de gestión de reportes se utilizaron las siguientes tecnologías y herramientas:
 
-TypeScript y Node.js
+##### TypeScript y Node.js
 
 Lenguaje de programación (TypeScript) y entorno de ejecución (Node.js 24) con los que se implementó el microservicio. El tipado estático permite detectar errores de contratos entre capas antes de ejecutar el código.
 
 https://www.typescriptlang.org/ · https://nodejs.org/
 
-NestJS
+##### NestJS
 
 Framework utilizado para construir la API REST (versión 12). Su sistema de módulos, inyección de dependencias, pipes de validación y filtros de excepciones facilitó la organización por capas del diseño táctico definido en el Capítulo IV.
 
 https://nestjs.com/
 
-PostgreSQL y TypeORM
+##### PostgreSQL y TypeORM
 
 Base de datos relacional propia del microservicio, de acuerdo con la arquitectura definida en el Capítulo IV (una base de datos por microservicio). Se accede mediante TypeORM con el driver pg. El esquema no se sincroniza automáticamente: se versiona con migraciones que se ejecutan al iniciar el servicio.
 
 https://www.postgresql.org/ · https://typeorm.io/
 
-pdfkit
+##### pdfkit
 
 Librería utilizada para generar los reportes en formato PDF directamente desde Node.js, con las fuentes incluidas en la librería y sin depender de un navegador. Los reportes en formato CSV se generan con código propio, con codificación UTF-8 con BOM y delimitador configurable para que Excel los abra correctamente.
 
 https://pdfkit.org/
 
-Swagger (OpenAPI)
+##### Swagger (OpenAPI)
 
 Especificación utilizada para documentar los endpoints del servicio. La documentación interactiva se publica en la ruta /api/docs e incluye el esquema de autenticación Bearer.
 
 https://swagger.io/specification/
 
-Vitest
+##### Vitest
 
 Framework utilizado para las pruebas unitarias y end-to-end del microservicio.
 
 https://vitest.dev/
 
-Docker y Docker Compose
+##### Docker y Docker Compose
 
 Herramientas utilizadas para empaquetar el servicio en una imagen de dos etapas (compilación y ejecución, sobre node:24-alpine) y para levantar en local el entorno completo (servicio y PostgreSQL 16).
 
 https://www.docker.com/
 
-Render y Aiven
+##### Render y Aiven
 
 Render se utilizó como plataforma de despliegue del servicio, y Aiven como proveedor de la base de datos PostgreSQL gestionada. Ambas se describen en la sección 6.1.4.
 
@@ -252,6 +252,8 @@ main
   └── feature/edge-contract
 ```
 
+#### Ramas y flujo en Report Management
+
 En el repositorio **Setrya-ReportManagement-Service** se trabajó con las ramas `main` (versión desplegada), `develop` y ramas `feature/*` por cada cambio. Cada cambio se integró primero a `develop` mediante un Pull Request, y `develop` se integró a `main` para generar el despliegue.
 
 | Pull Request | Rama origen | Rama destino | Contenido |
@@ -287,14 +289,6 @@ main
     └── feature/iot-error-handling
 ```
 
-```text
-main
-└── develop
-    ├── feature/project-setup
-    ├── feature/jwt-auth
-    ├── feature/requester-id-string
-    └── feature/iot-error-handling
-```
 
 ### 6.1.3. Source Code Style Guide & Conventions
 
