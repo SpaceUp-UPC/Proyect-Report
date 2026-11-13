@@ -909,24 +909,12 @@ Para sustentar el despliegue se deberán incorporar capturas de los servicios ej
 **Evidencias:**
 
 - IAM MICROSERVICE - https://iot-iam-microservice.onrender.com/swagger-ui/index.html#
-<br>
-<img src="capitulo6/IAMDEPLOY.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
-<br>
 
-- [URL o captura del despliegue de Space Management]
 - IoT MONITORING & NOTIFICATIONS - https://setrya-iotmonitoring-service.onrender.com
 
-  Servicio desplegado en Render con base de datos MySQL en Aiven (ver la sección 6.1.4). El 11 de noviembre de 2026 se comprobaron las siguientes respuestas:
 
-  | Solicitud | Respuesta | Significado |
-  |---|---|---|
-  | `GET /health` | `200` con `{"status":"ok"}` | El servicio está activo y se conectó a la base de datos (el servicio no escucha hasta completar las migraciones). |
-  | `GET /api/v1/spaces/space1/alerts` sin token | `401` con `missing bearer token` | La API está protegida con el JWT de IAM. |
-  | `GET /openapi.yaml` | `200`, versión 0.2.0 | Está desplegada la versión que implementa el contrato del Edge. |
 
-  Queda pendiente verificar la suscripción al broker MQTT en la nube, que depende de la configuración del broker compartido con la Edge Application.
-- [URL o captura del despliegue de Payment Management]
-- [URL o captura del despliegue de Reports & Advanced Features]
+
 
 
 
@@ -934,8 +922,18 @@ Para sustentar el despliegue se deberán incorporar capturas de los servicios ej
 
 A continuacion se presenta un desglose de las contribuciones y commits hechos por los integrantes del equipo:
 
-<img src="capitulo6/Insights1Sprint2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
-<img src="capitulo6/Insights2Sprint2.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+<img src="capitulo6/Insights-FrontEnd.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/Insights-SpaceManagement.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
+<img src="capitulo6/Insights-Report.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
+
+<br>
+
 
 
 
