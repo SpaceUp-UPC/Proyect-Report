@@ -1280,6 +1280,28 @@ Las entrevistas de validación tuvieron como objetivo comprobar si el producto d
 </tbody>
 </table>
 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Nombre</td><td>Eduardo</td></tr>
+  <tr><td>Apellido</td><td>Salvatierra</td></tr>
+  <tr><td>Edad</td><td>22</td></tr>
+  <tr><td>Distrito</td><td>San Miguel</td></tr>
+  <tr><td>Rol</td><td>Dueño de hogar</td></tr>
+  <tr><td>Evidencia</td><td><img src="capitulo6/ValidacionSeg1Entrevista3.png" style="max-width:500px; max-height:700px;"></td></tr>
+  <tr><td>Link</td><td>https://www.youtube.com/watch?v=y2wQrEJUM-8</td></tr>
+  <tr><td>Timing donde inicia la entrevista</td><td>00:00</td></tr>
+  <tr><td>Duración de la entrevista</td><td>2:00</td></tr>
+  <tr><td>Facilidad de uso (1 a 5)</td><td>4</td></tr>
+  <tr><td>Resumen</td><td>El entrevistado, Eduardo Salvatierra, tiene 22 años, vive en San Miguel y usa un foco inteligente, un parlante con asistente de voz y un enchufe inteligente que programa desde el celular. Entendió que Sentrya permite monitorear su hogar con sensores de humedad y temperatura y conectarse con implementadores que instalan los dispositivos. Consideró que el servicio se entiende, aunque recomendó agregar una sección de "cómo funciona" en tres pasos y hacer más visible la opción de contacto, por ejemplo en el menú superior o en el pie de página. Le transmite confianza el diseño limpio y profesional, y le daría más confianza ver testimonios de clientes, información sobre la privacidad de los datos y datos del equipo. Indicó que la pantalla de inicio muestra con claridad el estado del hogar y los dispositivos activos, y que las alertas explican qué ocurrió, pero sugirió que también indiquen qué hacer, con un botón de acción directa. Valoró el historial de humedad y temperatura y pidió filtros por día, semana o mes, comparación entre habitaciones, exportación de datos y un resumen semanal. Señaló que las acciones sobre los dispositivos se confirman, aunque haría la notificación más notoria. Sobre los implementadores, considera que la información es casi suficiente y agregaría precios referenciales, zonas de atención, tiempos de respuesta y reseñas de otros clientes. Lo más fácil fue ver el estado del hogar y navegar; lo más difícil, encontrar el contacto y entender cómo solicitar un implementador. Propone un tutorial corto en el primer ingreso. Calificó la facilidad de uso con 4 de 5 y afirmó que usaría Sentrya si el precio es accesible y sus datos están protegidos.</td></tr>
+</tbody>
+</table>
+
+
 #### Segmento objetivo 2: Implementador de hogar inteligente
 
 <table>
