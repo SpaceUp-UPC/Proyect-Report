@@ -4872,12 +4872,6 @@ A continuacion se presenta un desglose de las contribuciones y commits hechos po
 
 <img src="capitulo6/Insights-SpaceManagement.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
 
-<br>
-
-<img src="capitulo6/Insights-Report.png" style="max-width:700px; max-height:800px; width:auto; height:auto;">
-
-<br>
-
 
 
 
