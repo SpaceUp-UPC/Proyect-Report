@@ -1660,6 +1660,9 @@ Los problemas identificados deberán contrastarse con el prototipo actualizado y
 
 ## 6.4. Video About-the-Product.
 
+![About the product](capitulo6/About_the_product.png)
+
+[About_the_Product_Setrya.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQC2HEQ3Pe8KRLCtx8AteTXJAew-r6x1NuZq14Dzs4VSYCw?e=37X5Hz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 
 # Conclusiones
