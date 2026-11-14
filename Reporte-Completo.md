@@ -90,9 +90,10 @@
 
 | Versión | Fecha      | Autor(es)      | Descripción de modificación       |
 |-------|----------|--------------------------------------------------------|---------|
-| 0.1     | 09/09/2026 |    Equipo SpaceUp       |     Se completaron los capitulos del 1 al 4     |
-| 0.2     | 05/10/2026 |    Equipo SpaceUp       |     Se completaron los capitulos del 5 y 6     |
-| 0.3     | 10/11/2026 |    Equipo SpaceUp       |     Se completo el capitulo 6     |
+| 0.1     | 22/04/2026 |    Jose Luis Martínez Valdivia       |     Base del trabajo y estructura     |
+| 0.2     | 09/09/2026 |    Equipo SpaceUp       |     Se completaron los capitulos del 1 al 4     |
+| 0.3     | 05/10/2026 |    Equipo SpaceUp       |     Se completaron los capitulos del 5 y 6     |
+| 0.4     | 10/11/2026 |    Equipo SpaceUp       |     Se completo el capitulo 6     |
 
 <div style="page-break-before: always;"></div>
 
